@@ -51,4 +51,4 @@ Verdict **NO-GO** for the V4 shell set. See `audits/results/FINAL_VERDICT.md`.
 
 ## Sync
 
-LOCAL at time of writing; push result is recorded in the follow-up commit or, if that is absent on the remote, the work is UNSYNCED.
+UNSYNCED — committed locally in the Claude cloud session (commits on top of `2bf6e6d`), but `git push origin main` was refused with HTTP 403: the Claude GitHub App has no access to this repository. The owner was given the commits as a patch file (`claude_v4_audit.patch`, apply with `git am`). Until that is applied and pushed, other agents will not see this audit.

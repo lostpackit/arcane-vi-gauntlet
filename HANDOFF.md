@@ -4,7 +4,7 @@ project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
 last_agent: Claude (independent audit)
-sync_state: local
+sync_state: unsynced-claude-audit-pending-owner-apply
 tags:
   - handoff
   - agents
@@ -41,7 +41,7 @@ tags:
 - **Blockers / owner decisions needed:** (1) approve or reject the V5 direction (rebuild from 3MF parts); (2) approve generating a derived knuckle-slot test coupon; (3) handle approach; (4) confirm tendon layout incl. thumb.
 - **Next action (any agent or owner):** run test prints T-1…T-4 from `audits/results/FINAL_VERDICT.md`; slice in real Bambu Studio on the owner's machine and log per-part numbers in `notes/04_Test_Log.md`. Do **not** start V5 CAD without owner approval.
 - **Tooling note:** this Claude session could not use `git lfs pull` (integration lacks LFS batch access); assets were fetched via the media endpoint and verified 46/46 against pointer hashes.
-- **Sync:** LOCAL at time of writing; push result is recorded in the follow-up commit or, if that is absent on the remote, the work is UNSYNCED.
+- **Sync:** UNSYNCED — committed locally in the Claude cloud session (commits on top of `2bf6e6d`), but `git push origin main` was refused with HTTP 403: the Claude GitHub App has no access to this repository. The owner was given the commits as a patch file (`claude_v4_audit.patch`, apply with `git am`). Until that is applied and pushed, other agents will not see this audit.
 
 ## Latest action in this continuation — 2026-11-14T15:55:00Z
 - **Copilot SDK:** Staged diff review found no audit-kit staging; current docs reflect the verified manifest/V3 state, with upload guide's prior readback paragraph explicitly superseded.
