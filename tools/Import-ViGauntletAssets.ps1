@@ -52,6 +52,7 @@ try {
     }
   }
   Write-Host "All 61 files passed SHA256 verification."
+  $copyPlan = @()
   $copied = 0
   $skipped = 0
   foreach ($row in $manifest) {
@@ -65,10 +66,13 @@ try {
       }
       $skipped++
     } else {
-      New-Item -ItemType Directory -Path (Split-Path $dest -Parent) -Force | Out-Null
-      Copy-Item -LiteralPath $from -Destination $dest
-      $copied++
+      $copyPlan += [pscustomobject]@{ Source = $from; Destination = $dest }
     }
+  }
+  foreach ($item in $copyPlan) {
+    New-Item -ItemType Directory -Path (Split-Path $item.Destination -Parent) -Force | Out-Null
+    Copy-Item -LiteralPath $item.Source -Destination $item.Destination -NoClobber
+    $copied++
   }
   Write-Host "Import completed: $copied new files, $skipped already matching."
   Write-Host "Next: git lfs install; git add originals releases; git lfs ls-files; git commit; git pull --rebase origin main; git push."

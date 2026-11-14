@@ -71,3 +71,66 @@
 - New risks / decisions: The missing seven package files remain the blocker; do not run the importer.
 - Next action: Commit/push the verified synchronization update, then inspect independent repository setup status.
 - Sync: PUSHED `2feeda4ba98fe705488902fe5de5d4f713481584`; follow-up documentation edits are LOCAL.
+
+### 2026-11-14T14:10:00Z — Copilot SDK
+- Action: Committed the verified synchronization update, pushed `main`, and compared local HEAD with the remote branch.
+- Result: Commit `0375a77471a86671fdaa3e619844c8a8aff1c688` was pushed successfully; local and remote hashes matched exactly.
+- Files changed: `HANDOFF.md`; `notes/sessions/2026-11-14_copilot-sdk_asset-import.md`.
+- Evidence (file, command output, commit, issue): `git push origin main` succeeded; `git rev-parse HEAD` and `git ls-remote origin refs/heads/main` both returned `0375a77471a86671fdaa3e619844c8a8aff1c688`.
+- New risks / decisions: This sync record is now shared; no CAD files were available or imported.
+- Next action: Check Git LFS availability/configuration and confirm Obsidian/agent-sync files without modifying unrelated content.
+- Sync: PUSHED `0375a77471a86671fdaa3e619844c8a8aff1c688`.
+
+### 2026-11-14T14:11:00Z — Copilot SDK
+- Action: Inspected Git LFS version/environment, `.gitattributes`, repository LFS file list, required Obsidian files/folders, and the Claude/Gemini/Hermes instructions plus Obsidian setup and engineering decision/test/risk notes.
+- Result: Git LFS 3.7.1 is installed; the Git filters are configured and `.gitattributes` tracks STL/3MF/ZIP (including uppercase extensions). No LFS files are tracked because no CAD assets are present. LFS endpoint reports `auth=none` and upload/download access is not established. All required agent entry points, vault folders, hub, and Obsidian settings exist. Decision, test, and risk notes are under `notes/` and are present. Obsidian setup correctly specifies opening the repository root as the vault without requiring a third-party plugin.
+- Files changed: None during this inspection.
+- Evidence (file, command output, commit, issue): `git lfs version` reports 3.7.1; `.gitattributes`; `.obsidian/app.json`; `.obsidian/templates.json`; `notes/03_Decision_Log.md`, `notes/04_Test_Log.md`, and `notes/05_Risks_and_Blockers.md`.
+- New risks / decisions: LFS availability is installed/configured locally, but remote LFS auth/quota/object upload is not verified. Agent entry-point docs delegate detailed mandatory behavior to `AGENTS.md`/sync protocol.
+- Next action: Inspect the importer and exact script prerequisites; do not run it without all seven required files.
+- Sync: PUSHED `0375a77471a86671fdaa3e619844c8a8aff1c688`; this inspection is logged locally pending next checkpoint.
+
+### 2026-11-14T14:12:00Z — Copilot SDK
+- Action: Read `tools/Import-ViGauntletAssets.ps1` without executing it.
+- Result: The importer requires all six ZIP parts and the 61-row CSV, stages and hashes manifest files before copying, rejects existing files whose hashes differ, and cleans its unique temporary directory. However, it checks destination conflicts while copying, so a later conflict can leave earlier files partially copied.
+- Files changed: None during this inspection.
+- Evidence (file, command output, commit, issue): `tools/Import-ViGauntletAssets.ps1`.
+- New risks / decisions: Fix the partial-import-on-conflict defect by preflighting every destination before the first copy. Do not execute the importer without all seven downloads.
+- Next action: Make the conflict-preflight change and validate PowerShell syntax.
+- Sync: PUSHED `0375a77471a86671fdaa3e619844c8a8aff1c688`; review finding is local.
+
+### 2026-11-14T14:13:00Z — Copilot SDK
+- Action: Changed the importer to preflight every destination and verify all pre-existing hashes before the first copy; added `-NoClobber` to reduce overwrite risk from a concurrent file appearing after preflight. Parsed the script with PowerShell's AST parser and ran `git diff --check`.
+- Result: The importer no longer starts copying before all existing-file conflicts are checked. PowerShell syntax and whitespace validation passed. Full package/hash/extraction behavior remains untested because the required packages are missing.
+- Files changed: `tools/Import-ViGauntletAssets.ps1`.
+- Evidence (file, command output, commit, issue): PowerShell AST parser reported `PowerShell parse: PASS`; `git diff --check` passed.
+- New risks / decisions: Do not describe the importer as fully validated; only syntax and the identified conflict-preflight fix were checked.
+- Next action: Verify issue status and final repository state; commit/push this fix and the session/handoff notes. Leave Issue #1 open while import is blocked.
+- Sync: LOCAL; changes await a checkpoint commit/push.
+
+### 2026-11-14T14:14:00Z — Copilot SDK
+- Action: Checked all agent-instruction files for synchronization/evidence directives, queried GitHub Issue #1, and inspected local branch/status, LFS listing, and remote `main`.
+- Result: Agent files consistently defer to `AGENTS.md`/sync protocol or restate the after-action rules. Issue #1 is OPEN and correctly still lists asset upload and independent engineering checks as pending. `main` is at `0375a77471a86671fdaa3e619844c8a8aff1c688`, matching `origin/main`; only this task’s `HANDOFF.md`, session log, and importer are modified. No LFS files are tracked.
+- Files changed: None during this inspection.
+- Evidence (file, command output, commit, issue): GitHub Issue #1 returned state `open`; `git status --short --branch`; local and remote refs both `0375a77471a86671fdaa3e619844c8a8aff1c688`; instruction search in `AGENTS.md`, agent entry points, Copilot instructions, and sync protocol.
+- New risks / decisions: Keep Issue #1 open. CAD completeness, hashes, LFS uploads, and engineering gates remain unverified.
+- Next action: Search the remaining nearby OneDrive/source folders for the exact required filenames, then commit/push the setup checkpoint and stop for missing downloads if absent.
+- Sync: LOCAL; these inspection results are recorded locally.
+
+### 2026-11-14T14:15:00Z — Copilot SDK
+- Action: Searched the remaining nearby `OneDrive`, `source`, `Music`, and `Videos` locations for all seven required package/manifest names.
+- Result: No matches. Combined with the earlier searches of Downloads, Desktop, Documents, and repositories, all seven requested files are absent from the searched locations. Import must remain paused.
+- Files changed: None during this search.
+- Evidence (file, command output, commit, issue): Recursive PowerShell filename search across the listed folders returned no results.
+- New risks / decisions: Do not substitute archives or infer asset contents. User must provide the six named ZIPs and the named CSV before import.
+- Next action: Commit and push the verified setup/importer safety checkpoint, leave Issue #1 open, and request the exact missing downloads.
+- Sync: LOCAL; final blocker search is recorded locally.
+
+### 2026-11-14T14:16:00Z — Copilot SDK
+- Action: Fetched `origin` before the final checkpoint and compared branch pointers.
+- Result: Fetch succeeded; `HEAD` and `origin/main` both remained `0375a77471a86671fdaa3e619844c8a8aff1c688`. Worktree contains only the handoff, this session log, and the importer safety fix.
+- Files changed: None during fetch/inspection.
+- Evidence (file, command output, commit, issue): Full local and remote refs matched; `git status --short --branch` listed only the three task-owned modifications.
+- New risks / decisions: The checkpoint can be committed without overwriting remote changes; no concurrent remote update was found.
+- Next action: Commit/push the local updates and verify the remote hash.
+- Sync: LOCAL pending checkpoint push.

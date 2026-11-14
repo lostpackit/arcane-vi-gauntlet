@@ -26,7 +26,7 @@ tags:
 ## Latest completed action
 - **2026-11-14 | Copilot SDK:** The requested repository was cloned into the configured empty workspace. The six required ZIPs and SHA256 CSV were not found in the searched user-profile locations. Import has not run. **Blocked pending user-provided downloads.**
 - **Next:** Provide these exact files: `Arcane_Vi_Gauntlet_Assets_01_Original_3MF.zip`, `Arcane_Vi_Gauntlet_Assets_02_Original_Arms.zip`, `Arcane_Vi_Gauntlet_Assets_03_Original_Lights.zip`, `Arcane_Vi_Gauntlet_Assets_04_V1.zip`, `Arcane_Vi_Gauntlet_Assets_05_V2.zip`, `Arcane_Vi_Gauntlet_Assets_06_V3_V4.zip`, and `Arcane_Vi_Gauntlet_Assets_SHA256.csv`. Do not substitute other archives.
-- **Sync:** PUSHED and verified: local HEAD and `origin/main` both equal `2feeda4ba98fe705488902fe5de5d4f713481584`. Follow-up sync notes are currently local.
+- **Sync:** PUSHED and verified: local HEAD and `origin/main` both equal `0375a77471a86671fdaa3e619844c8a8aff1c688`.
 
 ## Earlier completed action
 - **2026-11-14 | ChatGPT:** Added Obsidian vault structure, mandatory `AGENTS.md` cross-agent rules, Claude/Copilot/Hermes/Gemini entry points, session templates and synchronization instructions. **Verified on GitHub `main`** in commit `e998e22811fa700c156eaae3de219b7c3f39fc28`.
@@ -52,11 +52,32 @@ tags:
 4. After **each** action, update this file and the agent's session log, commit and push at a safe checkpoint.
 
 ## Latest verification
+- **2026-11-14 | Copilot SDK:** Repeated the exact-name search in `OneDrive`, `source`, `Music`, and `Videos`; no required file was found. Earlier searches covered Downloads, Desktop, Documents, and repositories. All seven exact package/manifest files are absent from the searched locations; import is paused. Issue #1 remains OPEN.
+- **Next:** User provides all seven exact downloads. Do not run/import substitutes. After receipt, validate the ZIPs/61 hashes, run Git LFS transfer, and verify remote objects/files before considering Issue #1 closure.
+- **Sync:** Fetched `origin`; local `main` and `origin/main` still match at `0375a77471a86671fdaa3e619844c8a8aff1c688`. Current blocker search, importer fix, and session notes are LOCAL pending the final checkpoint push.
+
+- **2026-11-14 | Copilot SDK:** Agent instruction entry points were checked for mandatory sync/evidence expectations; Issue #1 is still OPEN. Local `main` and `origin/main` matched at `0375a77471a86671fdaa3e619844c8a8aff1c688` before the current importer/log changes. No LFS assets are tracked. Only task-owned files are modified.
+- **Next:** Complete the nearby-download search; commit/push the importer safety fix and factual handoff/session updates. Keep Issue #1 open while binaries are unavailable.
+- **Sync:** LOCAL; latest inspection results and importer changes are uncommitted.
+
+- **2026-11-14 | Copilot SDK:** Fixed the importer’s partial-copy-on-conflict behavior by checking all existing destination hashes before copying and using `-NoClobber`. PowerShell parser and `git diff --check` passed. Actual archive extraction and 61-file hash validation were **not run** because the required downloads are missing.
+- **Next:** Commit/push the script and note update; keep Issue #1 open. Continue only after all seven exact files are provided.
+- **Sync:** LOCAL; this importer change has not been committed or pushed.
+
+- **2026-11-14 | Copilot SDK:** Reviewed `tools/Import-ViGauntletAssets.ps1`. It stages and hashes manifest files and protects mismatched existing files, but its destination checks occur during copying, so a later collision can leave a partial import. The script will be updated to preflight all destinations before copying. It has not been run because all seven required downloads are missing.
+- **Next:** Fix and syntax-check the importer; do not run it until the exact six ZIPs and CSV are available.
+- **Sync:** Last pushed commit remains `0375a77471a86671fdaa3e619844c8a8aff1c688`; this review finding is local.
+
+- **2026-11-14 | Copilot SDK:** Git LFS 3.7.1 is installed; `.gitattributes` covers `.stl`, `.3mf`, and `.zip` (case variants included). No LFS objects are tracked because the CAD assets are absent. `git lfs env` reported `auth=none` and no upload/download access; remote LFS authorization/quota remains unverified. Required agent files, `.obsidian/`, hub, session/templates folders and decision/test/risk notes exist. Obsidian setup identifies the repository root as the vault and needs no additional plugin.
+- **Result:** PASS for local LFS tooling/config and vault structure only. **No LFS upload/authentication or asset presence is verified.**
+- **Next:** Inspect the importer; do not run it until all seven exact archive/manifest files are supplied.
+- **Sync:** Last pushed and verified commit is `0375a77471a86671fdaa3e619844c8a8aff1c688`; this inspection has been recorded locally.
+
 - **2026-11-14 | Copilot SDK:** The workspace initially contained no repository; cloned the specified private repository. `main` was clean and matched `origin/main` at `288305f808a8fa8046746c325e83821847b24a1b` before `git fetch origin`. Searched the user’s repositories, Downloads, Desktop and Documents for the seven exact package/manifest names; no matches were found. No imports, LFS setup, or asset verification were performed.
 - **Result:** Repository clone/fetch succeeded; asset availability is **BLOCKED**. V4 remains **NOT APPROVED**.
 - **Evidence:** `notes/sessions/2026-11-14_copilot-sdk_asset-import.md`.
 - **Next:** Cleanly synchronize `main`; wait for all seven required downloads before running the importer.
-- **Sync:** PUSHED `2feeda4ba98fe705488902fe5de5d4f713481584`; the pushed hash was confirmed equal to local HEAD. This handoff update itself is local until committed/pushed.
+- **Sync:** PUSHED `0375a77471a86671fdaa3e619844c8a8aff1c688`; the pushed hash was confirmed equal to local HEAD.
 
 - **2026-11-14 | ChatGPT:** Fetched the remote tree after publishing and verified `AGENTS.md`, `HANDOFF.md`, Obsidian settings, all agent entry points, the vault notes and templates on `main`.
 - **Result:** PASS for documentation presence only; **no CAD binaries or physical print validation were performed**.
