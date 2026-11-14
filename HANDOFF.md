@@ -20,21 +20,20 @@ tags:
 - Goal: wearable matched Arcane Vi gauntlets on Bambu Lab X1 Carbon, original string-actuated fingers, animated LEDs, wearable effect buttons, and serviceable electronics.
 - Design: V1/V2 prototypes, V3 fit coupons, V4 with 13 armor sections per arm and a ring preserved in one section.
 - **Release verdict: V4 is NOT APPROVED for complete printing.** No independently confirmed Bambu Studio slice, finger travel, LED dimensions, assembly strength or physical wear test.
-- CAD originals and release binaries: **not confirmed uploaded to GitHub**. User is cloning repository and preparing Git LFS upload. See `docs/ASSET_MAP.md` and Issue #1.
+- Local asset validation/upload is in progress. `originals/` contains 9 files (581,242,767 bytes). Canonical V4 contains 49 files (250,103,731 bytes): 36 STLs, 13 main shell STLs per side, 3 validation records, 4 source scripts, and 10 cover/hardware STLs. All 9 originals match the audit-kit CSV. V3 assets were not found; V1/V2 are intentionally excluded. The requested 61-entry manifest and V4 ZIP hash target are absent.
 - This repository's root is the Obsidian vault; see `notes/00_Project_Hub.md`.
 
 ## Latest completed action
-- **2026-11-14 | Copilot SDK:** The requested repository was cloned into the configured empty workspace. The six required ZIPs and SHA256 CSV were not found in the searched user-profile locations. Import has not run. **Blocked pending user-provided downloads.**
-- **Next:** Provide these exact files: `Arcane_Vi_Gauntlet_Assets_01_Original_3MF.zip`, `Arcane_Vi_Gauntlet_Assets_02_Original_Arms.zip`, `Arcane_Vi_Gauntlet_Assets_03_Original_Lights.zip`, `Arcane_Vi_Gauntlet_Assets_04_V1.zip`, `Arcane_Vi_Gauntlet_Assets_05_V2.zip`, `Arcane_Vi_Gauntlet_Assets_06_V3_V4.zip`, and `Arcane_Vi_Gauntlet_Assets_SHA256.csv`. Do not substitute other archives.
-- **Sync:** PUSHED and verified: local HEAD and `origin/main` both equal `0375a77471a86671fdaa3e619844c8a8aff1c688`.
+- **2026-11-14 | Copilot SDK:** Inspected the user's existing local files without downloading, extracting, or reimporting. Found eight original STL files, one original 3MF, and a 49-file V4 candidate folder with 13 shells per arm. All nine originals match the audit-kit CSV sizes and hashes. The requested 61-entry CSV is absent; the available 10-entry CSV does not cover V4 contents. No V3 assets were found in the inspected CAD inventory. `git-lfs/3.7.1` and appropriate `.gitattributes` rules are present, but files are not yet tracked.
+- **Next:** Exactly 65 intended files are staged (58 asset/support files + 7 documentation/log files), with 45 LFS objects and no unexpected paths. HEAD and `origin/main` both remain `b37a717a18961674e60a8159ce834531691ed43b`. Commit, push, then verify remote tree/LFS retrieval. V3 and V4 hash gaps mean Issue #1 remains open.
+- **Sync:** LOCAL; staged files await commit/push. `Claude_Vi_Gauntlet_Audit_Kit/` remains untracked and unstaged.
 
 ## Earlier completed action
 - **2026-11-14 | ChatGPT:** Added Obsidian vault structure, mandatory `AGENTS.md` cross-agent rules, Claude/Copilot/Hermes/Gemini entry points, session templates and synchronization instructions. **Verified on GitHub `main`** in commit `e998e22811fa700c156eaae3de219b7c3f39fc28`.
 - Evidence: `AGENTS.md`, `docs/AGENT_SYNC_PROTOCOL.md`, `docs/OBSIDIAN_SETUP.md`, `notes/`.
 
 ## In progress / ownership
-- **User:** Provide the seven exact missing download files above. Do not substitute other archives.
-- **Copilot SDK:** Asset import is paused; do not edit or move any user-provided CAD sources. Resume validation only after all seven files are available.
+- **Copilot SDK:** Validate the already-present untracked CAD files, configure LFS if needed, and stage only relevant assets; do not download, extract, or reimport. Preserve user files and do not mark V4 print-approved.
 - **Next reviewing agent (Claude Code recommended):** Independent geometry, assembly, lighting, string routing and actual slicer audit **after confirming assets are present**.
 - **ChatGPT / any agent:** Maintain this handoff and session log after every action.
 
@@ -52,6 +51,26 @@ tags:
 4. After **each** action, update this file and the agent's session log, commit and push at a safe checkpoint.
 
 ## Latest verification
+- **2026-11-14 | Copilot SDK:** Canonical original set is 9 files / 581,242,767 bytes, all 9 matching sizes and SHA-256 values in the available audit-kit CSV. V4 contains 49 files / 250,103,731 bytes, including 36 STL files, 13 left and 13 right main shells, 3 validation records, 4 source scripts, and 10 cover/hardware STLs. Combined available CAD payload is 58 files / 831,346,498 bytes. No V3 assets were found. Full 61-entry CSV is unavailable; the available CSV does not hash the extracted V4 files.
+- **Next:** Run final staged checks, commit/push, and verify remote tree and LFS object retrieval. V3 absent; Issue #1 stays open.
+- **Sync:** LOCAL; intended files staged, no commit/push yet.
+
+- **2026-11-14 | Copilot SDK:** Complete inventory found 8 original STLs (388,391,272 bytes), the 3MF (192,851,495 bytes), and 49 V4 candidate files (250,103,731 bytes). The candidate V4 tree has 13 left and 13 right shell STLs, lighting covers, seven hardware STLs, validation records, four source scripts, README and reference images. No V3 release directory/assets were found. Audit kit is separate. Its 10-entry CSV lists hashes for the 9 original files plus an unavailable V4 ZIP; it is not the user's 61-entry manifest.
+- **Next:** Verify applicable SHA-256 values, inspect ignore/LFS behavior, decide safe canonical paths, and stage/push only existing CAD. V3 is a blocker for full completion and Issue #1 closure.
+- **Sync:** LOCAL; this inventory status is uncommitted.
+
+- **2026-11-14 | Copilot SDK:** Git LFS 3.7.1 is installed; `.gitattributes` covers STL/3MF/ZIP case variants. No LFS files are tracked yet. Canonical 61-entry asset CSV was not found; a separate audit-kit input manifest exists but its applicability is unverified.
+- **Next:** Inspect complete local asset list and candidate CSV. Preserve audit-kit data; do not treat a different manifest as equivalent without confirming entries.
+- **Sync:** LOCAL; this inspection status is uncommitted.
+
+- **2026-11-14 | Copilot SDK:** Read mandatory agent instructions and project asset/release docs. Fetched `origin`; local `main` and `origin/main` match at `b37a717a18961674e60a8159ce834531691ed43b`. Initial inventory found eight original STL files and the original 3MF (192,851,495 bytes) in an extracted root-level folder; `releases/` is absent. Full candidate directory inventory is pending. No manifest found in the initial repo/Downloads search.
+- **Next:** Inspect the complete candidate-file inventory, check hash manifest availability and LFS attributes, then stage only after structure/ownership are confirmed.
+- **Sync:** LOCAL; this status update is uncommitted.
+
+- **2026-11-14 | Copilot SDK:** New local inspection found eight STL files in untracked `originals/`; no `releases/` folder is present. `git status` also shows three additional untracked folders (`Arcane_Vi_Gauntlet_Assets_01_Original_3MF/`, `Claude_Vi_Gauntlet_Audit_Kit/`, and `Vi_Gauntlet_X1C_V4_Print_Release/`). No manifest CSV was found at repository scope or top-level Downloads. Contents and relevance of all untracked files remain under inspection; none were staged.
+- **Next:** Fetch remote; inspect asset map and enumerate local CAD structures. Preserve user files; stage only verified required CAD content.
+- **Sync:** LOCAL; this update and the asset inventory are uncommitted.
+
 - **2026-11-14 | Copilot SDK:** Importer conflict-preflight change was committed in `28f98b1faebea8cfdc425ee08c99fc1a564e27d5`. Final blocked-import handoff/session status was committed and pushed in `3ed553426ce4a30500da7a5c0c060895da37595e`; local and `origin/main` matched at verification. All seven required package/manifest files remain absent from searched locations, so no asset import or engineering validation was performed. Issue #1 remains OPEN.
 - **Next:** User provides the six exact ZIPs and SHA256 CSV listed above. Then rerun importer validation, LFS transfer, and remote verification; only close Issue #1 if the upload is fully verified.
 - **Sync:** Last verified remote commit: `3ed553426ce4a30500da7a5c0c060895da37595e`.

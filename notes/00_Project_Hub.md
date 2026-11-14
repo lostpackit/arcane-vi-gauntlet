@@ -30,7 +30,7 @@ tags: [arcane, vi, 3d-printing, dashboard]
 - [[sessions/README|Per-agent session logs]]
 
 ## Current status
-**V4 is a digital candidate, not cleared for full printing.** User is preparing Git LFS upload. No verified LED-strip dimensions or end-to-end physical assembly test.
+**V4 is a digital candidate, not cleared for full printing.** Local asset set currently has 9 originals and the 49-file V4 candidate (13 main shells per arm); original hashes are verified 9/9 against the audit-kit CSV. V1/V2 are intentionally excluded. V3 fit-validation assets are missing. Git LFS upload/remote verification is pending. No verified LED-strip dimensions or end-to-end physical assembly test.
 
 ## Agent reminder
 After **every** project action, record the result in your own dated session note and update [[HANDOFF]]. Push at completed atomic checkpoints. A local edit is not a cross-agent update until committed and pushed.

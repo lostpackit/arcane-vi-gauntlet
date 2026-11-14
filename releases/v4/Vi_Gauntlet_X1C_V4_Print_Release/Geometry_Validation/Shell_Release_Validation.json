@@ -1,0 +1,559 @@
+{
+  "release": "V4 ring-safe shell release",
+  "parts_per_hand": 13,
+  "hand_shells_total": 26,
+  "both_gauntlets_watertight_positive_solid": true,
+  "all_single_connected_body": true,
+  "all_nominal_X1C_build_envelope": true,
+  "right_total_volume_mm3": 13960560.147,
+  "original_right_volume_mm3": 13960561.329924092,
+  "relative_volume_difference_percent": -8.47e-06,
+  "ring_module_source_bounds_mm": [
+    100,
+    300,
+    180,
+    300,
+    145,
+    310
+  ],
+  "original_ring_extent_in_assembled_coordinate_mm": [
+    145.705976,
+    275.73998,
+    231.61464,
+    256.90864,
+    155.81003,
+    286.18403
+  ],
+  "ring_min_distance_to_partition_planes_mm": 10.81,
+  "releases_original_ring_base_without_perimeter_cut": true,
+  "draw_string_hole_checks": "Section seam caps at source Z 145/310/400 and longitudinal X 211 checked unobstructed in candidate corridor at Y=130 (digital only)",
+  "engineering_limitations": [
+    "STL mesh validity and bounding-box fit are verified; Bambu Studio slicing, supports and estimated time not run in this environment",
+    "Actual fit to separately printed fingers, original diffuser and LEDs not physically tested",
+    "Consolidated shell seams are designed for bonded assembly and optional glued internal splines, not detachable fastened sections",
+    "LED driver board, buttons and final wire exit dimensions require chosen electronic hardware; no board-specific mounts or holes are modeled",
+    "Five PTFE tubes have a digital candidate internal corridor, but full dynamic finger-string motion is not proven"
+  ],
+  "parts": [
+    {
+      "hand": "right",
+      "section": 1,
+      "name": "Cuff_Left_Front",
+      "file": "R_01_Cuff_Left_Front_X1C.stl",
+      "triangles": 107140,
+      "bbox_mm": [
+        209.87,
+        147.0,
+        70.86
+      ],
+      "volume_mm3": 488996.074,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 15.06,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 2,
+      "name": "Cuff_Left_Rear",
+      "file": "R_02_Cuff_Left_Rear_X1C.stl",
+      "triangles": 135950,
+      "bbox_mm": [
+        209.97,
+        147.02,
+        145.0
+      ],
+      "volume_mm3": 969669.941,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 15.01,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 3,
+      "name": "Cuff_Right_Front",
+      "file": "R_03_Cuff_Right_Front_X1C.stl",
+      "triangles": 106198,
+      "bbox_mm": [
+        209.4,
+        147.0,
+        70.86
+      ],
+      "volume_mm3": 488519.724,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 15.3,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 4,
+      "name": "Cuff_Right_Rear",
+      "file": "R_04_Cuff_Right_Rear_X1C.stl",
+      "triangles": 133216,
+      "bbox_mm": [
+        209.49,
+        147.01,
+        144.97
+      ],
+      "volume_mm3": 968214.982,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 15.26,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 5,
+      "name": "LightBand_Front_Left",
+      "file": "R_05_LightBand_Front_Left_X1C.stl",
+      "triangles": 184838,
+      "bbox_mm": [
+        210.9,
+        165.0,
+        177.53
+      ],
+      "volume_mm3": 1860841.805,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 14.55,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 6,
+      "name": "LightBand_Front_Right",
+      "file": "R_06_LightBand_Front_Right_X1C.stl",
+      "triangles": 191064,
+      "bbox_mm": [
+        210.52,
+        165.0,
+        177.53
+      ],
+      "volume_mm3": 1856963.427,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 14.74,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 7,
+      "name": "LightBand_Rear_Left",
+      "file": "R_07_LightBand_Rear_Left_X1C.stl",
+      "triangles": 50724,
+      "bbox_mm": [
+        100.0,
+        165.0,
+        65.91
+      ],
+      "volume_mm3": 446768.166,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 37.5,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 8,
+      "name": "LightBand_REAR_RING_CARRIER",
+      "file": "R_08_LightBand_REAR_RING_CARRIER_X1C.stl",
+      "triangles": 299392,
+      "bbox_mm": [
+        200.0,
+        165.0,
+        93.5
+      ],
+      "volume_mm3": 1171885.018,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 20.0,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 9,
+      "name": "LightBand_Rear_Right",
+      "file": "R_09_LightBand_Rear_Right_X1C.stl",
+      "triangles": 61570,
+      "bbox_mm": [
+        121.61,
+        165.0,
+        71.87
+      ],
+      "volume_mm3": 602051.003,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 37.5,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 10,
+      "name": "Wrist_Upper_Left",
+      "file": "R_10_Wrist_Upper_Left_X1C.stl",
+      "triangles": 198126,
+      "bbox_mm": [
+        180.97,
+        224.92,
+        90.0
+      ],
+      "volume_mm3": 984766.897,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 7.54,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 11,
+      "name": "Wrist_Upper_Right",
+      "file": "R_11_Wrist_Upper_Right_X1C.stl",
+      "triangles": 199972,
+      "bbox_mm": [
+        180.59,
+        224.93,
+        90.0
+      ],
+      "volume_mm3": 982654.947,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 7.54,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 12,
+      "name": "Knuckles_Left",
+      "file": "R_12_Knuckles_Left_X1C.stl",
+      "triangles": 353548,
+      "bbox_mm": [
+        199.75,
+        199.04,
+        166.22
+      ],
+      "volume_mm3": 1591671.736,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 20.12,
+      "pass_all": true
+    },
+    {
+      "hand": "right",
+      "section": 13,
+      "name": "Knuckles_Right",
+      "file": "R_13_Knuckles_Right_X1C.stl",
+      "triangles": 334810,
+      "bbox_mm": [
+        200.12,
+        199.04,
+        157.7
+      ],
+      "volume_mm3": 1547556.426,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 19.94,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 1,
+      "name": "Cuff_Left_Front",
+      "file": "L_01_Cuff_Left_Front_X1C.stl",
+      "triangles": 107140,
+      "bbox_mm": [
+        209.87,
+        147.0,
+        70.86
+      ],
+      "volume_mm3": 488996.073,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 15.06,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 2,
+      "name": "Cuff_Left_Rear",
+      "file": "L_02_Cuff_Left_Rear_X1C.stl",
+      "triangles": 135950,
+      "bbox_mm": [
+        209.97,
+        147.02,
+        145.0
+      ],
+      "volume_mm3": 969669.942,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 15.01,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 3,
+      "name": "Cuff_Right_Front",
+      "file": "L_03_Cuff_Right_Front_X1C.stl",
+      "triangles": 106198,
+      "bbox_mm": [
+        209.4,
+        147.0,
+        70.86
+      ],
+      "volume_mm3": 488519.724,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 15.3,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 4,
+      "name": "Cuff_Right_Rear",
+      "file": "L_04_Cuff_Right_Rear_X1C.stl",
+      "triangles": 133216,
+      "bbox_mm": [
+        209.49,
+        147.01,
+        144.97
+      ],
+      "volume_mm3": 968214.982,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 15.26,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 5,
+      "name": "LightBand_Front_Left",
+      "file": "L_05_LightBand_Front_Left_X1C.stl",
+      "triangles": 184838,
+      "bbox_mm": [
+        210.9,
+        165.0,
+        177.53
+      ],
+      "volume_mm3": 1860841.81,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 14.55,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 6,
+      "name": "LightBand_Front_Right",
+      "file": "L_06_LightBand_Front_Right_X1C.stl",
+      "triangles": 191064,
+      "bbox_mm": [
+        210.52,
+        165.0,
+        177.53
+      ],
+      "volume_mm3": 1856963.427,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 14.74,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 7,
+      "name": "LightBand_Rear_Left",
+      "file": "L_07_LightBand_Rear_Left_X1C.stl",
+      "triangles": 50724,
+      "bbox_mm": [
+        100.0,
+        165.0,
+        65.91
+      ],
+      "volume_mm3": 446768.166,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 37.5,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 8,
+      "name": "LightBand_REAR_RING_CARRIER",
+      "file": "L_08_LightBand_REAR_RING_CARRIER_X1C.stl",
+      "triangles": 299392,
+      "bbox_mm": [
+        200.0,
+        165.0,
+        93.5
+      ],
+      "volume_mm3": 1171885.019,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 20.0,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 9,
+      "name": "LightBand_Rear_Right",
+      "file": "L_09_LightBand_Rear_Right_X1C.stl",
+      "triangles": 61570,
+      "bbox_mm": [
+        121.61,
+        165.0,
+        71.87
+      ],
+      "volume_mm3": 602051.003,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 37.5,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 10,
+      "name": "Wrist_Upper_Left",
+      "file": "L_10_Wrist_Upper_Left_X1C.stl",
+      "triangles": 198126,
+      "bbox_mm": [
+        180.97,
+        224.92,
+        90.0
+      ],
+      "volume_mm3": 984766.894,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 7.54,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 11,
+      "name": "Wrist_Upper_Right",
+      "file": "L_11_Wrist_Upper_Right_X1C.stl",
+      "triangles": 199972,
+      "bbox_mm": [
+        180.59,
+        224.93,
+        90.0
+      ],
+      "volume_mm3": 982654.947,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 7.54,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 12,
+      "name": "Knuckles_Left",
+      "file": "L_12_Knuckles_Left_X1C.stl",
+      "triangles": 353548,
+      "bbox_mm": [
+        199.75,
+        199.04,
+        166.22
+      ],
+      "volume_mm3": 1591671.736,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 20.12,
+      "pass_all": true
+    },
+    {
+      "hand": "left",
+      "section": 13,
+      "name": "Knuckles_Right",
+      "file": "L_13_Knuckles_Right_X1C.stl",
+      "triangles": 334810,
+      "bbox_mm": [
+        200.12,
+        199.04,
+        157.7
+      ],
+      "volume_mm3": 1547556.426,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "single_component": true,
+      "nominal_256cube_fit": true,
+      "centered_8mm_brim_margin_mm": 19.94,
+      "pass_all": true
+    }
+  ]
+}
