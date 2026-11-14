@@ -30,7 +30,7 @@ tags: [arcane, vi, 3d-printing, dashboard]
 - [[sessions/README|Per-agent session logs]]
 
 ## Current status
-**V4 is a digital candidate, not cleared for full printing.** The required set contains 9 originals, 49 V4 files, and the V3 fit-validation ZIP. All 59 required files pass exact byte-size and SHA-256 checks against [[docs/ASSET_SHA256_MANIFEST]]. V1/V2 are intentionally excluded. The V3 ZIP opens and contains 21 fit-validation/support files. The new V3 Git LFS upload and targeted remote readback are pending. No verified LED-strip dimensions or end-to-end physical assembly test.
+**V4 is a digital candidate, not cleared for full printing.** The required set contains 9 originals, 49 V4 files, and the V3 fit-validation ZIP. All 59 required files pass exact byte-size and SHA-256 checks against [[docs/ASSET_SHA256_MANIFEST]]. V1/V2 are intentionally excluded. The V3 ZIP opens and contains 21 fit-validation/support files. All 46 LFS assets are tracked; the V3 object was pushed and fetched from a fresh clone with matching size/SHA-256. Commit `beb157522fe4571d869ccaea186d5ceaddafaa68` is verified on remote `main`. No verified LED-strip dimensions or end-to-end physical assembly test.
 
 ## Agent reminder
 After **every** project action, record the result in your own dated session note and update [[HANDOFF]]. Push at completed atomic checkpoints. A local edit is not a cross-agent update until committed and pushed.

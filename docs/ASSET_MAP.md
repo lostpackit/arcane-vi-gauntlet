@@ -41,7 +41,7 @@ All 49 extracted V4 files match their byte counts and SHA-256 values in `docs/AS
 
 - Required manifest entries: **PASS, 59/59** exact file sizes and SHA-256 (9 originals + 49 V4 + 1 V3 archive); V1/V2 excluded by request.
 - V3 archive: **PASS**; `tar.exe -tf` succeeded and all 21 file entries were opened and decompressed.
-- Git LFS: 45 existing STL/3MF assets were already tracked; V3 ZIP has `filter=lfs` and must be included in the next push. Remote upload/readback of the new V3 object is pending.
-- Remote main ref and previous CAD directories were verified at the prior checkpoint; V3 remote visibility awaits push.
+- Git LFS: **46/46** assets tracked (44 STL, one 3MF, one V3 ZIP). The push acknowledged 1/1 new object; a fresh-clone targeted readback of the V3 ZIP passed at 698,022 bytes with matching SHA-256.
+- Remote `main` and expected V3/manifest paths: **VERIFIED** at commit `beb157522fe4571d869ccaea186d5ceaddafaa68`.
 
 V4 remains a digital candidate, not print-approved. See [release gates](RELEASE_GATES.md).

@@ -11,7 +11,7 @@ Assets are already present and organized in this existing clone. **Do not downlo
 - V3 archive has 21 readable fit-validation/support entries; the V3 ZIP size and SHA-256 match the manifest.
 - `docs/ASSET_SHA256_MANIFEST.csv` contains 61 rows; the 59 required entries (9 originals, 49 V4, 1 V3 ZIP) pass exact size/SHA-256 checks. The two V1/V2 rows are intentionally excluded.
 - Combined required CAD payload: 59 files, 832,044,520 bytes. The separately included manifest is 9,281 bytes.
-- Prior checkpoint: 45 original/V4 LFS objects were acknowledged as uploaded and passed local `git lfs fsck`. The newly added V3 ZIP requires its own push and targeted remote readback.
+- Git LFS: 46 total model/archive objects tracked. Push acknowledged the new V3 object (1/1, 698 KB); a fresh-clone targeted readback returned 698,022 bytes and SHA-256 `99647f63cfc4dabf5b05703b74c5e41d67fa37251cc6009c32a497d519323315`, matching the manifest/pointer. Local `git lfs fsck` passed.
 
 See [asset map](ASSET_MAP.md) for per-file structure and verified scope.
 
@@ -42,6 +42,6 @@ git push origin main
 
 Prior-checkpoint note: The preceding 45-object upload and directory visibility were verified, but a direct LFS readback was not performed then. This note is superseded for the current task; the V3 object must be pushed and read back.
 
-**Current upload status (2026-11-14):** The older remote-readback paragraph above reflects a prior checkpoint and is superseded. The local manifest validates all 59 required files, including extracted V4 and the V3 ZIP; V1/V2 are intentionally excluded. The V3 object has not yet been pushed or remotely read back. Issue #1 must remain open until that LFS object and the final commit are remotely verified.
+**Current upload status (2026-11-14):** All 59 required files pass manifest size/SHA-256 checks; V1/V2 are intentionally excluded. Commit `beb157522fe4571d869ccaea186d5ceaddafaa68` is verified on GitHub `main`; the V3 LFS object was fetched from a fresh cache and its size/SHA-256 match. Issue #1 is eligible for closure after the factual completion summary is posted.
 
 V4 is **NOT approved for full wearable printing**. No asset-upload check substitutes for the independent CAD, Bambu Studio, assembly, lighting, tendon, or physical-fit release gates. See [release gates](RELEASE_GATES.md) and [agent synchronization](AGENT_SYNC_PROTOCOL.md).

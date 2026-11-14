@@ -39,10 +39,16 @@ tags:
 - **Next:** Re-stage current handoff/session/guide edits, review the final diff, then commit and push.
 - **Sync:** LOCAL; verified asset/docs checkpoint remains uncommitted.
 
-## Latest action in this continuation — 2026-11-14T16:06:00Z
-- **Copilot SDK:** Exactly 9 intended paths staged; cached whitespace check passed; unrelated audit-kit remains unstaged.
-- **Next:** Commit the V3/manifest/docs checkpoint and push normally, then verify remote LFS readback.
+## Latest remote verification — 2026-11-14T16:11:00Z
+- **Copilot SDK:** Remote `main` and fresh-clone HEAD match `beb157522fe4571d869ccaea186d5ceaddafaa68`. GitHub lists V3 pointer and manifest. A fresh LFS cache fetched only the V3 object; 698,022-byte readback SHA-256 `99647f63cfc4dabf5b05703b74c5e41d67fa37251cc6009c32a497d519323315` matches manifest/pointer. Required 59/59 file hashes pass.
+- **Next:** Publish this readback evidence in the notes, then close Issue #1 with a factual summary. V4 remains NOT APPROVED; do not begin the independent audit.
+- **Sync:** Asset commit PUSHED and remote ref/LFS object verified; note update is LOCAL.
 - **Sync:** LOCAL; stage awaits commit/push.
+
+## Latest action — 2026-11-14T16:14:00+01:00
+- **Copilot SDK:** Test/risk notes now record the successful targeted V3 LFS readback. Seven intended documentation paths are staged; cached whitespace check passed; `HEAD` and `origin/main` remain synchronized at `beb157522fe4571d869ccaea186d5ceaddafaa68`.
+- **Next:** Commit and push this documentation checkpoint, verify final remote state, then close Issue #1 with a factual summary. V4 remains NOT APPROVED; no engineering audit.
+- **Sync:** Asset commit `beb157522fe4571d869ccaea186d5ceaddafaa68` is pushed; verification checkpoint is staged locally.
 
 ## Previous asset transfer checkpoint (historical; superseded by the current state above)
 - **2026-11-14 | Copilot SDK:** Inspected the user's existing local files without downloading, extracting, or reimporting. Found eight original STL files, one original 3MF, and a 49-file V4 candidate folder with 13 shells per arm. All nine originals match the audit-kit CSV sizes and hashes. The requested 61-entry CSV is absent; the available 10-entry CSV does not cover V4 contents. No V3 assets were found in the inspected CAD inventory. `git-lfs/3.7.1` and appropriate `.gitattributes` rules are present, but files are not yet tracked.

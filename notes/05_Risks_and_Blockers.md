@@ -7,7 +7,7 @@ tags: [risk, blockers]
 
 | Risk | Status | Required next evidence |
 |---|---|---|
-| New V3 LFS object not yet confirmed remotely | PENDING | Push, verify GitHub pointer, then perform targeted readback of the 698 KB V3 archive |
+| V3 LFS object remote availability | VERIFIED | Fresh-clone targeted readback matched the manifest size and SHA-256; internal member hashes remain unknown |
 | V3 archive member hashes | UNKNOWN | Manifest covers the V3 ZIP container only; its 21 internal files are not individually listed |
 | V4 printability and support requirements | UNKNOWN | Bambu Studio actual slice |
 | Finger mounting and five string paths | UNKNOWN | Assembly geometry and physical travel |
