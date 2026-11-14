@@ -24,6 +24,11 @@ tags:
 - This repository's root is the Obsidian vault; see `notes/00_Project_Hub.md`.
 
 ## Latest completed action
+- **2026-11-14 | ChatGPT:** Corrected the missing single-archive reference. Created **six downloadable CAD asset ZIPs** plus a 61-file SHA256 manifest, verified ZIP CRCs, and documented an importer at `tools/Import-ViGauntletAssets.ps1`. See `docs/UPLOAD_CAD_ASSETS.md`. **CAD binaries remain absent from the remote until user Git LFS upload.**
+- **Next:** User downloads all six parts and manifest, imports with the script, commits/pushes. Next agent verifies the remote.
+- **Sync:** Documentation pushed to GitHub; download files are in the ChatGPT conversation, not GitHub.
+
+## Earlier completed action
 - **2026-11-14 | ChatGPT:** Added Obsidian vault structure, mandatory `AGENTS.md` cross-agent rules, Claude/Copilot/Hermes/Gemini entry points, session templates and synchronization instructions. **Verified on GitHub `main`** in commit `e998e22811fa700c156eaae3de219b7c3f39fc28`.
 - Evidence: `AGENTS.md`, `docs/AGENT_SYNC_PROTOCOL.md`, `docs/OBSIDIAN_SETUP.md`, `notes/`.
 

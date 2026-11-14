@@ -36,7 +36,7 @@ The **repository root is an Obsidian vault**. Open the cloned repository folder 
 - [CAD asset upload instructions](docs/UPLOAD_CAD_ASSETS.md)
 
 ## CAD storage and build workflow
-Original files and V1–V4 binary releases are prepared in the locally downloadable project archive but **are not automatically present in GitHub until uploaded**. Use **Git LFS** for STL, 3MF, and ZIP objects. Put untouched originals under `originals/`, historical releases under `releases/v1`–`releases/v3`, and extracted V4 objects under `releases/v4/`. Do not commit generated G-code.
+Original files and V1–V4 binary releases are provided in **six downloadable asset ZIP parts** in the ChatGPT project conversation; the previously named single large ZIP was not delivered. See [corrected asset import instructions](docs/UPLOAD_CAD_ASSETS.md). **The binary assets are not automatically present in GitHub until uploaded.** Use **Git LFS** for STL, 3MF, and ZIP objects. Put untouched originals under `originals/`, historical releases under `releases/v1`–`releases/v3`, and extracted V4 objects under `releases/v4/`. Do not commit generated G-code.
 
 Keep this repository **private** until the third-party model license and redistribution permissions are established. Nothing here grants rights to *Arcane* or third-party source meshes.
 
