@@ -125,6 +125,53 @@ tags:
 - **Next:** Rebase both local note commits onto `origin/main`, preserving the newer remote audit/handoff.
 - **Sync:** LOCAL; remote remains at `cdd8733`. V5 files remain unstaged.
 
+## Latest action — 2026-11-14T22:48:00+01:00
+- **Copilot SDK:** Rebased three local tracking-note commits successfully onto remote `main` with no conflicts. The remote V4 NO-GO audit and V5 draft records are preserved.
+- **Next:** Verify the rebased tree/status, then add only the 33 manifest-verified V5 `.3mf` assets to the existing LFS-tracked `releases/v5/Vi_Gauntlet_X1C_V5_Draft/` directory.
+- **Sync:** Rebase is LOCAL; remote has not received these tracking notes or the V5 model files.
+
+## Latest action — 2026-11-14T22:49:00+01:00
+- **Copilot SDK:** Verified the rebased branch includes all remote audit changes and is three note commits ahead of `origin/main`. The local package contains 33 V5 3MFs; the canonical remote release path contains none yet.
+- **Next:** Copy the 33 manifest-verified 3MFs without overwriting existing files, validate destination hashes and LFS tracking, then commit/push with current notes.
+- **Sync:** LOCAL; package root and existing audit kit remain unstaged. V4 audit stays NO-GO; V5 stays draft/not print-approved.
+
+## Latest action — 2026-11-14T22:50:00+01:00
+- **Copilot SDK:** Preflighted the 33 model sources and canonical destinations; all source hashes matched and no destination conflicts existed. Copied 33 V5 3MFs into `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`; retained the original local package.
+- **Next:** Verify destination hashes, file count/size, and Git LFS attributes before staging only the canonical model files plus task notes.
+- **Sync:** LOCAL; CAD files are copied but not staged/pushed. V5 remains draft/not print-approved.
+
+## Latest action — 2026-11-14T22:51:00+01:00
+- **Copilot SDK:** Canonical V5 destination passes 33/33 manifest SHA-256 checks; model payload is 82,500,770 bytes. V5 3MFs resolve to Git LFS.
+- **Next:** Update V5 asset inventory/test notes and stage only canonical V5 model files plus task-owned documentation; then commit/push and verify remote LFS readback.
+- **Engineering status:** V4 audit remains NO-GO; V5 remains an unprinted digital draft. Hash checks do not prove printability or assembly.
+- **Sync:** V5 CAD verified locally only; not staged or pushed.
+
+## Latest action — 2026-11-14T22:52:00+01:00
+- **Copilot SDK:** Reviewed post-rebase asset map, hub, test log, and risk register. They preserve the independent V4 NO-GO and V5 computed-only status; asset map needs a V5 inventory entry and risk register says model transfer pending.
+- **Next:** Record 33 V5 model files / 82,500,770 bytes and local 33/33 checksum pass; keep remote LFS status pending until readback.
+- **Sync:** V5 files remain local; no remote CAD upload yet. Do not change release gates.
+
+## Latest action — 2026-11-14T22:53:00+01:00
+- **Copilot SDK:** Updated asset map, project hub, test log, and risk register: 33 V5 3MF models / 82,500,770 bytes pass the local manifest; remote LFS readback is pending.
+- **Next:** Review and stage the canonical V5 model files and task notes only; exclude the duplicate root package and existing audit kit.
+- **Engineering status:** V4 audit remains NO-GO; V5 remains draft/not print-approved. Release gates unchanged.
+- **Sync:** Documentation is LOCAL; model LFS upload not yet verified.
+
+## Latest action — 2026-11-14T22:54:00+01:00
+- **Copilot SDK:** Staged the canonical V5 release folder and current task documentation; cached whitespace check passed. Root-level package and audit-kit copies were excluded.
+- **Next:** Verify exact staged files and Git LFS pointers before creating the asset/documentation commit.
+- **Sync:** Staged locally only; no V5 LFS upload yet. V4 NO-GO and V5 draft status preserved.
+
+## Latest action — 2026-11-14T22:55:00+01:00
+- **Copilot SDK:** Verified 33/33 staged V5 LFS pointers against the manifest (OID and size); 39 intended paths staged, with 79 total LFS entries. Cached whitespace check passed. Root package and audit kit remain unstaged.
+- **Next:** Re-stage latest handoff/session entries, review final staged set, then commit and push. Targeted remote LFS readback remains required.
+- **Sync:** LOCAL; pointers are staged but not yet uploaded. V5 remains draft/not print-approved.
+
+## Latest action — 2026-11-14T22:56:00+01:00
+- **Copilot SDK:** Final staged set is exactly 39 paths: 33 V5 3MF model LFS pointers plus asset-map, hub, test/risk, handoff and session updates. Cached diff check passed; no duplicate root package or audit-kit files staged.
+- **Next:** Commit and push this checkpoint normally, then verify remote commit, LFS objects, and targeted readback.
+- **Sync:** Staged locally only. V4 audit NO-GO; V5 draft remains not print-approved.
+
 ## Previous asset transfer checkpoint (historical; superseded by the current state above)
 - **2026-11-14 | Copilot SDK:** Inspected the user's existing local files without downloading, extracting, or reimporting. Found eight original STL files, one original 3MF, and a 49-file V4 candidate folder with 13 shells per arm. All nine originals match the audit-kit CSV sizes and hashes. The requested 61-entry CSV is absent; the available 10-entry CSV does not cover V4 contents. No V3 assets were found in the inspected CAD inventory. `git-lfs/3.7.1` and appropriate `.gitattributes` rules are present, but files are not yet tracked.
 - **Next:** Asset commit `91f7233aceca2251a1f136ffff24f0524421176c` is on GitHub `main`; documentation checkpoint `0814cd5a6a817cb31565e6b697ddc66b7c527aef` is also pushed and its remote ref verified. Git LFS reported 45/45 objects (828 MB) uploaded; `git lfs fsck` passed locally; GitHub lists 9 originals and 13 shells per V4 side. API exposes pointer blobs; direct binary readback was not attempted per no-download instruction. V3/V4 hash gaps keep Issue #1 open.

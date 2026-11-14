@@ -37,11 +37,21 @@ One ZIP, 698,022 bytes, SHA-256 verified against `docs/ASSET_SHA256_MANIFEST.csv
 
 All 49 extracted V4 files match their byte counts and SHA-256 values in `docs/ASSET_SHA256_MANIFEST.csv`.
 
+### V5 — `releases/v5/Vi_Gauntlet_X1C_V5_Draft/` (DRAFT; not print-approved)
+
+33 model files / 82,500,770 bytes:
+- 13 shell 3MFs per arm
+- 6 insert 3MFs (handle, optional dowel peg, ring covers and pressure gauges)
+- 1 forefinger slot test coupon 3MF
+
+All 33 model files match `V5_SHA256_MANIFEST.txt`. The V5 support records and build scripts are in the same canonical folder. No Bambu Studio slice or physical test is represented by this checksum result. Remote LFS upload/readback is pending.
+
 ## Integrity and transfer status
 
 - Required manifest entries: **PASS, 59/59** exact file sizes and SHA-256 (9 originals + 49 V4 + 1 V3 archive); V1/V2 excluded by request.
 - V3 archive: **PASS**; `tar.exe -tf` succeeded and all 21 file entries were opened and decompressed.
 - Git LFS: **46/46** assets tracked (44 STL, one 3MF, one V3 ZIP). The push acknowledged 1/1 new object; a fresh-clone targeted readback of the V3 ZIP passed at 698,022 bytes with matching SHA-256.
 - Remote `main` and expected V3/manifest paths: **VERIFIED** at commit `beb157522fe4571d869ccaea186d5ceaddafaa68`.
+- V5 model checksum: **PASS, 33/33** locally; LFS push and remote readback pending.
 
-V4 remains a digital candidate, not print-approved. See [release gates](RELEASE_GATES.md).
+The independent V4 audit verdict is **NO-GO**. V5 is a digital draft, not print-approved. See [release gates](RELEASE_GATES.md) and `audits/results/FINAL_VERDICT.md`.

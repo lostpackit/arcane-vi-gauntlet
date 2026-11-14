@@ -71,3 +71,84 @@ tags: [session, sync, git]
 - New risks / decisions: Both local note commits are unpushed and remote `main` contains three newer commits; preserve all by rebasing, never force-push.
 - Next action: Rebase local `main` on `origin/main`; resolve any conflict retaining remote audit status and local sync log.
 - Sync: LOCAL commit `f71332a`; origin remains at `cdd8733`.
+
+## 2026-11-14T21:48:00Z — Copilot SDK
+- Action: Rebasing local documentation checkpoints on the latest remote `main`.
+- Result: `git pull --rebase origin main` completed successfully; all three local note commits replayed without conflicts on top of the three remote commits. No user files were staged or modified by the rebase.
+- Files changed: Git history only; rebase outcome to verify.
+- Evidence (file, command output, commit, issue): PowerShell output `Rebasing (1/3)` through `(3/3)`, `Successfully rebased and updated refs/heads/main`.
+- New risks / decisions: Confirm final branch contains the remote audit/no-go records and is ahead of `origin/main` only by the local tracking commits. Keep user model files unstaged until canonical destination prep.
+- Next action: Inspect current handoff/status and branch ancestry, then copy and stage only the 33 manifest-verified models.
+- Sync: Rebase succeeded locally; no push yet.
+
+## 2026-11-14T21:49:00Z — Copilot SDK
+- Action: Verified branch ancestry/status and counted source and destination V5 3MFs after rebase; inspected the merged handoff's remote audit records.
+- Result: Local branch is three documentation commits ahead of `origin/main` at `cdd8733`; all three remote commits, including V4 NO-GO audit, are in history. Local V5 has 33 3MFs; canonical remote path currently has 0. Both input trees remain untracked and untouched.
+- Files changed: None during verification.
+- Evidence (file, command output, commit, issue): `git rev-parse`; `git status --short --branch`; `git log`; `git ls-tree origin/main`; recursive source count; merged `HANDOFF.md` review.
+- New risks / decisions: The three local note commits and current note edits must be pushed along with the eventual V5 asset checkpoint. Avoid staging package root or audit kit duplicates.
+- Next action: Copy the 33 manifest-verified files, with no overwrite, into the canonical V5 directory; recheck all destination hashes and LFS attributes.
+- Sync: Rebased locally, three commits ahead; V5 models not yet copied or staged.
+
+## 2026-11-14T21:50:00Z — Copilot SDK
+- Action: Preflighted all V5 manifest source files and destination conflicts, then copied the 33 verified 3MF models to the canonical release directory.
+- Result: All 33 source hashes matched the manifest; no conflicting destinations existed. Exactly 33 new 3MFs copied to `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`. Source package was preserved; no files overwritten.
+- Files changed: 33 copied CAD files under the canonical V5 release folder.
+- Evidence (file, command output, commit, issue): PowerShell preflight reported `V5 manifest source entries validated: 33/33`, `New canonical files copied: 33`.
+- New risks / decisions: Must verify destination hashes, counts, LFS attribute resolution, and size before staging. No slicer/physical validation is implied.
+- Next action: Run focused destination hash/LFS verification and review the exact candidate staged paths.
+- Sync: Copy is LOCAL and not yet staged or pushed.
+
+## 2026-11-14T21:51:00Z — Copilot SDK
+- Action: Recomputed hashes and byte size at the canonical V5 destination; checked Git LFS attributes and worktree status.
+- Result: Destination manifest passes 33/33; model payload is 82,500,770 bytes. The release tree contains 44 files including 11 already-remote support/evidence files. Sample shell and insert both resolve to `filter=lfs`. Copies are untracked, not staged.
+- Files changed: None during verification.
+- Evidence (file, command output, commit, issue): PowerShell manifest validation; `git check-attr`; `git status --short --branch`.
+- New risks / decisions: Remote LFS availability can be confirmed only after pushing and targeted readback. Hash pass confirms package integrity, not geometry/slicing/fit.
+- Next action: Update asset inventory/project notes with the V5 draft payload and integrity check, then stage only canonical `releases/v5` CAD and task documentation.
+- Sync: V5 models are LOCAL and verified; no upload yet.
+
+## 2026-11-14T21:52:00Z — Copilot SDK
+- Action: Read the post-rebase asset map, Obsidian hub, test log, and risk register before updating V5 inventory status.
+- Result: Existing remote notes already record V5 draft computed checks and the V4 audit NO-GO, but asset map has no V5 section; risk register still says V5 3MFs are missing. Preserve all audit findings and distinguish hash integrity from engineering readiness.
+- Files changed: None during reads.
+- Evidence (file, command output, commit, issue): Current `docs/ASSET_MAP.md`, `notes/00_Project_Hub.md`, `notes/04_Test_Log.md`, and `notes/05_Risks_and_Blockers.md`.
+- New risks / decisions: Add a factual V5 inventory/checksum row and mark remote transfer pending until actual LFS push/readback succeeds. Do not edit release-gate outcomes.
+- Next action: Update asset map, hub, test log, risk register, handoff, and this session note as appropriate; stage no package duplicates.
+- Sync: V5 CAD remains local; current tracked notes are unpushed.
+
+## 2026-11-14T21:53:00Z — Copilot SDK
+- Action: Updated the CAD asset map and Obsidian hub/test/risk notes with the verified V5 draft inventory.
+- Result: Notes state 33 V5 model files / 82,500,770 bytes and 33/33 local SHA-256 pass, while clearly marking remote LFS readback pending and V5 not print-approved. V4 audit NO-GO is retained; release gates unchanged.
+- Files changed: `docs/ASSET_MAP.md`, `notes/00_Project_Hub.md`, `notes/04_Test_Log.md`, `notes/05_Risks_and_Blockers.md`.
+- Evidence (file, command output, commit, issue): Targeted `apply_patch`; source/destination validation evidence in prior session entries.
+- New risks / decisions: This update is local until pushed; do not state V5 objects are available on GitHub until targeted readback.
+- Next action: Review documentation diff and stage only canonical V5 model files plus relevant notes, excluding root-level duplicate package and audit kit.
+- Sync: Documentation updates are LOCAL and uncommitted.
+
+## 2026-11-14T21:54:00Z — Copilot SDK
+- Action: Staged the canonical V5 release folder and task-owned documentation/handoff/session updates.
+- Result: The staging command completed and cached whitespace check passed. Only intended canonical release and notes/docs paths were requested; the root-level package and audit kit were not added.
+- Files changed: Staging for `releases/v5/Vi_Gauntlet_X1C_V5_Draft/` and task documentation.
+- Evidence (file, command output, commit, issue): `git diff --cached --check`; cached stat/path list and `git status` output saved by the shell due output size.
+- New risks / decisions: Confirm exact staged model count and LFS pointer tracking before commit; remote LFS objects are not yet verified.
+- Next action: Check staged path count, `git lfs ls-files`, and representative Git index pointers; then commit if the set is exactly expected.
+- Sync: Staged locally; not committed/pushed.
+
+## 2026-11-14T21:55:00Z — Copilot SDK
+- Action: Validated staged path set and every V5 Git LFS pointer against the manifest; checked staged whitespace/status.
+- Result: All 33 staged V5 model pointers have the expected SHA-256 OID and exact source byte size. 39 paths staged (33 CAD + 6 task-owned notes/docs); 79 LFS assets now listed. `git diff --cached --check` passed. The root package duplicate and audit kit remain unstaged.
+- Files changed: Verification only; prior staging remains, with new handoff/session lines unstaged and to be re-staged.
+- Evidence (file, command output, commit, issue): PowerShell: `Staged V5 model pointers verified: 33/33`, `Total staged paths: 39`, `LFS-tracked assets total: 79`; `git status --short --branch`.
+- New risks / decisions: This proves local Git index pointer correctness only; remote LFS transfer/readback still required. Do not claim V5 print readiness.
+- Next action: Stage latest handoff/session updates, inspect the final staged diff, and commit the asset checkpoint.
+- Sync: All intended paths are staged locally except the just-added after-action record; no push yet.
+
+## 2026-11-14T21:56:00Z — Copilot SDK
+- Action: Re-staged current handoff/session changes and reviewed the complete staged diff summary and path set.
+- Result: Exactly 39 paths staged: 33 V5 model 3MFs and six documentation/handoff/session files. `git diff --cached --check` passed; no root package duplicates or audit-kit files are staged.
+- Files changed: Staging only; V5 models are LFS pointers in the Git index.
+- Evidence (file, command output, commit, issue): PowerShell reported `StagedPaths=39`, `StagedV5Models=33`; six non-V5 paths listed; cached diff stat and whitespace check.
+- New risks / decisions: LFS upload and remote object retrieval remain unverified. Keep all V5 claims at draft status.
+- Next action: Commit this synchronized V5 asset/docs checkpoint, then push normally.
+- Sync: Staged locally, ready to commit.

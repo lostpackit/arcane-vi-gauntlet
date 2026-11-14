@@ -28,5 +28,6 @@ For each test, add a separate note from [[templates/Validation_Template]] or app
 | 2026-11-14 | V5 physical prints (T-1, T2 coupon, dowel fit) | NOT RUN | owner to print |
 | 2026-11-14 | LED strip and ring fit | BLOCKED (hardware) — CAD measured: trough 27.1 mm wide × 13.3 mm deep; physical test T-1 proposed | `audits/results/ELECTRONICS_FIT.md` |
 | 2026-11-14 | Original finger mount and tendon travel | NOT RUN physically — digital findings in ISSUES C-3, C-5; test T-2 proposed | `audits/results/FINAL_VERDICT.md` |
+| 2026-11-14 | V5 draft model SHA-256 manifest | PASS (33/33, local) | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_SHA256_MANIFEST.txt`; 82,500,770 bytes; LFS remote readback pending |
 
 Also update [[docs/RELEASE_GATES]] and [[HANDOFF]] after every test.
