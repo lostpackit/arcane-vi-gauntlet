@@ -4,7 +4,7 @@ project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
 last_agent: ChatGPT
-sync_state: committed-when-published
+sync_state: pushed
 tags:
   - handoff
   - agents
@@ -24,7 +24,7 @@ tags:
 - This repository's root is the Obsidian vault; see `notes/00_Project_Hub.md`.
 
 ## Latest completed action
-- **2026-11-14 | ChatGPT:** Added Obsidian vault structure, mandatory `AGENTS.md` cross-agent rules, Claude/Copilot/Hermes/Gemini entry points, session templates and synchronization instructions. This entry describes the documentation commit containing this file; verify its presence on `main` before relying on it.
+- **2026-11-14 | ChatGPT:** Added Obsidian vault structure, mandatory `AGENTS.md` cross-agent rules, Claude/Copilot/Hermes/Gemini entry points, session templates and synchronization instructions. **Verified on GitHub `main`** in commit `e998e22811fa700c156eaae3de219b7c3f39fc28`.
 - Evidence: `AGENTS.md`, `docs/AGENT_SYNC_PROTOCOL.md`, `docs/OBSIDIAN_SETUP.md`, `notes/`.
 
 ## In progress / ownership
@@ -44,6 +44,13 @@ tags:
 2. Verify which binary CAD assets were actually pushed with Git LFS; record paths and hashes.
 3. Run the independent audit per `audits/claude/CLAUDE_MASTER_PROMPT.md`; update release gates with evidence.
 4. After **each** action, update this file and the agent's session log, commit and push at a safe checkpoint.
+
+## Latest verification
+- **2026-11-14 | ChatGPT:** Fetched the remote tree after publishing and verified `AGENTS.md`, `HANDOFF.md`, Obsidian settings, all agent entry points, the vault notes and templates on `main`.
+- **Result:** PASS for documentation presence only; **no CAD binaries or physical print validation were performed**.
+- **Evidence:** GitHub commit `e998e22811fa700c156eaae3de219b7c3f39fc28`.
+- **Next:** User completes CAD LFS upload, then an agent verifies asset presence/hashes and begins independent audit.
+- **Sync:** PUSHED to `main`.
 
 ## Sync and evidence
 - Shared sync state is **not** automatic. Changes become visible to other agents only after a successful push to the shared remote.
