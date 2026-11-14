@@ -20,6 +20,9 @@ Owner asked for a final comparison of three BTF-LIGHTING WS2812B strips for the 
 - **22:30** Wrote `electronics/LED_STRIP_COMPARISON.md`; appended review sections to BOM, WIRING, EFFECTS, WLED README, electronics README, audit electronics-fit report; added `electronics/wled/presets_144.json` (segment bounds remapped only; original untouched).
 - **22:35** Updated handoff, test log, action log; committed and pushed.
 
+- **22:45** Sync check: `main` = `origin/main`; 33/33 V5 3MF files match the SHA-256 manifest.
+- **22:50** Read-only review of `main.cpp`, WLED presets and wiring → `electronics/CODE_AND_WLED_REVIEW.md`. Not compiled, not flashed. Pushed.
+
 ## Result
 
 Recommend the 7.2 mm 3535 144 LEDs/m strip for ring, hand and crystal (50 + 34 + 9 = 93 px per arm), WLED limit 1000 mA to start. Conditional on T-1 with a real sample. Hand and crystal need V5 CAD changes that are not approved.

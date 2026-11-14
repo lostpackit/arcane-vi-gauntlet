@@ -3,8 +3,8 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
-last_agent: Claude (LED strip comparison)
-sync_state: v5-cad-pushed-targeted-lfs-readback-verified
+last_agent: Claude (code/WLED review, sync check)
+sync_state: pushed-v5-cad-verified-33-of-33
 tags:
   - handoff
   - agents
@@ -14,6 +14,13 @@ tags:
 # Cross-agent handoff — READ FIRST
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
+
+## Latest action — 2026-11-14T22:50Z — Claude (sync check; lighting code/WLED/hardware review)
+- **Sync check:** local `main` equals `origin/main`. All 33 V5 `.3mf` files are present as LFS objects and match `V5_SHA256_MANIFEST.txt` (33/33 OK).
+- **V5 status:** ready for the **test prints** listed in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT.md`; **not** approved for a full print. Shells 12/13 on hold (finger fit); hand strip and crystal lighting, electronics mounts not designed; no Bambu Studio slice; no physical test.
+- **Review:** `electronics/CODE_AND_WLED_REVIEW.md` (reading only; nothing compiled or flashed). Main findings: firmware likely fails to build as C++11 (F1) and has no current limit (F2); WLED button cycle includes the sustained strobe (W1/W2); effect IDs 13 and 15 probably do not give the intended chase/surge (W4). Wiring scheme has no error found. Recommend WLED for the build.
+- **Next agent:** apply W1–W4 on a real device; compile-test `main.cpp`; finish `electronics/REVIEW_CHECKLIST.md`; on owner approval, design hand/crystal LED channels and cuff electronics mounts in V5.
+- **Sync:** PUSHED with this commit.
 
 ## Latest action — 2026-11-14T22:35Z — Claude (LED strip comparison, pre-purchase)
 - **Action:** Reviewed the `electronics/` pack and compared three BTF-LIGHTING WS2812B ring strips against V5 CAD and manufacturer/third-party specs. No purchase, no hardware test, no CAD change.
