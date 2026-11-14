@@ -3,7 +3,7 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
-last_agent: Claude (code/WLED review, sync check)
+last_agent: Claude (lighting code fixes)
 sync_state: pushed-v5-cad-verified-33-of-33
 tags:
   - handoff
@@ -14,6 +14,13 @@ tags:
 # Cross-agent handoff — READ FIRST
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
+
+## Latest action — 2026-11-14T23:05Z — Claude (lighting code and WLED preset fixes)
+- **Action:** Revised `electronics/firmware/src/main.cpp` (C++11 build fix, software current limiter, build-time layouts, scaled chase, drift fix, overridable pins); added PC logic check `electronics/firmware/test/`; three PlatformIO environments. Fixed both WLED preset files: button cycle 1–5 without the strobe, flash is a 0.4 s burst playlist returning to idle.
+- **Result:** compiles clean under gnu++11/gnu++17 against stub headers; PC check PASS for 93, 50 and 39 px and for a 600 mA limit. **Not built for ESP32, not flashed, no hardware.** WLED effect IDs for chase and surge still need choosing on a device.
+- **Owner question answered:** V5 test prints `R_07`, `R_09`, the cover and (if printed) `R_08` are final parts and reusable if they pass; the original `Circle_Light.stl` test ring and the T2 coupon are throwaway test pieces.
+- **Next:** PlatformIO build + bench test with 3–5 pixels; WLED device setup; remaining `REVIEW_CHECKLIST.md` items.
+- **Sync:** PUSHED with this commit.
 
 ## Latest action — 2026-11-14T22:50Z — Claude (sync check; lighting code/WLED/hardware review)
 - **Sync check:** local `main` equals `origin/main`. All 33 V5 `.3mf` files are present as LFS objects and match `V5_SHA256_MANIFEST.txt` (33/33 OK).

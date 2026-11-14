@@ -17,3 +17,11 @@ Official docs: https://kno.wled.ge/features/presets/ ; https://kno.wled.ge/featu
 ## 144 LEDs/m layout (Claude, 2026-11-14)
 
 [presets_144.json](presets_144.json) is `presets.json` with only the segment bounds remapped for the recommended strip: ring `[0,50)`, hand `[50,84)`, crystal `[84,93)`. Set LED count 93 and the current limit to 1000 mA to start. Effect IDs, speeds and macros are unchanged and equally untested. For a ring-only build, set LED count 50 and delete the hand and crystal segments. Speeds tuned for 21 pixels may look slower on 50 and will need adjusting on the device.
+
+## Preset fixes (Claude, 2026-11-14) — applied to both preset files, untested on a device
+
+- Button A now cycles presets **1–5** (`"1~5~"`): 1 idle, 2 charging, 3 chase, 4 surge, 5 arcane sparks. The strobe is no longer in the cycle.
+- Preset **7** is the strobe at reduced brightness; preset **8** is a playlist that runs it for 0.4 s and then loads preset 1 (idle). Button B double-press calls 8. WLED cannot return to "whatever was running"; the standalone firmware can.
+- Button B long-press calls preset 5.
+- **Macro mapping to enter in Time & Macros:** A short → 21, A long → 22, B short → 23, B double → 24, B long → 25 (unchanged numbers).
+- **Still to do on the device:** effect IDs 13 (chase) and 15 (surge) were not changed because they cannot be confirmed without the installed version's `/json/eff`. Choose a comet/chase-type effect for preset 3 and a fast fade/breathe for preset 4 by name, then re-save those presets.

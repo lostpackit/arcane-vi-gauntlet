@@ -41,3 +41,19 @@ Points to settle on the bench:
 ## Recommendation
 
 Use **WLED** for the build: it has the current limiter, live tuning from a phone and no compile step. Fix W1–W3 in the preset file when the device is on the bench, and choose effects by name (W4). Keep the standalone sketch as a fallback, after F1–F3.
+
+## Fix status — 2026-11-14 (later the same day)
+
+| Item | Status |
+|---|---|
+| F1 C++11 build | **Fixed** in `main.cpp`; compiles as gnu++11 and gnu++17 against stub headers |
+| F2 current limit | **Fixed**: per-frame software limiter, default 1000 mA; PC check shows worst estimated frame 997 mA at 93 px |
+| F3 layout/timing | **Fixed**: build-time layouts; chase scales with pixel count |
+| F4 float drift | **Fixed** |
+| F5 pins | **Fixed**: overridable by build flags |
+| W1 strobe in cycle | **Fixed** in both preset files (cycle 1–5) |
+| W2/W3 sustained strobe | **Fixed**: 0.4 s burst playlist returning to idle, reduced brightness |
+| W4 effect IDs | **Open**: needs the device |
+| W5–W7 | Open: verify on the device |
+
+All fixes are verified on a PC only. No ESP32 build, no flashing, no hardware.

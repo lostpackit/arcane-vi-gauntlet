@@ -352,94 +352,6 @@
   ]
  },
  "5": {
-  "n": "Flash special - sustained",
-  "on": true,
-  "bri": 110,
-  "seg": [
-   {
-    "id": 0,
-    "start": 0,
-    "stop": 50,
-    "on": true,
-    "fx": 23,
-    "sx": 185,
-    "ix": 145,
-    "pal": 0,
-    "col": [
-     [
-      180,
-      220,
-      255
-     ],
-     [
-      0,
-      0,
-      0
-     ],
-     [
-      0,
-      0,
-      0
-     ]
-    ]
-   },
-   {
-    "id": 1,
-    "start": 50,
-    "stop": 84,
-    "on": true,
-    "fx": 23,
-    "sx": 185,
-    "ix": 145,
-    "pal": 0,
-    "col": [
-     [
-      160,
-      210,
-      255
-     ],
-     [
-      0,
-      0,
-      0
-     ],
-     [
-      0,
-      0,
-      0
-     ]
-    ]
-   },
-   {
-    "id": 2,
-    "start": 84,
-    "stop": 93,
-    "on": true,
-    "fx": 23,
-    "sx": 185,
-    "ix": 145,
-    "pal": 0,
-    "col": [
-     [
-      220,
-      230,
-      255
-     ],
-     [
-      0,
-      0,
-      0
-     ],
-     [
-      0,
-      0,
-      0
-     ]
-    ]
-   }
-  ]
- },
- "6": {
   "n": "Arcane sparks",
   "on": true,
   "bri": 105,
@@ -527,9 +439,114 @@
    }
   ]
  },
+ "7": {
+  "n": "Flash strobe (used only by the burst playlist)",
+  "on": true,
+  "bri": 70,
+  "seg": [
+   {
+    "id": 0,
+    "start": 0,
+    "stop": 50,
+    "on": true,
+    "fx": 23,
+    "sx": 185,
+    "ix": 145,
+    "pal": 0,
+    "col": [
+     [
+      180,
+      220,
+      255
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "id": 1,
+    "start": 50,
+    "stop": 84,
+    "on": true,
+    "fx": 23,
+    "sx": 185,
+    "ix": 145,
+    "pal": 0,
+    "col": [
+     [
+      160,
+      210,
+      255
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "id": 2,
+    "start": 84,
+    "stop": 93,
+    "on": true,
+    "fx": 23,
+    "sx": 185,
+    "ix": 145,
+    "pal": 0,
+    "col": [
+     [
+      220,
+      230,
+      255
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   }
+  ]
+ },
+ "8": {
+  "n": "Flash burst 0.4 s, then idle",
+  "on": true,
+  "playlist": {
+   "ps": [
+    7
+   ],
+   "dur": [
+    4
+   ],
+   "transition": [
+    0
+   ],
+   "repeat": 1,
+   "end": 1
+  }
+ },
  "21": {
-  "n": "A short: next mode",
-  "ps": "1~6~"
+  "n": "A short: next mode (1-5, strobe excluded)",
+  "ps": "1~5~"
  },
  "22": {
   "n": "A long: toggle",
@@ -540,11 +557,11 @@
   "bri": "w~32"
  },
  "24": {
-  "n": "B double: flash",
-  "ps": 5
+  "n": "B double: flash burst",
+  "ps": 8
  },
  "25": {
-  "n": "B long: violet special",
-  "ps": 6
+  "n": "B long: arcane sparks",
+  "ps": 5
  }
 }
