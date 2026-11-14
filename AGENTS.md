@@ -1,0 +1,40 @@
+# Mandatory agent operating instructions — Arcane Vi Gauntlet
+
+These instructions apply to **every AI agent** working in this repository: Claude, Codex, GitHub Copilot, Hermes, Gemini, ChatGPT, and any successor. If your agent environment has its own instruction file, that file must defer to this one.
+
+## Shared state: Obsidian + GitHub
+- The **repository root is an Obsidian vault**. Open the cloned repo as a vault. Notes are under `notes/`; the live cross-agent handoff is **`HANDOFF.md` at the repository root**.
+- GitHub `main` is the shared remote source of truth, not an agent's chat history or private notes.
+- Read `HANDOFF.md`, `notes/00_Project_Hub.md`, `docs/PROJECT_BRIEF.md`, `docs/RELEASE_GATES.md`, and `docs/AGENT_SYNC_PROTOCOL.md` **before doing project work**. Read `docs/ASSET_MAP.md` before claiming any CAD asset exists.
+- Before editing: check `git status` and `git fetch origin`. If the worktree is clean, `git pull --rebase origin main`. If dirty, preserve local changes and coordinate; never discard another agent's work.
+
+## Required after-action synchronization — do not skip
+**After EVERY project action, successful or failed**, including inspections, file edits, geometry checks, slicer tests, decisions, tool executions, or GitHub operations:
+1. Record what was attempted and the actual outcome in your own dated `notes/sessions/YYYY-MM-DD_<agent>_<task>.md`. Include evidence paths, changed files, tests and failures; use UTC timestamps when available.
+2. Update the single shared **`HANDOFF.md`** with the latest verified state, last action, next concrete step, blockers, and owner. Never delete another agent's unresolved findings.
+3. If the action changes a decision, test result, or release status, update the corresponding Obsidian note and `docs/RELEASE_GATES.md` as appropriate.
+4. Save the updates **before the next engineering action**. Documentation writes themselves are exempt from recursive logging.
+5. Commit and push at each completed atomic work unit and before ending or handing off. If offline or push fails, mark **UNSYNCED** in the handoff/session log and tell the user; local notes are not cross-agent synchronization until pushed.
+
+For read-only remote agents that cannot edit files, provide the exact proposed handoff/log patch and explicitly state that the repository was **not** updated. Do not claim a successful sync without verifying the remote commit.
+
+## Concurrent agent safety
+- Prefer distinct work branches for CAD modifications and separate dated session logs per agent.
+- Before editing the shared handoff, fetch/rebase the newest remote version; preserve all other agents' changes and blockers.
+- Never force-push `main`; never silently overwrite a handoff, validation report, or another agent's edits. Resolve conflicts by merging both sets of findings.
+- Link important changes to commits/issues/PRs. Update the handoff after merges.
+- Never edit `originals/` in place. Use versioned releases/branches for derived CAD. Large STL/3MF/ZIP files require Git LFS.
+- Do not commit secrets, access tokens, personal credentials, or unlicensed redistribution.
+
+## Engineering truth standard
+- V4 is **a digital candidate, not print-approved**.
+- A watertight STL or nominal bed fit is not equivalent to a real X1C sliced, assembled, safe wearable gauntlet.
+- Keep original manually string-actuated fingers compatible; motorized knuckles deferred.
+- Animated addressable LEDs, buttons, ESP32-class controller and battery are goals; no LED strip width or hardware fit has been physically verified.
+- Record PASS/FAIL/UNKNOWN/BLOCKED with evidence, not guesses. Never mark a gate PASS based on another agent's unverified summary.
+- Ask the user before irreversible fabrication, purchasing, publishing third-party models, or deleting history.
+
+## Handoff minimum fields
+Update `HANDOFF.md` after each action: timestamp, agent, action, observed result, modified files, verification/evidence, open blockers, next action, and sync state. Keep the file short enough to read at session start; put full detail in your own session note.
+
+**On exit:** ensure the handoff is current, your session note is saved, relevant notes/gates are updated, and remote push has been verified or the failure is disclosed.

@@ -21,6 +21,13 @@ Private engineering repository for adapting the multi-part *Arcane* Vi gauntlets
 
 Earlier checks reported watertight STL meshes and nominal X1C bed fit, but **a closed mesh is not proof of a printable, mechanically sound or wearable design**. There has been no independently verified Bambu Studio slicing, complete finger travel, lighting fit, strength or physical assembly.
 
+## Obsidian knowledge base and cross-agent handoff
+The **repository root is an Obsidian vault**. Open the cloned repository folder in Obsidian and start at [Project Hub](notes/00_Project_Hub.md). The live state shared by Claude, ChatGPT, Codex, Copilot, Hermes and other agents is [HANDOFF.md](HANDOFF.md).
+
+**All agents must follow [AGENTS.md](AGENTS.md)**: read the handoff before acting; **after every action, successful or failed**, update the handoff and a dated session log; commit and push at atomic checkpoints. Read [agent sync protocol](docs/AGENT_SYNC_PROTOCOL.md) and [Obsidian setup](docs/OBSIDIAN_SETUP.md). This is a workflow requirement, not an automatic background synchronization service.
+
+**If you are uploading CAD files now:** documentation changes may have been pushed since you cloned. Run `git pull --rebase origin main` before your asset push (first preserve/commit any local changes; never discard them).
+
 ## Read first
 - [Engineering acceptance gates](docs/RELEASE_GATES.md)
 - [Build requirements](docs/PROJECT_BRIEF.md)

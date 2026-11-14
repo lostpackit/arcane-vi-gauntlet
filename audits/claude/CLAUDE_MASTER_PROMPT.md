@@ -1,5 +1,7 @@
 # Independent Claude Code engineering audit
 
+**MANDATORY CROSS-AGENT SYNC:** Read `AGENTS.md`, `HANDOFF.md`, and `docs/AGENT_SYNC_PROTOCOL.md` before starting. **After every action, including inspections, tool calls, tests, decisions and failures, update `HANDOFF.md` and your own dated `notes/sessions/` file.** Commit/push at atomic checkpoints and disclose UNSYNCED work. Do not overwrite another agent's findings.
+
 You are conducting an **independent, adversarial engineering audit**, not a confirmation of prior claims. Work from the repository's original CAD assets and V4 release. **Do not assume the existing mesh-validation reports prove print readiness.**
 
 ## Goal

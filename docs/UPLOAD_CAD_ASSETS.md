@@ -27,3 +27,6 @@ If using the smaller scaffold and split archives instead, follow `docs/QUICK_STA
 2. Confirm CAD files are LFS pointers in Git history, with downloadable LFS objects.
 3. Compare file sizes and SHA-256 values against the supplied asset manifest.
 4. Do not call V4 production-ready until independent acceptance gates pass.
+
+## Concurrent agent commits while you upload
+Other agents may add Obsidian notes and `HANDOFF.md` while you are cloning and staging CAD. Before pushing your asset commit, run `git status`, then `git pull --rebase origin main` **only after preserving or committing local edits**. If the branch diverges or has conflicts, resolve them without force-pushing or discarding your CAD. See `docs/AGENT_SYNC_PROTOCOL.md`.
