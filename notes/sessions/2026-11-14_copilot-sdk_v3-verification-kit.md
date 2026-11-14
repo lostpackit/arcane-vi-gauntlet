@@ -522,3 +522,12 @@ tags: [session, asset-validation, git-lfs]
 - New risks / decisions: None affecting safe commit. Keep the unrelated audit-kit out.
 - Next action: Commit the staged documentation synchronization normally, then record and push that commit.
 - Sync: Documentation checkpoint staged; remote base synchronized.
+
+### 2026-11-14T16:14:00+01:00 — Copilot SDK
+- Action: Created and pushed the documentation checkpoint, then verified the commit through GitHub, compared remote `main`, checked the worktree, and ran `git lfs fsck`.
+- Result: Commit `11e7a003c2640a1269248c7288ba2000eab8da4b` exists on GitHub and matches local `HEAD`/`origin/main`; `git lfs fsck` passed. Only the unrelated audit-kit directory remains untracked. Issue #1 is still open.
+- Files changed: None during verification.
+- Evidence (file, command output, commit, issue): GitHub `get_commit`; `git ls-remote`; local `git rev-parse`; `git status`; `git lfs fsck`; GitHub Issue #1 read.
+- New risks / decisions: Issue text is stale and still claims no CAD assets were uploaded. Add a factual completion comment and close only the asset-import scope; explicitly retain V4 independent audit/print gates as NOT APPROVED.
+- Next action: Post factual completion comment and close Issue #1, then verify its closed state.
+- Sync: Documentation commit `11e7a003c2640a1269248c7288ba2000eab8da4b` is pushed and remote-verified.
