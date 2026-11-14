@@ -46,9 +46,10 @@ tags:
 - **Sync:** LOCAL; stage awaits commit/push.
 
 ## Latest action — 2026-11-14T16:14:00+01:00
-- **Copilot SDK:** Verification notes are pushed in commit `11e7a003c2640a1269248c7288ba2000eab8da4b`; GitHub commit/ref checks match local `HEAD` and `origin/main`, and `git lfs fsck` passes. Issue #1 remains open pending its factual closure summary.
-- **Next:** Post the completion summary and close Issue #1 for the asset-import scope. Preserve the independent V4 audit and print gates as NOT APPROVED/NOT RUN.
-- **Sync:** Latest documentation commit is PUSHED and remote-verified. The unrelated `Claude_Vi_Gauntlet_Audit_Kit/` remains untracked and unstaged.
+- **Copilot SDK:** Issue #1 is CLOSED after posting the verified asset-import summary. Latest prior documentation commit `d9c9a588637216e8203c4ea678c2594b1c14d21b` is confirmed on GitHub `main`; `git lfs fsck` passes.
+- **Next:** Independent engineering audit of original fidelity, mesh/slicing, assembly interfaces, finger mount, five tendon paths, LED ring/cover, electronics access, and physical fit/print tests. Do not claim any gate passed without evidence.
+- **Engineering status:** V4 is a digitally validated candidate only, **NOT APPROVED for printing**. V1/V2 were intentionally excluded from the asset-import scope. V3 container hashes are verified; hashes of its 21 internal members are not in the supplied manifest.
+- **Sync:** Closure-status note is LOCAL and will be pushed as the final handoff checkpoint. Only unrelated `Claude_Vi_Gauntlet_Audit_Kit/` remains untracked/unstaged.
 
 ## Previous asset transfer checkpoint (historical; superseded by the current state above)
 - **2026-11-14 | Copilot SDK:** Inspected the user's existing local files without downloading, extracting, or reimporting. Found eight original STL files, one original 3MF, and a 49-file V4 candidate folder with 13 shells per arm. All nine originals match the audit-kit CSV sizes and hashes. The requested 61-entry CSV is absent; the available 10-entry CSV does not cover V4 contents. No V3 assets were found in the inspected CAD inventory. `git-lfs/3.7.1` and appropriate `.gitattributes` rules are present, but files are not yet tracked.
@@ -60,22 +61,21 @@ tags:
 - Evidence: `AGENTS.md`, `docs/AGENT_SYNC_PROTOCOL.md`, `docs/OBSIDIAN_SETUP.md`, `notes/`.
 
 ## In progress / ownership
-- **Copilot SDK:** Stage, commit, and push the verified V3 archive/manifest and related notes; verify remote commit and targeted LFS readback. Do not modify CAD geometry or begin the independent audit.
+- **Copilot SDK:** Asset import and repository synchronization are complete; GitHub Issue #1 is closed. No CAD geometry was changed. Do not reopen printing approval without independent evidence.
 - **Next reviewing agent (Claude Code recommended):** Independent geometry, assembly, lighting, string routing and actual slicer audit **after confirming assets are present**.
 - **ChatGPT / any agent:** Maintain this handoff and session log after every action.
 
 ## Blockers and risks
-1. New V3 LFS object is not yet remotely verified; targeted readback is pending.
+1. SHA-256 manifest covers the V3 ZIP container only; individual hashes for its 21 internal members are unavailable.
 2. V4 geometry is digitally checked only; full X1C toolpath and assembly not proven.
 3. Original finger mounts, five string paths and LED channel fit require evidence.
 4. Exact LED, ESP32, buttons, battery and power components are not selected or measured.
 5. Third-party model rights/redistribution terms unverified; keep repo private.
 
 ## Next action
-1. Refresh origin, commit and push the nine verified/staged paths without including the unrelated audit-kit folder.
-2. Verify the final remote SHA, GitHub V3/manifest paths, and fetch/read back only the small V3 LFS object.
-3. Close Issue #1 only if all required upload and integrity checks pass; otherwise leave it open and report the remaining blocker.
-4. Do not start the independent engineering audit; V4 stays NOT APPROVED.
+1. Assign an independent reviewer to audit original model fidelity, mesh integrity, Bambu Studio slicing, assembly/seam strength, finger mounting, five tendon paths, LED channel/cover fit, and electronics access.
+2. Obtain physical fit and print-test evidence on the X1 Carbon and, where useful, the A1 Mini.
+3. Keep all untested release gates UNKNOWN/NOT RUN; V4 remains NOT APPROVED for printing.
 
 ## Historical verification snapshots (superseded by current status above)
 - **2026-11-14 | Copilot SDK:** Canonical original set is 9 files / 581,242,767 bytes, all 9 matching sizes and SHA-256 values in the available audit-kit CSV. V4 contains 49 files / 250,103,731 bytes, including 36 STL files, 13 left and 13 right main shells, 3 validation records, 4 source scripts, and 10 cover/hardware STLs. Combined available CAD payload is 58 files / 831,346,498 bytes. No V3 assets were found. Full 61-entry CSV is unavailable; the available CSV does not hash the extracted V4 files.
