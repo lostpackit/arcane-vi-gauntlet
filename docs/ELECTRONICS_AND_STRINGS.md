@@ -10,3 +10,7 @@ Specify physical board, switches, protected battery/pack, wiring gauge, connecto
 
 ## Strings
 Five candidate 4 mm OD PTFE routes were proposed, but have not been proven end-to-end. Check entry/exit locations, finger attachments, bend radii, friction, string travel and ability to rethread after assembly. Do not bond a seam that blocks a critical route.
+
+## Electronics design package for Claude review (2026-11-14)
+
+See [electronics/README.md](../electronics/README.md), [BOM](../electronics/BOM.md), [six effects and buttons](../electronics/EFFECTS.md), [wiring diagram](../electronics/WIRING.md), [WLED presets](../electronics/wled/presets.json), and [standalone reference firmware](../electronics/firmware/src/main.cpp). These are **proposed and untested**. The independent V4 audit found lighting FAIL; V5 is the active unprinted draft and its accent/crystal mounting remains unresolved. Do not purchase or modify CAD without owner approval.

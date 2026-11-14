@@ -20,6 +20,9 @@ tags: [arcane, vi, 3d-printing, dashboard]
 - [[docs/OBSIDIAN_SETUP|Vault setup]]
 - [[audits/claude/CLAUDE_MASTER_PROMPT|Claude independent audit]]
 
+- [[electronics/README|Electronics design pack]] — BOM, effects, wiring, WLED presets, alternative ESP32 code; **Claude review required**
+- [[electronics/REVIEW_CHECKLIST|Electronics review checklist]]
+
 ## Knowledge notes
 - [[01_Engineering_Map|Design and engineering map]]
 - [[02_Agent_Roles|Agent responsibilities]]
