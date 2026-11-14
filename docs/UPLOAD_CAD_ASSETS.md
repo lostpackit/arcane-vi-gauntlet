@@ -9,7 +9,8 @@ Assets are already present and organized in this existing clone. **Do not downlo
 - V1 and V2: intentionally excluded.
 - V3 fit-validation assets: not found; the missing V3 set prevents full completion.
 - The requested 61-entry `Arcane_Vi_Gauntlet_Assets_SHA256.csv` is unavailable. The audit-kit CSV also references an absent V4 ZIP and does not hash the extracted V4 files.
-- Combined existing originals and V4 payload: 58 files, 831,346,498 bytes. Remote commit and LFS object availability are pending until a successful push and verification.
+- Combined originals and V4 payload: 58 files, 831,346,498 bytes. Commit `91f7233aceca2251a1f136ffff24f0524421176c` is on `origin/main`, and GitHub directory listings show the expected 9 originals and both 13-file shell directories.
+- The push reported 45/45 LFS objects (828 MB) uploaded; local `git lfs fsck` passed. GitHub's content API returns the small LFS pointer blobs (132–134 bytes). No direct LFS fetch/readback was attempted because the instruction prohibits downloading.
 
 See [asset map](ASSET_MAP.md) for per-file structure and verified scope.
 
@@ -38,6 +39,6 @@ git commit -m "Upload original CAD and V4 release assets"
 git push origin main
 ```
 
-After a successful push, verify the remote commit, browse expected files on GitHub, confirm LFS pointers in the commit and confirm remote LFS objects can be fetched/read. If authentication, quota, or permissions block this, report the exact failure and leave the issue open.
+After a successful push, verify the remote commit, browse expected files on GitHub, confirm LFS pointers in the commit, and—when permitted—fetch/read remote LFS objects. Here, remote ref and directory visibility are verified and the push acknowledged all 45 LFS uploads; independent LFS readback remains untested because downloading was prohibited. Keep Issue #1 open while V3 and applicable V4 hash verification remain incomplete.
 
 V4 is **NOT approved for full wearable printing**. No asset-upload check substitutes for the independent CAD, Bambu Studio, assembly, lighting, tendon, or physical-fit release gates. See [release gates](RELEASE_GATES.md) and [agent synchronization](AGENT_SYNC_PROTOCOL.md).

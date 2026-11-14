@@ -432,3 +432,57 @@
 - New risks / decisions: Keep Issue #1 open; no remote commit or LFS upload exists yet.
 - Next action: Update handoff staging status, then restage the session/handoff and commit.
 - Sync: LOCAL.
+
+### 2026-11-14T15:28:00Z — Copilot SDK
+- Action: Restaged the latest handoff/session updates, verified staged counts/whitespace, and committed all 65 intended files.
+- Result: Commit `91f7233` was created successfully; 58 asset/support files and 7 docs/logs were committed. LFS staging count was 45; no unexpected paths were staged. This commit includes 9 originals and the full local V4 directory, but not V3, V1/V2, or the audit kit.
+- Files changed: Original assets, V4 release/support files, `docs/ASSET_MAP.md`, `docs/UPLOAD_CAD_ASSETS.md`, `notes/00_Project_Hub.md`, `notes/04_Test_Log.md`, `notes/05_Risks_and_Blockers.md`, `HANDOFF.md`, and this session log.
+- Evidence (file, command output, commit, issue): Commit output: 65 files changed; staged scope check 65/58/45; `git diff --cached --check` passed.
+- New risks / decisions: LFS objects have not yet been pushed. V3 absent; V4 file hashes remain unverified. Keep Issue #1 open.
+- Next action: Inspect post-commit LFS transfer queue, then push `main` normally and verify the remote commit/LFS objects.
+- Sync: LOCAL; commit `91f7233` exists locally only.
+
+### 2026-11-14T15:30:00Z — Copilot SDK
+- Action: Started normal `git push origin main` for commit `91f7233`.
+- Result: The command reported LFS upload 100% complete (45/45 objects, 828 MB, transfer shown at 1.4 MB/s), but the process had not yet returned or confirmed that the Git ref update completed when the initial wait expired.
+- Files changed: None from the push command itself; repository push process remains running.
+- Evidence (file, command output, commit, issue): PowerShell session `36`; LFS progress line “Uploading LFS objects: 100% (45/45), 828 MB”.
+- New risks / decisions: Do not claim the commit is pushed until the command exits and `origin/main` is verified. Do not start a second push.
+- Next action: Wait for the active push command to finish; then verify the remote commit and LFS objects.
+- Sync: UNSYNCED until GitHub branch/ref and LFS objects are independently confirmed.
+
+### 2026-11-14T15:38:00Z — Copilot SDK
+- Action: Read the completed push command result after receiving the process-completion notification.
+- Result: `git push origin main` completed with exit code 0; GitHub accepted commit `91f7233` (`b37a717..91f7233`) and Git LFS reported all 45 objects uploaded (828 MB).
+- Files changed: None during result retrieval.
+- Evidence (file, command output, commit, issue): PowerShell session 36 output: `Uploading LFS objects: 100% (45/45), 828 MB ... done`; `main -> main`.
+- New risks / decisions: Verify remote SHA and GitHub file tree; remote retrieval is still to be confirmed. V3 absent and V4 hashes unavailable, so Issue #1 remains open.
+- Next action: Query remote ref, inspect GitHub paths, and verify representative LFS object retrieval without downloading/extracting/reimporting archives.
+- Sync: Push command succeeded; remote ref/hash and asset visibility checks pending.
+
+### 2026-11-14T15:40:00Z — Copilot SDK
+- Action: Queried `origin/main`, local HEAD, LFS status, latest LFS logs, GitHub directory listings for originals and both V4 shell sides, and the GitHub commit record.
+- Result: `origin/main` and local HEAD both equal `91f7233aceca2251a1f136ffff24f0524421176c`. GitHub listings show all 9 originals, 13 left shells, and 13 right shells. GitHub API reports LFS pointer blob sizes (132–134 bytes), as expected for LFS, not CAD payload sizes. Push succeeded and reported 45/45 LFS objects uploaded; post-push `git lfs status` has no objects queued to push. Two note edits remain local; audit kit remains untracked.
+- Files changed: None during remote verification.
+- Evidence (file, command output, commit, issue): `git ls-remote origin refs/heads/main`; local `git rev-parse HEAD`; `git lfs status`; GitHub `get_file_contents` listings; GitHub commit lookup for `91f7233`.
+- New risks / decisions: Direct LFS readback was not performed to respect the instruction not to download anything; upload acknowledgment from Git LFS is positive but readback availability has not been independently tested. V3 absent and V4 hashes unavailable. Issue #1 remains open.
+- Next action: Run local LFS object integrity check (`git lfs fsck`), update docs/test/handoff to reflect verified push with direct readback caveat, then commit/push this synchronization update.
+- Sync: Main asset commit PUSHED and ref verified; latest two note edits are LOCAL.
+
+### 2026-11-14T15:42:00Z — Copilot SDK
+- Action: Ran `git lfs fsck` against the current commit's locally stored LFS payloads.
+- Result: `Git LFS fsck OK`.
+- Files changed: None during the integrity check.
+- Evidence (file, command output, commit, issue): `git -C "C:\Users\donnk\repos\arcane gauntlets" lfs fsck` returned `Git LFS fsck OK`.
+- New risks / decisions: This validates local LFS payload integrity, not a fresh remote read. GitHub push previously acknowledged all 45 objects; direct remote readback remains untested by design.
+- Next action: Update asset documentation, project hub, test log, risk register, and handoff; then commit/push synchronization changes without staging the unrelated audit kit.
+- Sync: Main asset commit PUSHED; sync note edits remain local.
+
+### 2026-11-14T15:43:00Z — Copilot SDK
+- Action: Ran `git diff --check`, reviewed the changed-file summary, fetched `origin`, and compared local and remote refs before preparing the docs/handoff checkpoint.
+- Result: Whitespace check passed; the seven intended docs/handoff/log files are modified. The unrelated audit-kit directory remains untracked and unstaged. `HEAD` and `origin/main` both remain `91f7233aceca2251a1f136ffff24f0524421176c`; fetch succeeded with no remote advance.
+- Files changed: None during validation/fetch.
+- Evidence (file, command output, commit, issue): `git diff --check`; `git status --short --branch`; `git diff --stat`; `git fetch origin`; both `git rev-parse` results.
+- New risks / decisions: None beyond the existing V3/V4-hash/readback blockers.
+- Next action: Stage only the seven intended tracked files, commit with the required co-author trailer, push normally, and verify the resulting remote ref.
+- Sync: Documentation/handoff updates are LOCAL and ready for the synchronization commit.

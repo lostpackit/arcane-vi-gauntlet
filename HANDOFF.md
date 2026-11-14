@@ -25,8 +25,8 @@ tags:
 
 ## Latest completed action
 - **2026-11-14 | Copilot SDK:** Inspected the user's existing local files without downloading, extracting, or reimporting. Found eight original STL files, one original 3MF, and a 49-file V4 candidate folder with 13 shells per arm. All nine originals match the audit-kit CSV sizes and hashes. The requested 61-entry CSV is absent; the available 10-entry CSV does not cover V4 contents. No V3 assets were found in the inspected CAD inventory. `git-lfs/3.7.1` and appropriate `.gitattributes` rules are present, but files are not yet tracked.
-- **Next:** Exactly 65 intended files are staged (58 asset/support files + 7 documentation/log files), with 45 LFS objects and no unexpected paths. HEAD and `origin/main` both remain `b37a717a18961674e60a8159ce834531691ed43b`. Commit, push, then verify remote tree/LFS retrieval. V3 and V4 hash gaps mean Issue #1 remains open.
-- **Sync:** LOCAL; staged files await commit/push. `Claude_Vi_Gauntlet_Audit_Kit/` remains untracked and unstaged.
+- **Next:** Asset commit `91f7233aceca2251a1f136ffff24f0524421176c` is on GitHub `main`; remote and local refs match. Git LFS reported 45/45 objects (828 MB) uploaded; `git lfs fsck` passed locally; GitHub lists 9 originals and 13 shells per V4 side. API exposes pointer blobs; direct binary readback was not attempted per no-download instruction. V3/V4 hash gaps keep Issue #1 open.
+- **Sync:** Main asset commit PUSHED and remote ref/tree verified. This handoff/session/doc synchronization update is local pending its commit. `Claude_Vi_Gauntlet_Audit_Kit/` remains untracked and unstaged.
 
 ## Earlier completed action
 - **2026-11-14 | ChatGPT:** Added Obsidian vault structure, mandatory `AGENTS.md` cross-agent rules, Claude/Copilot/Hermes/Gemini entry points, session templates and synchronization instructions. **Verified on GitHub `main`** in commit `e998e22811fa700c156eaae3de219b7c3f39fc28`.
@@ -52,8 +52,8 @@ tags:
 
 ## Latest verification
 - **2026-11-14 | Copilot SDK:** Canonical original set is 9 files / 581,242,767 bytes, all 9 matching sizes and SHA-256 values in the available audit-kit CSV. V4 contains 49 files / 250,103,731 bytes, including 36 STL files, 13 left and 13 right main shells, 3 validation records, 4 source scripts, and 10 cover/hardware STLs. Combined available CAD payload is 58 files / 831,346,498 bytes. No V3 assets were found. Full 61-entry CSV is unavailable; the available CSV does not hash the extracted V4 files.
-- **Next:** Run final staged checks, commit/push, and verify remote tree and LFS object retrieval. V3 absent; Issue #1 stays open.
-- **Sync:** LOCAL; intended files staged, no commit/push yet.
+- **Next:** Asset push and remote ref/tree check succeeded; run LFS integrity verification, then push updated handoff. V3 absent; Issue #1 stays open.
+- **Sync:** Commit `91f7233aceca2251a1f136ffff24f0524421176c` PUSHED; current note edits are local.
 
 - **2026-11-14 | Copilot SDK:** Complete inventory found 8 original STLs (388,391,272 bytes), the 3MF (192,851,495 bytes), and 49 V4 candidate files (250,103,731 bytes). The candidate V4 tree has 13 left and 13 right shell STLs, lighting covers, seven hardware STLs, validation records, four source scripts, README and reference images. No V3 release directory/assets were found. Audit kit is separate. Its 10-entry CSV lists hashes for the 9 original files plus an unavailable V4 ZIP; it is not the user's 61-entry manifest.
 - **Next:** Verify applicable SHA-256 values, inspect ignore/LFS behavior, decide safe canonical paths, and stage/push only existing CAD. V3 is a blocker for full completion and Issue #1 closure.
