@@ -219,6 +219,11 @@ tags:
 - **Next:** Owner-led V5 validation prints and Bambu Studio slicing. V4 audit remains NO-GO; V5 is not print-approved.
 - **Sync:** Final verification note is LOCAL pending its push.
 
+## Latest action — 2026-11-14T23:06:00+01:00
+- **Copilot SDK:** Pushed final verification note from `ed734a5` to `7161879`.
+- **Next:** Final check that remote `main` matches the pushed handoff record.
+- **Sync:** Push succeeded; final ref check pending.
+
 ## Previous asset transfer checkpoint (historical; superseded by the current state above)
 - **2026-11-14 | Copilot SDK:** Inspected the user's existing local files without downloading, extracting, or reimporting. Found eight original STL files, one original 3MF, and a 49-file V4 candidate folder with 13 shells per arm. All nine originals match the audit-kit CSV sizes and hashes. The requested 61-entry CSV is absent; the available 10-entry CSV does not cover V4 contents. No V3 assets were found in the inspected CAD inventory. `git-lfs/3.7.1` and appropriate `.gitattributes` rules are present, but files are not yet tracked.
 - **Next:** Asset commit `91f7233aceca2251a1f136ffff24f0524421176c` is on GitHub `main`; documentation checkpoint `0814cd5a6a817cb31565e6b697ddc66b7c527aef` is also pushed and its remote ref verified. Git LFS reported 45/45 objects (828 MB) uploaded; `git lfs fsck` passed locally; GitHub lists 9 originals and 13 shells per V4 side. API exposes pointer blobs; direct binary readback was not attempted per no-download instruction. V3/V4 hash gaps keep Issue #1 open.
