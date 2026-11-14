@@ -23,6 +23,10 @@ tags: [risk, blockers]
 | Mass about 5.4 kg of shell per arm (surrogate slice) | OPEN — HIGH (H-6) | Bambu Studio slice at lighter settings |
 | Glove_B1 23 × 63 mm opening filled | OPEN — HIGH (H-7) | Restore in V5 |
 | Bambu Studio slice still not run by any agent | OPEN | Run on owner's machine |
-| Claude cloud session cannot use Git LFS batch API or push | OPEN (tooling) | Install/authorise Claude GitHub App for the repo, or apply the supplied patch |
+| Claude cloud session cannot upload Git LFS objects (download and normal push work) | OPEN (tooling) — LFS storage host blocked by session network policy | Owner uploads CAD delivered as zip |
+| V5 3MF files not yet in the repo | OPEN | Owner: unzip, verify against `V5_SHA256_MANIFEST.txt`, commit, push |
+| V5 draft unprinted; dowel and insert clearances untested in LW-PLA | OPEN | Print R_09/R_07 and inserts first |
+| V5 shells 12/13 still carry the older finger carrier | OPEN — hold | T2 coupon with a printed finger |
+| V5 supports about 20 % of filament | OPEN | Re-orient 05/06/08/12/13 |
 
 For current priority and ownership, see [[HANDOFF]]. Record any newly discovered risk there **after the action**.

@@ -1,0 +1,59 @@
+{
+ "files": 33,
+ "failing_closed_solid": [],
+ "mirror_max_dev_mm": 0.0,
+ "trough_topdown": {
+  "31": [
+   -3.52,
+   -3.5,
+   -3.3,
+   0
+  ],
+  "36": [
+   -Infinity,
+   -3.5,
+   -3.3,
+   0
+  ],
+  "42": [
+   -Infinity,
+   -3.5,
+   -3.47,
+   0
+  ],
+  "48": [
+   -Infinity,
+   -3.5,
+   -3.46,
+   0
+  ],
+  "54": [
+   -3.54,
+   -3.5,
+   -3.4,
+   0
+  ]
+ },
+ "cover_lift_overlap_mm3": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "gauge_lift_overlap_mm3": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "cover_seat_fraction": 0.341,
+ "dowels": 57,
+ "dowel_thin_wall": [],
+ "dowel_clashes": []
+}

@@ -18,6 +18,7 @@ tags: [cad, engineering]
 | V1 | Initial cut study | Historical |
 | V2 | Repaired eight-section prototype | Historical |
 | V3 | Fit validation coupons | Prototype |
+| V5 draft | V4 layout with open ring light, separate cover/gauge/handle, seam dowels, 3MF | **Draft, unprinted (2026-11-14)** — `releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT.md` |
 | V4 | 13 sections per arm, ring preserved, reinforcement | **Unapproved digital candidate — independent audit NO-GO (2026-11-14), see `audits/results/FINAL_VERDICT.md`** |
 
 ## Engineering sources

@@ -3,7 +3,7 @@ type: agent-session
 agent: Claude (Claude Code, cloud session)
 task: Independent V4 engineering audit
 date: 2026-11-14
-status: complete-pending-sync
+status: complete
 tags: [session, audit, claude, v4]
 ---
 
@@ -51,4 +51,4 @@ Verdict **NO-GO** for the V4 shell set. See `audits/results/FINAL_VERDICT.md`.
 
 ## Sync
 
-UNSYNCED — committed locally in the Claude cloud session (commits on top of `2bf6e6d`), but `git push origin main` was refused with HTTP 403: the Claude GitHub App has no access to this repository. The owner was given the commits as a patch file (`claude_v4_audit.patch`, apply with `git am`). Until that is applied and pushed, other agents will not see this audit.
+PUSHED as `4fc75b8` + `243a51f` after the owner authorised the Claude GitHub App (initial push attempt was refused with HTTP 403).

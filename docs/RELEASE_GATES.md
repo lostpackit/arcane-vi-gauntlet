@@ -19,3 +19,7 @@
 | End-to-end | One assembled side with functioning lights and fingers | BLOCKED |
 
 Record PASS only with evidence. FAIL, UNKNOWN, and BLOCKED are not PASS. Physical validation cannot be replaced by a digital render.
+
+## V5 draft (2026-11-14)
+
+`releases/v5/Vi_Gauntlet_X1C_V5_Draft/` is a **draft** and is **not approved**. Computed checks pass for mesh integrity, envelope, open LED trough, cover/gauge removal, handle sockets and dowel sockets (`V5_Verification.json`). Every gate that needs Bambu Studio or a physical test is still UNKNOWN or BLOCKED for V5. Finger mounting and Tendons remain unresolved (shells 12/13 on hold).

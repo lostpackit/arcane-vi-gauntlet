@@ -4,7 +4,7 @@ project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
 last_agent: Claude (independent audit)
-sync_state: unsynced-claude-audit-pending-owner-apply
+sync_state: docs-pushed-v5-cad-pending-owner-lfs-upload
 tags:
   - handoff
   - agents
@@ -24,6 +24,22 @@ tags:
 - Asset upload checkpoints are on remote `main`; latest verified SHA before this continuation is `16a552be5bea05935966f931c6f736eae6973ba2`. The user-provided verification kit was extracted without overwrites. Manifest `docs/ASSET_SHA256_MANIFEST.csv` contains 61 rows; the 59 required entries (9 originals, 49 V4 files, 1 V3 archive) all pass byte-size and SHA-256 checks; V1/V2 rows are intentionally excluded. The V3 archive (698,022 bytes) opens, all 21 members decompress, and `tar.exe -tf` succeeds.
 - This repository's root is the Obsidian vault; see `notes/00_Project_Hub.md`.
 
+## Latest action — 2026-11-14T21:45Z — Claude (V5 draft build, owner-approved)
+- **Owner decisions (chat, 2026-11-14):** V5 direction APPROVED. Build lighter: cosplay use, lightweight PLA. Goal restated by owner: fuse everything except the fingers, cut into bed-sized shells, fewer prints, sturdier, with programmable LEDs inside the gauntlet.
+- **Action:** Built `releases/v5/Vi_Gauntlet_X1C_V5_Draft/` from the original files (originals untouched). Same 13-shell layout and print orientations as V4, with:
+  1. Ring light opened: cover and gauge are separate lift-out inserts; LED trough open (fixes audit C-1).
+  2. One-piece handle in reinforced sockets in shells 10/11 (fixes C-4).
+  3. 57 dowel sockets for 6 × 30 mm dowels across all 27 shell interfaces (addresses M-8).
+  4. 3MF output; all 33 files verified manifold single-part (addresses M-9).
+  5. T2 finger-slot coupon for checking a printed finger.
+- **Result:** DRAFT, digital only. Verified by computation (`V5_Verification.json`); surrogate slice at lightweight settings gives 3,843 g per arm incl. 760 g support in standard PLA (V4: 6,183 g). **No Bambu Studio slice, no physical test.**
+- **Failed attempts (kept for the record):** first ring cut left a thin film over the trough; first handle socket was too shallow; STL export produced tiny non-manifold edges and a MeshLab repair damaged a shell (discarded, rebuilt). Details in the session note.
+- **Still open:** shells 12/13 on hold pending finger test (C-3); light-strip/crystal lighting; electronics mounts; seam planes unchanged; thumb route (C-5); supports are about 20 % of filament.
+- **Next action (owner):** print T-1 (original `Circle_Light.stl` + V5 cover) and the T2 coupon on the A1 Mini; print `R_09`/`R_07` to test dowel fit in LW-PLA; slice in Bambu Studio and log numbers in `notes/04_Test_Log.md`.
+- **Next action (agent):** after test results: finger carrier decision, LED channels for strip/crystal, cuff electronics mounts, support-reducing orientations.
+- **Files changed:** `releases/v5/**`, `HANDOFF.md`, `docs/RELEASE_GATES.md`, `notes/00_Project_Hub.md`, `notes/01_Engineering_Map.md`, `notes/03_Decision_Log.md`, `notes/04_Test_Log.md`, `notes/05_Risks_and_Blockers.md`, `notes/Action_Log.md`, `notes/sessions/2026-11-14_claude_v5-draft-build.md`, `notes/sessions/2026-11-14_claude_independent-v4-audit.md`.
+- **Sync:** Documentation, verification records and build scripts PUSHED with this commit. **The 33 V5 `.3mf` files are NOT in the repo**: LFS upload from the Claude cloud session was refused (LFS storage host blocked by network policy, HTTP 403). They were handed to the owner as `Vi_Gauntlet_X1C_V5_Draft.zip`; hashes in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_SHA256_MANIFEST.txt`. **Owner action:** unzip into the repo, verify, `git add`, commit, push.
+
 ## Latest action — 2026-11-14T16:50Z — Claude (independent engineering audit)
 - **Action:** Independent audit of originals, 3MF, and all V4 STLs. CAD analysis plus a surrogate slice (PrusaSlicer 2.7.2, X1C-like profile). **No Bambu Studio slice. No physical test. No CAD modified.**
 - **Result: NO-GO for printing the V4 shell set.** Key findings (details and evidence in `audits/results/ISSUES.md`):
@@ -41,7 +57,7 @@ tags:
 - **Blockers / owner decisions needed:** (1) approve or reject the V5 direction (rebuild from 3MF parts); (2) approve generating a derived knuckle-slot test coupon; (3) handle approach; (4) confirm tendon layout incl. thumb.
 - **Next action (any agent or owner):** run test prints T-1…T-4 from `audits/results/FINAL_VERDICT.md`; slice in real Bambu Studio on the owner's machine and log per-part numbers in `notes/04_Test_Log.md`. Do **not** start V5 CAD without owner approval.
 - **Tooling note:** this Claude session could not use `git lfs pull` (integration lacks LFS batch access); assets were fetched via the media endpoint and verified 46/46 against pointer hashes.
-- **Sync:** UNSYNCED — committed locally in the Claude cloud session (commits on top of `2bf6e6d`), but `git push origin main` was refused with HTTP 403: the Claude GitHub App has no access to this repository. The owner was given the commits as a patch file (`claude_v4_audit.patch`, apply with `git am`). Until that is applied and pushed, other agents will not see this audit.
+- **Sync:** PUSHED later the same day as `4fc75b8` + `243a51f`, after the owner authorised the Claude GitHub App.
 
 ## Latest action in this continuation — 2026-11-14T15:55:00Z
 - **Copilot SDK:** Staged diff review found no audit-kit staging; current docs reflect the verified manifest/V3 state, with upload guide's prior readback paragraph explicitly superseded.

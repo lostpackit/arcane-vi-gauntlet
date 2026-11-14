@@ -23,6 +23,9 @@ For each test, add a separate note from [[templates/Validation_Template]] or app
 | 2026-11-14 | Finger base revision, fused arm vs printable 3MF | FAIL (computed): 25 % of surface > 1 mm apart | `audits/results/evidence/version_diff_sections.png` |
 | 2026-11-14 | Surrogate slice, PrusaSlicer 2.7.2 X1C-like profile (NOT Bambu Studio) | INFO: 6,183 g per arm incl. 761 g support | `audits/results/evidence/surrogate_slice.csv` |
 | 2026-11-14 | Full X1C slicer check | NOT RUN | [[docs/RELEASE_GATES]] |
+| 2026-11-14 | V5 draft: 33 files closed-solid / mirror / open trough / cap lift-out / handle sockets / dowel sockets | PASS (computed) | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_Verification.json` |
+| 2026-11-14 | V5 draft surrogate slice, lightweight settings (PrusaSlicer, NOT Bambu Studio) | INFO: 3,843 g per arm incl. 760 g support, standard PLA | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_Surrogate_Slice_Light_Settings.csv` |
+| 2026-11-14 | V5 physical prints (T-1, T2 coupon, dowel fit) | NOT RUN | owner to print |
 | 2026-11-14 | LED strip and ring fit | BLOCKED (hardware) — CAD measured: trough 27.1 mm wide × 13.3 mm deep; physical test T-1 proposed | `audits/results/ELECTRONICS_FIT.md` |
 | 2026-11-14 | Original finger mount and tendon travel | NOT RUN physically — digital findings in ISSUES C-3, C-5; test T-2 proposed | `audits/results/FINAL_VERDICT.md` |
 
