@@ -3,8 +3,8 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
-last_agent: ChatGPT
-sync_state: pushed
+last_agent: Copilot SDK
+sync_state: local
 tags:
   - handoff
   - agents
@@ -20,10 +20,31 @@ tags:
 - Goal: wearable matched Arcane Vi gauntlets on Bambu Lab X1 Carbon, original string-actuated fingers, animated LEDs, wearable effect buttons, and serviceable electronics.
 - Design: V1/V2 prototypes, V3 fit coupons, V4 with 13 armor sections per arm and a ring preserved in one section.
 - **Release verdict: V4 is NOT APPROVED for complete printing.** No independently confirmed Bambu Studio slice, finger travel, LED dimensions, assembly strength or physical wear test.
-- Local asset validation/upload is in progress. `originals/` contains 9 files (581,242,767 bytes). Canonical V4 contains 49 files (250,103,731 bytes): 36 STLs, 13 main shell STLs per side, 3 validation records, 4 source scripts, and 10 cover/hardware STLs. All 9 originals match the audit-kit CSV. V3 assets were not found; V1/V2 are intentionally excluded. The requested 61-entry manifest and V4 ZIP hash target are absent.
+- Asset upload checkpoints are on remote `main`; latest verified SHA before this continuation is `16a552be5bea05935966f931c6f736eae6973ba2`. The user-provided verification kit was extracted without overwrites. Manifest `docs/ASSET_SHA256_MANIFEST.csv` contains 61 rows; the 59 required entries (9 originals, 49 V4 files, 1 V3 archive) all pass byte-size and SHA-256 checks; V1/V2 rows are intentionally excluded. The V3 archive (698,022 bytes) opens, all 21 members decompress, and `tar.exe -tf` succeeds.
 - This repository's root is the Obsidian vault; see `notes/00_Project_Hub.md`.
 
-## Latest completed action
+## Latest action in this continuation — 2026-11-14T15:55:00Z
+- **Copilot SDK:** Staged diff review found no audit-kit staging; current docs reflect the verified manifest/V3 state, with upload guide's prior readback paragraph explicitly superseded.
+- **Next:** Run focused stale-claim/path checks, fetch origin, then commit and push.
+- **Blockers:** No blocker for the local 59-file hash check. New V3 LFS upload/readback pending. V4 remains NOT APPROVED; physical fit and slicing remain unverified. Keep Issue #1 open until upload and remote verification.
+- **Sync:** LOCAL; latest notes are not yet pushed.
+
+## Latest action in this continuation — 2026-11-14T15:58:00Z
+- **Copilot SDK:** Upload guide distinguishes prior 45-object upload from the new V3 object still pending push/readback. Local 59-file verification is complete; 9 intended paths staged and audit-kit excluded.
+- **Next:** Review remaining stale historic text, verify current diff, then push and test remote LFS. Keep Issue #1 open pending remote confirmation.
+- **Sync:** LOCAL; staged checkpoint remains uncommitted.
+
+## Latest action in this continuation — 2026-11-14T16:02:00Z
+- **Copilot SDK:** Handoff now directs V3 push and targeted readback, closes Issue #1 only on verified completion, and prohibits beginning the engineering audit. Historical snapshots are labeled; V4 remains NOT APPROVED.
+- **Next:** Re-stage current handoff/session/guide edits, review the final diff, then commit and push.
+- **Sync:** LOCAL; verified asset/docs checkpoint remains uncommitted.
+
+## Latest action in this continuation — 2026-11-14T16:06:00Z
+- **Copilot SDK:** Exactly 9 intended paths staged; cached whitespace check passed; unrelated audit-kit remains unstaged.
+- **Next:** Commit the V3/manifest/docs checkpoint and push normally, then verify remote LFS readback.
+- **Sync:** LOCAL; stage awaits commit/push.
+
+## Previous asset transfer checkpoint (historical; superseded by the current state above)
 - **2026-11-14 | Copilot SDK:** Inspected the user's existing local files without downloading, extracting, or reimporting. Found eight original STL files, one original 3MF, and a 49-file V4 candidate folder with 13 shells per arm. All nine originals match the audit-kit CSV sizes and hashes. The requested 61-entry CSV is absent; the available 10-entry CSV does not cover V4 contents. No V3 assets were found in the inspected CAD inventory. `git-lfs/3.7.1` and appropriate `.gitattributes` rules are present, but files are not yet tracked.
 - **Next:** Asset commit `91f7233aceca2251a1f136ffff24f0524421176c` is on GitHub `main`; documentation checkpoint `0814cd5a6a817cb31565e6b697ddc66b7c527aef` is also pushed and its remote ref verified. Git LFS reported 45/45 objects (828 MB) uploaded; `git lfs fsck` passed locally; GitHub lists 9 originals and 13 shells per V4 side. API exposes pointer blobs; direct binary readback was not attempted per no-download instruction. V3/V4 hash gaps keep Issue #1 open.
 - **Sync:** Asset and documentation checkpoints are pushed; remote `main` matched local HEAD at `0814cd5a6a817cb31565e6b697ddc66b7c527aef` during final verification. Issue #1 remains open. `Claude_Vi_Gauntlet_Audit_Kit/` remains untracked and unstaged.
@@ -33,24 +54,24 @@ tags:
 - Evidence: `AGENTS.md`, `docs/AGENT_SYNC_PROTOCOL.md`, `docs/OBSIDIAN_SETUP.md`, `notes/`.
 
 ## In progress / ownership
-- **Copilot SDK:** Validate the already-present untracked CAD files, configure LFS if needed, and stage only relevant assets; do not download, extract, or reimport. Preserve user files and do not mark V4 print-approved.
+- **Copilot SDK:** Stage, commit, and push the verified V3 archive/manifest and related notes; verify remote commit and targeted LFS readback. Do not modify CAD geometry or begin the independent audit.
 - **Next reviewing agent (Claude Code recommended):** Independent geometry, assembly, lighting, string routing and actual slicer audit **after confirming assets are present**.
 - **ChatGPT / any agent:** Maintain this handoff and session log after every action.
 
 ## Blockers and risks
-1. Source STL/3MF and release files are not yet verified on the remote.
+1. New V3 LFS object is not yet remotely verified; targeted readback is pending.
 2. V4 geometry is digitally checked only; full X1C toolpath and assembly not proven.
 3. Original finger mounts, five string paths and LED channel fit require evidence.
 4. Exact LED, ESP32, buttons, battery and power components are not selected or measured.
 5. Third-party model rights/redistribution terms unverified; keep repo private.
 
 ## Next action
-1. Pull newest `main` and read `AGENTS.md`, this handoff and your latest session notes.
-2. Verify which binary CAD assets were actually pushed with Git LFS; record paths and hashes.
-3. Run the independent audit per `audits/claude/CLAUDE_MASTER_PROMPT.md`; update release gates with evidence.
-4. After **each** action, update this file and the agent's session log, commit and push at a safe checkpoint.
+1. Refresh origin, commit and push the nine verified/staged paths without including the unrelated audit-kit folder.
+2. Verify the final remote SHA, GitHub V3/manifest paths, and fetch/read back only the small V3 LFS object.
+3. Close Issue #1 only if all required upload and integrity checks pass; otherwise leave it open and report the remaining blocker.
+4. Do not start the independent engineering audit; V4 stays NOT APPROVED.
 
-## Latest verification
+## Historical verification snapshots (superseded by current status above)
 - **2026-11-14 | Copilot SDK:** Canonical original set is 9 files / 581,242,767 bytes, all 9 matching sizes and SHA-256 values in the available audit-kit CSV. V4 contains 49 files / 250,103,731 bytes, including 36 STL files, 13 left and 13 right main shells, 3 validation records, 4 source scripts, and 10 cover/hardware STLs. Combined available CAD payload is 58 files / 831,346,498 bytes. No V3 assets were found. Full 61-entry CSV is unavailable; the available CSV does not hash the extracted V4 files.
 - **Next:** Asset push and remote ref/tree check succeeded; run LFS integrity verification, then push updated handoff. V3 absent; Issue #1 stays open.
 - **Sync:** Commit `91f7233aceca2251a1f136ffff24f0524421176c` PUSHED; current note edits are local.

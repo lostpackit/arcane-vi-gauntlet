@@ -1,16 +1,17 @@
 # CAD asset upload and verification
 
-## Current local state (2026-11-14)
+## Verified asset state (2026-11-14)
 
 Assets are already present and organized in this existing clone. **Do not download, extract, or run the importer again.**
 
-- `originals/`: 9 files (one 3MF and eight STLs), 581,242,767 bytes. All 9 match the available `Claude_Vi_Gauntlet_Audit_Kit/03_INPUT_MANIFEST_SHA256.csv` by size and SHA-256.
+- `originals/`: 9 files (one 3MF and eight STLs), 581,242,767 bytes; all 9 match `docs/ASSET_SHA256_MANIFEST.csv` by byte size and SHA-256.
 - `releases/v4/Vi_Gauntlet_X1C_V4_Print_Release/`: 49 files, 250,103,731 bytes, including 13 main shell STLs per arm.
+- `releases/v3/Vi_Gauntlet_V3_FitValidation_Printables.zip`: 698,022 bytes.
 - V1 and V2: intentionally excluded.
-- V3 fit-validation assets: not found; the missing V3 set prevents full completion.
-- The requested 61-entry `Arcane_Vi_Gauntlet_Assets_SHA256.csv` is unavailable. The audit-kit CSV also references an absent V4 ZIP and does not hash the extracted V4 files.
-- Combined originals and V4 payload: 58 files, 831,346,498 bytes. Commit `91f7233aceca2251a1f136ffff24f0524421176c` is on `origin/main`, and GitHub directory listings show the expected 9 originals and both 13-file shell directories.
-- The push reported 45/45 LFS objects (828 MB) uploaded; local `git lfs fsck` passed. GitHub's content API returns the small LFS pointer blobs (132–134 bytes). No direct LFS fetch/readback was attempted because the instruction prohibits downloading.
+- V3 archive has 21 readable fit-validation/support entries; the V3 ZIP size and SHA-256 match the manifest.
+- `docs/ASSET_SHA256_MANIFEST.csv` contains 61 rows; the 59 required entries (9 originals, 49 V4, 1 V3 ZIP) pass exact size/SHA-256 checks. The two V1/V2 rows are intentionally excluded.
+- Combined required CAD payload: 59 files, 832,044,520 bytes. The separately included manifest is 9,281 bytes.
+- Prior checkpoint: 45 original/V4 LFS objects were acknowledged as uploaded and passed local `git lfs fsck`. The newly added V3 ZIP requires its own push and targeted remote readback.
 
 See [asset map](ASSET_MAP.md) for per-file structure and verified scope.
 
@@ -27,7 +28,7 @@ git lfs ls-files
 git status --short
 ```
 
-Confirm all 44 STL files and the 3MF (45 LFS files total) are listed by Git LFS. The three original files larger than 100 MB must be LFS pointers, not ordinary Git blobs. Do not stage the separate `Claude_Vi_Gauntlet_Audit_Kit/` unless it is intentionally part of a separately reviewed change.
+Confirm all 44 STL files, the 3MF, and the V3 ZIP (46 LFS files total) are listed by Git LFS. The V3 ZIP must resolve to `filter=lfs`. Do not stage the separate `Claude_Vi_Gauntlet_Audit_Kit/` unless it is intentionally part of a separately reviewed change.
 
 Before pushing, fetch and preserve any concurrent changes. Never force-push or discard local work:
 
@@ -39,6 +40,8 @@ git commit -m "Upload original CAD and V4 release assets"
 git push origin main
 ```
 
-After a successful push, verify the remote commit, browse expected files on GitHub, confirm LFS pointers in the commit, and—when permitted—fetch/read remote LFS objects. Here, remote ref and directory visibility are verified and the push acknowledged all 45 LFS uploads; independent LFS readback remains untested because downloading was prohibited. Keep Issue #1 open while V3 and applicable V4 hash verification remain incomplete.
+Prior-checkpoint note: The preceding 45-object upload and directory visibility were verified, but a direct LFS readback was not performed then. This note is superseded for the current task; the V3 object must be pushed and read back.
+
+**Current upload status (2026-11-14):** The older remote-readback paragraph above reflects a prior checkpoint and is superseded. The local manifest validates all 59 required files, including extracted V4 and the V3 ZIP; V1/V2 are intentionally excluded. The V3 object has not yet been pushed or remotely read back. Issue #1 must remain open until that LFS object and the final commit are remotely verified.
 
 V4 is **NOT approved for full wearable printing**. No asset-upload check substitutes for the independent CAD, Bambu Studio, assembly, lighting, tendon, or physical-fit release gates. See [release gates](RELEASE_GATES.md) and [agent synchronization](AGENT_SYNC_PROTOCOL.md).

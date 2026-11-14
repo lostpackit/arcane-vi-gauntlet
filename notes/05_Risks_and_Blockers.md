@@ -7,10 +7,8 @@ tags: [risk, blockers]
 
 | Risk | Status | Required next evidence |
 |---|---|---|
-| Remote LFS binary readback | UNVERIFIED | Push acknowledged 45/45 objects; GitHub shows pointer blobs and local fsck passes. Independently fetch/read remote objects when downloading is permitted |
-| V3 fit-validation assets missing locally | BLOCKED | Locate/provide V3 files; do not substitute other assets |
-| Extracted V4 file hashes unavailable | UNKNOWN | Obtain V4 file manifest or compare against trusted release archive |
-| Requested 61-entry asset manifest absent | UNKNOWN | Obtain canonical SHA-256 CSV; current audit-kit CSV covers 9 originals and an absent V4 ZIP |
+| New V3 LFS object not yet confirmed remotely | PENDING | Push, verify GitHub pointer, then perform targeted readback of the 698 KB V3 archive |
+| V3 archive member hashes | UNKNOWN | Manifest covers the V3 ZIP container only; its 21 internal files are not individually listed |
 | V4 printability and support requirements | UNKNOWN | Bambu Studio actual slice |
 | Finger mounting and five string paths | UNKNOWN | Assembly geometry and physical travel |
 | Circular LED groove width/depth and diffuser clearance | BLOCKED | Measure channel and real LED strip |

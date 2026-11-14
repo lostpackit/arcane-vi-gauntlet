@@ -11,11 +11,10 @@ For each test, add a separate note from [[templates/Validation_Template]] or app
 
 | Date | Test | Status | Evidence |
 |---|---|---|---|
-| 2026-11-14 | Local original-asset size/SHA-256 check | PASS (9/9) | [[docs/ASSET_MAP]]; `Claude_Vi_Gauntlet_Audit_Kit/03_INPUT_MANIFEST_SHA256.csv` |
-| 2026-11-14 | Local V4 inventory | PASS (file-count check only) | [[docs/ASSET_MAP]]; 13 left + 13 right main shell STLs; extracted V4 hashes unavailable |
-| 2026-11-14 | V3 fit-validation asset presence | BLOCKED | No V3/fit-validation assets found in repository inventory |
+| 2026-11-14 | Required asset size/SHA-256 verification | PASS (59/59) | [[docs/ASSET_MAP]]; `docs/ASSET_SHA256_MANIFEST.csv`; 9 originals + 49 V4 + 1 V3 ZIP; V1/V2 excluded |
+| 2026-11-14 | V3 archive structure/content | PASS | `tar.exe -tf` listed 21 file entries; every entry opened/decompressed, 1,247,730 bytes total |
 | 2026-11-14 | Remote commit and asset visibility | PASS | `origin/main` equals `91f7233aceca2251a1f136ffff24f0524421176c`; GitHub listings show 9 originals and 13 shells per V4 side |
-| 2026-11-14 | Git LFS upload/local integrity | PASS (upload acknowledged; local fsck) | Push reported 45/45 objects (828 MB); `git lfs fsck` passed. Direct remote fetch/readback not run because downloading was prohibited; GitHub API shows 132–134 byte pointer blobs |
+| 2026-11-14 | Git LFS V3 configuration | PASS (attribute only) | `git check-attr` reports `filter=lfs`; 45 existing assets tracked; V3 push/readback pending |
 | 2026-11-14 | V4 independent release audit | NOT RUN | [[audits/claude/CLAUDE_MASTER_PROMPT]] |
 | 2026-11-14 | Full X1C slicer check | NOT RUN | [[docs/RELEASE_GATES]] |
 | 2026-11-14 | LED strip and ring fit | BLOCKED | LED hardware dimensions not selected |
