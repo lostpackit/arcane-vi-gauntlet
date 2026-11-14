@@ -3,7 +3,7 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
-last_agent: Copilot SDK
+last_agent: Claude (independent audit)
 sync_state: local
 tags:
   - handoff
@@ -20,8 +20,28 @@ tags:
 - Goal: wearable matched Arcane Vi gauntlets on Bambu Lab X1 Carbon, original string-actuated fingers, animated LEDs, wearable effect buttons, and serviceable electronics.
 - Design: V1/V2 prototypes, V3 fit coupons, V4 with 13 armor sections per arm and a ring preserved in one section.
 - **Release verdict: V4 is NOT APPROVED for complete printing.** No independently confirmed Bambu Studio slice, finger travel, LED dimensions, assembly strength or physical wear test.
+- **Independent audit (Claude, 2026-11-14): NO-GO for the V4 shell set.** See `audits/results/FINAL_VERDICT.md`. Do not print shells 08, 10/11, 12/13 of either arm.
 - Asset upload checkpoints are on remote `main`; latest verified SHA before this continuation is `16a552be5bea05935966f931c6f736eae6973ba2`. The user-provided verification kit was extracted without overwrites. Manifest `docs/ASSET_SHA256_MANIFEST.csv` contains 61 rows; the 59 required entries (9 originals, 49 V4 files, 1 V3 archive) all pass byte-size and SHA-256 checks; V1/V2 rows are intentionally excluded. The V3 archive (698,022 bytes) opens, all 21 members decompress, and `tar.exe -tf` succeeds.
 - This repository's root is the Obsidian vault; see `notes/00_Project_Hub.md`.
+
+## Latest action — 2026-11-14T16:50Z — Claude (independent engineering audit)
+- **Action:** Independent audit of originals, 3MF, and all V4 STLs. CAD analysis plus a surrogate slice (PrusaSlicer 2.7.2, X1C-like profile). **No Bambu Studio slice. No physical test. No CAD modified.**
+- **Result: NO-GO for printing the V4 shell set.** Key findings (details and evidence in `audits/results/ISSUES.md`):
+  1. **C-1 CRITICAL** — Shell 08: LED chamber is a sealed void; the diffuser cover's volume is 99.7 % solid. LEDs and cover cannot be installed.
+  2. **C-2 CRITICAL** — V4 was cut from the fused display solid `Full_Arm_* (No Fingers).stl`, not from the 3MF functional parts. Cover, gauge, handle, finger carrier, crystal, light strip and plates are all fused in.
+  3. **C-3 CRITICAL** — Finger mount in shells 12/13 is a different revision from the printable 3MF `Fingers_Base` (340.02 vs 360.37 cm³; 25 % of surface > 1 mm apart).
+  4. **C-4 HIGH** — Load-bearing handle is cut in half at X=211 (2.8 cm² butt joint).
+  5. **C-5 HIGH** — The "five PTFE corridor" is the arm opening. Real string bores: four, 3.4–3.8 mm, inside shells 12/13; no thumb route found; 4 mm PTFE does not fit.
+  6. **H-6 HIGH** — About 6.2 kg filament per arm (0.76 kg support) at README settings [surrogate slice].
+  7. **H-7 HIGH** — 23 × 63 mm opening in printable `Glove_B1` is filled solid.
+  - Confirmed: 26 shells watertight/single-body; right shells are an exact partition of the source; left is an exact mirror; all fit the X1C envelope with 8 mm brim.
+- **Gates:** Source fidelity FAIL; Finger mounting FAIL; Tendons FAIL; Lighting FAIL; Mesh integrity PASS (computed, caveat M-9); X1C fit, Toolpaths, Seams, Strength, Wearability, Licensing UNKNOWN; Electronics, End-to-end BLOCKED. `docs/RELEASE_GATES.md` updated.
+- **Files changed:** `audits/results/` (INVENTORY, GEOMETRY_REPORT.csv, ISSUES, PRINTABILITY, ELECTRONICS_FIT, FINAL_VERDICT, evidence/), `audits/claude/scripts/`, `docs/RELEASE_GATES.md`, `notes/00_Project_Hub.md`, `notes/01_Engineering_Map.md`, `notes/03_Decision_Log.md`, `notes/04_Test_Log.md`, `notes/05_Risks_and_Blockers.md`, `notes/Action_Log.md`, `notes/sessions/2026-11-14_claude_independent-v4-audit.md`, this file.
+- **Evidence:** `audits/results/evidence/` (section plots, reassembly report, fused-part volume test, surrogate slice CSV, 3MF object table).
+- **Blockers / owner decisions needed:** (1) approve or reject the V5 direction (rebuild from 3MF parts); (2) approve generating a derived knuckle-slot test coupon; (3) handle approach; (4) confirm tendon layout incl. thumb.
+- **Next action (any agent or owner):** run test prints T-1…T-4 from `audits/results/FINAL_VERDICT.md`; slice in real Bambu Studio on the owner's machine and log per-part numbers in `notes/04_Test_Log.md`. Do **not** start V5 CAD without owner approval.
+- **Tooling note:** this Claude session could not use `git lfs pull` (integration lacks LFS batch access); assets were fetched via the media endpoint and verified 46/46 against pointer hashes.
+- **Sync:** LOCAL at time of writing; push result is recorded in the follow-up commit or, if that is absent on the remote, the work is UNSYNCED.
 
 ## Latest action in this continuation — 2026-11-14T15:55:00Z
 - **Copilot SDK:** Staged diff review found no audit-kit staging; current docs reflect the verified manifest/V3 state, with upload guide's prior readback paragraph explicitly superseded.
@@ -62,10 +82,11 @@ tags:
 
 ## In progress / ownership
 - **Copilot SDK:** Asset import and repository synchronization are complete; GitHub Issue #1 is closed. No CAD geometry was changed. Do not reopen printing approval without independent evidence.
-- **Next reviewing agent (Claude Code recommended):** Independent geometry, assembly, lighting, string routing and actual slicer audit **after confirming assets are present**.
+- **Claude:** Independent audit delivered 2026-11-14 (NO-GO). Waiting on owner decisions listed in the latest action above. Actual Bambu Studio slicing is still outstanding and unowned.
 - **ChatGPT / any agent:** Maintain this handoff and session log after every action.
 
 ## Blockers and risks
+0. **(Claude audit, 2026-11-14) V4 has critical functional defects C-1…C-3 and high-severity C-4, C-5, H-6, H-7** — see `audits/results/ISSUES.md`. Items 2–4 below are superseded in detail by that file but remain open.
 1. SHA-256 manifest covers the V3 ZIP container only; individual hashes for its 21 internal members are unavailable.
 2. V4 geometry is digitally checked only; full X1C toolpath and assembly not proven.
 3. Original finger mounts, five string paths and LED channel fit require evidence.

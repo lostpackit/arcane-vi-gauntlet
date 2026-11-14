@@ -1,0 +1,107 @@
+{
+ "L_Circle_Light_Cover_Mirrored.stl": {
+  "self_intersecting_faces": 1840,
+  "faces": 59778,
+  "faces_in_small_components": 0
+ },
+ "R_Circle_Light_Cover_Original.stl": {
+  "self_intersecting_faces": 1837,
+  "faces": 59784,
+  "faces_in_small_components": 0
+ },
+ "Bonded_Spline_Long_65x14x2p4.stl": {
+  "self_intersecting_faces": 0,
+  "faces": 2388,
+  "faces_in_small_components": 0
+ },
+ "Bonded_Spline_Short_38x12x2p2.stl": {
+  "self_intersecting_faces": 0,
+  "faces": 2388,
+  "faces_in_small_components": 0
+ },
+ "LED_Tape_Test_Channel_10p6mm.stl": {
+  "self_intersecting_faces": 0,
+  "faces": 28,
+  "faces_in_small_components": 0
+ },
+ "LED_Tape_Test_Channel_8p6mm.stl": {
+  "self_intersecting_faces": 0,
+  "faces": 28,
+  "faces_in_small_components": 0
+ },
+ "PTFE_FiveChannel_Clamp_BASE.stl": {
+  "self_intersecting_faces": 0,
+  "faces": 1544,
+  "faces_in_small_components": 0
+ },
+ "PTFE_FiveChannel_Clamp_LID.stl": {
+  "self_intersecting_faces": 0,
+  "faces": 1552,
+  "faces_in_small_components": 0
+ },
+ "R_01_Cuff_Left_Front_X1C.stl": {
+  "self_intersecting_faces": 41,
+  "faces": 106742,
+  "faces_in_small_components": 0
+ },
+ "R_02_Cuff_Left_Rear_X1C.stl": {
+  "self_intersecting_faces": 31,
+  "faces": 135502,
+  "faces_in_small_components": 0
+ },
+ "R_03_Cuff_Right_Front_X1C.stl": {
+  "self_intersecting_faces": 16,
+  "faces": 105854,
+  "faces_in_small_components": 0
+ },
+ "R_04_Cuff_Right_Rear_X1C.stl": {
+  "self_intersecting_faces": 37,
+  "faces": 132778,
+  "faces_in_small_components": 0
+ },
+ "R_05_LightBand_Front_Left_X1C.stl": {
+  "self_intersecting_faces": 7190,
+  "faces": 176382,
+  "faces_in_small_components": 0
+ },
+ "R_06_LightBand_Front_Right_X1C.stl": {
+  "self_intersecting_faces": 8029,
+  "faces": 180708,
+  "faces_in_small_components": 0
+ },
+ "R_07_LightBand_Rear_Left_X1C.stl": {
+  "self_intersecting_faces": 162,
+  "faces": 50190,
+  "faces_in_small_components": 0
+ },
+ "R_08_LightBand_REAR_RING_CARRIER_X1C.stl": {
+  "self_intersecting_faces": 3260,
+  "faces": 293308,
+  "faces_in_small_components": 0
+ },
+ "R_09_LightBand_Rear_Right_X1C.stl": {
+  "self_intersecting_faces": 125,
+  "faces": 60926,
+  "faces_in_small_components": 0
+ },
+ "R_10_Wrist_Upper_Left_X1C.stl": {
+  "self_intersecting_faces": 246,
+  "faces": 195896,
+  "faces_in_small_components": 0
+ },
+ "R_11_Wrist_Upper_Right_X1C.stl": {
+  "self_intersecting_faces": 261,
+  "faces": 197636,
+  "faces_in_small_components": 2
+ },
+ "R_12_Knuckles_Left_X1C.stl": {
+  "self_intersecting_faces": 178,
+  "faces": 352744,
+  "faces_in_small_components": 0
+ },
+ "R_13_Knuckles_Right_X1C.stl": {
+  "self_intersecting_faces": 163,
+  "faces": 333982,
+  "faces_in_small_components": 0
+ }
+}

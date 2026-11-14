@@ -1,0 +1,210 @@
+{
+ "Circle_Light_Cover": {
+  "component": 48,
+  "volume_cm3": 45.31,
+  "sample_points": 1237,
+  "fraction_inside_fused_arm": 0.998,
+  "lo": [
+   151.7,
+   246.4,
+   162.0
+  ],
+  "hi": [
+   270.0,
+   256.9,
+   280.4
+  ]
+ },
+ "Glove_Light_Strip": {
+  "component": 10,
+  "volume_cm3": 3.61,
+  "sample_points": 261,
+  "fraction_inside_fused_arm": 0.966,
+  "lo": [
+   204.2,
+   220.3,
+   285.7
+  ],
+  "hi": [
+   217.5,
+   238.8,
+   523.6
+  ]
+ },
+ "Crystal": {
+  "component": 50,
+  "volume_cm3": 5.87,
+  "sample_points": 976,
+  "fraction_inside_fused_arm": 0.988,
+  "lo": [
+   192.0,
+   241.4,
+   452.1
+  ],
+  "hi": [
+   229.3,
+   251.6,
+   517.0
+  ]
+ },
+ "Pressure_Needle": {
+  "component": 45,
+  "volume_cm3": 0.51,
+  "sample_points": 633,
+  "fraction_inside_fused_arm": 0.978,
+  "lo": [
+   204.0,
+   262.7,
+   200.9
+  ],
+  "hi": [
+   217.7,
+   270.4,
+   232.9
+  ]
+ },
+ "Circle_Light": {
+  "component": 49,
+  "volume_cm3": 119.15,
+  "sample_points": 1064,
+  "fraction_inside_fused_arm": 0.998,
+  "lo": [
+   145.7,
+   231.6,
+   155.9
+  ],
+  "hi": [
+   275.8,
+   256.9,
+   286.2
+  ]
+ },
+ "Pressure": {
+  "component": 46,
+  "volume_cm3": 110.22,
+  "sample_points": 623,
+  "fraction_inside_fused_arm": 0.997,
+  "lo": [
+   156.2,
+   239.2,
+   110.4
+  ],
+  "hi": [
+   265.2,
+   273.5,
+   295.0
+  ]
+ },
+ "Handle": {
+  "component": 80,
+  "volume_cm3": 61.78,
+  "sample_points": 3082,
+  "fraction_inside_fused_arm": 0.997,
+  "lo": [
+   97.9,
+   146.6,
+   366.5
+  ],
+  "hi": [
+   324.6,
+   165.4,
+   385.4
+  ]
+ },
+ "Fingers_Base (sizing version)": {
+  "component": 98,
+  "volume_cm3": 360.37,
+  "sample_points": 694,
+  "fraction_inside_fused_arm": 0.999,
+  "lo": [
+   71.9,
+   98.7,
+   519.9
+  ],
+  "hi": [
+   349.7,
+   193.4,
+   599.0
+  ]
+ },
+ "Gold_Base_Finger": {
+  "component": 97,
+  "volume_cm3": 71.73,
+  "sample_points": 701,
+  "fraction_inside_fused_arm": 0.996,
+  "lo": [
+   73.0,
+   93.1,
+   490.5
+  ],
+  "hi": [
+   348.7,
+   123.7,
+   538.3
+  ]
+ },
+ "Finger_Knot_Fore": {
+  "component": 62,
+  "volume_cm3": 56.63,
+  "sample_points": 1442,
+  "fraction_inside_fused_arm": 0.999,
+  "lo": [
+   281.8,
+   162.3,
+   534.8
+  ],
+  "hi": [
+   335.1,
+   209.3,
+   600.1
+  ]
+ },
+ "Thumb_Base (sizing version)": {
+  "component": 168,
+  "volume_cm3": 115.22,
+  "sample_points": 925,
+  "fraction_inside_fused_arm": 0.004,
+  "lo": [
+   328.0,
+   100.9,
+   436.6
+  ],
+  "hi": [
+   401.2,
+   183.3,
+   517.6
+  ]
+ },
+ "Circle_Top_Plate_Left": {
+  "component": 5,
+  "volume_cm3": 175.37,
+  "sample_points": 297,
+  "fraction_inside_fused_arm": 0.997,
+  "lo": [
+   228.4,
+   198.2,
+   124.4
+  ],
+  "hi": [
+   398.9,
+   261.0,
+   353.6
+  ]
+ },
+ "Crystal_Base": {
+  "component": 51,
+  "volume_cm3": 48.93,
+  "sample_points": 841,
+  "fraction_inside_fused_arm": 0.996,
+  "lo": [
+   172.5,
+   219.2,
+   435.1
+  ],
+  "hi": [
+   248.8,
+   249.6,
+   532.6
+  ]
+ }
+}

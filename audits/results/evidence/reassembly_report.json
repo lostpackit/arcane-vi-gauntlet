@@ -1,0 +1,340 @@
+[
+ {
+  "shell": 1,
+  "name": "Cuff_Left_Front",
+  "verts": 53546,
+  "matched_source": 51476,
+  "on_cut_plane": 2070,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   -1.872,
+   150.0,
+   145.0
+  ],
+  "assembled_lo": [
+   1.13,
+   -0.0,
+   74.14
+  ],
+  "assembled_hi": [
+   211.0,
+   147.0,
+   145.0
+  ]
+ },
+ {
+  "shell": 2,
+  "name": "Cuff_Left_Rear",
+  "verts": 67954,
+  "matched_source": 65584,
+  "on_cut_plane": 2370,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   -1.974,
+   297.017,
+   145.0
+  ],
+  "assembled_lo": [
+   1.03,
+   147.0,
+   0.0
+  ],
+  "assembled_hi": [
+   211.0,
+   294.02,
+   145.0
+  ]
+ },
+ {
+  "shell": 3,
+  "name": "Cuff_Right_Front",
+  "verts": 53092,
+  "matched_source": 51038,
+  "on_cut_plane": 2054,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   208.0,
+   150.0,
+   145.0
+  ],
+  "assembled_lo": [
+   211.0,
+   0.0,
+   74.14
+  ],
+  "assembled_hi": [
+   420.4,
+   147.0,
+   145.0
+  ]
+ },
+ {
+  "shell": 4,
+  "name": "Cuff_Right_Rear",
+  "verts": 66600,
+  "matched_source": 64262,
+  "on_cut_plane": 2338,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   208.0,
+   297.01,
+   145.0
+  ],
+  "assembled_lo": [
+   211.0,
+   147.0,
+   0.03
+  ],
+  "assembled_hi": [
+   420.49,
+   294.01,
+   145.0
+  ]
+ },
+ {
+  "shell": 5,
+  "name": "LightBand_Front_Left",
+  "verts": 88112,
+  "matched_source": 83298,
+  "on_cut_plane": 4814,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   -2.898,
+   180.0,
+   142.0
+  ],
+  "assembled_lo": [
+   0.1,
+   2.47,
+   145.0
+  ],
+  "assembled_hi": [
+   211.0,
+   180.0,
+   310.0
+  ]
+ },
+ {
+  "shell": 6,
+  "name": "LightBand_Front_Right",
+  "verts": 90388,
+  "matched_source": 85575,
+  "on_cut_plane": 4813,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   208.0,
+   180.0,
+   142.0
+  ],
+  "assembled_lo": [
+   211.0,
+   2.47,
+   145.0
+  ],
+  "assembled_hi": [
+   421.52,
+   180.0,
+   310.0
+  ]
+ },
+ {
+  "shell": 7,
+  "name": "LightBand_Rear_Left",
+  "verts": 25204,
+  "matched_source": 23142,
+  "on_cut_plane": 2062,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   -3.0,
+   180.0,
+   313.0
+  ],
+  "assembled_lo": [
+   0.0,
+   180.0,
+   145.0
+  ],
+  "assembled_hi": [
+   100.0,
+   245.91,
+   310.0
+  ]
+ },
+ {
+  "shell": 8,
+  "name": "LightBand_REAR_RING_CARRIER",
+  "verts": 147158,
+  "matched_source": 142013,
+  "on_cut_plane": 5145,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   97.0,
+   180.0,
+   313.0
+  ],
+  "assembled_lo": [
+   100.0,
+   180.0,
+   145.0
+  ],
+  "assembled_hi": [
+   300.0,
+   273.5,
+   310.0
+  ]
+ },
+ {
+  "shell": 9,
+  "name": "LightBand_Rear_Right",
+  "verts": 30647,
+  "matched_source": 28085,
+  "on_cut_plane": 2562,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   297.0,
+   180.0,
+   313.0
+  ],
+  "assembled_lo": [
+   300.0,
+   180.0,
+   145.0
+  ],
+  "assembled_hi": [
+   421.61,
+   251.87,
+   310.0
+  ]
+ },
+ {
+  "shell": 10,
+  "name": "Wrist_Upper_Left",
+  "verts": 98853,
+  "matched_source": 91788,
+  "on_cut_plane": 7065,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   27.028,
+   30.194,
+   310.0
+  ],
+  "assembled_lo": [
+   30.03,
+   33.19,
+   310.0
+  ],
+  "assembled_hi": [
+   211.0,
+   258.11,
+   400.0
+  ]
+ },
+ {
+  "shell": 11,
+  "name": "Wrist_Upper_Right",
+  "verts": 99770,
+  "matched_source": 92742,
+  "on_cut_plane": 7028,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   208.0,
+   30.192,
+   310.0
+  ],
+  "assembled_lo": [
+   211.0,
+   33.19,
+   310.0
+  ],
+  "assembled_hi": [
+   391.59,
+   258.12,
+   400.0
+  ]
+ },
+ {
+  "shell": 12,
+  "name": "Knuckles_Left",
+  "verts": 176643,
+  "matched_source": 172868,
+  "on_cut_plane": 3775,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   211.0,
+   51.542,
+   397.0
+  ],
+  "assembled_lo": [
+   44.78,
+   54.54,
+   400.0
+  ],
+  "assembled_hi": [
+   211.0,
+   253.58,
+   599.75
+  ]
+ },
+ {
+  "shell": 13,
+  "name": "Knuckles_Right",
+  "verts": 167249,
+  "matched_source": 163623,
+  "on_cut_plane": 3626,
+  "other": 0,
+  "other_far_gt_0p05": 0,
+  "other_max_dev_mm": 0,
+  "size_err_mm": 0.0,
+  "translation": [
+   211.0,
+   51.542,
+   603.117
+  ],
+  "assembled_lo": [
+   211.0,
+   54.54,
+   400.0
+  ],
+  "assembled_hi": [
+   368.7,
+   253.59,
+   600.12
+  ]
+ }
+]

@@ -15,5 +15,14 @@ tags: [risk, blockers]
 | Electronics and battery mounting/access | BLOCKED | Selected parts and dimensions |
 | Bonded seam strength and serviceability | UNKNOWN | Test coupons and mechanical review |
 | Third-party source license | UNKNOWN | Provenance and terms |
+| **Shell 08 LED chamber sealed, cover seat solid** | OPEN — CRITICAL (Claude audit C-1) | Regenerate 08 without cover/gauge fused; test T-1 |
+| **V4 cut from fused display solid, not 3MF functional parts** | OPEN — CRITICAL (C-2) | Owner decision on V5 direction |
+| **Finger mount revision differs from printable Fingers_Base** | OPEN — CRITICAL (C-3) | Test T-2 |
+| Handle cut at X=211 | OPEN — HIGH (C-4) | Test T-3 / one-piece handle |
+| Tendon corridor claim invalid; bores 3.4–3.8 mm; thumb route unknown | OPEN — HIGH (C-5) | Test T-2; owner confirms tendon layout |
+| Mass about 5.4 kg of shell per arm (surrogate slice) | OPEN — HIGH (H-6) | Bambu Studio slice at lighter settings |
+| Glove_B1 23 × 63 mm opening filled | OPEN — HIGH (H-7) | Restore in V5 |
+| Bambu Studio slice still not run by any agent | OPEN | Run on owner's machine |
+| Claude cloud session cannot use Git LFS batch API or push | OPEN (tooling) | Install/authorise Claude GitHub App for the repo, or apply the supplied patch |
 
 For current priority and ownership, see [[HANDOFF]]. Record any newly discovered risk there **after the action**.

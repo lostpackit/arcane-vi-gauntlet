@@ -18,7 +18,7 @@ tags: [cad, engineering]
 | V1 | Initial cut study | Historical |
 | V2 | Repaired eight-section prototype | Historical |
 | V3 | Fit validation coupons | Prototype |
-| V4 | 13 sections per arm, ring preserved, reinforcement | **Unapproved digital candidate** |
+| V4 | 13 sections per arm, ring preserved, reinforcement | **Unapproved digital candidate — independent audit NO-GO (2026-11-14), see `audits/results/FINAL_VERDICT.md`** |
 
 ## Engineering sources
 - [[docs/PROJECT_BRIEF]]
