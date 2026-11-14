@@ -24,7 +24,7 @@ tags: [risk, blockers]
 | Glove_B1 23 × 63 mm opening filled | OPEN — HIGH (H-7) | Restore in V5 |
 | Bambu Studio slice still not run by any agent | OPEN | Run on owner's machine |
 | Claude cloud session cannot upload Git LFS objects (download and normal push work) | OPEN (tooling) — LFS storage host blocked by session network policy | Owner uploads CAD delivered as zip |
-| V5 3MF files not yet confirmed on remote LFS | LOCAL—VERIFIED / REMOTE PENDING | Push 33 manifest-verified models, then targeted fresh-clone LFS readback |
+| V5 remote LFS object availability | UPLOAD ACKNOWLEDGED; SAMPLED READBACK PASS (2/33) | Push reported all 33 objects; fresh-clone readback verified one insert and one shell. Remaining objects were not individually read back |
 | V5 draft unprinted; dowel and insert clearances untested in LW-PLA | OPEN | Print R_09/R_07 and inserts first |
 | V5 shells 12/13 still carry the older finger carrier | OPEN — hold | T2 coupon with a printed finger |
 | V5 supports about 20 % of filament | OPEN | Re-orient 05/06/08/12/13 |

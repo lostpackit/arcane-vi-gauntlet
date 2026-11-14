@@ -4,7 +4,7 @@ project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
 last_agent: Claude (independent audit)
-sync_state: docs-pushed-v5-cad-pending-owner-lfs-upload
+sync_state: v5-cad-pushed-targeted-lfs-readback-verified
 tags:
   - handoff
   - agents
@@ -181,6 +181,22 @@ tags:
 - **Copilot SDK:** Recorded the asset commit pending push in note-only commit `e794792`.
 - **Next:** Push local `main` normally and confirm remote commit plus LFS object availability.
 - **Sync:** `bbb0440` and `e794792` are local and unpushed.
+
+## Latest action — 2026-11-14T22:58:00+01:00
+- **Copilot SDK:** Normal push succeeded from `cdd8733` to `dced436`; Git LFS uploaded 33/33 new objects (82 MB).
+- **Next:** Verify final remote `main`, GitHub model paths, and fresh-clone LFS readback before marking the asset sync complete.
+- **Sync:** Push accepted; remote commit and LFS binary availability not yet independently verified.
+
+## Latest action — 2026-11-14T23:00:00+01:00
+- **Copilot SDK:** Verified remote `main` at `dced43625bce1d00b3e94133496f9cfdac463682`; GitHub lists V5 models. Fresh-clone targeted LFS fetch/readback passed for the dowel insert (2,884 bytes) and R_01 shell (1,641,461 bytes), both matching manifest hashes. Push acknowledged 33/33 V5 objects.
+- **Next:** Push this final verification record and confirm remote `main` matches. Continue with owner-led V5 test prints and Bambu Studio slicing; do not mark V5 print-approved.
+- **Engineering status:** V4 remains NO-GO from independent audit. V5 is unprinted draft; 33/33 SHA-256 checks pass, but only 2/33 remote objects were independently read back. No CAD geometry changed in this sync.
+- **Sync:** Asset payload is pushed; final verification-note edits are LOCAL until committed/pushed.
+
+## Latest action — 2026-11-14T23:01:00+01:00
+- **Copilot SDK:** Reviewed the final transfer-note diff; whitespace check passed. Six task note files have the final V5 transfer status.
+- **Next:** Stage and commit only the documentation updates, push, then verify final remote state.
+- **Sync:** V5 asset commit is already pushed; final status notes are LOCAL.
 
 ## Previous asset transfer checkpoint (historical; superseded by the current state above)
 - **2026-11-14 | Copilot SDK:** Inspected the user's existing local files without downloading, extracting, or reimporting. Found eight original STL files, one original 3MF, and a 49-file V4 candidate folder with 13 shells per arm. All nine originals match the audit-kit CSV sizes and hashes. The requested 61-entry CSV is absent; the available 10-entry CSV does not cover V4 contents. No V3 assets were found in the inspected CAD inventory. `git-lfs/3.7.1` and appropriate `.gitattributes` rules are present, but files are not yet tracked.

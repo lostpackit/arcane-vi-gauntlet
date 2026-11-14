@@ -170,3 +170,30 @@ tags: [session, sync, git]
 - New risks / decisions: Push the combined local commits using ordinary `git push origin main`; do not force-push.
 - Next action: Push and verify branch/remote LFS transfer.
 - Sync: `e794792` and `bbb0440` remain local; push not yet attempted.
+
+## 2026-11-14T21:58:00Z — Copilot SDK
+- Action: Pushed local `main` to `origin` using a normal, non-force push.
+- Result: Push succeeded from `cdd8733` to `dced436`; Git LFS reported 33/33 new objects uploaded (82 MB). This confirms server acceptance, not yet targeted readback.
+- Files changed: None during push.
+- Evidence (file, command output, commit, issue): `git push origin main` output reported `Uploading LFS objects: 100% (33/33), 82 MB` and branch update.
+- New risks / decisions: Verify exact remote SHA and ensure at least one/all required new LFS objects can be retrieved from a fresh clone. Preserve local duplicate source package and audit kit without staging.
+- Next action: Check GitHub commit/tree and perform targeted remote LFS readback using a new clone.
+- Sync: Push command succeeded; remote ref/readback verification pending.
+
+## 2026-11-14T22:00:00Z — Copilot SDK
+- Action: Verified remote branch/commit and GitHub V5 tree; fetched two V5 LFS objects from a fresh shallow clone with smudging disabled.
+- Result: `origin/main` is `dced43625bce1d00b3e94133496f9cfdac463682`. GitHub lists the V5 shell models. Fresh-clone targeted fetch returned the dowel insert (2,884 bytes) and R_01 shell (1,641,461 bytes); both SHA-256 values matched the supplied manifest. Push output had acknowledged all 33 new LFS objects.
+- Files changed: None during remote verification; final docs updated to record this result.
+- Evidence (file, command output, commit, issue): GitHub `get_commit`/directory listing; `git ls-remote`; fresh clone with targeted `git lfs fetch` and checkout; remote size/hash output.
+- New risks / decisions: Only two of 33 objects were individually read back; all 33 were acknowledged as uploaded. This is transfer evidence only, not validation of geometry or printability.
+- Next action: Commit/push the final asset-map, test/risk, hub, handoff and session status; verify final remote ref.
+- Sync: V5 assets are pushed and two targeted objects are verified; final status documentation is LOCAL.
+
+## 2026-11-14T22:01:00Z — Copilot SDK
+- Action: Reviewed final transfer-note diff and ran whitespace validation.
+- Result: `git diff --check` passed. Six intended note files changed (40 insertions, 9 deletions); no CAD assets were altered by this documentation update.
+- Files changed: `HANDOFF.md`, `docs/ASSET_MAP.md`, project hub, test log, risk register, and this session log.
+- Evidence (file, command output, commit, issue): `git diff --check`; `git diff --stat`; focused diff output saved by the shell because of size.
+- New risks / decisions: State the scope precisely: 33/33 manifest hashes and upload acknowledgments; only two targeted remote binaries read back. V4 NO-GO and V5 not print-approved remain explicit.
+- Next action: Stage and commit only these six final verification notes; push, then verify the final remote SHA/status.
+- Sync: Asset commit is on remote; final verification notes are LOCAL.
