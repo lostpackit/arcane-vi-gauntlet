@@ -5,6 +5,8 @@ Goal: individually addressable **animated** LEDs rather than static lighting, wi
 
 Before buying or cutting parts, measure the circular channel's actual usable width, depth, circumference, corner radii and wire exit. Compare against **actual datasheets or samples** of candidate LED strips; nominal 10 mm strip width is not proof of fit. Also assess bend radius, density, voltage/current, diffuser spacing, power injection, thermal constraints and wire clearance.
 
+Strip comparison and current recommendation (2026-11-14): [electronics/LED_STRIP_COMPARISON](../electronics/LED_STRIP_COMPARISON.md).
+
 ## Controls and power
 Specify physical board, switches, protected battery/pack, wiring gauge, connectors, charging arrangement, fuse/protection and access hatch before making permanent cavities. Keep the battery accessible and use appropriate protected electronics.
 

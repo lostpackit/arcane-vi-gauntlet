@@ -3,7 +3,7 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
-last_agent: Claude (independent audit)
+last_agent: Claude (LED strip comparison)
 sync_state: v5-cad-pushed-targeted-lfs-readback-verified
 tags:
   - handoff
@@ -14,6 +14,15 @@ tags:
 # Cross-agent handoff — READ FIRST
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
+
+## Latest action — 2026-11-14T22:35Z — Claude (LED strip comparison, pre-purchase)
+- **Action:** Reviewed the `electronics/` pack and compared three BTF-LIGHTING WS2812B ring strips against V5 CAD and manufacturer/third-party specs. No purchase, no hardware test, no CAD change.
+- **Result:** Recommend **Ultra-Narrow WS2812B 3535, 144 LEDs/m, 7.2 mm, IP30** on the trough outer wall: 50 px per ring, 5.8 mm height margin in a 13.0 mm wall. Fallback 60/m 10 mm (21 px). The 5050 144/m strip is rejected (about 12 mm wide). Same strip proposed for hand (34 px) and crystal (9 px): **93 px per arm**; WLED limit 1000 mA to start; 3 A fuse unchanged.
+- **Files:** `electronics/LED_STRIP_COMPARISON.md` (new), `electronics/wled/presets_144.json` (new, bounds remapped only), review sections appended to `electronics/BOM.md`, `WIRING.md`, `EFFECTS.md`, `README.md`, `wled/README.md`, `audits/results/ELECTRONICS_FIT.md`, `docs/ELECTRONICS_AND_STRINGS.md`; notes and session log.
+- **Still open from `electronics/REVIEW_CHECKLIST.md`:** board choice and pin map, button pod, voltage-drop numbers, firmware compile, device test of presets, controller/bank mounts.
+- **Owner decisions needed:** (1) approve V5 CAD work for the hand-strip channel and crystal pocket; (2) order samples: 2 m of the 7.2 mm strip + 1 m of 60/m 10 mm.
+- **Next test:** T-1 ring fit with the real strip.
+- **Sync:** PUSHED with this commit.
 
 ## Latest action — 2026-11-14 | ChatGPT — electronics design pack for Claude
 - **Action:** Recovered earlier two-controller/four-button, independent 5 V power, animated-effects decisions; inspected Claude's V4 NO-GO and active V5 draft; added proposed `electronics/` BOM, six effects, Mermaid wiring, WLED presets/macros and separate PlatformIO reference firmware. Linked from Obsidian hub and electronics docs.

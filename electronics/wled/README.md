@@ -13,3 +13,7 @@ The file [presets.json](presets.json) is a **starter example, not an exported te
 WLED flash preset 5 remains strobing until mode changes. For one-shot flash-and-resume, test a WLED playlist/usermod or the separate [standalone Arduino reference](../firmware/README.md). Do not claim the WLED JSON reproduces custom choreography exactly until tested behind the diffuser.
 
 Official docs: https://kno.wled.ge/features/presets/ ; https://kno.wled.ge/features/macros/ ; https://kno.wled.ge/interfaces/json-api/
+
+## 144 LEDs/m layout (Claude, 2026-11-14)
+
+[presets_144.json](presets_144.json) is `presets.json` with only the segment bounds remapped for the recommended strip: ring `[0,50)`, hand `[50,84)`, crystal `[84,93)`. Set LED count 93 and the current limit to 1000 mA to start. Effect IDs, speeds and macros are unchanged and equally untested. For a ring-only build, set LED count 50 and delete the hand and crystal segments. Speeds tuned for 21 pixels may look slower on 50 and will need adjusting on the device.

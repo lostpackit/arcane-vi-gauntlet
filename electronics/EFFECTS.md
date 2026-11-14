@@ -14,3 +14,5 @@
 **Important difference**: WLED sample preset 5 is a **sustained strobe** until another preset is chosen; it does not automatically resume. The **alternative standalone firmware** makes the flash a ~350 ms one-shot and returns to the prior mode. Claude should validate a WLED playlist/usermod or recommend which approach is appropriate.
 
 Prototype indexes: ring [0,21), hand [21,35), crystal [35,39), subject to real LED count and wiring. Never assume that V5 already has working hand/crystal light channels. Check visual diffusion, color order, current, heat, safe power-up, button bounce and accidental triggering.
+
+**Claude review note, 2026-11-14:** with the recommended 144 LEDs/m strip the indexes become ring [0,50), hand [50,84), crystal [84,93). See [LED_STRIP_COMPARISON](LED_STRIP_COMPARISON.md) and `wled/presets_144.json`.

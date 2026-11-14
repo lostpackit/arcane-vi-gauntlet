@@ -20,3 +20,20 @@
 **Power budget estimate**: 39 RGB pixels × 60 mA ≈ **2.34 A per arm** at worst-case full white, plus ESP32. This is a *conservative estimate*, not measured. WLED prototype current-limit target ~1.5 A/arm (software estimate only); physical fuse, rated wiring and meter tests remain mandatory. Do not mix RGBW and RGB protocols on an unverified single data chain. Use separate 5 V banks for the arms. No bare LiPo against skin; no charging while worn.
 
 **Procurement hold**: Claude must verify real datasheets, actual 8/10 mm ring strip and ~2.7 mm hand strip dimensions, controller/power fit, LED channel, cover closure and V5 wiring access before approving a sample order. **No components have been bought.**
+
+## Claude review — 2026-11-14 (LED strip selection; nothing purchased)
+
+See [LED_STRIP_COMPARISON](LED_STRIP_COMPARISON.md). Earlier rows are kept as written; this section records the review outcome.
+
+| Part | Review | Proposed change |
+|---|---|---|
+| Ring LEDs | **CHANGE** | BTF-LIGHTING Ultra-Narrow WS2812B 3535, 144 LEDs/m, 7.2 mm, IP30: **50 px per ring** on the trough outer wall. Fallback: WS2812B 5050 60/m 10 mm (21 px). The 5050 144/m strip is rejected (about 12 mm in a 13.0 mm wall). |
+| Hand LEDs | **CHANGE / BLOCKED on CAD** | Same 7.2 mm 144/m strip, 34 px. The ~2.7 mm accent strip is not needed (window is 13.3 mm wide). V5 has no channel yet. |
+| Crystal LEDs | **CHANGE / BLOCKED on CAD** | Same strip, 9 px. V5 has no pocket yet. |
+| Strip quantity | — | 2 m of the 7.2 mm strip (1 m per arm = 93 of 144 LEDs), plus 1 m of 60/m 10 mm as fallback and bench sample. |
+| Power budget | **CHANGE** | 93 px per arm; worst case 5.6 A at the manufacturer's 0.3 W/LED. WLED current limit is mandatory; start at 1000 mA per arm. 3 A fuse unchanged. |
+| Power bank, fuse, shifter, resistor, capacitor, connectors, wire | APPROVE as specified | No change from the strip choice. |
+| ESP32 board | OPEN | Either board drives 93 px. Choice depends on mount size and soldering; pin map must follow the chosen board. |
+| Momentary switches | OPEN | Size and position wait for the handle-area button pod design. |
+
+Remaining before any "order-ready" mark: T-1 ring fit with a real sample, colour order, measured current and 30-minute temperature.

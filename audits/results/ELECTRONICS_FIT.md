@@ -125,3 +125,7 @@ Safety: no bare LiPo pouch cells against the forearm, no charging while worn, ke
 
 - **Lighting: FAIL for V4 as released** (sealed chamber). For the original ring part, strip fit is supported by CAD and awaits T-1.
 - **Electronics: BLOCKED** (no hardware selected, no mounting geometry exists).
+
+## Addendum — 2026-11-14: strip selection for V5
+
+The 60 LEDs/m preference in section 3 is superseded for visual quality by `electronics/LED_STRIP_COMPARISON.md`: BTF-LIGHTING Ultra-Narrow WS2812B 3535, 144 LEDs/m, 7.2 mm, 50 px on the outer wall. V5 usable wall height is about 13.0 mm (cover seat is 0.3 mm lower than in the original part). The 12 mm-class 5050 144/m strip is rejected. Gate status is unchanged: Lighting needs T-1; Electronics BLOCKED.

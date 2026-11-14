@@ -34,3 +34,7 @@ flowchart TD
 - Software brightness cap/current estimate is **not a fuse**. Final current, power connector and board power scheme require electrical review.
 
 **V5 caution**: ring trough is digitally open in draft; accent/crystal mounting and tendon-safe cable paths are still unresolved.
+
+## Claude review note — 2026-11-14
+
+With the recommended 144 LEDs/m strip the chain is ring 50 → hand 34 → crystal 9 (93 px per arm). The diagram is unchanged. Two points become firmer: the WLED current limit is required (1000 mA start, 93 px can exceed the 3 A fuse at full white), and each zone should get its own 5 V/GND feed as drawn. Details: [LED_STRIP_COMPARISON](LED_STRIP_COMPARISON.md).
