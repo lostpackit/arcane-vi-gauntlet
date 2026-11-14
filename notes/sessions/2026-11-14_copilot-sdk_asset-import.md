@@ -134,3 +134,12 @@
 - New risks / decisions: The checkpoint can be committed without overwriting remote changes; no concurrent remote update was found.
 - Next action: Commit/push the local updates and verify the remote hash.
 - Sync: LOCAL pending checkpoint push.
+
+### 2026-11-14T14:17:00Z — Copilot SDK
+- Action: Committed the importer preflight fix and factual handoff/session updates, pushed `main`, and verified the remote branch hash.
+- Result: Commit `28f98b1faebea8cfdc425ee08c99fc1a564e27d5` was pushed successfully; local HEAD and `origin/main` matched exactly.
+- Files changed: `tools/Import-ViGauntletAssets.ps1`; `HANDOFF.md`; `notes/sessions/2026-11-14_copilot-sdk_asset-import.md`.
+- Evidence (file, command output, commit, issue): `git diff --cached --check` passed; push succeeded; local and remote refs both returned `28f98b1faebea8cfdc425ee08c99fc1a564e27d5`.
+- New risks / decisions: The importer only has a syntax check and conflict-preflight fix; archive extraction, all 61 hashes, asset counts, LFS upload, and remote asset visibility remain unverified. Issue #1 remains open.
+- Next action: Wait for the user to provide all seven exact package/manifest files; resume import only then.
+- Sync: PUSHED `28f98b1faebea8cfdc425ee08c99fc1a564e27d5`.
