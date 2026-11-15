@@ -39,7 +39,7 @@ tags: [arcane, vi, 3d-printing, dashboard]
 
 **V5 CAD payload:** 33 3MF models (13 shells per arm, six inserts, one finger-slot coupon; 82,500,770 bytes) are on remote `main` under `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`. All 33 match the supplied SHA-256 manifest; Git LFS acknowledged 33/33 uploads. Fresh-clone readback of one insert and one shell matched their hashes. V5 is unprinted and not print-approved.
 
-**V5.1 additions:** 16 revised shell and insert models match the V5.1 SHA-256 manifest locally. Their archive contents were readable; see [[HANDOFF]] for upload status. Superseded V5 shells remain for history, not printing. No Bambu Studio slice or physical tests are implied.
+**V5.1 additions:** 16 revised shell and insert models match the V5.1 SHA-256 manifest locally; their archive contents were readable. Git LFS acknowledged all 16 uploads and all 16 were independently downloaded and hash-checked. Superseded V5 shells remain for history, not printing. No Bambu Studio slice or physical tests are implied.
 
 **V4 is a digital candidate, not cleared for full printing.** The required set contains 9 originals, 49 V4 files, and the V3 fit-validation ZIP. All 59 required files pass exact byte-size and SHA-256 checks against [[docs/ASSET_SHA256_MANIFEST]]. V1/V2 are intentionally excluded. The V3 ZIP opens and contains 21 fit-validation/support files. All 46 LFS assets are tracked; the V3 object was pushed and fetched from a fresh clone with matching size/SHA-256. Commit `beb157522fe4571d869ccaea186d5ceaddafaa68` is verified on remote `main`. No verified LED-strip dimensions or end-to-end physical assembly test.
 

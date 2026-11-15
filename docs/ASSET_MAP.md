@@ -48,13 +48,13 @@ All 33 model files match `V5_SHA256_MANIFEST.txt`. The V5 support records and bu
 
 ### V5.1 additions (DRAFT; not print-approved)
 
-16 additional 3MF models / 43,283,814 bytes: revised shells 08 and 10–13 for both arms, plus six crystal and hand-lens inserts. All 16 local files match `V5_1_SHA256_MANIFEST.txt` and their archive entries were readable. Older V5 shells are retained as historical assets; do not print their superseded versions. See `HANDOFF.md` for current transfer status.
+16 additional 3MF models / 43,283,814 bytes: revised shells 08 and 10–13 for both arms, plus six crystal and hand-lens inserts. All 16 local files match `V5_1_SHA256_MANIFEST.txt` and their archive entries were readable. Upload acknowledged 16/16; a separate empty LFS cache fetched all 16 from remote and each SHA-256 matched the manifest. Asset commit: `030b461ea3a0ca205c045aa3de6da7a0f3b803f9`. Older V5 shells are retained as historical assets; do not print their superseded versions.
 
 ## Integrity and transfer status
 
 - Required manifest entries: **PASS, 59/59** exact file sizes and SHA-256 (9 originals + 49 V4 + 1 V3 archive); V1/V2 excluded by request.
 - V3 archive: **PASS**; `tar.exe -tf` succeeded and all 21 file entries were opened and decompressed.
-- Git LFS: **79 assets tracked** (44 STL, 34 3MF, one ZIP). The V5 push acknowledged 33/33 new objects (82 MB).
+- Git LFS: 79 assets were tracked before V5.1 (44 STL, 34 3MF, one ZIP). The V5 push acknowledged 33/33 new objects (82 MB); V5.1 adds 16 LFS models.
 - V5 model checksum: **PASS, 33/33** against the included manifest. Fresh-clone targeted readback of the dowel insert (2,884 bytes) and R_01 shell (1,641,461 bytes) matched their manifest SHA-256 values. The remaining V5 objects were upload-acknowledged but not individually read back.
 - Remote `main` and V5 model paths: **VERIFIED** at commit `dced43625bce1d00b3e94133496f9cfdac463682`.
 - Original/V3/V4 manifest verification remains **PASS, 59/59**, as recorded above.

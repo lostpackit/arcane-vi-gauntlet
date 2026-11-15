@@ -28,6 +28,7 @@ For each test, add a separate note from [[templates/Validation_Template]] or app
 | 2026-11-14 | LED strip comparison for V5 ring (CAD + manufacturer specs; no hardware) | DONE — recommend 7.2 mm 3535 144/m, 50 px; 12 mm 144/m rejected | `electronics/LED_STRIP_COMPARISON.md` |
 | 2026-11-15 | V5.1 hand channel / crystal well: closed solids, lens and crystal lift-out, channel size, dowels unchanged | PASS (computed) | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_1_Verification.json` |
 | 2026-11-15 | V5.1 model transfer integrity | PASS locally (16/16) | `V5_1_SHA256_MANIFEST.txt`; 43,283,814 bytes; copied SHA-256 values match and every 3MF archive entry was readable. See [[HANDOFF]] for remote status. |
+| 2026-11-15 | V5.1 remote LFS readback | PASS (16/16) | Asset commit `030b461ea3a0ca205c045aa3de6da7a0f3b803f9`; path-filtered fetch to an empty independent cache, all SHA-256 values matched the manifest; `git lfs fsck` passed. |
 | 2026-11-14 | V5 physical prints (T-1, T2 coupon, dowel fit) | NOT RUN | owner to print |
 | 2026-11-14 | LED strip and ring fit | BLOCKED (hardware) — CAD measured: trough 27.1 mm wide × 13.3 mm deep; physical test T-1 proposed | `audits/results/ELECTRONICS_FIT.md` |
 | 2026-11-14 | Original finger mount and tendon travel | NOT RUN physically — digital findings in ISSUES C-3, C-5; test T-2 proposed | `audits/results/FINAL_VERDICT.md` |

@@ -3,8 +3,8 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-15
-last_agent: Claude (V5.1 hand/crystal lighting)
-sync_state: docs-pushed-v5-1-cad-pending-owner-lfs-upload
+last_agent: Copilot SDK (V5.1 sync)
+sync_state: v5-1-models-pushed-and-read-back
 tags:
   - handoff
   - agents
@@ -49,6 +49,26 @@ tags:
 - **Files changed:** Staged models and documentation, plus this handoff and session log.
 - **Next:** Commit, push normally, and verify remote LFS objects independently.
 - **Blockers/sync:** Upload/readback pending; LOCAL.
+
+## Latest action — 2026-11-15T21:24Z — Copilot SDK (V5.1 upload)
+- **Result:** Commit `030b461ea3a0ca205c045aa3de6da7a0f3b803f9` pushed to `main`; Git LFS reported 16/16 objects uploaded (43 MB). Independent remote readback is still pending.
+- **Files changed:** Handoff and session log for this record; commit included 16 models and six documentation files.
+- **Next:** Verify the remote ref and independently fetch the new objects into an isolated LFS cache.
+- **Blockers:** V5.1 remains a digital draft; print and hardware gates are unverified.
+- **Sync:** Asset commit push succeeded; this verification note is LOCAL.
+
+## Latest action — 2026-11-15T21:26Z — Copilot SDK (readback attempt)
+- **Result:** Remote `main` confirmed at `030b461ea3a0ca205c045aa3de6da7a0f3b803f9`. Independent readback did not run: installed Git LFS rejects `fetch --object-id`.
+- **Files changed:** Handoff and session log; an empty isolated cache was created in session storage.
+- **Next:** Retry with supported path-filtered `git lfs fetch` into the isolated cache, then hash all 16 objects.
+- **Blockers/sync:** Remote content readback pending; LOCAL note.
+
+## Latest action — 2026-11-15T21:28Z — Copilot SDK (remote LFS verification)
+- **Result:** At asset commit `030b461ea3a0ca205c045aa3de6da7a0f3b803f9`, fetched all 16 V5.1 objects using path-filtered Git LFS into a separate empty cache; all 16 downloaded SHA-256 hashes match the manifest. `git lfs fsck` passed. This supersedes the older CAD-pending notice below.
+- **Files changed:** Handoff, session log, asset inventory and Obsidian test/hub notes for verification.
+- **Next:** Push this verification record. Owner-led finger fit, actual Bambu Studio slicing and electronics/hardware tests remain necessary.
+- **Blockers:** V4 is NO-GO; V5.1 remains a digital draft, not print-approved; superseded V5 shells are retained but must not be printed. No physical tests were run.
+- **Sync:** Asset commit `030b461` verified on remote; check Git's remote ref for this verification record.
 
 ## Latest action — 2026-11-15T21:16Z — Copilot SDK (package comparison)
 - **Result:** Eight of nine differing text files differ only in line endings; the root README lacks 51 lines present in the newer canonical README. Preserve the canonical files and both source directories.

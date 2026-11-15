@@ -9,6 +9,26 @@
 - Next: Compare source package with canonical release and validate manifest hashes and LFS tracking before upload.
 - Sync: LOCAL.
 
+## 2026-11-15T21:26Z
+- Action: Queried remote `main` and attempted an independent LFS readback using `git lfs fetch --object-id` in an isolated cache.
+- Result: Remote ref confirmed `030b461ea3a0ca205c045aa3de6da7a0f3b803f9`; fetch failed because installed Git LFS 3.7.1 does not support `--object-id`. No object was fetched or verified in this attempt.
+- Next: Retry with supported `--include` paths and hash the isolated cache.
+- Sync: LOCAL note; asset commit pushed.
+
+## 2026-11-15T21:28Z
+- Action: Retried using path-filtered `git lfs fetch` into the separate empty session cache; hashed all downloaded objects and ran `git lfs fsck`.
+- Result: PASS, 16/16 downloaded SHA-256 values match the V5.1 manifest; `git lfs fsck` passed. Remote ref had independently confirmed the asset commit.
+- Evidence: `git -c lfs.storage=<isolated-cache> lfs fetch --include=<16-paths> --exclude= origin 030b461ea3a0ca205c045aa3de6da7a0f3b803f9`; `Get-FileHash`; `git lfs fsck`.
+- Next: Push verification notes, preserving open physical and engineering blockers.
+- Sync: Asset commit `030b461` is on remote; check Git's remote ref for this verification record.
+
+## 2026-11-15T21:24Z
+- Action: Committed staged V5.1 assets and documentation, then pushed normally to `origin/main`.
+- Result: Commit `030b461ea3a0ca205c045aa3de6da7a0f3b803f9` pushed; Git LFS reported 16/16 objects uploaded (43 MB).
+- Evidence: `git commit` and `git push origin main` output.
+- Next: Confirm the remote ref and fetch the 16 objects into an isolated LFS cache.
+- Sync: Asset commit push succeeded; this note is LOCAL.
+
 ## 2026-11-15T21:21Z
 - Action: Staged the 16 named models and six task documentation files; checked every index pointer against manifest hash and local size.
 - Result: 16/16 LFS pointers valid; `git diff --cached --check` passed. Both root packages remain untracked and untouched.
