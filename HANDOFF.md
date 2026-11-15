@@ -3,8 +3,8 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-15
-last_agent: Copilot SDK (repository cleanup)
-sync_state: cleanup-check-current-git-ref
+last_agent: Claude (V5.2 simulation and issues)
+sync_state: docs-pushed-v5-2-cad-pending-upload-issue-2
 tags:
   - handoff
   - agents
@@ -24,6 +24,19 @@ tags:
 # Cross-agent handoff — READ FIRST
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
+
+## Latest action — 2026-11-15T22:05Z — Claude (V5.2: simulation, wire link fix, mounts, GitHub issues)
+- **Owner request:** re-check the models, open issues for everything left, work through them, simulate printing and fit, design LED hardware mounts.
+- **Models re-checked from the repo:** 13 right shells reassemble with zero pairwise interference into one body; all inserts, 57 dowels and both LED strips (as solids) fit with zero interference. Report: `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_2_SIMULATION_REPORT.md`.
+- **Found and fixed (V5.2, shell 08 only):** wire link from ring trough to hand LED channel passed only a 2 mm sphere; a 9 mm wire slot makes it 4 mm.
+- **Corrected:** hand strip is 33 LEDs; layout is **83 px per arm**. Firmware default, `presets_144.json`, `ORDER_LIST.md` updated; PC firmware check PASS.
+- **Finger mount (audit C-3) downgraded:** printed finger cores and slot pieces match the assembled reference and clear shells 12/13 digitally. Coupon print still advised.
+- **Mount concepts:** handle button pod and electronics sled in `Mounts_CONCEPT/` (sized from catalogue dimensions; untested).
+- **Gauge retention:** magnet pockets tried and dropped (no flat contact area). Recommendation recorded in issue #8.
+- **GitHub issues:** #2–#16 open (owner/physical/hardware work), #17–#19 closed with evidence. **Use the issue list as the task queue.**
+- **ACTION NEEDED (issue #2):** upload `V5_2_changed_files.zip` contents (R/L shell 08 V5.2 + two mounts), verify `V5_2_SHA256_MANIFEST.txt`, then move shell 08 V5.1 to `Superseded_V5_DO_NOT_PRINT/`.
+- **Not done:** no Bambu Studio slice, no print, no hardware. Supports re-orientation (#15) and thumb route (#14) not worked beyond a digital thumb-seat check.
+- **Sync:** docs, records and scripts PUSHED with this commit; V5.2 CAD pending upload.
 
 ## Latest action — 2026-11-15T21:32Z — Copilot SDK (fallback preset)
 - **Result:** Remapped the six fallback segment sets to 21/10/4 pixels; JSON parsed successfully. The diff contains only the requested segment start/stop changes.

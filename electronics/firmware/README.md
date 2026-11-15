@@ -8,7 +8,7 @@ WLED is the preferred path. This sketch is the fallback that gives the exact but
 
 - Builds as C++11 (button struct has a constructor).
 - Software current limiter: each frame's estimated draw is scaled to stay under `LIMIT_MA` (default 1000 mA). It is an estimate (20 mA per colour channel at full, 1 mA idle per pixel), **not a fuse**.
-- Layout chosen at build time: default 144 LEDs/m, V5.1 layout (ring 50, hand 23, crystal 11 = 84; the crystal is the end of the hand strip); `-DLAYOUT_60` for 21/10/4; `-DRING_ONLY` for the ring alone.
+- Layout chosen at build time: default 144 LEDs/m, V5.1 layout (ring 50, hand 23, crystal 10 = 83; the crystal is the end of the hand strip); `-DLAYOUT_60` for 21/10/4; `-DRING_ONLY` for the ring alone.
 - Chase is a comet whose speed and tail scale with the pixel count (one ring revolution in 1.4 s).
 - Periodic effects no longer drift after hours of run time.
 - Pins and limit can be set with build flags; see `platformio.ini`.

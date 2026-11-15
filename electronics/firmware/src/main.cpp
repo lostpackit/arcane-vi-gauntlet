@@ -28,14 +28,14 @@
 #define LIMIT_MA 1000            // estimated LED current ceiling per arm
 #endif
 
-// Layout: default = 144 LEDs/m strip (ring 50, hand 23, crystal 11 = 84).
+// Layout: default = 144 LEDs/m strip (ring 50, hand 23, crystal 10 = 83).
 // Build with -DLAYOUT_60 for the 60 LEDs/m layout (21 / 10 / 4 = 35), -DRING_ONLY to drive the ring alone.
 // V5.1: one strip runs from the ring down the hand channel and passes under the crystal well, so
 // "crystal" is simply the last pixels of the hand strip.
 #ifdef LAYOUT_60
 constexpr int RING = 21, HAND_FULL = 10, CRYSTAL_FULL = 4;
 #else
-constexpr int RING = 50, HAND_FULL = 23, CRYSTAL_FULL = 11;
+constexpr int RING = 50, HAND_FULL = 23, CRYSTAL_FULL = 10;
 #endif
 #ifdef RING_ONLY
 constexpr int HAND = 0, CRYSTAL = 0;

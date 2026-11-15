@@ -138,3 +138,4 @@ Sources consulted: btf-lighting.com ultra-narrow product page and WS2812B 5 V co
 - Earlier text said V5 had no LED channel for the hand strip or crystal. On closer inspection the original design has a sealed channel under the hand lens (about 11.3 × 2.2 mm) and a light well under the crystal. **V5.1 opens both** (owner-approved); see the V5.1 section of the V5 README.
 - The crystal is lit by the hand strip passing under its well. Per-arm count is now **84** (ring 50 + hand 34; the last 11 hand pixels are under the crystal). Worst case at 0.3 W/LED is 5.0 A; the 1000 mA WLED limit still applies.
 - The channel is 11.3 mm wide, so the 7.2 mm strip fits; a 10 mm strip would also fit there.
+- **V5.2 correction:** hand strip is 33 LEDs (channel length 232.5 mm), so 83 per arm. Modelled as solids, both strips fit with zero interference: 5.6 mm clear under the cover, 2.0 mm under the hand lens.

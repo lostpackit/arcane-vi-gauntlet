@@ -159,3 +159,7 @@ Support mass with build-plate-only organic supports: R_08 135 g (20 %), R_05 129
 3. Keep the `Glove_B1` opening.
 4. Add alignment keys or dowel sockets to every merged-panel seam; move seams off the centreline where the X1C envelope allows.
 5. Decide electronics pocket and button positions after tests T-1 and T-2.
+
+## Addendum 2026-11-15 — C-3 finger mount, digital fit result
+
+The finger parts that mate with the knuckle block (finger cores and slot pieces) match the assembled reference by volume and, in assembled position, clear V5.1 shells 12/13 with 0.8–1.8 mm running gap (cores) and at most 0.15 mm overlap (slot pieces, press fit). The revision difference found in C-3 is in the stand-alone printable `Fingers_Base`, which V5 does not use. C-3 is therefore **downgraded from CRITICAL to "confirm by coupon print"**. Evidence: `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_2_SIMULATION_REPORT.md` section 5.

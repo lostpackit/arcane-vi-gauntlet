@@ -1,0 +1,487 @@
+{
+ "assembly": {
+  "repo_vs_build_max_dev_mm": 0.0,
+  "shell_interference": {},
+  "union_bodies": 1,
+  "trough_outer_radius_fit_mm": 55.87,
+  "parts": {
+   "cover": {
+    "interference_mm3": 0.0,
+    "volume_cm3": 45.32,
+    "min_gap_to_shells_mm": 0.0
+   },
+   "gauge": {
+    "interference_mm3": 0.0,
+    "volume_cm3": 110.73,
+    "min_gap_to_shells_mm": 0.0
+   },
+   "crystal": {
+    "interference_mm3": 0.0,
+    "volume_cm3": 5.87,
+    "min_gap_to_shells_mm": 0.15
+   },
+   "lens A": {
+    "interference_mm3": 0.0,
+    "volume_cm3": 1.23,
+    "min_gap_to_shells_mm": 0.0
+   },
+   "lens B": {
+    "interference_mm3": 0.0,
+    "volume_cm3": 0.72,
+    "min_gap_to_shells_mm": 0.0
+   },
+   "handle": {
+    "interference_mm3": 0.0,
+    "volume_cm3": 69.35,
+    "min_gap_to_shells_mm": 0.25
+   },
+   "LED strip, ring (7.2 x 2.2 mm band on outer wall)": {
+    "interference_mm3": 0.0,
+    "volume_cm3": 5.18,
+    "min_gap_to_shells_mm": 0.02
+   },
+   "LED strip, hand (33 LEDs, 229 x 7.2 x 2.2 mm in channel)": {
+    "interference_mm3": 0.0,
+    "volume_cm3": 3.63,
+    "min_gap_to_shells_mm": 0.05
+   },
+   "57 dowels 6 x 30 mm": {
+    "interference_mm3": 0.0,
+    "volume_cm3": 48.21,
+    "min_gap_to_shells_mm": 0.2
+   }
+  },
+  "part_part_interference": {
+   "cover | gauge": 1.93
+  },
+  "short_dowel_sockets": [],
+  "ring_strip_to_cover_min_gap_mm": 5.56,
+  "hand_strip_to_lens_min_gap_mm": 2.0
+ },
+ "finger_fit": [
+  {
+   "finger": "little",
+   "comp": 121,
+   "part": "finger core segment 1",
+   "volume_cm3": 129.32,
+   "vs_V5_1_knuckle_shells": {
+    "points": 3536,
+    "inside_pct": 0.1,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 1.8,
+    "near_gap_median_mm": 0.84
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 3536,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": 2.3
+   }
+  },
+  {
+   "finger": "little",
+   "comp": 125,
+   "part": "Little_Finger_Piece",
+   "volume_cm3": 18.01,
+   "vs_V5_1_knuckle_shells": {
+    "points": 6000,
+    "inside_pct": 8.2,
+    "max_penetration_mm": 0.15,
+    "p95_penetration_mm": 0.04,
+    "touching_pct": 5.0,
+    "near_gap_median_mm": 0.58
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 6000,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "little",
+   "comp": 163,
+   "part": "armor plate (older rev)",
+   "volume_cm3": 17.23,
+   "vs_V5_1_knuckle_shells": {
+    "points": 637,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 637,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "little",
+   "comp": 161,
+   "part": "armor plate (older rev)",
+   "volume_cm3": 20.96,
+   "vs_V5_1_knuckle_shells": {
+    "points": 318,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": 2.09
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 318,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "ring",
+   "comp": 127,
+   "part": "finger core segment 1",
+   "volume_cm3": 143.11,
+   "vs_V5_1_knuckle_shells": {
+    "points": 3330,
+    "inside_pct": 0.1,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 2.3,
+    "near_gap_median_mm": 0.83
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 3330,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": 2.37
+   }
+  },
+  {
+   "finger": "ring",
+   "comp": 130,
+   "part": "Ring_Finger_Piece",
+   "volume_cm3": 18.68,
+   "vs_V5_1_knuckle_shells": {
+    "points": 6000,
+    "inside_pct": 2.9,
+    "max_penetration_mm": 0.08,
+    "p95_penetration_mm": 0.07,
+    "touching_pct": 9.5,
+    "near_gap_median_mm": 0.1
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 6000,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "ring",
+   "comp": 156,
+   "part": "Middle_Finger_Piece",
+   "volume_cm3": 18.81,
+   "vs_V5_1_knuckle_shells": {
+    "points": 563,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 563,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "ring",
+   "comp": 155,
+   "part": "armor plate (older rev)",
+   "volume_cm3": 22.89,
+   "vs_V5_1_knuckle_shells": {
+    "points": 302,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": 2.48
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 302,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "middle",
+   "comp": 132,
+   "part": "finger core segment 1",
+   "volume_cm3": 142.85,
+   "vs_V5_1_knuckle_shells": {
+    "points": 3366,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 2.3,
+    "near_gap_median_mm": 0.82
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 3366,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": 2.23
+   }
+  },
+  {
+   "finger": "middle",
+   "comp": 139,
+   "part": "Middle_Finger_Piece",
+   "volume_cm3": 18.81,
+   "vs_V5_1_knuckle_shells": {
+    "points": 6000,
+    "inside_pct": 8.7,
+    "max_penetration_mm": 0.13,
+    "p95_penetration_mm": 0.12,
+    "touching_pct": 2.7,
+    "near_gap_median_mm": 0.98
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 6000,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "middle",
+   "comp": 151,
+   "part": "Middle_Finger_Piece",
+   "volume_cm3": 18.82,
+   "vs_V5_1_knuckle_shells": {
+    "points": 590,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 590,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "middle",
+   "comp": 150,
+   "part": "armor plate (older rev)",
+   "volume_cm3": 22.89,
+   "vs_V5_1_knuckle_shells": {
+    "points": 248,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": 2.23
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 248,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "fore",
+   "comp": 114,
+   "part": "finger core segment 1",
+   "volume_cm3": 135.23,
+   "vs_V5_1_knuckle_shells": {
+    "points": 3432,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 2.0,
+    "near_gap_median_mm": 1.8
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 3432,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": 2.09
+   }
+  },
+  {
+   "finger": "fore",
+   "comp": 119,
+   "part": "Forefinger_Piece",
+   "volume_cm3": 19.15,
+   "vs_V5_1_knuckle_shells": {
+    "points": 6000,
+    "inside_pct": 6.9,
+    "max_penetration_mm": 0.03,
+    "p95_penetration_mm": 0.03,
+    "touching_pct": 4.9,
+    "near_gap_median_mm": 0.56
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 6000,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "fore",
+   "comp": 144,
+   "part": "Ringfinger_Middle_A",
+   "volume_cm3": 18.44,
+   "vs_V5_1_knuckle_shells": {
+    "points": 747,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": 2.11
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 747,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  },
+  {
+   "finger": "fore",
+   "comp": 143,
+   "part": "armor plate (older rev)",
+   "volume_cm3": 22.44,
+   "vs_V5_1_knuckle_shells": {
+    "points": 406,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.5,
+    "near_gap_median_mm": 1.98
+   },
+   "vs_3MF_Fingers_Base": {
+    "points": 406,
+    "inside_pct": 0.0,
+    "max_penetration_mm": 0.0,
+    "p95_penetration_mm": 0.0,
+    "touching_pct": 0.0,
+    "near_gap_median_mm": null
+   }
+  }
+ ],
+ "wire_path_V5_1": {
+  "cover_seat_drop_mm": 0.25,
+  "trough_to_channel_diameter_mm": 2.0,
+  "trough_to_cavity_diameter_mm": 11.0
+ },
+ "wire_path_V5_2": {
+  "cover_seat_drop_mm": 0.25,
+  "trough_to_channel_diameter_mm": 4.0,
+  "trough_to_cavity_diameter_mm": 11.0
+ },
+ "surrogate_slice_light": [
+  {
+   "part": "R_08_LightBand_Rear_RingCarrier_V5_2",
+   "filament_g_standard_PLA": 408.96,
+   "support_g": 131.7
+  },
+  {
+   "part": "R_10_Wrist_Left_V5_1",
+   "filament_g_standard_PLA": 284.54,
+   "support_g": 29.5
+  },
+  {
+   "part": "R_11_Wrist_Right_V5_1",
+   "filament_g_standard_PLA": 288.56,
+   "support_g": 33.4
+  },
+  {
+   "part": "R_12_Knuckles_Left_V5_1",
+   "filament_g_standard_PLA": 489.06,
+   "support_g": 109.1
+  },
+  {
+   "part": "R_13_Knuckles_Right_V5_1",
+   "filament_g_standard_PLA": 474.96,
+   "support_g": 104.4
+  },
+  {
+   "part": "R_Crystal_translucent",
+   "filament_g_standard_PLA": 3.93,
+   "support_g": 0.3
+  },
+  {
+   "part": "R_Hand_Lens_A_translucent_81mm",
+   "filament_g_standard_PLA": 1.86,
+   "support_g": 0
+  },
+  {
+   "part": "R_Hand_Lens_B_translucent_46mm",
+   "filament_g_standard_PLA": 1.1,
+   "support_g": 0
+  },
+  {
+   "part": "R_Ring_Light_Cover_translucent",
+   "filament_g_standard_PLA": 27.44,
+   "support_g": 2.8
+  },
+  {
+   "part": "Button_Pod_Handle_Clip_2x_12mm_tact_CONCEPT",
+   "filament_g_standard_PLA": 7.18,
+   "support_g": 0
+  },
+  {
+   "part": "Electronics_Sled_80x45_CONCEPT",
+   "filament_g_standard_PLA": 8.82,
+   "support_g": 0
+  }
+ ],
+ "unsupported_branch_warnings": [
+  "R_08_LightBand_Rear_RingCarrier_V5_2",
+  "R_12_Knuckles_Left_V5_1",
+  "R_13_Knuckles_Right_V5_1"
+ ]
+}

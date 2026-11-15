@@ -61,7 +61,7 @@
    {
     "id": 2,
     "start": 73,
-    "stop": 84,
+    "stop": 83,
     "on": true,
     "fx": 2,
     "sx": 95,
@@ -149,7 +149,7 @@
    {
     "id": 2,
     "start": 73,
-    "stop": 84,
+    "stop": 83,
     "on": true,
     "fx": 2,
     "sx": 130,
@@ -237,7 +237,7 @@
    {
     "id": 2,
     "start": 73,
-    "stop": 84,
+    "stop": 83,
     "on": true,
     "fx": 2,
     "sx": 130,
@@ -325,7 +325,7 @@
    {
     "id": 2,
     "start": 73,
-    "stop": 84,
+    "stop": 83,
     "on": true,
     "fx": 1,
     "sx": 160,
@@ -413,7 +413,7 @@
    {
     "id": 2,
     "start": 73,
-    "stop": 84,
+    "stop": 83,
     "on": true,
     "fx": 20,
     "sx": 130,
@@ -501,7 +501,7 @@
    {
     "id": 2,
     "start": 73,
-    "stop": 84,
+    "stop": 83,
     "on": true,
     "fx": 23,
     "sx": 185,

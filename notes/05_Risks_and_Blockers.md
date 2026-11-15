@@ -29,5 +29,7 @@ tags: [risk, blockers]
 | V5 shells 12/13 still carry the older finger carrier | OPEN — hold | T2 coupon with a printed finger |
 | V5 supports about 20 % of filament | OPEN | Re-orient 05/06/08/12/13 |
 | V5.1 3MF files (shells 08, 10–13, crystal, lenses) not yet in the repo | CLOSED 2026-11-15 — uploaded (`030b461`), verified 16/16; superseded files moved to `Superseded_V5_DO_NOT_PRINT/` | Owner/Copilot: upload from `V5_1_changed_files.zip`, verify manifest, remove superseded `_V5` files |
+| V5.2 shell 08 and mount concepts not yet in the repo | OPEN | GitHub issue #2 |
+| Remaining work is tracked as GitHub issues #2–#16 | INFO | Use the issue list as the queue |
 
 For current priority and ownership, see [[HANDOFF]]. Record any newly discovered risk there **after the action**.

@@ -1,6 +1,6 @@
 # WLED (preferred) — setup for Claude to validate
 
-The primary layout is [presets_144.json](presets_144.json) for **84 LEDs per arm** at 144 LEDs/m. [presets.json](presets.json) is the **35-LED fallback** at 60 LEDs/m. Both are starter examples, not exported, tested WLED backups. Install supported WLED on two ESP32-class controllers, one per gauntlet. Configure 5 V WS2812-compatible RGB output, reference GPIO16 and an appropriate software LED current limit in **Config → LED Preferences**. Configure 2 pushbuttons on reference GPIO25/26; actual GPIOs depend on selected board. Back up settings before preset import.
+The primary layout is [presets_144.json](presets_144.json) for **83 LEDs per arm** at 144 LEDs/m. [presets.json](presets.json) is the **35-LED fallback** at 60 LEDs/m. Both are starter examples, not exported, tested WLED backups. Install supported WLED on two ESP32-class controllers, one per gauntlet. Configure 5 V WS2812-compatible RGB output, reference GPIO16 and an appropriate software LED current limit in **Config → LED Preferences**. Configure 2 pushbuttons on reference GPIO25/26; actual GPIOs depend on selected board. Back up settings before preset import.
 
 **Fallback segments**: [0,21) ring, [21,31) hand, [31,35) crystal. IDs 21–25 are button-action API macros. See the preset fixes below for current button behavior.
 
@@ -16,7 +16,7 @@ Official docs: https://kno.wled.ge/features/presets/ ; https://kno.wled.ge/featu
 
 ## 144 LEDs/m layout (Claude, 2026-11-14)
 
-[presets_144.json](presets_144.json) uses the V5.1 recommended strip: 84 LEDs, ring `[0,50)`, hand `[50,73)`, crystal `[73,84)` (the crystal is lit by the end of the hand strip). Set the current limit to 1000 mA to start. Effect IDs, speeds and macros are untested. For a ring-only build, set LED count 50 and delete the hand and crystal segments. Speeds tuned for 21 pixels may look slower on 50 and will need adjusting on the device.
+[presets_144.json](presets_144.json) uses the V5.1 recommended strip: 83 LEDs, ring `[0,50)`, hand `[50,73)`, crystal `[73,83)` (the crystal is lit by the end of the hand strip). Set the current limit to 1000 mA to start. Effect IDs, speeds and macros are untested. For a ring-only build, set LED count 50 and delete the hand and crystal segments. Speeds tuned for 21 pixels may look slower on 50 and will need adjusting on the device.
 
 ## Preset fixes (Claude, 2026-11-14) — applied to both preset files, untested on a device
 

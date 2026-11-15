@@ -1,0 +1,35 @@
+{
+ "button_pod": {
+  "handle_d": 18.8,
+  "clip_inner_d": 19.3,
+  "clip_wall": 2.8,
+  "snap_opening": 15.0,
+  "length": 26.0,
+  "switch_pocket": [
+   12.5,
+   12.5,
+   4.2
+  ],
+  "size": [
+   31.4,
+   30.0,
+   26.0
+  ],
+  "volume_cm3": 9.48,
+  "watertight": true
+ },
+ "electronics_sled": {
+  "size": [
+   80.0,
+   45.0,
+   7.4
+  ],
+  "inner": [
+   76.8,
+   41.8
+  ],
+  "zip_slots": 8,
+  "volume_cm3": 9.92,
+  "watertight": true
+ }
+}

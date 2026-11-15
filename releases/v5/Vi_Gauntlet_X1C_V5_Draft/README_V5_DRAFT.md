@@ -120,7 +120,7 @@ The lens is only fitted where it is visible. Under the top-plate bridge and unde
 
 ## LED layout per arm with the 7.2 mm 144 LEDs/m strip
 
-Ring 50 + hand channel 34 = **84 pixels** (replaces the earlier 93). The last 11 hand pixels sit under the crystal well. WLED segments: ring `[0,50)`, hand `[50,73)`, crystal `[73,84)`.
+Ring 50 + hand channel 33 = **83 pixels** (corrected in V5.2; the channel takes 33 LEDs, not 34). The last 10 hand pixels sit under the crystal well. WLED segments: ring `[0,50)`, hand `[50,73)`, crystal `[73,83)`.
 
 ## Fitting notes
 
@@ -150,8 +150,23 @@ Each folder (`Right_Shells/`, `Left_Shells/`) now holds exactly one file per she
 | Shell | File (right arm; left is the same with `L_`) | Version |
 |---|---|---|
 | 01–07, 09 | `R_0x_..._V5.3mf` | V5 (unchanged) |
-| 08 ring carrier | `R_08_LightBand_Rear_RingCarrier_V5_1.3mf` | V5.1 |
+| 08 ring carrier | `R_08_LightBand_Rear_RingCarrier_V5_2.3mf` once uploaded (until then the `_V5_1` file is in the folder; it works, but its wire link to the hand channel is only 2 mm) | V5.2 |
 | 10, 11 wrist | `R_10_Wrist_Left_V5_1.3mf`, `R_11_Wrist_Right_V5_1.3mf` | V5.1 |
-| 12, 13 knuckles | `R_12_Knuckles_Left_V5_1.3mf`, `R_13_Knuckles_Right_V5_1.3mf` | V5.1 — **on hold until the finger coupon test** |
+| 12, 13 knuckles | `R_12_Knuckles_Left_V5_1.3mf`, `R_13_Knuckles_Right_V5_1.3mf` | V5.1 — digital finger fit passes (V5.2 simulation report); coupon print still advised before committing about 480 g each |
 
 Inserts: ring cover, gauge, handle, crystal, hand lens A and B (both arms), optional dowel peg. Test coupon: T2 finger slot.
+
+---
+
+# V5.2 update — wire link, simulation, mount concepts (2026-11-15)
+
+> **File status:** `R_08_..._V5_2.3mf`, `L_08_..._V5_2.3mf` and two mount concepts were delivered to the owner as `V5_2_changed_files.zip` (Claude's session cannot upload LFS objects). Unzip over this folder, check with `sha256sum -c V5_2_SHA256_MANIFEST.txt`, commit and push, then move the two `_08_..._V5_1.3mf` files into `Superseded_V5_DO_NOT_PRINT/`.
+
+- **Shell 08 only:** a 9 mm wide wire slot now links the ring trough to the hand LED channel. In V5.1 that link passed only a 2 mm sphere; it now passes 4 mm. Everything else in shell 08, and every other shell and insert, is unchanged.
+- **Simulation:** `V5_2_SIMULATION_REPORT.md` covers assembly interference, LED strips as solids, wire path, finger fit and surrogate slicing. Raw numbers in `V5_2_Simulation_Results.json`.
+- **LED count:** 83 per arm (hand strip 33).
+- **Mount concepts (`Mounts_CONCEPT/`)**, stand-alone parts that need no shell changes:
+  - `Button_Pod_Handle_Clip_2x_12mm_tact_CONCEPT` — snaps onto the 18.8 mm handle, holds two 12 × 12 mm tactile switches under the thumb, wires exit at one end. 31 × 30 × 26 mm.
+  - `Electronics_Sled_80x45_CONCEPT` — rimmed tray with eight zip-tie slots for the controller and level shifter; fix it and the power bank to the cuff's inner wall with hook-and-loop tape.
+  - Both are sized from catalogue dimensions, not from parts in hand. Check against the hardware you buy.
+- **Gauge retention:** magnet pockets were tried and dropped. The gauge only touches the shell on narrow rims, with no flat area for a 6 mm magnet. Recommended: glue the gauge to the cover so they lift out as one cap, and hold the cap with two or three dots of removable mounting putty.

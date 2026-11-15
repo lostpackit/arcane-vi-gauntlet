@@ -11,8 +11,8 @@ This is the single list to order from. It consolidates `BOM.md`, `LED_STRIP_COMP
 | Zone | Pixels | Strip length |
 |---|---|---|
 | Ring (gauge halo) | 50 | 347 mm |
-| Hand channel, including the part under the crystal | 34 | 236 mm |
-| **Total** | **84** | **583 mm** |
+| Hand channel, including the part under the crystal | 33 | 229 mm |
+| **Total** | **83** | **576 mm** |
 
 ## Order list
 
@@ -41,10 +41,16 @@ This is the single list to order from. It consolidates `BOM.md`, `LED_STRIP_COMP
 
 ## Settings that go with this list
 
-WLED: 84 LEDs, WS281x, colour order GRB (confirm on the sample), current limit 1000 mA, segments ring `[0,50)`, hand `[50,73)`, crystal `[73,84)`; presets in `wled/presets_144.json`. Standalone firmware: default build is the same 84-pixel layout.
+WLED: 83 LEDs, WS281x, colour order GRB (confirm on the sample), current limit 1000 mA, segments ring `[0,50)`, hand `[50,73)`, crystal `[73,83)`; presets in `wled/presets_144.json`. Standalone firmware: default build is the same 83-pixel layout.
 
 ## First things to do when parts arrive
 
 1. Bench test 3–5 pixels of the strip with the controller, fuse and capacitor.
 2. Seat 50 pixels in a printed ring (shell 08 or the stand-in `Circle_Light.stl`) with the cover on.
 3. Measure current at the 1000 mA limit and temperature after 30 minutes.
+
+## Update 2026-11-15 (V5.2 simulation)
+
+- Hand strip is **33 LEDs** (the deepened channel is 232.5 mm long), so each arm is **83 LEDs**. Strip quantity is unchanged (1 m per arm).
+- Items 5 and 3: concept mounts now exist in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/Mounts_CONCEPT/`: a clip-on handle pod for **two 12 × 12 mm tactile switches** and an 80 × 45 mm electronics sled with zip-tie slots. If you want to use the pod as drawn, buy 12 × 12 mm tactile switches with caps instead of panel-mount buttons. The sled takes either controller board.
+- Add: hook-and-loop tape (sled and power bank to the cuff wall), small zip ties, removable mounting putty (gauge cap).
