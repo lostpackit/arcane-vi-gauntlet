@@ -15,6 +15,56 @@ tags:
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
 
+## Latest action — 2026-11-15T21:10Z — Copilot SDK (local update sync)
+- **Action/result:** Fetched and fast-forwarded `main` from `72d9cf6` to `8fb91bd`; incoming electronics and V5.1 documentation retained. Two pre-existing untracked package directories were preserved.
+- **Files changed:** This handoff and `notes/sessions/2026-11-15_copilot-sdk_review-sync.md`; fast-forward brought in 35 tracked paths.
+- **Evidence:** `git status`, `git fetch origin`, `git merge --ff-only origin/main`; V5.1 manifest lists 16 models, while the root V5 package contains matching-named additions.
+- **Blockers:** V5.1 model content, local-versus-canonical differences and LFS transfer not yet verified; V4 remains NO-GO, V5.1 unprinted.
+- **Next:** Review all local package differences and verify the 16 manifest hashes before safely synchronizing assets.
+- **Sync:** LOCAL; this note is not yet pushed.
+
+## Latest action — 2026-11-15T21:15Z — Copilot SDK (V5.1 package verification)
+- **Result:** All 16 local V5.1 manifest entries match SHA-256, totaling 43,283,814 bytes. All 16 canonical destinations are absent and 3MF paths use Git LFS. Nine existing text/script files differ between the root package and canonical release and will not be overwritten without review.
+- **Files changed:** Handoff and session log only.
+- **Evidence:** SHA-256 comparison to `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_1_SHA256_MANIFEST.txt`, source-versus-release comparison, `git check-attr`, `git lfs version`.
+- **Blockers:** Remote upload and readback pending; CAD remains unprinted; V4 remains NO-GO.
+- **Next:** Inspect differing text files and safely copy only the 16 manifest-verified models into vacant release paths.
+- **Sync:** LOCAL.
+
+## Latest action — 2026-11-15T21:19Z — Copilot SDK (inventory review)
+- **Result:** Reviewed inventory, project hub, test log and release README. Identified outdated V5/V5.1 missing-file notices; these will be corrected without asserting a remote upload before verification.
+- **Files changed:** Handoff and session log.
+- **Evidence:** `docs/ASSET_MAP.md`, `notes/00_Project_Hub.md`, `notes/04_Test_Log.md`, `releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT.md`.
+- **Next:** Record manifest/archive results, clarify that older shells are retained, and prepare the LFS commit.
+- **Blockers/sync:** Remote upload pending; no print approval. LOCAL.
+
+## Latest action — 2026-11-15T21:20Z — Copilot SDK (inventory updates)
+- **Result:** Updated the V5.1 inventory, hub, validation log and release README with the 16 local hashes and archive-read results; corrected stale V5 missing-file notices. Preserved superseded models rather than deleting them.
+- **Files changed:** `docs/ASSET_MAP.md`, `notes/00_Project_Hub.md`, `notes/04_Test_Log.md`, V5 draft README, handoff and session log.
+- **Next:** Stage only the 16 manifest models and the task documentation, check LFS pointers, then commit and push.
+- **Blockers/sync:** Remote upload pending; physical gates remain open. LOCAL.
+
+## Latest action — 2026-11-15T21:21Z — Copilot SDK (LFS staging check)
+- **Result:** Staged precisely the 16 manifest models and six documentation files. All 16 staged Git LFS pointers contain the manifest SHA-256 and exact local byte size; `git diff --cached --check` passed.
+- **Files changed:** Staged models and documentation, plus this handoff and session log.
+- **Next:** Commit, push normally, and verify remote LFS objects independently.
+- **Blockers/sync:** Upload/readback pending; LOCAL.
+
+## Latest action — 2026-11-15T21:16Z — Copilot SDK (package comparison)
+- **Result:** Eight of nine differing text files differ only in line endings; the root README lacks 51 lines present in the newer canonical README. Preserve the canonical files and both source directories.
+- **Files changed:** Handoff and session log only.
+- **Evidence:** Normalized text comparison and `git diff --no-index`; `docs/ASSET_MAP.md` also contains a stale V5 upload-pending sentence.
+- **Next:** Copy the 16 hash-verified models without overwriting existing files; update inventory and verification records.
+- **Blockers/sync:** V5.1 LFS upload and readback pending; LOCAL.
+
+## Latest action — 2026-11-15T21:18Z — Copilot SDK (V5.1 model staging)
+- **Result:** Copied 16 V5.1 models into previously absent canonical release paths using create-new mode; all copied SHA-256 hashes match the manifest and every 3MF archive entry was readable. No existing file was overwritten; old V5 shells remain present.
+- **Files changed:** 16 new 3MF files under `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`, plus this handoff and session log.
+- **Evidence:** Manifest hash comparison and complete ZIP-entry reads.
+- **Blockers:** Upload and independent remote LFS readback pending; physical fit and Bambu slicing remain unverified. Do not print superseded V5 shells 08, 10–13; V5.1 shells 12/13 remain on hold for finger testing.
+- **Next:** Update inventory and test record, stage the verified models through LFS, and push.
+- **Sync:** LOCAL.
+
 ## Latest action — 2026-11-15 — Claude (V5.1: hand light channel and crystal; order list)
 - **Owner approval (chat, 2026-11-15):** cut the hand-strip and crystal light slots.
 - **Action:** Built V5.1 from the originals. Shells **08, 10, 11, 12, 13** (both arms) revised: hand lens freed, LED channel under it opened and deepened to 4.2 mm, crystal freed with its light well open to the channel. Dowel positions identical to V5. New inserts: crystal, hand lens A (81 mm) and B (46 mm). Finding: the original design already contained the channel and well; they were only sealed by fusing.

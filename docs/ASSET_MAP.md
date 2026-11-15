@@ -44,7 +44,11 @@ All 49 extracted V4 files match their byte counts and SHA-256 values in `docs/AS
 - 6 insert 3MFs (handle, optional dowel peg, ring covers and pressure gauges)
 - 1 forefinger slot test coupon 3MF
 
-All 33 model files match `V5_SHA256_MANIFEST.txt`. The V5 support records and build scripts are in the same canonical folder. No Bambu Studio slice or physical test is represented by this checksum result. Remote LFS upload/readback is pending.
+All 33 model files match `V5_SHA256_MANIFEST.txt`. The V5 support records and build scripts are in the same canonical folder. No Bambu Studio slice or physical test is represented by this checksum result.
+
+### V5.1 additions (DRAFT; not print-approved)
+
+16 additional 3MF models / 43,283,814 bytes: revised shells 08 and 10–13 for both arms, plus six crystal and hand-lens inserts. All 16 local files match `V5_1_SHA256_MANIFEST.txt` and their archive entries were readable. Older V5 shells are retained as historical assets; do not print their superseded versions. See `HANDOFF.md` for current transfer status.
 
 ## Integrity and transfer status
 

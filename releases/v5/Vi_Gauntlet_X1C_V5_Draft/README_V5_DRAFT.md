@@ -2,7 +2,7 @@
 
 Built by Claude on 2026-11-14 after owner approval of the V5 direction. **Status: draft for test printing. Not print-approved.** Nothing here has been sliced in Bambu Studio or printed. Originals were not modified; every file here is derived.
 
-> **Where the 3MF files are.** Claude's cloud session cannot upload Git LFS objects (the LFS storage host is blocked by its network policy), so the 33 `.3mf` files are **not in the repository yet**. They were delivered to the owner as `Vi_Gauntlet_X1C_V5_Draft.zip`. To add them: unzip over this folder, check with `sha256sum -c V5_SHA256_MANIFEST.txt`, then `git add` (they are LFS-tracked by `.gitattributes`), commit and push. The folders `Right_Shells/`, `Left_Shells/`, `Inserts/` and `Test_Coupons/` described below come from that zip.
+> **Where the 3MF files are.** The 33 original V5 models are in this release folder and tracked with Git LFS. Their hashes matched `V5_SHA256_MANIFEST.txt`; see `docs/ASSET_MAP.md` for transfer evidence. The V5.1 update below supersedes selected shells.
 
 ## What V5 is
 
@@ -95,7 +95,7 @@ Supports are about a fifth of the filament and are concentrated in shells 05, 06
 
 # V5.1 update — hand light strip and crystal (2026-11-15, owner-approved)
 
-> **File status:** the 16 new `.3mf` files (shells 08, 10, 11, 12, 13 for both arms, crystal and hand-lens inserts) were delivered to the owner as `V5_1_changed_files.zip` because Claude's session cannot upload LFS objects. Unzip over this folder, check with `sha256sum -c V5_1_SHA256_MANIFEST.txt`, commit and push. **Once they are in the repo, delete the superseded `*_08_*_V5.3mf`, `*_10_*`, `*_11_*`, `*_12_*`, `*_13_*_V5.3mf` files.** Shells 01–07 and 09 and the other inserts are unchanged.
+> **File status:** the 16 new `.3mf` files (shells 08, 10, 11, 12, 13 for both arms, crystal and hand-lens inserts) match `V5_1_SHA256_MANIFEST.txt`; see `HANDOFF.md` for remote sync status. Superseded V5 shells are retained for history but **must not be printed**. Shells 01–07 and 09 and the other inserts are unchanged.
 
 ## What changed
 
