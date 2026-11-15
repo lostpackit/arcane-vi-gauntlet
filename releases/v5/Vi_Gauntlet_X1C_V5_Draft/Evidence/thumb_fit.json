@@ -1,0 +1,7 @@
+{
+ "note": "Partial run: the script stopped after two of seven candidate bodies (the remaining reference thumb bodies could not be processed). Surface-sample test of assembled-reference thumb parts against V5.1 shells 11 and 13.",
+ "results": [
+  {"comp": 168, "part": "thumb base, assembled reference (115.22 cm3; printable 3MF Thumb_Base is 113.66 cm3)", "lo": [328.0, 100.9, 436.6], "hi": [401.2, 183.3, 517.6], "inside_pct": 6.8, "max_penetration_mm": 2.05, "touching_pct": 6.1, "min_gap_mm": 0.0},
+  {"comp": 142, "part": "Thumb_Middle_B", "volume_cm3": 23.79, "inside_pct": 0.0, "max_penetration_mm": 0.0, "touching_pct": 0.0, "min_gap_mm": 6.02}
+ ]
+}
