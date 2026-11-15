@@ -1,6 +1,6 @@
 # Arcane Vi Gauntlet — X1C Redesign
 
-**Status: V4 digital geometry candidate. NOT cleared for full wearable printing. Independent review pending.**
+**Status: V4 independently audited NO-GO. Current work is the V5.1 draft in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`, approved for test prints only.**
 
 Private engineering repository for adapting the multi-part *Arcane* Vi gauntlets to a Bambu Lab **X1 Carbon** (0.4 mm nozzle; nominal 256 × 256 × 256 mm build volume).
 
@@ -17,7 +17,9 @@ Private engineering repository for adapting the multi-part *Arcane* Vi gauntlets
 | V1 | Initial eight-section per arm cut | Superseded concept |
 | V2 | Mesh repairs and dowel socket prototypes | Superseded prototype |
 | V3 | Light-ring and PTFE channel fit coupons | Fit-test concept |
-| V4 | 13 shell sections per arm; light ring in one section; separate cover and reinforcement splines | **Digital candidate only** |
+| V4 | 13 shell sections per arm; light ring in one section; separate cover and reinforcement splines | **Independent audit: NO-GO** |
+| V5 | Draft with separate lighting inserts, handle and dowel sockets | Superseded in part by V5.1 |
+| V5.1 | Revised hand light channel, crystal well and selected shells | Draft; test prints only |
 
 Earlier checks reported watertight STL meshes and nominal X1C bed fit, but **a closed mesh is not proof of a printable, mechanically sound or wearable design**. There has been no independently verified Bambu Studio slicing, complete finger travel, lighting fit, strength or physical assembly.
 
@@ -33,10 +35,13 @@ The **repository root is an Obsidian vault**. Open the cloned repository folder 
 - [Build requirements](docs/PROJECT_BRIEF.md)
 - [Electronics and finger string constraints](docs/ELECTRONICS_AND_STRINGS.md)
 - [Claude independent review](audits/claude/CLAUDE_MASTER_PROMPT.md)
+- [V4 audit verdict](audits/results/FINAL_VERDICT.md)
+- [V5.1 draft and print set](releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT.md)
+- [Current electronics order list](electronics/ORDER_LIST.md)
 - [CAD asset upload instructions](docs/UPLOAD_CAD_ASSETS.md)
 
 ## CAD storage and build workflow
-Original files and V1–V4 binary releases are provided in **six downloadable asset ZIP parts** in the ChatGPT project conversation; the previously named single large ZIP was not delivered. See [corrected asset import instructions](docs/UPLOAD_CAD_ASSETS.md). **The binary assets are not automatically present in GitHub until uploaded.** Use **Git LFS** for STL, 3MF, and ZIP objects. Put untouched originals under `originals/`, historical releases under `releases/v1`–`releases/v3`, and extracted V4 objects under `releases/v4/`. Do not commit generated G-code.
+The original, V3, V4, V5 and V5.1 CAD assets are in the repository using **Git LFS** for STL, 3MF, and ZIP objects. V1 and V2 were intentionally excluded. See the [asset map](docs/ASSET_MAP.md) and [asset instructions](docs/UPLOAD_CAD_ASSETS.md). Do not commit generated G-code.
 
 Keep this repository **private** until the third-party model license and redistribution permissions are established. Nothing here grants rights to *Arcane* or third-party source meshes.
 

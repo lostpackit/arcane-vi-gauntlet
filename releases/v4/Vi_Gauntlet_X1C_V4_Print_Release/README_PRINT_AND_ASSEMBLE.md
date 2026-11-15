@@ -1,3 +1,5 @@
+> **SUPERSEDED — independent audit NO-GO (2026-11-14). Do not print. Use releases/v5/.** See the [audit verdict](../../../audits/results/FINAL_VERDICT.md).
+
 # VI GAUNTLET — V4 X1C RING-SAFE PRINT RELEASE
 
 **This is the consolidated full-size structural shell print release, not the previous V2 prototype cuts.**

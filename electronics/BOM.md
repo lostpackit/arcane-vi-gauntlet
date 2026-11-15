@@ -1,3 +1,5 @@
+> **Current order list:** [ORDER_LIST.md](ORDER_LIST.md). The sections below are historical.
+
 # Bill of materials — candidates for two gauntlets (not order-ready)
 
 | Part | Quantity total | Proposed specification | Status / verification |

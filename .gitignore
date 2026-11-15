@@ -17,6 +17,9 @@ local_print_tests/
 .env
 .env.*
 *.pem
+/Vi_Gauntlet_X1C_V5_Draft*.zip
+/V5_1_changed_files*.zip
+/*_changed_files.zip
 
 # Obsidian local workspace state; keep shared app/templates config in Git
 .obsidian/workspace.json
