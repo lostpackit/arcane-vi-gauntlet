@@ -28,5 +28,6 @@ tags: [risk, blockers]
 | V5 draft unprinted; dowel and insert clearances untested in LW-PLA | OPEN | Print R_09/R_07 and inserts first |
 | V5 shells 12/13 still carry the older finger carrier | OPEN — hold | T2 coupon with a printed finger |
 | V5 supports about 20 % of filament | OPEN | Re-orient 05/06/08/12/13 |
+| V5.1 3MF files (shells 08, 10–13, crystal, lenses) not yet in the repo | OPEN | Owner/Copilot: upload from `V5_1_changed_files.zip`, verify manifest, remove superseded `_V5` files |
 
 For current priority and ownership, see [[HANDOFF]]. Record any newly discovered risk there **after the action**.

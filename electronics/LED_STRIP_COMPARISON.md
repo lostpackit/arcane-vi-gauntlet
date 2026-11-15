@@ -132,3 +132,9 @@ Per arm: **ring 50 + hand 34 + crystal 9 = 93 pixels** (was 21 + 14 + 4 = 39). R
 6. **Preset check on the device:** effect IDs, segment bounds, button mapping, flash behaviour.
 
 Sources consulted: btf-lighting.com ultra-narrow product page and WS2812B 5 V collection; BTF-LIGHTING WS2812B ECO and WS2812B listings on Amazon.de; buyer reports on the 144/m 5050 width; superlightingled.com and ledyilighting.com generic 144/m specifications.
+
+## Correction and update — 2026-11-15
+
+- Earlier text said V5 had no LED channel for the hand strip or crystal. On closer inspection the original design has a sealed channel under the hand lens (about 11.3 × 2.2 mm) and a light well under the crystal. **V5.1 opens both** (owner-approved); see the V5.1 section of the V5 README.
+- The crystal is lit by the hand strip passing under its well. Per-arm count is now **84** (ring 50 + hand 34; the last 11 hand pixels are under the crystal). Worst case at 0.3 W/LED is 5.0 A; the 1000 mA WLED limit still applies.
+- The channel is 11.3 mm wide, so the 7.2 mm strip fits; a 10 mm strip would also fit there.

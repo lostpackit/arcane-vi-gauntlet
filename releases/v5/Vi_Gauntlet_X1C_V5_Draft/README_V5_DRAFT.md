@@ -90,3 +90,52 @@ Supports are about a fifth of the filament and are concentrated in shells 05, 06
 2. `T2_Knuckle_Slot_Forefinger_Coupon` on the A1 Mini, with one of your printed fingers.
 3. `R_09` (A1 Mini) and `R_07`, small shells that share a doweled seam with 08, to test dowel fit in your LW-PLA.
 4. Then `R_08`.
+
+---
+
+# V5.1 update — hand light strip and crystal (2026-11-15, owner-approved)
+
+> **File status:** the 16 new `.3mf` files (shells 08, 10, 11, 12, 13 for both arms, crystal and hand-lens inserts) were delivered to the owner as `V5_1_changed_files.zip` because Claude's session cannot upload LFS objects. Unzip over this folder, check with `sha256sum -c V5_1_SHA256_MANIFEST.txt`, commit and push. **Once they are in the repo, delete the superseded `*_08_*_V5.3mf`, `*_10_*`, `*_11_*`, `*_12_*`, `*_13_*_V5.3mf` files.** Shells 01–07 and 09 and the other inserts are unchanged.
+
+## What changed
+
+Inspection of the fused solid showed the original design already contains an **LED channel under the hand light strip** (about 11.3 mm wide, 2.2 mm deep) and a **light well under the crystal**. Both were sealed. V5.1 opens them:
+
+| Change | Detail |
+|---|---|
+| Hand lens freed | The 13.3 × 238 mm light-strip insert is no longer fused. Its slot is open to the outside where nothing sits over it. |
+| LED channel deepened | Channel under the lens is now 4.2 mm deep (was 2.2) over a 10.5 mm width, 11.3 mm wide at the top. 4.6–6.6 mm of wall remains to the hand cavity. Straight and unobstructed for its whole length. |
+| Channel reaches the ring | The channel runs on toward the ring's wire notch, so the ring strip and the hand strip can be one data chain with the joint at the notch. |
+| Crystal freed | The crystal is a lift-out insert (0.3 mm clearance). The well beneath it is open down to the LED channel, so **the hand strip lights the crystal**; no separate crystal LEDs. |
+| Dowel sockets | Identical positions to V5, so any V5 shells already printed still mate. |
+
+## New inserts (print in clear or translucent standard PLA)
+
+- `*_Hand_Lens_A_translucent_81mm` — sits between the ring and the top plate.
+- `*_Hand_Lens_B_translucent_46mm` — sits between the top plate and the crystal base.
+- `*_Crystal_translucent`.
+
+The lens is only fitted where it is visible. Under the top-plate bridge and under the crystal base the slot is left as an open tunnel for the strip.
+
+## LED layout per arm with the 7.2 mm 144 LEDs/m strip
+
+Ring 50 + hand channel 34 = **84 pixels** (replaces the earlier 93). The last 11 hand pixels sit under the crystal well. WLED segments: ring `[0,50)`, hand `[50,73)`, crystal `[73,84)`.
+
+## Fitting notes
+
+1. Feed the strip into the channel from an open section and push it through the two tunnels (22 mm under the top plate, about 18 mm under the front of the crystal base). Do this before bonding anything over it.
+2. The lens rests on ledges about 1.0 mm wide each side. Fix it with a few dots of clear glue or thin double-sided tape; it carries no load.
+3. LEDs sit about 2 mm below a 1.6 mm lens, so individual pixels will be visible as soft dots at 144 LEDs/m. A frosted or thicker lens print softens this.
+4. The centre seam (X = 211) runs along the channel. Channel floor at the seam is 4.6 mm or more.
+5. The crystal rests on a narrow rim (about 12 % of its underside). Glue dots are enough.
+
+## Verification (computed; `V5_1_Verification.json`)
+
+- 39/39 built files are closed manifold single parts within the X1C envelope; left = exact mirror.
+- Only shells 08, 10, 11, 12, 13 differ from V5 (−0.8 to −4.8 cm³ each).
+- Crystal: zero overlap seated and lifted 1–25 mm. Lens segments A and B: zero overlap seated; lift-out clear (one 0.3 mm³ contact at 3 mm).
+- Channel: 11.3 mm wide, 4.2 mm deep at 12 stations; 234 mm clear straight run.
+- Channel under the crystal is open to the outside through the crystal pocket at three stations.
+- No dowel socket has lost its surrounding wall.
+
+Still unprinted and unsliced in Bambu Studio. Shells 12/13 remain on hold for the finger test.

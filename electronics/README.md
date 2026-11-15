@@ -14,3 +14,5 @@
 **Strip selection reviewed by Claude, 2026-11-14:** see [LED_STRIP_COMPARISON](LED_STRIP_COMPARISON.md). Recommended: BTF-LIGHTING Ultra-Narrow WS2812B 3535, 144 LEDs/m, 7.2 mm for ring, hand and crystal (50 + 34 + 9 = 93 px per arm). Conditional on the T-1 fit test; hand and crystal need unapproved V5 CAD changes.
 
 **Code, WLED and wiring review (Claude, 2026-11-14, reading only):** [CODE_AND_WLED_REVIEW](CODE_AND_WLED_REVIEW.md).
+
+**Order list (2026-11-15):** [ORDER_LIST](ORDER_LIST.md). V5.1 layout is 84 pixels per arm; the gauge uses strip in the ring trough, not an LED ring board.

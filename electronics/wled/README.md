@@ -25,3 +25,5 @@ Official docs: https://kno.wled.ge/features/presets/ ; https://kno.wled.ge/featu
 - Button B long-press calls preset 5.
 - **Macro mapping to enter in Time & Macros:** A short → 21, A long → 22, B short → 23, B double → 24, B long → 25 (unchanged numbers).
 - **Still to do on the device:** effect IDs 13 (chase) and 15 (surge) were not changed because they cannot be confirmed without the installed version's `/json/eff`. Choose a comet/chase-type effect for preset 3 and a fast fade/breathe for preset 4 by name, then re-save those presets.
+
+**2026-11-15:** `presets_144.json` now uses the V5.1 layout: 84 LEDs, ring `[0,50)`, hand `[50,73)`, crystal `[73,84)` (the crystal is lit by the end of the hand strip).

@@ -37,3 +37,7 @@ See [LED_STRIP_COMPARISON](LED_STRIP_COMPARISON.md). Earlier rows are kept as wr
 | Momentary switches | OPEN | Size and position wait for the handle-area button pod design. |
 
 Remaining before any "order-ready" mark: T-1 ring fit with a real sample, colour order, measured current and 30-minute temperature.
+
+## Update 2026-11-15 (Claude)
+
+Consolidated order list: [ORDER_LIST](ORDER_LIST.md). With V5.1 the hand strip also lights the crystal, so the per-arm count is **84 pixels** (ring 50 + hand channel 34), not 93, and no separate crystal LEDs are needed. No LED ring board is used for the gauge.

@@ -3,8 +3,8 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-14
-last_agent: Claude (lighting code fixes)
-sync_state: pushed-v5-cad-verified-33-of-33
+last_agent: Claude (V5.1 hand/crystal lighting)
+sync_state: docs-pushed-v5-1-cad-pending-owner-lfs-upload
 tags:
   - handoff
   - agents
@@ -14,6 +14,17 @@ tags:
 # Cross-agent handoff — READ FIRST
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
+
+## Latest action — 2026-11-15 — Claude (V5.1: hand light channel and crystal; order list)
+- **Owner approval (chat, 2026-11-15):** cut the hand-strip and crystal light slots.
+- **Action:** Built V5.1 from the originals. Shells **08, 10, 11, 12, 13** (both arms) revised: hand lens freed, LED channel under it opened and deepened to 4.2 mm, crystal freed with its light well open to the channel. Dowel positions identical to V5. New inserts: crystal, hand lens A (81 mm) and B (46 mm). Finding: the original design already contained the channel and well; they were only sealed by fusing.
+- **Result:** verified by computation (`releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_1_Verification.json`). Unprinted, not sliced in Bambu Studio.
+- **LED layout now 84 px per arm** (ring 50 + hand 34, last 11 under the crystal). `electronics/wled/presets_144.json` and the firmware default updated; PC check PASS.
+- **New:** `electronics/ORDER_LIST.md` is the single consolidated order list. The gauge uses strip in the trough, not an LED ring board.
+- **ACTION NEEDED (owner or Copilot):** the 16 new `.3mf` files are **not in the repo**. Unzip `V5_1_changed_files.zip` over `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`, run `sha256sum -c V5_1_SHA256_MANIFEST.txt`, commit, push; then delete the superseded `_V5.3mf` files for shells 08, 10, 11, 12, 13.
+- **Do not print** the old `_V5` versions of shells 08, 10, 11, 12, 13.
+- **Still open:** shells 12/13 on hold (finger test); gauge magnet pockets; electronics mounts and button pod; WLED effect choice on a device; ESP32 build.
+- **Sync:** docs, records, scripts PUSHED with this commit; CAD pending as above.
 
 ## Latest action — 2026-11-14T23:05Z — Claude (lighting code and WLED preset fixes)
 - **Action:** Revised `electronics/firmware/src/main.cpp` (C++11 build fix, software current limiter, build-time layouts, scaled chase, drift fix, overridable pins); added PC logic check `electronics/firmware/test/`; three PlatformIO environments. Fixed both WLED preset files: button cycle 1–5 without the strobe, flash is a 0.4 s burst playlist returning to idle.
