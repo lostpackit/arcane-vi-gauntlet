@@ -29,6 +29,10 @@ V5.1: shells 08, 10, 11, 12, 13 (both arms) revised; new crystal and two hand-le
 
 Magnet pockets for the gauge, electronics mounts, button pod, finger-carrier decision, Bambu Studio slicing, any physical test.
 
+## Follow-up 21:35Z
+
+Copilot uploaded the 16 files (`030b461`). Checked: 16/16 match the manifest and my build byte for byte; not LFS pointers. Moved the 10 superseded `_V5` shells into `Superseded_V5_DO_NOT_PRINT/` (rename only) and fixed their manifest paths; 33/33 and 16/16 still OK. README now lists the current print set.
+
 ## Sync
 
-Docs, records and scripts PUSHED. The 16 new `.3mf` files are NOT in the repo (LFS upload blocked for this session); delivered to the owner as `V5_1_changed_files.zip` with `V5_1_SHA256_MANIFEST.txt`.
+All PUSHED. V5.1 models uploaded by Copilot and verified by Claude.

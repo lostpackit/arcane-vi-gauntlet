@@ -17,3 +17,4 @@ This is a **summary index**; detailed after-every-action records live in each ag
 | 2026-11-14 | Claude | Sync verified (33/33 V5 files); read-only review of lighting firmware, WLED presets and wiring | `electronics/CODE_AND_WLED_REVIEW.md` |
 | 2026-11-14 | Claude | Lighting firmware revised and PC-checked; WLED preset cycle and flash burst fixed | `electronics/firmware/`, `electronics/wled/` |
 | 2026-11-15 | Claude | V5.1: hand LED channel and crystal well opened (shells 08, 10–13); order list consolidated; layout 84 px | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT.md`, `electronics/ORDER_LIST.md` |
+| 2026-11-15 | Claude | Verified Copilot's V5.1 upload (16/16); moved superseded V5 shells to a do-not-print folder | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/Superseded_V5_DO_NOT_PRINT/` |

@@ -21,6 +21,7 @@ Not changed in this draft: seam planes, finger carrier geometry, light-strip win
 ## Files
 
 - `Right_Shells/`, `Left_Shells/` — 13 shells each, 3MF, already oriented for printing and centred on a 256 mm bed. Left is the exact mirror.
+- `Superseded_V5_DO_NOT_PRINT/` — the original V5 versions of shells 08 and 10–13, replaced by the `_V5_1` files. History only.
 - `Inserts/` — cover and gauge (R and L), handle, optional printable dowel peg.
 - `Test_Coupons/T2_Knuckle_Slot_Forefinger_Coupon.3mf` — the forefinger slot of shell 13 (105 × 115 × 75 mm) for checking your printed finger before committing to shells 12/13.
 - `V5_Geometry_Check.csv`, `V5_Verification.json`, `V5_build_log.json`, `V5_Surrogate_Slice_Light_Settings.csv`, `Evidence/`, `Build_Scripts/`.
@@ -89,7 +90,7 @@ Supports are about a fifth of the filament and are concentrated in shells 05, 06
 1. `R_Ring_Light_Cover_translucent` + the original `Circle_Light.stl` (audit test T-1) on the A1 Mini, to settle the LED strip choice.
 2. `T2_Knuckle_Slot_Forefinger_Coupon` on the A1 Mini, with one of your printed fingers.
 3. `R_09` (A1 Mini) and `R_07`, small shells that share a doweled seam with 08, to test dowel fit in your LW-PLA.
-4. Then `R_08`.
+4. Then `R_08_LightBand_Rear_RingCarrier_V5_1`.
 
 ---
 
@@ -139,3 +140,18 @@ Ring 50 + hand channel 34 = **84 pixels** (replaces the earlier 93). The last 11
 - No dowel socket has lost its surrounding wall.
 
 Still unprinted and unsliced in Bambu Studio. Shells 12/13 remain on hold for the finger test.
+
+---
+
+## Current print set (as of 2026-11-15) — 13 shells per arm
+
+Each folder (`Right_Shells/`, `Left_Shells/`) now holds exactly one file per shell:
+
+| Shell | File (right arm; left is the same with `L_`) | Version |
+|---|---|---|
+| 01–07, 09 | `R_0x_..._V5.3mf` | V5 (unchanged) |
+| 08 ring carrier | `R_08_LightBand_Rear_RingCarrier_V5_1.3mf` | V5.1 |
+| 10, 11 wrist | `R_10_Wrist_Left_V5_1.3mf`, `R_11_Wrist_Right_V5_1.3mf` | V5.1 |
+| 12, 13 knuckles | `R_12_Knuckles_Left_V5_1.3mf`, `R_13_Knuckles_Right_V5_1.3mf` | V5.1 — **on hold until the finger coupon test** |
+
+Inserts: ring cover, gauge, handle, crystal, hand lens A and B (both arms), optional dowel peg. Test coupon: T2 finger slot.

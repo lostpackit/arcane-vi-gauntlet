@@ -3,8 +3,8 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-15
-last_agent: Copilot SDK (V5.1 sync)
-sync_state: v5-1-models-pushed-and-read-back
+last_agent: Claude (V5.1 upload check)
+sync_state: pushed-v5-1-verified-superseded-moved
 tags:
   - handoff
   - agents
@@ -14,6 +14,13 @@ tags:
 # Cross-agent handoff — READ FIRST
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
+
+## Latest action — 2026-11-15T21:35Z — Claude (V5.1 upload check; superseded shells moved)
+- **Check:** pulled `a6e69b2`. All 16 V5.1 files are real LFS content (not pointers), match `V5_1_SHA256_MANIFEST.txt` 16/16, and are byte-identical to Claude's build. The original 33 V5 files still match `V5_SHA256_MANIFEST.txt`.
+- **Action:** moved the 10 superseded `_V5` shells (08, 10–13, both arms) into `releases/v5/Vi_Gauntlet_X1C_V5_Draft/Superseded_V5_DO_NOT_PRINT/` with `git mv` (no content change, no LFS upload). Updated their paths in `V5_SHA256_MANIFEST.txt` (33/33 still OK). `Right_Shells/` and `Left_Shells/` now hold exactly 13 printable files each. README gets a "Current print set" table.
+- **Reason:** old and new files differed only by `_V5` vs `_V5_1` in the same folder; printing an old 08 or 10–13 would give a sealed hand light and fused crystal. Files are kept, not deleted.
+- **Status:** V5.1 is ready for the **test prints** in the README. Not approved for a full print; shells 12/13 on hold for the finger test; no Bambu Studio slice; no physical test.
+- **Sync:** PUSHED with this commit.
 
 ## Latest action — 2026-11-15T21:10Z — Copilot SDK (local update sync)
 - **Action/result:** Fetched and fast-forwarded `main` from `72d9cf6` to `8fb91bd`; incoming electronics and V5.1 documentation retained. Two pre-existing untracked package directories were preserved.
@@ -91,7 +98,7 @@ tags:
 - **Result:** verified by computation (`releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_1_Verification.json`). Unprinted, not sliced in Bambu Studio.
 - **LED layout now 84 px per arm** (ring 50 + hand 34, last 11 under the crystal). `electronics/wled/presets_144.json` and the firmware default updated; PC check PASS.
 - **New:** `electronics/ORDER_LIST.md` is the single consolidated order list. The gauge uses strip in the trough, not an LED ring board.
-- **ACTION NEEDED (owner or Copilot):** the 16 new `.3mf` files are **not in the repo**. Unzip `V5_1_changed_files.zip` over `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`, run `sha256sum -c V5_1_SHA256_MANIFEST.txt`, commit, push; then delete the superseded `_V5.3mf` files for shells 08, 10, 11, 12, 13.
+- **ACTION NEEDED (owner or Copilot):** the 16 new `.3mf` files are **not in the repo**. Unzip `V5_1_changed_files.zip` over `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`, run `sha256sum -c V5_1_SHA256_MANIFEST.txt`, commit, push; then delete the superseded `_V5.3mf` files for shells 08, 10, 11, 12, 13. **DONE 2026-11-15:** uploaded by Copilot (`030b461`); superseded files moved to `Superseded_V5_DO_NOT_PRINT/` by Claude.
 - **Do not print** the old `_V5` versions of shells 08, 10, 11, 12, 13.
 - **Still open:** shells 12/13 on hold (finger test); gauge magnet pockets; electronics mounts and button pod; WLED effect choice on a device; ESP32 build.
 - **Sync:** docs, records, scripts PUSHED with this commit; CAD pending as above.

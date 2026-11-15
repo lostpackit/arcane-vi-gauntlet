@@ -60,3 +60,5 @@ All 33 model files match `V5_SHA256_MANIFEST.txt`. The V5 support records and bu
 - Original/V3/V4 manifest verification remains **PASS, 59/59**, as recorded above.
 
 The independent V4 audit verdict is **NO-GO**. V5 is a digital draft, not print-approved. See [release gates](RELEASE_GATES.md) and `audits/results/FINAL_VERDICT.md`.
+
+**2026-11-15 (Claude):** the 10 superseded V5 shells (08, 10–13, both arms) were moved to `releases/v5/Vi_Gauntlet_X1C_V5_Draft/Superseded_V5_DO_NOT_PRINT/`. `Right_Shells/` and `Left_Shells/` each hold exactly the 13 current printable shells.
