@@ -1,5 +1,7 @@
 # Copilot SDK — repository cleanup
 
+Earlier action times in this cleanup log and its handoff entries were estimates, not measured timestamps. Their sequence and outcomes are recorded as observed.
+
 ## 2026-11-15T21:24Z
 - Action: Inspected status including ignored files, instructions, incoming history, LFS baseline and project context; fetched and pulled `origin/main`.
 - Result: Fast-forwarded to `500150332db89c6d9d0f673bdc7765719aff6047`. Incoming commit already moved ten V5 shells with 100% identical Git objects into the superseded folder and adjusted the manifest. No CAD changes were authored in this session. Two source directories remain untracked. Baseline LFS count is 95.
@@ -7,6 +9,13 @@
 - Open blockers: V4 NO-GO and V5.1 physical/slicer testing remain unchanged.
 - Next: Inspect delivery archives, requested text files, handoff headings and links.
 - Sync: LOCAL.
+
+## 2026-11-15T21:38Z
+- Action: Reverified archive text and order, staged task files, checked staged whitespace and ensured no CAD files or tracked deletions were staged; committed and pushed.
+- Result: Archive and staged checks PASS. Commit `1a73d5b81c4aeacd6adc72a600acff3f152108dd` pushed and `git ls-remote` confirmed the same SHA. Tracked worktree clean; pre-existing `Claude_Vi_Gauntlet_Audit_Kit/` and `Vi_Gauntlet_X1C_V5_Draft/` remain untracked. No root ZIPs existed or were deleted.
+- Next: Push this verification record. Firmware runtime remains blocked by Application Control; no engineering release verdict changed.
+- Clock check: `Get-Date` returned `2026-11-15T21:38:06Z` after the remote verification.
+- Sync: Check Git's remote ref for this final verification record.
 
 ## 2026-11-15T21:58Z
 - Action: Inspected the archive end and appended a separate end marker after the original last entry.
