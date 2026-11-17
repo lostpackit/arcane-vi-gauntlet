@@ -25,6 +25,11 @@ tags:
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
 
+## Latest action — 2026-11-17T22:45Z — Claude (wiring visualised; order-list gaps closed)
+- Drew the per-gauntlet layout and wiring chain for the owner (in chat).
+- Found and added to `electronics/ORDER_LIST.md`: power via **USB-A** (bare USB-C plugs get no power from USB-C banks), perfboard and DIP socket for the 74AHCT125, Dupont jumpers and breadboard for the bench test, soldering tools and multimeter if not owned.
+- **Sync:** PUSHED with this commit.
+
 ## Latest action — 2026-11-17T22:20Z — Claude (complete print pack and print order)
 - **Owner question:** the V5.1 zip only had the changed files; where is the rest, and what order to print?
 - **Action:** built `Vi_Gauntlet_V5_Print_Pack.zip` for the owner: all 42 current print files (13 shells per arm with V5.2 shell 08, all inserts, handle, finger coupon, mount concepts, optional dowel peg) plus the original `Circle_Light.stl` as an optional stand-in, arranged in numbered print-order folders. Every file checked against the repo manifests (0 mismatches). Added `releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER.md`.

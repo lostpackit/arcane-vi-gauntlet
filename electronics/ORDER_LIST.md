@@ -23,13 +23,13 @@ This is the single list to order from. It consolidates `BOM.md`, `LED_STRIP_COMP
 | 3 | ESP32 controller board | 1 pack of 3 | **AZDelivery 3 × ESP32 NodeMCU Dev Kit C, WROOM-32, CP2102, USB-C, pins soldered** (matches the reference wiring and firmware pins) | https://www.amazon.de/AZDelivery-Development-Anschluss-kompatibel-inklusive/dp/B0D8WBG557 | **Chosen 2026-11-17.** Listing found by search, not opened; check "3 ×", USB-C and soldered pins |
 | 4 | Level shifter | 2 + spare | 74AHCT125 (DIP-14 or breakout) | Amazon.de: `74AHCT125` | Not verified |
 | 5 | Tactile switches with caps | 4 + spares | **12 × 12 mm tactile switch ("Taster 12x12 mit Kappe")**, to fit the handle button pod | Amazon.de: `Taster 12x12mm mit Kappe` | Not verified; pod is a concept sized from catalogue dimensions |
-| 6 | Power bank | 2 | 5 V, at least 2.4 A output, 5,000–10,000 mAh, low-current mode ("Kleinstrom") | Amazon.de | Not verified |
+| 6 | Power bank | 2 | 5 V, **with a USB-A output port**, at least 2.4 A, 5,000–10,000 mAh, low-current mode ("Kleinstrom") | Amazon.de | Not verified |
 | 7 | Inline fuse holder + 3 A fuses | 2 + spare fuses | Blade or 5×20 mm, 3 A | Amazon.de: `Sicherungshalter Flachsicherung` | — |
 | 8 | Electrolytic capacitor | 2 + spares | 1000 µF, 10 V or higher | Amazon.de: `Elko 1000uF 16V` | — |
 | 9 | Resistors | assortment | 330–470 Ω | Amazon.de: `Widerstand Sortiment` | — |
 | 10 | 3-pin connectors | 6+ pairs | JST-SM 3-pin with leads | Amazon.de: `JST SM 3 Pin Stecker Buchse` | — |
 | 11 | Silicone wire | 1 set | 22 AWG (power), 26 AWG (signal) | Amazon.de: `Silikonkabel 22AWG Set` | — |
-| 12 | USB-C plug with bare leads | 2 | 5 V power pigtail | Amazon.de: `USB-C Stecker offenes Ende` | — |
+| 12 | **USB-A** plug with bare leads | 2 + spare | USB-A male to open wires, 5 V power | Amazon.de: `USB A Stecker offene Enden Kabel` | Changed 2026-11-17: a bare USB-C plug gets no power from most USB-C power banks (they only switch on when they detect a device) |
 | 13 | Heat-shrink tubing | 1 set | — | Amazon.de | — |
 | 14 | Wooden dowels | 120 | 6 × 30 mm | Amazon.de / Baumarkt: `Holzdübel 6x30` | 57 per arm |
 | 15 | ~~Small magnets~~ | — | **Dropped 2026-11-15.** The gauge has no flat contact area for magnets; it is glued to the cover and the cap is held with removable putty (item 17) | — | Not needed |
@@ -67,3 +67,14 @@ The list is still valid. Changes folded into the table above: the controller is 
 | 20 | Clear glue or thin clear double-sided tape | 1 | Hand lenses, crystal, gauge to cover |
 
 **Must-have to light one ring on the bench:** items 1 (or 2), 3, 4, 6, 7, 8, 9, 11, 12. Everything else can wait until parts are printed.
+
+## Update 2026-11-17 (late) — gaps found while drawing the wiring
+
+| # | Item | Qty | Why |
+|---|---|---|---|
+| 21 | Perfboard ("Lochrasterplatine"), small | 2–3 | The 74AHCT125 is a bare chip; it, the resistor and the capacitor need something to sit on |
+| 22 | 14-pin DIP socket | 2 + spare | So the shifter chip plugs in and is not soldered directly |
+| 23 | Dupont jumper wires (female-female and female-male) + small breadboard | 1 set | First bench test without soldering to the ESP32 |
+| 24 | Soldering iron, solder, multimeter | if not already owned | Strip joints, power wiring, and the current/temperature test |
+
+Items 6 and 12 changed: power comes from a **USB-A** port through a USB-A pigtail. Do not power the ESP32 from USB and the power bank at the same time.
