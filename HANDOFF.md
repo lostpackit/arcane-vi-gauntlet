@@ -25,6 +25,12 @@ tags:
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
 
+## Latest action — 2026-11-17T23:05Z — Claude (controller/strip rethink after owner objections)
+- Owner rejected USB-A and perfboard/breadboard; 7.2 mm ultra-narrow strip out of stock.
+- **Proposed** (not yet confirmed by owner): Adafruit Sparkle Motion Mini as controller (USB-C 5 V 4 A in, 4 A fuse, level-shifted outputs, 32 x 20 mm), replacing ESP32 DevKit, level shifter, perfboard, fuse holder, pigtail, breadboard. Any 5 V WS2812B strip of 10 mm or less at 144–160/m fits without CAD change. Details at the end of `electronics/ORDER_LIST.md`.
+- If confirmed: update `WIRING.md`, firmware pins, WLED setup, and resize the electronics sled concept.
+- **Sync:** PUSHED with this commit.
+
 ## Latest action — 2026-11-17T22:45Z — Claude (wiring visualised; order-list gaps closed)
 - Drew the per-gauntlet layout and wiring chain for the owner (in chat).
 - Found and added to `electronics/ORDER_LIST.md`: power via **USB-A** (bare USB-C plugs get no power from USB-C banks), perfboard and DIP socket for the 74AHCT125, Dupont jumpers and breadboard for the bench test, soldering tools and multimeter if not owned.

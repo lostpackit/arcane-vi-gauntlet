@@ -78,3 +78,15 @@ The list is still valid. Changes folded into the table above: the controller is 
 | 24 | Soldering iron, solder, multimeter | if not already owned | Strip joints, power wiring, and the current/temperature test |
 
 Items 6 and 12 changed: power comes from a **USB-A** port through a USB-A pigtail. Do not power the ESP32 from USB and the power bank at the same time.
+
+## Revision 2026-11-17 (night) — PROPOSED, replaces items 3, 4, 7, 9, 12, 21, 22, 23 and the USB-A change
+
+Owner objections: wants USB-C, not USB-A; a perfboard/breadboard build has no clear home inside the glove; the 7.2 mm ultra-narrow strip is out of stock.
+
+**Controller: Adafruit Sparkle Motion Mini** (ADA6160, or ADA6314 with pre-soldered terminal block), 2 + 1 spare. ESP32 module, WLED-friendly, **USB-C power input up to 5 V 4 A with a 4 A resetting fuse**, two **level-shifted** LED outputs, 32.3 × 19.7 × 12.4 mm, 5.1 g, mounting holes. It replaces: the AZDelivery ESP32 pack, the 74AHCT125, perfboard, DIP socket, inline fuse holder, USB pigtail and breadboard. Power: ordinary USB-C to USB-C cable from a USB-C power bank. Not on Amazon.de; European sellers found: Opencircuit (NL), robot-domestici (IT), Pimoroni (UK/EU), The Pi Hut (UK). Stock varies.
+
+Still needed: 1000 µF capacitor at the strip (recommended), silicone wire, heat-shrink, 3-pin JST connectors, two 12 × 12 mm tactile switches per arm, short USB-C to USB-C cable per arm, USB-C power bank with low-current mode.
+
+**LED strip:** any 5 V WS2812B, IP30, **width 10 mm or less**, 144–160 LEDs/m fits both the ring wall (about 13.0 mm high) and the hand channel (11.3 mm wide) with no CAD change; the LED count is a WLED setting. Candidates seen in search, stock not verified: BTF-LIGHTING WS2812B 2020 5 mm 160/m; TOPXCDZ WS2812B 3535 8 mm 144/m. Fallback that is widely stocked: BTF-LIGHTING WS2812B 5050 60/m 10 mm (21 + 15 LEDs per arm, more stepped animation).
+
+Firmware/WLED pin map and the sled concept must be updated to this board once the owner confirms.
