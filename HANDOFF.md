@@ -2,8 +2,8 @@
 type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
-updated_date: 2026-11-15
-last_agent: Claude (V5.2 simulation and issues)
+updated_date: 2026-11-17
+last_agent: Claude (order list re-check)
 sync_state: docs-pushed-v5-2-cad-pending-upload-issue-2
 tags:
   - handoff
@@ -24,6 +24,13 @@ tags:
 # Cross-agent handoff — READ FIRST
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
+
+## Latest action — 2026-11-17 — Claude (order list re-check; controller chosen)
+- **Owner question:** is the order list still valid without magnets? Yes. `electronics/ORDER_LIST.md` updated: magnets dropped; controller fixed as the AZDelivery 3 × ESP32 NodeMCU Dev Kit C (WROOM-32, CP2102, USB-C); buttons are 12 × 12 mm tactile switches for the handle pod; putty, hook-and-loop, zip ties and clear glue added.
+- **Issue #10 (board choice):** recommendation recorded; pin map stays GPIO 16 / 25 / 26.
+- **Lighting behaviour:** owner is still deciding whether effects should auto-return to breathing; no change made.
+- Nothing purchased by an agent; no hardware test.
+- **Sync:** PUSHED with this commit.
 
 ## Latest action — 2026-11-15T22:05Z — Claude (V5.2: simulation, wire link fix, mounts, GitHub issues)
 - **Owner request:** re-check the models, open issues for everything left, work through them, simulate printing and fit, design LED hardware mounts.

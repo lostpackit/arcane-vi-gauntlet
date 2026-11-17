@@ -20,9 +20,9 @@ This is the single list to order from. It consolidates `BOM.md`, `LED_STRIP_COMP
 |---|---|---|---|---|---|
 | 1 | LED strip, BTF-LIGHTING Ultra-Narrow WS2812B | 2 m (2 × 1 m or 1 × 2 m) | 3535 LEDs, **144 LEDs/m, 7.2 mm**, 5 V, IP30, white PCB | https://www.btf-lighting.com/products/ultra-narrow-ws2812b-addressable-rgbic-led-strip (variant "3535 144LEDs 7.2mm IP30") | Product verified on manufacturer page; ships from China, buyer handles customs. Not found on Amazon.de |
 | 2 | Fallback/bench strip, BTF-LIGHTING WS2812B | 1 m | 5050, **60 LEDs/m, 10 mm**, 5 V, IP30 | Amazon.de, BTF-LIGHTING store | Listing not individually verified |
-| 3 | ESP32 controller board | 2 + 1 spare | ESP32-WROOM-32 DevKit (matches the reference wiring and firmware pins) **or** Seeed XIAO ESP32-C3/S3 (smaller, different pins) | Amazon.de: `ESP32 DevKit WROOM-32` or `Seeed XIAO ESP32C3` | Board choice still open; either runs WLED |
+| 3 | ESP32 controller board | 1 pack of 3 | **AZDelivery 3 × ESP32 NodeMCU Dev Kit C, WROOM-32, CP2102, USB-C, pins soldered** (matches the reference wiring and firmware pins) | https://www.amazon.de/AZDelivery-Development-Anschluss-kompatibel-inklusive/dp/B0D8WBG557 | **Chosen 2026-11-17.** Listing found by search, not opened; check "3 ×", USB-C and soldered pins |
 | 4 | Level shifter | 2 + spare | 74AHCT125 (DIP-14 or breakout) | Amazon.de: `74AHCT125` | Not verified |
-| 5 | Momentary push buttons | 4 + spares | Normally open, momentary ("Taster"), about 12 mm | Amazon.de: `Drucktaster 12mm Taster Schließer` | Size waits for the button-pod design |
+| 5 | Tactile switches with caps | 4 + spares | **12 × 12 mm tactile switch ("Taster 12x12 mit Kappe")**, to fit the handle button pod | Amazon.de: `Taster 12x12mm mit Kappe` | Not verified; pod is a concept sized from catalogue dimensions |
 | 6 | Power bank | 2 | 5 V, at least 2.4 A output, 5,000–10,000 mAh, low-current mode ("Kleinstrom") | Amazon.de | Not verified |
 | 7 | Inline fuse holder + 3 A fuses | 2 + spare fuses | Blade or 5×20 mm, 3 A | Amazon.de: `Sicherungshalter Flachsicherung` | — |
 | 8 | Electrolytic capacitor | 2 + spares | 1000 µF, 10 V or higher | Amazon.de: `Elko 1000uF 16V` | — |
@@ -32,7 +32,7 @@ This is the single list to order from. It consolidates `BOM.md`, `LED_STRIP_COMP
 | 12 | USB-C plug with bare leads | 2 | 5 V power pigtail | Amazon.de: `USB-C Stecker offenes Ende` | — |
 | 13 | Heat-shrink tubing | 1 set | — | Amazon.de | — |
 | 14 | Wooden dowels | 120 | 6 × 30 mm | Amazon.de / Baumarkt: `Holzdübel 6x30` | 57 per arm |
-| 15 | Small magnets (optional) | 12 | 6 × 2 mm, to hold the gauge over the light cover | Amazon.de | Needs magnet pockets (not yet in CAD) |
+| 15 | ~~Small magnets~~ | — | **Dropped 2026-11-15.** The gauge has no flat contact area for magnets; it is glued to the cover and the cap is held with removable putty (item 17) | — | Not needed |
 | 16 | Clear or translucent PLA | 1 spool | For cover, hand lenses, crystal | — | — |
 
 ## Not to buy
@@ -54,3 +54,16 @@ WLED: 83 LEDs, WS281x, colour order GRB (confirm on the sample), current limit 1
 - Hand strip is **33 LEDs** (the deepened channel is 232.5 mm long), so each arm is **83 LEDs**. Strip quantity is unchanged (1 m per arm).
 - Items 5 and 3: concept mounts now exist in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/Mounts_CONCEPT/`: a clip-on handle pod for **two 12 × 12 mm tactile switches** and an 80 × 45 mm electronics sled with zip-tie slots. If you want to use the pod as drawn, buy 12 × 12 mm tactile switches with caps instead of panel-mount buttons. The sled takes either controller board.
 - Add: hook-and-loop tape (sled and power bank to the cuff wall), small zip ties, removable mounting putty (gauge cap).
+
+## Update 2026-11-17 — list re-checked
+
+The list is still valid. Changes folded into the table above: the controller is now a specific board (item 3), buttons are 12 × 12 mm tactile switches for the handle pod (item 5), and magnets are dropped (item 15). Added:
+
+| # | Item | Qty | Why |
+|---|---|---|---|
+| 17 | Removable mounting putty | 1 pack | Holds the gauge-and-cover cap |
+| 18 | Hook-and-loop tape, self-adhesive | 1 roll | Electronics sled and power bank to the cuff wall |
+| 19 | Small zip ties | 1 pack | Boards onto the sled |
+| 20 | Clear glue or thin clear double-sided tape | 1 | Hand lenses, crystal, gauge to cover |
+
+**Must-have to light one ring on the bench:** items 1 (or 2), 3, 4, 6, 7, 8, 9, 11, 12. Everything else can wait until parts are printed.
