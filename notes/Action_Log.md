@@ -20,3 +20,4 @@ This is a **summary index**; detailed after-every-action records live in each ag
 | 2026-11-15 | Claude | Verified Copilot's V5.1 upload (16/16); moved superseded V5 shells to a do-not-print folder | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/Superseded_V5_DO_NOT_PRINT/` |
 | 2026-11-15 | Claude | V5.2: assembly/LED/wire/finger simulation; wire-link fix in shell 08; mount concepts; issues #2–#19 | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_2_SIMULATION_REPORT.md` |
 | 2026-11-17 | Claude | Order list re-checked: magnets dropped, ESP32 board chosen, pod switches specified | `electronics/ORDER_LIST.md` |
+| 2026-11-17 | Claude | Complete print pack (42 files, print-order folders) delivered; PRINT_ORDER.md added | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER.md` |

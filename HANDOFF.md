@@ -3,7 +3,7 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-17
-last_agent: Claude (order list re-check)
+last_agent: Claude (print pack)
 sync_state: docs-pushed-v5-2-cad-pending-upload-issue-2
 tags:
   - handoff
@@ -24,6 +24,12 @@ tags:
 # Cross-agent handoff — READ FIRST
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
+
+## Latest action — 2026-11-17T22:20Z — Claude (complete print pack and print order)
+- **Owner question:** the V5.1 zip only had the changed files; where is the rest, and what order to print?
+- **Action:** built `Vi_Gauntlet_V5_Print_Pack.zip` for the owner: all 42 current print files (13 shells per arm with V5.2 shell 08, all inserts, handle, finger coupon, mount concepts, optional dowel peg) plus the original `Circle_Light.stl` as an optional stand-in, arranged in numbered print-order folders. Every file checked against the repo manifests (0 mismatches). Added `releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER.md`.
+- **Still open:** issue #2 (V5.2 shell 08 and mounts into the repo). The pack contains them already.
+- **Sync:** PUSHED with this commit.
 
 ## Latest action — 2026-11-17 — Claude (order list re-check; controller chosen)
 - **Owner question:** is the order list still valid without magnets? Yes. `electronics/ORDER_LIST.md` updated: magnets dropped; controller fixed as the AZDelivery 3 × ESP32 NodeMCU Dev Kit C (WROOM-32, CP2102, USB-C); buttons are 12 × 12 mm tactile switches for the handle pod; putty, hook-and-loop, zip ties and clear glue added.

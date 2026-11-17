@@ -1,5 +1,7 @@
 # Vi Gauntlet V5 — DRAFT (digital only, unprinted)
 
+**What to print, and in what order: [PRINT_ORDER.md](PRINT_ORDER.md).**
+
 Built by Claude on 2026-11-14 after owner approval of the V5 direction. **Status: draft for test printing. Not print-approved.** Nothing here has been sliced in Bambu Studio or printed. Originals were not modified; every file here is derived.
 
 > **Where the 3MF files are.** The 33 original V5 models are in this release folder and tracked with Git LFS. Their hashes matched `V5_SHA256_MANIFEST.txt`; see `docs/ASSET_MAP.md` for transfer evidence. The V5.1 update below supersedes selected shells.
