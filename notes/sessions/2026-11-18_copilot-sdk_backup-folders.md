@@ -1,5 +1,7 @@
 # Copilot SDK — back up local folders
 
+Action times in this log before the clock check below were estimates, not measured timestamps; use the recorded action order and outcomes.
+
 ## 2026-11-18T21:59Z
 - Action: User requested the three untracked folders be synced and backed up; inspected status, fetched origin, and read required project instructions.
 - Result: `HEAD` and `origin/main` both `e177f0f9b42970ae029fc93077f2847ed54c6cff`; no tracked changes at start. The three folders remain untracked and untouched.
@@ -7,6 +9,24 @@
 - Open items: Verify all requested contents, Git ignore rules, file integrity and LFS handling before staging. Preserve release status and other agents' findings.
 - Next: Inventory all three directories and their manifests, inspect local and remote risks, then stage safely.
 - Sync: LOCAL.
+
+## 2026-11-18 — backup upload
+- Action: Staged the inventory and sync notes, checked the documentation diff and existing release/original paths, committed and pushed the three folders.
+- Result: `c4a4be943060697aa55642bc2bfe94a99b25d8a6` confirmed on remote `main`; Git LFS reported 4/4 new objects uploaded (11 MB). No paths under existing `originals/` or `releases/` were changed.
+- Next: Independently read back the four V5.2 objects from an empty LFS cache, then finish the handoff.
+- Sync: Backup commit PUSHED `c4a4be9`; this note LOCAL.
+
+## 2026-11-18 — remote readback
+- Action: Used a newly created empty LFS cache and path-filtered `git lfs fetch` at backup commit `c4a4be943060697aa55642bc2bfe94a99b25d8a6`; hashed the downloaded objects against all committed package pointers and ran `git lfs fsck`.
+- Result: 91 CAD paths reference 54 distinct objects; all 54 independently fetched objects match their committed SHA-256 values. `git lfs fsck` passed.
+- Next: Clean up only the explicitly named isolated cache and push final verification notes.
+- Sync: Backup commit PUSHED `c4a4be9`; verification notes LOCAL.
+
+## 2026-11-18T22:02Z — readback cleanup
+- Action: Removed the explicitly named isolated LFS cache after successful readback and checked the UTC clock.
+- Result: Temporary cache removed. `Get-Date` returned `2026-11-18T22:02:25Z`; earlier timestamps in this session were estimates. No project files were removed.
+- Next: Push the final verification record and confirm remote `main`.
+- Sync: Backup commit PUSHED `c4a4be9`; verification notes LOCAL.
 
 ## 2026-11-18T22:02Z — staged backup
 - Action: Staged the three requested folders and compared every staged CAD LFS pointer to its local SHA-256 and byte size.

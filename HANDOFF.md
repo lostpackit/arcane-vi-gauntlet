@@ -3,8 +3,8 @@ type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-18
-last_agent: Copilot SDK (repository sync)
-sync_state: remote-main-synced-local-untracked-folders-preserved
+last_agent: Copilot SDK (package backup)
+sync_state: package-backup-pushed-verification-record-pending
 tags:
   - handoff
   - agents
@@ -43,6 +43,25 @@ tags:
 - **Files changed:** Staged three root folders, handoff and backup session log.
 - **Next:** Update inventory to distinguish backed-up source copies from canonical release files; commit and push.
 - **Blockers/sync:** Remote upload and readback pending. LOCAL.
+
+## Latest action — 2026-11-18 — Copilot SDK (package backup push)
+- **Result:** Pushed all three root folders in commit `c4a4be943060697aa55642bc2bfe94a99b25d8a6`; remote `main` confirmed that commit. LFS uploaded 4 new objects (11 MB); other payloads were already present. The 91 staged CAD pointers matched local sizes/hashes.
+- **Files changed:** Three package folders, `docs/ASSET_MAP.md`, handoff and backup session log.
+- **Next:** Independently fetch the 4 newly required V5.2 objects into an isolated empty LFS cache and verify their hashes.
+- **Blockers/sync:** Remote LFS readback pending. Current engineering gates and canonical V5.2 placement unchanged.
+
+## Latest action — 2026-11-18 — Copilot SDK (backup readback)
+- **Result:** Independently fetched all backed-up CAD payloads into a fresh LFS cache: 91 paths map to 54 unique objects, all 54 SHA-256 values match their committed pointers. `git lfs fsck` passed.
+- **Files changed:** Handoff, asset map and backup session log; temporary isolated cache in session storage.
+- **Next:** Remove only the temporary cache, then push this verification record and confirm remote `main`.
+- **Blockers:** This confirms backup integrity only; V5.2 canonical release paths and physical/engineering gates remain as previously recorded.
+- **Sync:** Backup commit `c4a4be9` on remote; verification record LOCAL.
+
+## Latest action — 2026-11-18T22:02Z — Copilot SDK (verification cleanup)
+- **Result:** Removed the isolated readback cache after verifying all 54 unique LFS objects for 91 CAD paths. Backup of 118 files is confirmed in remote commit `c4a4be9`. Earlier backup-entry times were estimates; see the session log.
+- **Files changed:** Handoff, asset map and backup session log; temporary session cache removed.
+- **Next:** Push this verification record. Preserve V4 NO-GO and existing V5.2 engineering blockers.
+- **Sync:** Backup commit on remote; this record pending push.
 
 ## Current state
 - V4: **NO-GO** ([audit verdict](audits/results/FINAL_VERDICT.md)).
