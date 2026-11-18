@@ -25,6 +25,12 @@ tags:
 
 > **Authoritative current working state for every agent.** Read `AGENTS.md` first. Update **this file after every action**, whether successful or failed. Keep a dated per-agent session log in `notes/sessions/`. Preserve other agents' open work and findings.
 
+## Latest action — 2026-11-18 — Claude (first physical result recorded)
+- **Owner printed the T2 knuckle coupon: the printed finger fits.** First physical confirmation of the V5.1 knuckle geometry (audit C-3). Orientation was changed; supports filled the string bore. String curl/pull not yet reported (issue #5 stays open).
+- Coupon was heavy at Bambu default settings. Advised slicer-only lightening (2 walls, 3/3 shells, 5–8 % gyroid, LW-PLA); handle stays standard PLA. No CAD change.
+- LED purchasing (owner, in progress): 5 mm 2020 WS2812-type strip, 160 LEDs/m, 2 × 1 m (seller lists ESP32/WLED as compatible; chip not named); Adafruit Sparkle Motion Mini as controller. Repo docs to be updated once the order is confirmed.
+- **Sync:** PUSHED with this commit.
+
 ## Latest action — 2026-11-17T23:05Z — Claude (controller/strip rethink after owner objections)
 - Owner rejected USB-A and perfboard/breadboard; 7.2 mm ultra-narrow strip out of stock.
 - **Proposed** (not yet confirmed by owner): Adafruit Sparkle Motion Mini as controller (USB-C 5 V 4 A in, 4 A fuse, level-shifted outputs, 32 x 20 mm), replacing ESP32 DevKit, level shifter, perfboard, fuse holder, pigtail, breadboard. Any 5 V WS2812B strip of 10 mm or less at 144–160/m fits without CAD change. Details at the end of `electronics/ORDER_LIST.md`.
