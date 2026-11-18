@@ -20,6 +20,14 @@ tags:
 - Open: magnet pockets, electronics mounts, button pod, WLED effect choice on a device, ESP32 build, Bambu Studio slice and physical tests.
 - [Older handoff actions](notes/handoff_archive/HANDOFF_ARCHIVE_2026-11.md).
 
+## Latest action — 2026-11-18T21:55Z — Copilot SDK (repository sync)
+- **Result:** Fast-forwarded `main` from `1ea2100` to `f9b24f4` with no conflicts. Remote includes V5.2 records/order changes and an owner-recorded T2 coupon pass; this is not full release approval. Local and remote refs match; LFS count remains 95.
+- **Files changed:** Handoff and `notes/sessions/2026-11-18_copilot-sdk_sync-repo.md`.
+- **Evidence:** `git fetch origin`, `git merge --ff-only origin/main`; `git rev-parse HEAD`, `git rev-parse origin/main`, `git lfs ls-files`.
+- **Open items:** Three local source/print-pack folders remain untracked and preserved; no files were staged or pushed from them.
+- **Next:** Push this sync record. Keep the untracked local folders intact unless their contents are explicitly selected for publication.
+- **Sync:** Local sync record pending commit/push.
+
 
 # Cross-agent handoff — READ FIRST
 
