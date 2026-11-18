@@ -1,5 +1,11 @@
 # CAD asset map
 
+## Root package backups (2026-11-18)
+
+The owner requested backups of `Claude_Vi_Gauntlet_Audit_Kit/` (13 files), `Vi_Gauntlet_V5_Print_Pack/` (44), and `Vi_Gauntlet_X1C_V5_Draft/` (61). These preserve the delivered folder layouts; their historical instructions may be stale and should not replace the current handoff or canonical release documentation. The root draft includes superseded shell copies.
+
+The print-pack manifest matches 42/42 files; its two V5.2 shell models and two concept mounts also match all four entries of the canonical V5.2 manifest. They are backed up in the print pack, not installed into the canonical V5 release paths. The root draft's V5 and V5.1 manifests match 33/33 and 16/16 respectively. These checks do not approve any design for printing. See `HANDOFF.md` for current transfer status.
+
 ## Verified inventory (2026-11-14)
 
 The required CAD set contains **59 files / 832,044,520 bytes**: 9 originals, 49 V4 files, and the V3 fit-validation archive. The V3 archive is 698,022 bytes. The separately committed manifest contains 61 rows; the two V1/V2 rows are intentionally excluded from this required set.

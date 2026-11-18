@@ -1,0 +1,16 @@
+Gate,Pass evidence needed,V4 status from previous report,Independent audit status,Priority
+Original 3MF structure,"3MF objects and transforms reconstructed; finger anchor components identified",Previously inspected superficially,NOT CHECKED,CRITICAL
+All 26 mesh bodies,"Each STL manifold closed correct winding positive volume single body min thickness",Claimed pass by V4 validation report,NOT CHECKED,HIGH
+Geometric X1C fit,"Each part in usable actual X1C print region incl brim and keep-outs",Nominal 256mm cube check only,NOT CHECKED,HIGH
+Slicer supports,"Bambu Studio X1C 0.4mm profile sliced and previewed every shell",Not run,NOT CHECKED,HIGH
+Seam reconstruction,"Inverse-print-transform reassembly and measured gaps / collisions",Volume preservation claimed not full proof,NOT CHECKED,CRITICAL
+Joint reliability,"Registration and reinforcement fit strength and accessible assembly sequence",Bonded seams only with loose splines,NOT CHECKED,CRITICAL
+Finger mechanical match,"Original finger mounts / hinge / tendon attachments align with shells 12 and 13",Not physically or fully digitally verified,NOT CHECKED,CRITICAL
+Five full tendon routes,"All five tubes/strings each have full clear routed path to actual finger anchor",Selected sampled corridor only,NOT CHECKED,CRITICAL
+LED carrier geometry,"Original ring geometry matches section 08 in original coordinate frame",Claimed fully within section 08,NOT CHECKED,CRITICAL
+Cover removal,"Source cover fits and removes after shell assembly with tolerances",Separate cover supplied but no fit test,NOT CHECKED,CRITICAL
+LED groove,"Full ring path real width depth bend radius wire exit measured",Not verified for chosen 8/10 mm strip,NOT CHECKED,CRITICAL
+Electrical access,"Controller battery switches wiring strain relief mount replaceability",Controller hardware not selected and mounts absent,NEEDS HARDWARE,CRITICAL
+Wearable fit,"Actual hand wrist elbow opening and attachment method measured",100 percent size follows source,NOT CHECKED,HIGH
+Time filament savings,"Actual slicer per-part time filament and supports versus original 3MF",Not sliced,NOT CHECKED,MEDIUM
+Physical fit,"Test coupons dry fit ring and finger assembly and load test seam",Requires physical prototype,NEEDS HARDWARE,CRITICAL

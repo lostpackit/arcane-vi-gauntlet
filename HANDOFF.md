@@ -11,6 +11,39 @@ tags:
   - vi-gauntlet
 ---
 
+## Latest action — 2026-11-18T21:59Z — Copilot SDK (backup local packages)
+- **Action/result:** User requested all three untracked local folders be synced and backed up. Fetched origin; local `main` and `origin/main` both `e177f0f9b42970ae029fc93077f2847ed54c6cff`; no tracked changes at start.
+- **Files changed:** This handoff and `notes/sessions/2026-11-18_copilot-sdk_backup-folders.md`.
+- **Evidence:** `git status --short --branch --ignored`, `git fetch origin`, `git rev-parse`.
+- **Open items:** `Claude_Vi_Gauntlet_Audit_Kit/`, `Vi_Gauntlet_V5_Print_Pack/`, and `Vi_Gauntlet_X1C_V5_Draft/` need inventory, safety and LFS verification before upload. Preserve all prior CAD and findings; V4 remains NO-GO.
+- **Next:** Inventory and validate the requested folders, manifests, ignored paths, and large files.
+- **Sync:** LOCAL; backup not yet uploaded.
+
+## Latest action — 2026-11-18T21:59Z — Copilot SDK (backup inventory)
+- **Result:** Inventoried 118 files: audit kit 13 (908,371 bytes), print pack 44 (85,238,280 bytes), draft package 61 (125,952,729 bytes). No ignored files were reported within those directories. The print pack includes V5.2-named models and concept mounts; no CAD was moved or changed.
+- **Files changed:** Handoff and backup session log only.
+- **Evidence:** Recursive inventory, `git ls-files --others --ignored --exclude-standard`, `.gitattributes`; Git LFS 3.7.1.
+- **Next:** Verify package manifests, sensitive-file exclusions, and all staged CAD LFS pointers before upload.
+- **Blockers/sync:** Not yet pushed; engineering and physical validation remain separate. LOCAL.
+
+## Latest action — 2026-11-18T22:00Z — Copilot SDK (package integrity)
+- **Result:** Print-pack manifest PASS 42/42; root draft V5 manifest PASS 33/33 and V5.1 PASS 16/16. Obvious sensitive filename/content scan found zero matches; no file exceeds 100 MiB. The V5.2 manifest lists four models present by name in the print pack; canonical release placement remains a separate issue.
+- **Files changed:** Handoff and backup session log only.
+- **Next:** Verify print-pack copies against the canonical V5.2 hashes; stage exactly the requested folders and check LFS pointers.
+- **Blockers/sync:** Backup upload/readback pending; no engineering release status changed. LOCAL.
+
+## Latest action — 2026-11-18T22:01Z — Copilot SDK (V5.2 pack comparison)
+- **Result:** All four print-pack V5.2 items match `V5_2_SHA256_MANIFEST.txt` by SHA-256. Example STL and 3MF paths are assigned the LFS filter. Remote main still `e177f0f9b42970ae029fc93077f2847ed54c6cff`.
+- **Files changed:** Handoff and backup session log only.
+- **Next:** Stage and verify all 118 requested files and their LFS pointers; do not overwrite canonical release paths.
+- **Blockers/sync:** Canonical V5.2 placement and engineering checks remain separate; backup still LOCAL.
+
+## Latest action — 2026-11-18T22:02Z — Copilot SDK (backup staging)
+- **Result:** Staged all 118 requested files. All 91 CAD files have LFS pointers whose SHA-256 and size match the local payloads; 27 non-CAD files are below GitHub's 100 MiB limit. Existing canonical assets were not changed.
+- **Files changed:** Staged three root folders, handoff and backup session log.
+- **Next:** Update inventory to distinguish backed-up source copies from canonical release files; commit and push.
+- **Blockers/sync:** Remote upload and readback pending. LOCAL.
+
 ## Current state
 - V4: **NO-GO** ([audit verdict](audits/results/FINAL_VERDICT.md)).
 - V5.1: current draft, ready for test prints only; not print-approved.

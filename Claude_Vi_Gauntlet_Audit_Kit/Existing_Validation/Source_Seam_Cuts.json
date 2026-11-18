@@ -1,0 +1,447 @@
+[
+  {
+    "id": 1,
+    "part": "Cuff_Left_Front",
+    "source_limits_mm": [
+      -1,
+      211,
+      -1,
+      147,
+      -1,
+      145
+    ],
+    "original_dimensions_mm": [
+      209.87,
+      147.0,
+      70.86
+    ],
+    "print_dimensions_mm": [
+      209.872,
+      147.0,
+      70.861
+    ],
+    "rotations": [
+      [
+        "X",
+        180
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 107136,
+    "fits_nominal_X1C": true,
+    "file": "01_Cuff_Left_Front_V4_RAW.stl",
+    "seconds": 0.8
+  },
+  {
+    "id": 2,
+    "part": "Cuff_Left_Rear",
+    "source_limits_mm": [
+      -1,
+      211,
+      147,
+      300,
+      -1,
+      145
+    ],
+    "original_dimensions_mm": [
+      209.97,
+      147.02,
+      145.0
+    ],
+    "print_dimensions_mm": [
+      209.974,
+      147.017,
+      145.0
+    ],
+    "rotations": [
+      [
+        "X",
+        180
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 135950,
+    "fits_nominal_X1C": true,
+    "file": "02_Cuff_Left_Rear_V4_RAW.stl",
+    "seconds": 0.8
+  },
+  {
+    "id": 3,
+    "part": "Cuff_Right_Front",
+    "source_limits_mm": [
+      211,
+      425,
+      -1,
+      147,
+      -1,
+      145
+    ],
+    "original_dimensions_mm": [
+      209.4,
+      147.0,
+      70.86
+    ],
+    "print_dimensions_mm": [
+      209.402,
+      146.999,
+      70.861
+    ],
+    "rotations": [
+      [
+        "X",
+        180
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 106196,
+    "fits_nominal_X1C": true,
+    "file": "03_Cuff_Right_Front_V4_RAW.stl",
+    "seconds": 0.7
+  },
+  {
+    "id": 4,
+    "part": "Cuff_Right_Rear",
+    "source_limits_mm": [
+      211,
+      425,
+      147,
+      300,
+      -1,
+      145
+    ],
+    "original_dimensions_mm": [
+      209.49,
+      147.01,
+      144.97
+    ],
+    "print_dimensions_mm": [
+      209.489,
+      147.01,
+      144.974
+    ],
+    "rotations": [
+      [
+        "X",
+        180
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 133216,
+    "fits_nominal_X1C": true,
+    "file": "04_Cuff_Right_Rear_V4_RAW.stl",
+    "seconds": 0.7
+  },
+  {
+    "id": 5,
+    "part": "LightBand_Front_Left",
+    "source_limits_mm": [
+      -1,
+      211,
+      -1,
+      180,
+      145,
+      310
+    ],
+    "original_dimensions_mm": [
+      210.9,
+      177.53,
+      165.0
+    ],
+    "print_dimensions_mm": [
+      210.898,
+      165.0,
+      177.53
+    ],
+    "rotations": [
+      [
+        "X",
+        -90
+      ]
+    ],
+    "boundary_edges": 6,
+    "nonmanifold_edges": 0,
+    "mesh_components": 3,
+    "triangles": 185018,
+    "fits_nominal_X1C": true,
+    "file": "05_LightBand_Front_Left_V4_RAW.stl",
+    "seconds": 1.0
+  },
+  {
+    "id": 6,
+    "part": "LightBand_Front_Right",
+    "source_limits_mm": [
+      211,
+      425,
+      -1,
+      180,
+      145,
+      310
+    ],
+    "original_dimensions_mm": [
+      210.52,
+      177.53,
+      165.0
+    ],
+    "print_dimensions_mm": [
+      210.518,
+      165.0,
+      177.528
+    ],
+    "rotations": [
+      [
+        "X",
+        -90
+      ]
+    ],
+    "boundary_edges": 13,
+    "nonmanifold_edges": 0,
+    "mesh_components": 2,
+    "triangles": 191197,
+    "fits_nominal_X1C": true,
+    "file": "06_LightBand_Front_Right_V4_RAW.stl",
+    "seconds": 1.0
+  },
+  {
+    "id": 7,
+    "part": "LightBand_Rear_Left",
+    "source_limits_mm": [
+      -1,
+      100,
+      180,
+      300,
+      145,
+      310
+    ],
+    "original_dimensions_mm": [
+      100.0,
+      65.91,
+      165.0
+    ],
+    "print_dimensions_mm": [
+      100.0,
+      165.0,
+      65.906
+    ],
+    "rotations": [
+      [
+        "X",
+        90
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 50724,
+    "fits_nominal_X1C": true,
+    "file": "07_LightBand_Rear_Left_V4_RAW.stl",
+    "seconds": 0.7
+  },
+  {
+    "id": 8,
+    "part": "LightBand_REAR_RING_CARRIER",
+    "source_limits_mm": [
+      100,
+      300,
+      180,
+      300,
+      145,
+      310
+    ],
+    "original_dimensions_mm": [
+      200.0,
+      93.5,
+      165.0
+    ],
+    "print_dimensions_mm": [
+      200.0,
+      165.0,
+      93.505
+    ],
+    "rotations": [
+      [
+        "X",
+        90
+      ]
+    ],
+    "boundary_edges": 48,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 299340,
+    "fits_nominal_X1C": true,
+    "file": "08_LightBand_REAR_RING_CARRIER_V4_RAW.stl",
+    "seconds": 1.5
+  },
+  {
+    "id": 9,
+    "part": "LightBand_Rear_Right",
+    "source_limits_mm": [
+      300,
+      425,
+      180,
+      300,
+      145,
+      310
+    ],
+    "original_dimensions_mm": [
+      121.61,
+      71.87,
+      165.0
+    ],
+    "print_dimensions_mm": [
+      121.611,
+      165.0,
+      71.872
+    ],
+    "rotations": [
+      [
+        "X",
+        90
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 61568,
+    "fits_nominal_X1C": true,
+    "file": "09_LightBand_Rear_Right_V4_RAW.stl",
+    "seconds": 0.6
+  },
+  {
+    "id": 10,
+    "part": "Wrist_Upper_Left",
+    "source_limits_mm": [
+      -1,
+      211,
+      -1,
+      300,
+      310,
+      400
+    ],
+    "original_dimensions_mm": [
+      180.97,
+      224.92,
+      90.0
+    ],
+    "print_dimensions_mm": [
+      180.972,
+      224.917,
+      90.0
+    ],
+    "rotations": [],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 198046,
+    "fits_nominal_X1C": true,
+    "file": "10_Wrist_Upper_Left_V4_RAW.stl",
+    "seconds": 0.9
+  },
+  {
+    "id": 11,
+    "part": "Wrist_Upper_Right",
+    "source_limits_mm": [
+      211,
+      425,
+      -1,
+      300,
+      310,
+      400
+    ],
+    "original_dimensions_mm": [
+      180.59,
+      224.93,
+      90.0
+    ],
+    "print_dimensions_mm": [
+      180.588,
+      224.928,
+      90.0
+    ],
+    "rotations": [],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 199912,
+    "fits_nominal_X1C": true,
+    "file": "11_Wrist_Upper_Right_V4_RAW.stl",
+    "seconds": 0.8
+  },
+  {
+    "id": 12,
+    "part": "Knuckles_Left",
+    "source_limits_mm": [
+      -1,
+      211,
+      -1,
+      300,
+      400,
+      601
+    ],
+    "original_dimensions_mm": [
+      166.22,
+      199.04,
+      199.75
+    ],
+    "print_dimensions_mm": [
+      199.754,
+      199.038,
+      166.222
+    ],
+    "rotations": [
+      [
+        "Y",
+        90
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 353548,
+    "fits_nominal_X1C": true,
+    "file": "12_Knuckles_Left_V4_RAW.stl",
+    "seconds": 1.0
+  },
+  {
+    "id": 13,
+    "part": "Knuckles_Right",
+    "source_limits_mm": [
+      211,
+      425,
+      -1,
+      300,
+      400,
+      601
+    ],
+    "original_dimensions_mm": [
+      157.7,
+      199.04,
+      200.12
+    ],
+    "print_dimensions_mm": [
+      200.117,
+      199.044,
+      157.705
+    ],
+    "rotations": [
+      [
+        "Y",
+        -90
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_components": 1,
+    "triangles": 334810,
+    "fits_nominal_X1C": true,
+    "file": "13_Knuckles_Right_V4_RAW.stl",
+    "seconds": 0.9
+  }
+]
