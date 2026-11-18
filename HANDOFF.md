@@ -4,7 +4,7 @@ project: arcane-vi-gauntlet
 status: active
 updated_date: 2026-11-18
 last_agent: Copilot SDK (package backup)
-sync_state: package-backup-pushed-verification-record-pending
+sync_state: package-backup-and-readback-verified-check-remote-ref
 tags:
   - handoff
   - agents
@@ -61,7 +61,7 @@ tags:
 - **Result:** Removed the isolated readback cache after verifying all 54 unique LFS objects for 91 CAD paths. Backup of 118 files is confirmed in remote commit `c4a4be9`. Earlier backup-entry times were estimates; see the session log.
 - **Files changed:** Handoff, asset map and backup session log; temporary session cache removed.
 - **Next:** Push this verification record. Preserve V4 NO-GO and existing V5.2 engineering blockers.
-- **Sync:** Backup commit on remote; this record pending push.
+- **Sync:** Backup commit `c4a4be9` and verification commit `d7e83bc` pushed; check the remote ref for the latest handoff record.
 
 ## Current state
 - V4: **NO-GO** ([audit verdict](audits/results/FINAL_VERDICT.md)).

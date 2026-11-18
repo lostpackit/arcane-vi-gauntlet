@@ -22,6 +22,12 @@ Action times in this log before the clock check below were estimates, not measur
 - Next: Clean up only the explicitly named isolated cache and push final verification notes.
 - Sync: Backup commit PUSHED `c4a4be9`; verification notes LOCAL.
 
+## 2026-11-18 — verification push
+- Action: Committed and pushed the readback evidence, checked the remote main ref and status.
+- Result: `d7e83bc599e9d5e2224e75eabb5447746a6e187c` confirmed on remote `main`; the tracked worktree was clean and 186 LFS file paths were listed.
+- Next: Push this final handoff status. V4 NO-GO and existing V5.2 release blockers remain unchanged.
+- Sync: Readback record PUSHED `d7e83bc`; check the remote ref for this final status.
+
 ## 2026-11-18T22:02Z — readback cleanup
 - Action: Removed the explicitly named isolated LFS cache after successful readback and checked the UTC clock.
 - Result: Temporary cache removed. `Get-Date` returned `2026-11-18T22:02:25Z`; earlier timestamps in this session were estimates. No project files were removed.
