@@ -2,9 +2,9 @@
 type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
-updated_date: 2026-11-17
-last_agent: Claude (print pack)
-sync_state: docs-pushed-v5-2-cad-pending-upload-issue-2
+updated_date: 2026-11-18
+last_agent: Copilot SDK (repository sync)
+sync_state: remote-main-synced-local-untracked-folders-preserved
 tags:
   - handoff
   - agents
@@ -26,7 +26,7 @@ tags:
 - **Evidence:** `git fetch origin`, `git merge --ff-only origin/main`; `git rev-parse HEAD`, `git rev-parse origin/main`, `git lfs ls-files`.
 - **Open items:** Three local source/print-pack folders remain untracked and preserved; no files were staged or pushed from them.
 - **Next:** Push this sync record. Keep the untracked local folders intact unless their contents are explicitly selected for publication.
-- **Sync:** Local sync record pending commit/push.
+- **Sync:** Follow-up sync record is being committed; prior sync-log commit `f039419470084de460114a67c1d2a9c8a29059d0` was pushed and confirmed on remote `main`.
 
 
 # Cross-agent handoff — READ FIRST
