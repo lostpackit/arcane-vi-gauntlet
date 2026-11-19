@@ -11,6 +11,13 @@ tags:
   - vi-gauntlet
 ---
 
+## Latest action — 2026-11-19 — Claude (hardware received; layout and pins updated)
+- Owner received the BTF 2020 5 mm 160 LEDs/m strip and **one of two** Adafruit Mini Sparkle Motion 6160 boards (second outstanding with the seller).
+- Recorded in `electronics/HARDWARE_AS_BOUGHT.md`. Pins from Adafruit's pinout page: LEDs on 5V/32/G; buttons on GPIO 14 and 27.
+- LED layout now **91 per arm** (ring 55, hand 25, crystal 11). Updated `wled/presets_144.json`, firmware defaults (pins 32/14/27) and platformio.ini; PC firmware check rerun.
+- **Next:** bench test of one board + the full 1 m strip in WLED at a 500 mA limit.
+- **Sync:** PUSHED with this commit.
+
 ## Latest action — 2026-11-18T21:59Z — Copilot SDK (backup local packages)
 - **Action/result:** User requested all three untracked local folders be synced and backed up. Fetched origin; local `main` and `origin/main` both `e177f0f9b42970ae029fc93077f2847ed54c6cff`; no tracked changes at start.
 - **Files changed:** This handoff and `notes/sessions/2026-11-18_copilot-sdk_backup-folders.md`.

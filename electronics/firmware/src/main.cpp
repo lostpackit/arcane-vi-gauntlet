@@ -8,7 +8,7 @@
 // STATUS: syntax-checked on a PC against stub headers only. NOT built for ESP32, NOT flashed,
 // NOT bench tested. The limiter is an estimate, not a fuse: keep the 3 A inline fuse.
 //
-// Wiring (reference DevKit): LED_PIN -> 5 V level shifter -> 330R -> ring DIN -> hand -> crystal.
+// Board: Adafruit Sparkle Motion Mini (6160). LED_PIN 32 is level-shifted on the board: pads 5V / 32 / G -> strip 5V / DIN / GND.
 // MODE_PIN / ACTION_PIN: momentary normally-open switches to GND (internal pull-ups).
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
@@ -16,26 +16,26 @@
 #include <string.h>
 
 #ifndef LED_PIN
-#define LED_PIN 16
+#define LED_PIN 32
 #endif
 #ifndef MODE_PIN
-#define MODE_PIN 25
+#define MODE_PIN 14
 #endif
 #ifndef ACTION_PIN
-#define ACTION_PIN 26
+#define ACTION_PIN 27
 #endif
 #ifndef LIMIT_MA
 #define LIMIT_MA 1000            // estimated LED current ceiling per arm
 #endif
 
-// Layout: default = 144 LEDs/m strip (ring 50, hand 23, crystal 10 = 83).
+// Layout: default = 144 LEDs/m strip (ring 55, hand 25, crystal 11 = 91; BTF 2020 160 LEDs/m).
 // Build with -DLAYOUT_60 for the 60 LEDs/m layout (21 / 10 / 4 = 35), -DRING_ONLY to drive the ring alone.
 // V5.1: one strip runs from the ring down the hand channel and passes under the crystal well, so
 // "crystal" is simply the last pixels of the hand strip.
 #ifdef LAYOUT_60
 constexpr int RING = 21, HAND_FULL = 10, CRYSTAL_FULL = 4;
 #else
-constexpr int RING = 50, HAND_FULL = 23, CRYSTAL_FULL = 10;
+constexpr int RING = 55, HAND_FULL = 25, CRYSTAL_FULL = 11;   // BTF 2020 5 mm, 160 LEDs/m (purchased)
 #endif
 #ifdef RING_ONLY
 constexpr int HAND = 0, CRYSTAL = 0;
