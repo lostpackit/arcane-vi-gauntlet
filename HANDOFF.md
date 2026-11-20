@@ -12,6 +12,8 @@ tags:
 ---
 
 ## Latest action — 2026-11-19 — Claude (hardware received; layout and pins updated)
+
+- 2026-11-20 (Claude): Left inserts (ring cover, crystal, lenses A/B, gauge) had inverted normals; fixed copies in L_Inserts_Normals_Fix.zip (SHA256 list in releases/v5/.../L_INSERTS_NORMALS_FIX_SHA256.txt) — owner to upload over Inserts/L_*.3mf. Owner starting translucent covers on A1 Mini in glow PETG (right arm first). Session note notes/sessions/2026-11-20_claude_a1-mini-translucent-parts.md.
 - Owner received the BTF 2020 5 mm 160 LEDs/m strip and **one of two** Adafruit Mini Sparkle Motion 6160 boards (second outstanding with the seller).
 - Recorded in `electronics/HARDWARE_AS_BOUGHT.md`. Pins from Adafruit's pinout page: LEDs on 5V/32/G; buttons on GPIO 14 and 27.
 - LED layout now **91 per arm** (ring 55, hand 25, crystal 11). Updated `wled/presets_144.json`, firmware defaults (pins 32/14/27) and platformio.ini; PC firmware check rerun.
