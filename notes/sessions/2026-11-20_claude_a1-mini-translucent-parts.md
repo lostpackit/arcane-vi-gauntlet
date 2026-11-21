@@ -13,3 +13,5 @@
 - L vs R translucent inserts are mirror images and not identical (best rigid fit deviation: lens A ≤0.16 mm, crystal ≤0.30, ring cover ≤0.49) → print L files for left.
 - Lens bottom tilted 0.02–0.05 mm (inherited); within first layer, prints fine. Offered to flatten if wanted.
 - Generated parts inventory with renders: releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory.md (+39 PNG renders); scripts Build_Scripts/inventory_*.py. Uses print-pack files (08 = V5_2) and fixed L inserts.
+
+- 2026-11-21 22:17: Owner asked to publish inventory + sync repo. Inventory already on origin (0ce86ba). Retried LFS push of 9 3MFs (V5_2 shell 08, mounts, fixed L inserts): still blocked by proxy (github-cloud.s3.amazonaws.com). Local commit undone with soft reset (nothing pushed). Delivered Repo_Upload_Issues_2_and_20.zip with git steps; commented on #2 and #20.

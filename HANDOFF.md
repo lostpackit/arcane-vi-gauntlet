@@ -13,6 +13,8 @@ tags:
 
 ## Latest action — 2026-11-19 — Claude (hardware received; layout and pins updated)
 
+- 2026-11-21 22:17 (Claude): Repo text/docs in sync with origin. 9 LFS 3MFs (R/L_08 V5_2, 2 mount concepts, 5 fixed L inserts) still need owner upload: Repo_Upload_Issues_2_and_20.zip + steps (issues #2, #20). Claude LFS push still blocked.
+
 - 2026-11-21 (Claude): Parts inventory checklist with renders added at releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory.md (owner nearly done printing right arm). Cover material now GiantArm transparent PLA; wooden 6x30 dowels; handle printed or 18 mm rod; UHU Plus Schnellfest epoxy + Poly Max for covers. See notes/sessions/2026-11-20_claude_a1-mini-translucent-parts.md.
 
 - 2026-11-20 (Claude): Left inserts (ring cover, crystal, lenses A/B, gauge) had inverted normals; fixed copies in L_Inserts_Normals_Fix.zip (SHA256 list in releases/v5/.../L_INSERTS_NORMALS_FIX_SHA256.txt) — owner to upload over Inserts/L_*.3mf. Owner starting translucent covers on A1 Mini in glow PETG (right arm first). Session note notes/sessions/2026-11-20_claude_a1-mini-translucent-parts.md.
