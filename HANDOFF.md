@@ -13,6 +13,8 @@ tags:
 
 ## Latest action — 2026-11-19 — Claude (hardware received; layout and pins updated)
 
+- 2026-11-21 22:30 (Claude): Vault brought current (Hub, Decision Log, Test Log, Risks). **LED/wiring work starts at notes/LED_Wiring_Start_Here.md.**
+
 - 2026-11-21 22:17 (Claude): Repo text/docs in sync with origin. 9 LFS 3MFs (R/L_08 V5_2, 2 mount concepts, 5 fixed L inserts) still need owner upload: Repo_Upload_Issues_2_and_20.zip + steps (issues #2, #20). Claude LFS push still blocked.
 
 - 2026-11-21 (Claude): Parts inventory checklist with renders added at releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory.md (owner nearly done printing right arm). Cover material now GiantArm transparent PLA; wooden 6x30 dowels; handle printed or 18 mm rod; UHU Plus Schnellfest epoxy + Poly Max for covers. See notes/sessions/2026-11-20_claude_a1-mini-translucent-parts.md.

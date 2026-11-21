@@ -29,7 +29,10 @@ tags: [risk, blockers]
 | V5 shells 12/13 still carry the older finger carrier | OPEN — hold | T2 coupon with a printed finger |
 | V5 supports about 20 % of filament | OPEN | Re-orient 05/06/08/12/13 |
 | V5.1 3MF files (shells 08, 10–13, crystal, lenses) not yet in the repo | CLOSED 2026-11-15 — uploaded (`030b461`), verified 16/16; superseded files moved to `Superseded_V5_DO_NOT_PRINT/` | Owner/Copilot: upload from `V5_1_changed_files.zip`, verify manifest, remove superseded `_V5` files |
-| V5.2 shell 08 and mount concepts not yet in the repo | OPEN | GitHub issue #2 |
-| Remaining work is tracked as GitHub issues #2–#16 | INFO | Use the issue list as the queue |
+| V5.2 shell 08, mount concepts and fixed left inserts not yet in the repo | OPEN — owner upload from `Repo_Upload_Issues_2_and_20.zip` | GitHub issues #2, #20 |
+| Left inserts (ring cover, crystal, lenses, gauge) had inverted normals | FIXED in files 2026-11-20; awaiting upload | issue #20 |
+| Electronics sled concept sized for old board (80 × 45) | OPEN | Redesign for 32 × 20 mm Sparkle Motion Mini |
+| LED bench test not yet run | OPEN | Board + strip in WLED, 10 min full-white heat check (covers are PLA) |
+| Remaining work is tracked as GitHub issues #2–#16 and #20 | INFO | Use the issue list as the queue |
 
 For current priority and ownership, see [[HANDOFF]]. Record any newly discovered risk there **after the action**.

@@ -31,6 +31,8 @@ For each test, add a separate note from [[templates/Validation_Template]] or app
 | 2026-11-15 | V5.1 remote LFS readback | PASS (16/16) | Asset commit `030b461ea3a0ca205c045aa3de6da7a0f3b803f9`; path-filtered fetch to an empty independent cache, all SHA-256 values matched the manifest; `git lfs fsck` passed. |
 | 2026-11-15 | V5.2 digital assembly, LED-strip, wire-path and finger-fit simulation | PASS (computed); wire link fixed 2 → 4 mm; hand strip corrected to 33 LEDs | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_2_SIMULATION_REPORT.md` |
 | 2026-11-18 | T2 knuckle-slot coupon (owner print) | **PASS: finger fits.** Orientation changed by owner; supports filled the string bore. Part heavy at default slicer settings | owner report in chat; GitHub issue #5 |
+| 2026-11-20 | Glow-in-the-dark blue PETG for covers (owner, A1 Mini) | **FAIL: wet filament, stringing and popping after 2 tries.** Switched to transparent PLA | owner report in chat |
+| 2026-11-21 | Left vs right translucent inserts congruence (computed) | INFO: mirror images, not identical (best fit ≤0.16 mm lens A, ≤0.30 crystal, ≤0.49 ring cover); print L files for left | session note 2026-11-20 |
 | 2026-11-14 | V5 physical prints (T-1, T2 coupon, dowel fit) | NOT RUN | owner to print |
 | 2026-11-14 | LED strip and ring fit | BLOCKED (hardware) — CAD measured: trough 27.1 mm wide × 13.3 mm deep; physical test T-1 proposed | `audits/results/ELECTRONICS_FIT.md` |
 | 2026-11-14 | Original finger mount and tendon travel | NOT RUN physically — digital findings in ISSUES C-3, C-5; test T-2 proposed | `audits/results/FINAL_VERDICT.md` |

@@ -33,7 +33,9 @@ tags: [arcane, vi, 3d-printing, dashboard]
 - [[sessions/README|Per-agent session logs]]
 
 ## Current status
-**V5.1 is the current draft:** [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT]]. Unprinted and approved for test prints only; shells 12/13 remain on hold for the finger test. The 16 revised models were independently fetched and hash-checked from Git LFS. No Bambu Studio slice or physical tests are implied.
+**Current print set: V5 / V5.1 / V5.2** (shell 08 = `_V5_2`): [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT]], print order [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER]], **parts checklist [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory]]**. Owner is nearly done printing the right arm (2026-11-21); finger coupon passed. No Bambu Studio slice by any agent.
+
+**LEDs / electronics: start at [[LED_Wiring_Start_Here]].** Hardware partly received (Sparkle Motion Mini ×1, BTF 160/m strip); bench test next.
 
 **Independent audit (Claude, 2026-11-14): NO-GO for the V4 shell set.** Shell 08 seals the LED chamber, the handle is cut, and the finger mount is a different revision from the printable base. Start with [[audits/results/FINAL_VERDICT]] and [[audits/results/ISSUES]]. Four small test prints are proposed.
 

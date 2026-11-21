@@ -15,3 +15,5 @@
 - Generated parts inventory with renders: releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory.md (+39 PNG renders); scripts Build_Scripts/inventory_*.py. Uses print-pack files (08 = V5_2) and fixed L inserts.
 
 - 2026-11-21 22:17: Owner asked to publish inventory + sync repo. Inventory already on origin (0ce86ba). Retried LFS push of 9 3MFs (V5_2 shell 08, mounts, fixed L inserts): still blocked by proxy (github-cloud.s3.amazonaws.com). Local commit undone with soft reset (nothing pushed). Delivered Repo_Upload_Issues_2_and_20.zip with git steps; commented on #2 and #20.
+
+- 2026-11-21 22:30: Owner wants Obsidian vault as the cross-conversation brain. Updated Project Hub (current status, inventory link), Decision Log (owner decisions since V5), Test Log, Risks; added notes/LED_Wiring_Start_Here.md as context pack for a new LED/wiring conversation.
