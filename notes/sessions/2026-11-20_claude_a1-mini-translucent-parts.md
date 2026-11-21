@@ -21,3 +21,5 @@
 - 2026-11-21 22:40: Owner asked that all AI conversations keep the vault current. Added "Context continuity" to AGENTS.md + sync protocol section 7; one-line pointers in CLAUDE/GEMINI/HERMES/copilot instructions; notes/inbox/ + Inbox_Note_Template for chat-only AIs; docs/AI_CONTEXT_INSTRUCTIONS.md paste-in text; Hub Start Here section. Compacted HANDOFF 296 -> ~75 lines; full prior text archived verbatim at notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-21.md.
 
 - 2026-11-21 22:45: Added session-start hygiene check (rule 5a) to AGENTS.md context continuity; owner trigger phrase "clean up the vault".
+
+- 2026-11-21 22:50: Claude Project "Arcane Gauntlets" updated: added doc claude/00_START_HERE_Arcane_Gauntlets.md (pointer to vault + continuity rules); marked claude/V4_Independent_Audit_Final_Verdict.md as HISTORICAL. Project instructions field is empty; owner to paste docs/AI_CONTEXT_INSTRUCTIONS.md text (Claude cannot set it).

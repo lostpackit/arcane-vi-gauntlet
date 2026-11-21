@@ -44,6 +44,9 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-21 22:50, Claude
+- Claude Project "Arcane Gauntlets": added start-here pointer doc; V4 verdict doc marked historical. Project instructions still empty: owner to paste `docs/AI_CONTEXT_INSTRUCTIONS.md`. Sync: PUSHED.
+
 ### 2026-11-21 22:45, Claude
 - Added vault hygiene check at every session start (AGENTS.md rule 5a); owner trigger: "clean up the vault". Sync: PUSHED.
 
