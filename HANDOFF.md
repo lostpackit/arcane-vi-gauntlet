@@ -28,7 +28,7 @@ tags:
 ## Current state (2026-11-21)
 - **V4: NO-GO** ([audit verdict](audits/results/FINAL_VERDICT.md)). Do not print V4 shells.
 - **Print set: V5 / V5.1 / V5.2** in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`. Shell 08 must be `_V5_2`. Not print-approved by release gates; owner is test-printing.
-- **Physical results:** T2 finger coupon PASS (2026-11-18). Owner nearly done printing the **right arm** (2026-11-21). Glow-blue PETG covers FAIL (wet); covers now GiantArm transparent PLA.
+- **Physical results:** T2 finger coupon PASS (2026-11-18). **Right arm partly printed** (owner photo 2026-11-21: shell 08 with ring cover seated, plus several shells; exact list being confirmed against the inventory). Glow-blue PETG covers FAIL (wet); covers now GiantArm transparent PLA.
 - **Materials/assembly:** shells LW-PLA; handle printed PLA/PETG or 18 mm beech rod; wooden 6 × 30 mm dowels (57 per arm); UHU Plus Schnellfest epoxy for seams; UHU Poly Max for covers/electronics; no super glue near clear parts.
 - **Electronics:** Sparkle Motion Mini (1 of 2 received), BTF 5 mm 160/m strip received, 91 LEDs per arm, data GPIO 32, buttons 14/27, WLED. Bench test not yet run. Rest of parts being ordered.
 - **No Bambu Studio slice by any agent** (issue #3). Only owner prints are physical evidence.

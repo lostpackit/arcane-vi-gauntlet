@@ -25,3 +25,5 @@
 - 2026-11-21 22:50: Claude Project "Arcane Gauntlets" updated: added doc claude/00_START_HERE_Arcane_Gauntlets.md (pointer to vault + continuity rules); marked claude/V4_Independent_Audit_Final_Verdict.md as HISTORICAL. Project instructions field is empty; owner to paste docs/AI_CONTEXT_INSTRUCTIONS.md text (Claude cannot set it).
 
 - 2026-11-21 23:15: Owner note: parts need IDs (in Bambu and on the floor). Logged as pending decision in HANDOFF; no geometry changed.
+
+- 2026-11-21 23:20: Owner photo shows right arm partly printed (corrects earlier "nearly done"). Identified from photo: R_08 ring carrier with ring cover seated; tall piece consistent with R_12 knuckles; two smaller shells unconfirmed. Asked owner to confirm part list and cover fit (seats flush / removable by hand) for issue #4.

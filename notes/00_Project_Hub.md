@@ -38,7 +38,7 @@ tags: [arcane, vi, 3d-printing, dashboard]
 - [[sessions/README|Per-agent session logs]]
 
 ## Current status
-**Current print set: V5 / V5.1 / V5.2** (shell 08 = `_V5_2`): [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT]], print order [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER]], **parts checklist [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory]]**. Owner is nearly done printing the right arm (2026-11-21); finger coupon passed. No Bambu Studio slice by any agent.
+**Current print set: V5 / V5.1 / V5.2** (shell 08 = `_V5_2`): [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT]], print order [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER]], **parts checklist [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory]]**. Right arm partly printed (owner photo 2026-11-21: ring carrier 08 with ring cover seated, plus several shells; exact list being confirmed); finger coupon passed. No Bambu Studio slice by any agent.
 
 **LEDs / electronics: start at [[LED_Wiring_Start_Here]].** Hardware partly received (Sparkle Motion Mini ×1, BTF 160/m strip); bench test next.
 
