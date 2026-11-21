@@ -44,6 +44,9 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-21 22:45, Claude
+- Added vault hygiene check at every session start (AGENTS.md rule 5a); owner trigger: "clean up the vault". Sync: PUSHED.
+
 ### 2026-11-21 22:35, Claude
 - Action: Compacted this handoff (was 296 lines). Full previous text archived verbatim at [HANDOFF_SNAPSHOT_2026-11-21](notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-21.md). Added "Context continuity" rules to AGENTS.md and the sync protocol, inbox capture for chat-only AIs (`notes/inbox/`), and a paste-in instruction for other AI tools (`docs/AI_CONTEXT_INSTRUCTIONS.md`).
 - Next: owner uploads #2/#20; LED bench test in a new conversation starting from LED_Wiring_Start_Here.

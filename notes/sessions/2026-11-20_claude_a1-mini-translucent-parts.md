@@ -19,3 +19,5 @@
 - 2026-11-21 22:30: Owner wants Obsidian vault as the cross-conversation brain. Updated Project Hub (current status, inventory link), Decision Log (owner decisions since V5), Test Log, Risks; added notes/LED_Wiring_Start_Here.md as context pack for a new LED/wiring conversation.
 
 - 2026-11-21 22:40: Owner asked that all AI conversations keep the vault current. Added "Context continuity" to AGENTS.md + sync protocol section 7; one-line pointers in CLAUDE/GEMINI/HERMES/copilot instructions; notes/inbox/ + Inbox_Note_Template for chat-only AIs; docs/AI_CONTEXT_INSTRUCTIONS.md paste-in text; Hub Start Here section. Compacted HANDOFF 296 -> ~75 lines; full prior text archived verbatim at notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-21.md.
+
+- 2026-11-21 22:45: Added session-start hygiene check (rule 5a) to AGENTS.md context continuity; owner trigger phrase "clean up the vault".
