@@ -41,6 +41,7 @@ tags:
 
 ## Pending owner decisions
 - Lighting behaviour: "breathing all the time, button triggers an effect, then back to breathing" (durations and button mapping).
+- Part labelling (owner note 2026-11-21): parts need IDs in Bambu Studio and physically. Options: marker/tape now; owner adds text in Bambu Studio; or Claude engraves IDs on hidden inner faces of the left-arm shells (geometry change, needs approval).
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
