@@ -27,3 +27,5 @@
 - 2026-11-21 23:15: Owner note: parts need IDs (in Bambu and on the floor). Logged as pending decision in HANDOFF; no geometry changed.
 
 - 2026-11-21 23:20: Owner photo shows right arm partly printed (corrects earlier "nearly done"). Identified from photo: R_08 ring carrier with ring cover seated; tall piece consistent with R_12 knuckles; two smaller shells unconfirmed. Asked owner to confirm part list and cover fit (seats flush / removable by hand) for issue #4.
+
+- 2026-11-21 23:35: Owner reports every part shows as "geometry_0" in Bambu Studio. Cause: Claude-generated 3MFs set <object name="geometry_0"> (trimesh default). Fix: object name set to file stem in all 41 pack 3MFs (XML name attribute only; rest of model XML verified byte-identical apart from names). Delivered Vi_Gauntlet_V5_Print_Pack_named.zip (includes fixed L inserts, parts inventory, new SHA256_MANIFEST.txt). Repo copies still named geometry_0 (LFS upload blocked) -> issue opened. Owner X1C history shows plates from "Vi Gauntlet right 3mf_reaggranged" (not a V5 pack file); asked owner what that file is.

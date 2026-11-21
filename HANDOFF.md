@@ -45,6 +45,9 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-21 23:35, Claude
+- Bug: all Claude 3MFs show as "geometry_0" in Bambu. Fixed object names (= file name) in a new `Vi_Gauntlet_V5_Print_Pack_named.zip` (geometry unchanged). Repo copies need replacing (issue #21). Owner X1C prints come from "Vi Gauntlet right 3mf_reaggranged" plates: source unknown, asked. Sync: PUSHED.
+
 ### 2026-11-21 22:50, Claude
 - Claude Project "Arcane Gauntlets": added start-here pointer doc; V4 verdict doc marked historical. Project instructions still empty: owner to paste `docs/AI_CONTEXT_INSTRUCTIONS.md`. Sync: PUSHED.
 
