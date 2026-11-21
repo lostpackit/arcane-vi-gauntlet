@@ -18,6 +18,16 @@ These instructions apply to **every AI agent** working in this repository: Claud
 
 For read-only remote agents that cannot edit files, provide the exact proposed handoff/log patch and explicitly state that the repository was **not** updated. Do not claim a successful sync without verifying the remote commit.
 
+## Context continuity: no AI conversation may lose project knowledge
+Conversations end, get summarised, or move between tools (Claude, ChatGPT, Copilot, Gemini, Hermes, phone apps). **The vault is the memory, not the chat.**
+1. **Start of every conversation:** read `HANDOFF.md`, `notes/00_Project_Hub.md`, and the topic's *Start Here* note (e.g. `notes/LED_Wiring_Start_Here.md`). Process anything in `notes/inbox/` (merge it into the right notes, then delete the inbox file in the same commit). Do not re-ask the owner for facts already recorded.
+2. **During the conversation:** every owner decision goes into `notes/03_Decision_Log.md` and every physical result (print, fit, bench test, purchase received) into `notes/04_Test_Log.md` or `electronics/HARDWARE_AS_BOUGHT.md` **in the same session**, not "later".
+3. **Before the conversation ends, or when the owner says "update the vault":** update `HANDOFF.md` (current state + one short entry), the topic Start Here note, and your session note; commit and push.
+4. **AIs that cannot write to the repo** (chat-only ChatGPT, Claude.ai without the repo, mobile): at the end of the conversation, output a ready-to-save Markdown note using `notes/templates/Inbox_Note_Template.md` for `notes/inbox/YYYY-MM-DD_<ai>_<topic>.md`, and tell the owner the repo was **not** updated. The next repo-capable agent merges it.
+5. **Keep the entry points short:** `HANDOFF.md` under about 120 lines; Start Here notes about one page. When `HANDOFF.md` grows past that, move older entries **verbatim** to `notes/handoff_archive/` (never delete them) and leave a link.
+6. **One topic, one Start Here note.** When a new workstream starts (e.g. assembly, painting), create `notes/<Topic>_Start_Here.md` and link it from the Project Hub and the HANDOFF topic table.
+7. Never record something as done, measured or bought unless it actually happened; never describe a web page or listing that was not actually opened.
+
 ## Concurrent agent safety
 - Prefer distinct work branches for CAD modifications and separate dated session logs per agent.
 - Before editing the shared handoff, fetch/rebase the newest remote version; preserve all other agents' changes and blockers.

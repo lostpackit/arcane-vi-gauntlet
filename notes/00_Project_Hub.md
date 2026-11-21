@@ -23,6 +23,11 @@ tags: [arcane, vi, 3d-printing, dashboard]
 - [[electronics/README|Electronics design pack]] — BOM, effects, wiring, WLED presets, alternative ESP32 code; **Claude review required**
 - [[electronics/REVIEW_CHECKLIST|Electronics review checklist]]
 
+## Start Here notes (one per workstream)
+- [[LED_Wiring_Start_Here|LEDs, wiring, WLED, firmware]]
+- Printing: [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER|Print order]] and [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory|Parts inventory]]
+- Inbox from chat-only AIs: `notes/inbox/` (merge at session start)
+
 ## Knowledge notes
 - [[01_Engineering_Map|Design and engineering map]]
 - [[02_Agent_Roles|Agent responsibilities]]

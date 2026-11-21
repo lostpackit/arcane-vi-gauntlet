@@ -53,3 +53,12 @@ git lfs ls-files
 git push origin main
 ```
 If the worktree is dirty or commits conflict, do not force the push. Commit/stash local work carefully and reconcile first. Existing user files must never be discarded.
+
+## 7. Context continuity across conversations and AI tools
+Mandatory; see "Context continuity" in `AGENTS.md`. Summary:
+- Start: `HANDOFF.md` → Project Hub → topic Start Here note → process `notes/inbox/`.
+- During: owner decisions → Decision Log; physical results → Test Log / Hardware as bought, same session.
+- End: HANDOFF entry + Start Here note + session note, commit, push.
+- Chat-only AIs: produce an inbox note (`notes/templates/Inbox_Note_Template.md`) and say UNSYNCED.
+- Keep `HANDOFF.md` under ~120 lines; archive older entries verbatim in `notes/handoff_archive/`.
+- Paste-in instruction for tools without repo access: `docs/AI_CONTEXT_INSTRUCTIONS.md`.

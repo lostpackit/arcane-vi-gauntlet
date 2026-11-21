@@ -17,3 +17,5 @@
 - 2026-11-21 22:17: Owner asked to publish inventory + sync repo. Inventory already on origin (0ce86ba). Retried LFS push of 9 3MFs (V5_2 shell 08, mounts, fixed L inserts): still blocked by proxy (github-cloud.s3.amazonaws.com). Local commit undone with soft reset (nothing pushed). Delivered Repo_Upload_Issues_2_and_20.zip with git steps; commented on #2 and #20.
 
 - 2026-11-21 22:30: Owner wants Obsidian vault as the cross-conversation brain. Updated Project Hub (current status, inventory link), Decision Log (owner decisions since V5), Test Log, Risks; added notes/LED_Wiring_Start_Here.md as context pack for a new LED/wiring conversation.
+
+- 2026-11-21 22:40: Owner asked that all AI conversations keep the vault current. Added "Context continuity" to AGENTS.md + sync protocol section 7; one-line pointers in CLAUDE/GEMINI/HERMES/copilot instructions; notes/inbox/ + Inbox_Note_Template for chat-only AIs; docs/AI_CONTEXT_INSTRUCTIONS.md paste-in text; Hub Start Here section. Compacted HANDOFF 296 -> ~75 lines; full prior text archived verbatim at notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-21.md.

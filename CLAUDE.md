@@ -7,3 +7,4 @@
 3. For the independent CAD audit, read [Claude master audit prompt](audits/claude/CLAUDE_MASTER_PROMPT.md).
 4. **After every action, successful or failed, update your dated session note AND `HANDOFF.md`**, before continuing; commit/push at atomic checkpoints. Follow [agent sync protocol](docs/AGENT_SYNC_PROTOCOL.md).
 5. Do not declare V4 print-ready without the release-gate evidence.
+6. Follow "Context continuity" in AGENTS.md: start from HANDOFF, Project Hub and the topic Start Here note; process `notes/inbox/`; keep HANDOFF under ~120 lines.
