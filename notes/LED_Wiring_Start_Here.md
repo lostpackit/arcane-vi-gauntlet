@@ -70,7 +70,7 @@ Proposed WLED segments: lead `[0,11)` off; ring `[11,123)`; hand `[125,149)` (hi
 4. **Placement (option A) concept done 2026-11-22:** [[electronics/concepts/2026-11-22_controller_placement_option_A/README]]. Test-print sled (R/L) and cover; hold the sled against printed shell 08 before gluing. Button pod: **v2** (`print/Button_Pod_v2_HUAZIZ_for_18p8_printed_handle` / `..._18p0_beech_rod`) has pockets for the HUAZIZ buttons (island + leg/solder channel + bottom wire exit; glue with Poly Max). Fit test on the owner's A1 Mini plate 2026-11-22; final pod in PETG.
 5. Update [[electronics/WIRING]] fully for the Sparkle Motion Mini and option A (wire lengths ~5 / 18 / 20 cm + slack; keep strip pads apart and off metal; insulate the strip end where the far-end plug was removed).
 6. Lighting decided 2026-11-22: B1 = on / next look (hold = off), B2 = "Bring It" burst 3–4 s; default all blue; Vi pink only in the burst.
-7. **Presets ready (not loaded yet):** `electronics/wled/presets_wled16_whole_strip.json` + `PRESETS_WLED16_README.md` (IDs checked in WLED 16.0.1 source). Load on both boards, set buttons 14/27 and button actions, tune speeds by eye.
+7. **Presets v3 loaded on board 1, accepted (2026-11-22); load the same file on board 2.** `electronics/wled/presets_wled16_whole_strip.json` + `PRESETS_WLED16_README.md` (IDs checked in WLED 16.0.1 source). Load on both boards, set buttons 14/27 and button actions, tune speeds by eye.
 
 ## Related
 [[electronics/README]] · [[electronics/EFFECTS]] · [[electronics/CODE_AND_WLED_REVIEW]] · [[electronics/LED_STRIP_COMPARISON]] · [[03_Decision_Log]] · [[05_Risks_and_Blockers]]

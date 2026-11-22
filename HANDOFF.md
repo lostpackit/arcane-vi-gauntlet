@@ -33,7 +33,7 @@ tags:
 - **Status (owner):** fingers except thumbs printed + primed; one more thumb needed; all transparent parts printed; right arm ~65 % printed and dry-fitting with dowels; left arm shells not started (spares cover 3).
 - **Physical results:** T2 finger coupon PASS (11-18); both board + strip bench tests PASS (11-22); strip passes R_08 round hole, far-end JST does not (cut off). Glow-blue PETG covers FAIL (wet). Nothing else physically tested; no Bambu Studio slice by any agent (#3).
 - **Materials/assembly:** shells LW-PLA; handle printed PLA/PETG or 18 mm beech rod; wooden 6 × 30 dowels; UHU Plus Schnellfest (seams, thumb dowel); UHU Poly Max (covers, electronics, buttons); no super glue near clear parts; gauges masked + painted where they should not glow.
-- **Electronics:** 3 Sparkle Motion Minis, 2 BTF 160/m strips, **HUAZIZ 12 × 12 × 7 LED push buttons** (pod v2 sized for them), capacitors, flux, M2 × 8; silicone wire not yet arrived. Decisions: continuous strip ring→hand, whole 1 m per arm, ring wrapped twice, board on sled near the ring (option A), power bank on cuff wall. [LED Start Here](notes/LED_Wiring_Start_Here.md).
+- **Electronics:** 3 Sparkle Motion Minis, 2 BTF 160/m strips, HUAZIZ 12 × 12 × 7 LED push buttons, capacitors, flux, M2 × 8; silicone wire not yet arrived. Both board + strip sets bench-tested PASS. **Right-arm strip dry-fit done (whole 160 LEDs: lead-in 11 off, ring 112 = 2 turns, hand 24, crystal 11)**. **WLED 16 presets v3 loaded on board 1 and accepted** (Hextech Idle all blue; Shimmer; Overcharged; Calm; button-2 burst "Bring It" with Vi pink; board cool on a phone charger). Final tuning after mounting, with the wearer (owner's daughter). Decisions: board on sled near the ring (option A), vented cover, power bank on cuff wall, button roles B1 on/next/off, B2 Bring It. [LED Start Here](notes/LED_Wiring_Start_Here.md).
 - **V4 stays NO-GO** ([audit](audits/results/FINAL_VERDICT.md)).
 
 ## Open work queue (GitHub issues)
@@ -43,13 +43,16 @@ tags:
 - Bambu Studio slice: #3.
 
 ## Pending owner decisions
-- Lighting behaviour: button roles decided (B1 on/cycle, B2 Hextech burst, then back to default); still open: default look, effect list, burst length, button LEDs always-on or not.
+- Button LEDs: always-on (one extra 5V wire + 470 Ω per LED) or not wired.
 - Right-arm shells still to print (needed for the X1C schedule) and whether a 0.6 mm nozzle is available.
-- Button LEDs: wire the HUAZIZ buttons' built-in LEDs (2 wires + resistor each) or not.
 - Part labelling (owner note 2026-11-21): parts need IDs in Bambu Studio and physically. Options: marker/tape now; owner adds text in Bambu Studio; or Claude engraves IDs on hidden inner faces of the left-arm shells (geometry change, needs approval).
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 23:30 CET, Claude (Electronics & LEDs)
+- Right-arm LED dry-fit counts recorded and mapped to WLED segments; WLED 16 preset file `electronics/wled/presets_wled16_whole_strip.json` (v3) built, loaded on board 1 and accepted by owner after two source-checked fixes (overlay flag is `o2`; layered segments need blend mode stencil `bm`:16). Board cool. Owner decisions: default all blue, Vi pink only in "Bring It", tune after mounting with the wearer. Next: load board 2, rename APs, print sled/cover, power bank, resistors, wire buttons when wire arrives.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-22 22:20 CET, Claude (Main)
 - Took the Main role. Hygiene: merged Mechanics inbox note (Hub status refreshed, Mechanics/Finishing/Conversation_Starters linked) and deleted it; archived entries 18:55 and older verbatim to `HANDOFF_SNAPSHOT_2026-11-22`. New **`notes/Deadline_Plan_2026-11-28.md`**: day-by-day plan across printing, electronics, mechanics, finishing + 9 blocking decisions (thumb string before R_13 prints; right shells left; faster left profile; handle; wire ETA; paint; deadline hour).
 - Sync: PUSHED (see git log).
