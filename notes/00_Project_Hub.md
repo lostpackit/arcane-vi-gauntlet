@@ -24,7 +24,11 @@ tags: [arcane, vi, 3d-printing, dashboard]
 - [[electronics/REVIEW_CHECKLIST|Electronics review checklist]]
 
 ## Start Here notes (one per workstream)
+- **[[Deadline_Plan_2026-11-28|Deadline plan to 2026-11-28]]** (Main)
+- [[Conversation_Starters|Topic conversations: who owns what]]
 - [[Print_Queue_Start_Here|Print queue to 2026-11-28]]
+- [[Mechanics_Start_Here|Mechanics: fingers, strings, thumb, handle, dowels]]
+- [[Finishing_Start_Here|Finishing: glue-up, paint, final assembly]]
 - [[LED_Wiring_Start_Here|LEDs, wiring, WLED, firmware]]
 - Printing: [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER|Print order]] and [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory|Parts inventory]]
 - Inbox from chat-only AIs: `notes/inbox/` (merge at session start)
@@ -38,10 +42,14 @@ tags: [arcane, vi, 3d-printing, dashboard]
 - [[Action_Log|Milestone index]]
 - [[sessions/README|Per-agent session logs]]
 
-## Current status
-**Current print set: V5 / V5.1 / V5.2** (shell 08 = `_V5_2`): [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/README_V5_DRAFT]], print order [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER]], **parts checklist [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory]]**. Right arm partly printed (owner photo 2026-11-21: ring carrier 08 with ring cover seated, plus several shells; exact list being confirmed); finger coupon passed. No Bambu Studio slice by any agent.
+## Current status (2026-11-22)
+**Deadline 2026-11-28: both gauntlets working and painted.** Plan: [[Deadline_Plan_2026-11-28]]. Current state in [[HANDOFF]].
 
-**LEDs / electronics: start at [[LED_Wiring_Start_Here]].** Hardware partly received (Sparkle Motion Mini ×1, BTF 160/m strip); bench test next.
+**Print set:** V5 / V5.1 / V5.2 shells, **V5.3** thumb joint (R/L_13), **V5.4** spare-match left shells (spare R_01/R_02/R_05 used as L_03/L_04/L_06). What to print: [[Print_Queue_Start_Here]]. Right arm ~65 % printed (owner); left arm shells not started. No Bambu Studio slice by any agent.
+
+**Electronics:** 3 Sparkle Motion Minis, 2 BTF 160/m strips, HUAZIZ LED buttons in hand; **both board + strip bench tests PASS (2026-11-22)**; silicone wire not yet arrived. [[LED_Wiring_Start_Here]].
+
+**Physical tests so far:** finger coupon fit PASS (11-18); bench tests PASS (11-22). Finger string pull, dowel fit, handle, thumb joint: not yet tested ([[Mechanics_Start_Here]]).
 
 **Independent audit (Claude, 2026-11-14): NO-GO for the V4 shell set.** Shell 08 seals the LED chamber, the handle is cut, and the finger mount is a different revision from the printable base. Start with [[audits/results/FINAL_VERDICT]] and [[audits/results/ISSUES]]. Four small test prints are proposed.
 
