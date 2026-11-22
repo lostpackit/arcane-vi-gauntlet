@@ -26,7 +26,7 @@ tags:
 | What has been tested | [Test log](notes/04_Test_Log.md), [Release gates](docs/RELEASE_GATES.md) |
 
 ## Current state (2026-11-22)
-- **DEADLINE: ready to wear by 2026-11-28** (owner, 2026-11-22). Owner status 2026-11-22: all fingers except thumbs printed + primed (drying), probably one more thumb to print; all transparent parts printed; right gauntlet ~65 % printed; left gauntlet not started (except fingers, crystals, LED parts); nothing glued, full dry-fit planned first. R_13 (thumb mount shell) not yet printed.
+- **DEADLINE: ready to wear by 2026-11-28: BOTH gauntlets working (fingers, LEDs) and painted** (owner, 2026-11-22). Print time is the critical path. Owner status 2026-11-22: all fingers except thumbs printed + primed (drying), probably one more thumb to print; all transparent parts printed; right gauntlet ~65 % printed; left gauntlet not started (except fingers, crystals, LED parts); nothing glued, full dry-fit planned first. R_13 (thumb mount shell) not yet printed.
 - **V4: NO-GO** ([audit verdict](audits/results/FINAL_VERDICT.md)). Do not print V4 shells.
 - **Print set: V5 / V5.1 / V5.2** in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`. Shell 08 must be `_V5_2`. Not print-approved by release gates; owner is test-printing.
 - **Physical results:** T2 finger coupon PASS (2026-11-18). **Right arm partly printed** (owner photo + print history 2026-11-21: shell 08 with ring cover seated; A1 Mini printed ring cover ×2, crystals and lenses; X1C plates 21 and 27 of the owner's project of Claude files, shells not yet identified because every file was named geometry_0, now fixed in the named print pack). Glow-blue PETG covers FAIL (wet); covers now GiantArm transparent PLA.
