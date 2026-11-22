@@ -24,6 +24,7 @@ tags: [arcane, vi, 3d-printing, dashboard]
 - [[electronics/REVIEW_CHECKLIST|Electronics review checklist]]
 
 ## Start Here notes (one per workstream)
+- [[Print_Queue_Start_Here|Print queue to 2026-11-28]]
 - [[LED_Wiring_Start_Here|LEDs, wiring, WLED, firmware]]
 - Printing: [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER|Print order]] and [[releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory|Parts inventory]]
 - Inbox from chat-only AIs: `notes/inbox/` (merge at session start)

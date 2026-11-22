@@ -20,7 +20,7 @@ tags:
 | Working on | Read |
 |---|---|
 | Anything | [Project Hub](notes/00_Project_Hub.md), then this file |
-| Printing V5 parts | [Print order](releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER.md), [Parts inventory](releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory.md) |
+| Printing V5 parts | **[Print queue to 2026-11-28](notes/Print_Queue_Start_Here.md)**, [Print order](releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER.md), [Parts inventory](releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory.md) |
 | LEDs, wiring, WLED, firmware | [LED_Wiring_Start_Here](notes/LED_Wiring_Start_Here.md) |
 | Why something was decided | [Decision log](notes/03_Decision_Log.md) |
 | What has been tested | [Test log](notes/04_Test_Log.md), [Release gates](docs/RELEASE_GATES.md) |
@@ -46,6 +46,9 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 20:45 CET, Claude (print/vault session)
+- New `notes/Print_Queue_Start_Here.md`: left-arm list with spares, small parts, A1 Mini assignments. Gauge: R and L identical shape (mirror-symmetric ≤0.22 mm), 185 mm long so A1 Mini only standing diagonally; plate layout with both thumb bases verified (2D, 32 mm clearance). Right-arm remaining shells still to be confirmed by owner. Sync: PUSHED.
+
 ### 2026-11-22 18:55 CET, Claude (print/vault session)
 - Third spare is R_02 (owner correction): becomes L_04. Rebuilt spare-match set v2: L_08 (V5_2), L_09, L_11 with relocated holes; L_04 SPAREMATCH withdrawn. One R_02 hole toward L_09 has no partner (insufficient material). Left arm now needs 10 new shells. Sync: PUSHED.
 
