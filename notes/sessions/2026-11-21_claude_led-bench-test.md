@@ -253,3 +253,7 @@ tags: [agents, session, electronics, leds, wled]
 - Explained button LEDs: always-on = one extra 5V wire per arm + one 470 Ω resistor per LED at the pod, LED minus shares the G wire; plus leg via red tab mark or coin-cell test (owner has no multimeter). Switching the LEDs with effects needs a transistor each (not recommended).
 - Owner: button 1 = power on + cycle effects; button 2 = Hextech power-up explosion. Recorded in Decision Log. Proposed WLED mapping: B1 short = next preset (cycle API), B1 long = off (never hold B1 > ~6 s: WLED opens AP / resets on long holds of button 0), B2 short = playlist burst ~3 s then end preset = default look.
 - Sync: LOCAL.
+
+### 2026-11-22 20:45 UTC — Action 40: hand/crystal layout figure
+- Owner asked for a visual of the crystal LED layout for the dry-fit. Drew schematic from V5.1/V5.2 numbers (channel 232.5, Lens A 81, tunnel 22, Lens B 46, tunnel ~18, crystal 65; 6.25 mm pitch → 36 LEDs). Saved as hand_crystal_layout.png; Start Here line added.
+- Sync: LOCAL.

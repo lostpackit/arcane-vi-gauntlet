@@ -44,6 +44,7 @@ Details: [[electronics/HARDWARE_AS_BOUGHT]].
 - Firmware: `LED_PIN 32`, `MODE_PIN 14`, `ACTION_PIN 27`, `LIMIT_MA 1000` ([[electronics/firmware/README]]). WLED presets: `electronics/wled/presets_144.json` (ring [0,55), hand [55,80), crystal [80,91)).
 
 ## Strip routing (owner decision 2026-11-22)
+- **Hand channel + crystal layout (dry-fit guide):** `electronics/concepts/2026-11-22_controller_placement_option_A/hand_crystal_layout.png`. Strip lies flat, LEDs up; from the ring: LEDs 1–13 under Lens A, 14–16 hidden (top plate), 17–24 Lens B, 25–27 hidden (crystal base front), 28–36 light the crystal; cut at the channel end. Twist 90° in the notch slot.
 - **One continuous strip per arm** from the ring into the hand channel, no cut between ring and hand (owner's call; physical turn into the notch slot still to be checked on printed R_08).
 - **Near end** (owner's term) = strip input end: keeps its **factory JST connector**, which passes out through the ring's exit hole and plugs into the ESP32 pigtail in the cavity. No connector sits inside the trough.
 - **Far end**: the far-end factory JST **does not fit** the opening toward the hand channel (owner fit check 2026-11-22), so it is cut off before threading and stays on the offcut; the leading end must be bare. The bare strip passes the round hole. Thread once (or twice, see below) around the trough **outer wall** (LEDs facing inward), through the notch slot into the hand channel, then trim at the crystal end in place. (The earlier "cut at ~100 LEDs" note is superseded by the whole-1-m decision below.)
