@@ -38,10 +38,20 @@ Details: [[electronics/HARDWARE_AS_BOUGHT]].
 - **GPIO 32 locked by AudioReactive** in stock WLED (default mic pins SD 32 / WS 15 / SCK 14, which also blocks button pin 14). Fix per Adafruit's Mini Sparkle Motion guide: Config → Usermods → AudioReactive: type SPH0654, SD 9, WS 10, SCK 23; save; reboot; then set LED GPIO 32. Every freshly flashed board.
 - **Uncut strip on the bench:** with WLED length shorter than the strip, pixels past the length lit up on their own (stayed on with WLED off and after a power-cycle; likely boot-time noise; unconfirmed) and sit outside the current limiter. Keep length = physical LEDs (160) and limit with segment 0 instead. Not an issue once the strip is cut.
 
-## Layout per arm (91 LEDs)
-- Ring: 55 LEDs (index 0–54), 343.8 mm in a 351.2 mm wall.
-- Hand: 36 LEDs (55–90), 225 mm in a 232.5 mm channel. Crystal = last 11 (80–90).
-- Firmware: `LED_PIN 32`, `MODE_PIN 14`, `ACTION_PIN 27`, `LIMIT_MA 1000` ([[electronics/firmware/README]]). WLED presets: `electronics/wled/presets_144.json` (ring [0,55), hand [55,80), crystal [80,91)).
+## Layout per arm: whole strip, 160 LEDs (owner dry-fit 2026-11-22, right arm)
+WLED index 0 = first LED after the board's plug (input end). Owner counted from the far end (= WLED 159).
+| Zone | WLED index | Count | Owner's far-end count |
+|---|---|---|---|
+| Lead-in inside the gauntlet (probably hidden) | 0–10 | 11 | 150–160 |
+| Ring (gauge), two turns | 11–122 | 112 | 38–149 |
+| Turn into the hand channel (hidden; soft twist is fine) | 123–124 | 2 | 36–37 |
+| Long shaft, Lens A | 125–136 | 12 | 24–35 |
+| Under the top plate (hidden) | 137–138 | 2 | 22–23 |
+| Short shaft, Lens B | 139–146 | 8 | 14–21 |
+| Under the crystal base front (hidden) | 147–148 | 2 | 12–13 |
+| Crystal | 149–159 | 11 | 1–11 |
+Proposed WLED segments: lead `[0,11)` off; ring `[11,123)`; hand `[125,149)` (hidden LEDs inside it don't matter, owner); crystal `[149,160)`. Ring split per turn (~56 each) to be confirmed when installed. The older 91-LED layout and the CAD-estimate figure `hand_crystal_layout.png` are superseded by these counts.
+- Firmware pins unchanged: data GPIO 32, buttons 14 / 27, WLED limit 1000 mA.
 
 ## Strip routing (owner decision 2026-11-22)
 - **Hand channel + crystal layout (dry-fit guide):** `electronics/concepts/2026-11-22_controller_placement_option_A/hand_crystal_layout.png`. Strip lies flat, LEDs up; from the ring: LEDs 1–13 under Lens A, 14–16 hidden (top plate), 17–24 Lens B, 25–27 hidden (crystal base front), 28–36 light the crystal; the strip's end lands at the channel end. Twist 90° in the notch slot.

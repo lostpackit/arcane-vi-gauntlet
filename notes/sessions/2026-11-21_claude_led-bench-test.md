@@ -261,3 +261,7 @@ tags: [agents, session, electronics, leds, wled]
 
 ### 2026-11-22 21:05 UTC — Action 41: topic conversations and ownership
 - Owner: this chat = Electronics/LEDs owner; 'LED review' chat = Main; new chats for Print queue and Finishing. Created notes/Conversation_Starters.md (ownership table + starter prompts, incl. optional Mechanics), notes/Finishing_Start_Here.md, AGENTS.md rule, Agent Roles line, Hub link, HANDOFF entry; updated Claude Project doc. Pushed.
+
+### 2026-11-22 21:35 UTC — Action 42: LED dry-fit counts
+- Owner dry-fit (right arm, from far end): crystal 1–11, hidden 12–13, Lens B 14–21, hidden 22–23, Lens A 24–35, hidden 36–37, ring 38–149 (112 = 2 turns), last 11 probably inside the gauntlet; soft twist OK. Converted to WLED indices (input end = 0) and segments; Start Here layout replaced, Test Log row added. CAD estimate was close (crystal 11 vs 9–10, Lens A 12 vs 13, hidden 2 vs 3).
+- Sync: LOCAL.
