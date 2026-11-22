@@ -49,6 +49,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 21:40 CET, Claude (LED session)
+- Merge note: this session also sent the owner a "pod v2" at 17:30 with the **same file names** but different pockets (12.6 square + tab cross slots, leg cavity with pillar). **Superseded:** the canonical v2 is the print session's (`scripts/pod_export_v2.py`, already on the A1 plate). Owner: discard the 17:30 copies. Noted in the concept print/README. Claude project memory updated.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-22 21:35 CET, Claude (print/vault session)
 - "Update the vault": hygiene check: HANDOFF was 128 lines, so entries up to 2026-11-22 09:20 moved verbatim to `notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-22.md`; Current state rewritten; inbox empty. Since 20:45: two transparent gauges fit one A1 Mini plate standing; owner plate = 2 gauges + pod; button pod v2 for HUAZIZ LED buttons (`electronics/concepts/.../scripts/pod_export_v2.py`, 3MFs LFS-pending, sent in chat). Files: Print Queue, LED Start Here, Hardware as bought, print/README.
 - Next: owner confirms right shells left + 0.6 nozzle → X1C plate schedule to 11-28.

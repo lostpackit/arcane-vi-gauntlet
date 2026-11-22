@@ -46,3 +46,5 @@ Owner's buttons: **HUAZIZ LED push button 12 × 12 × 7 mm** (illuminated tact s
 - Pocket 15.2 × 13.8 × 4.5 mm (body), 2.6 mm channel round a 7.6 mm centre island, 5 mm deep, for the legs and solder joints; wire exit to the pod's bottom end. Clip unchanged. Pad 10.7 mm thick (v1: 7.2), pod 32 × 33 × 26 mm, ~9 cm³.
 - Assembly: solder wires to the switch legs (and the LED legs if the button lights are wanted), route out the bottom slot, dab of UHU Poly Max on the island, press the button in.
 - Not printed or fitted. Black-body height not measured (pocket assumes ≈4.5 mm; if taller, the button simply stands further proud).
+
+> **Duplicate pod v2 warning (2026-11-22 21:40):** the LED session sent Erich a different "pod v2" at 17:30 under the **same file names** (`Button_Pod_v2_HUAZIZ_for_18p8_printed_handle.3mf` / `..._18p0_beech_rod.3mf`: 12.6 mm square pocket with tab cross slots, 14.4 mm leg cavity with a centre pillar). It is **superseded** by the print session's v2 from `scripts/pod_export_v2.py` (15.2 × 13.8 pocket, island + leg/solder channel). Print and upload only the `pod_export_v2.py` version; discard the 17:30 copies.

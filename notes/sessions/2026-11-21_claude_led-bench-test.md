@@ -239,3 +239,12 @@ tags: [agents, session, electronics, leds, wled]
 - Pushed as ONE squashed commit (per-step local commits kept only on local branch `led-session-full-history`): the first push failed because the 5 new .3mf files are LFS and the proxy blocks LFS uploads. The .3mf files were removed from the commit and delivered to the owner in chat; owner/Copilot to upload them to `electronics/concepts/2026-11-22_controller_placement_option_A/print/`.
 - Open: button type + handle type for the pod pockets; dry-fit LED count per turn; power bank model; WIRING.md rewrite; GitHub issues #9–#13 comments; renaming both WLED APs.
 - [[HANDOFF]] updated: YES.
+
+### 2026-11-22 16:21 UTC — Action 37: button pod v2 for the owner's buttons
+- Owner photos: HUAZIZ LED push button 12 × 12 × 7 mm (Amazon listing), 13.4 mm over legs, 14.6 mm over the white LED tabs. Recorded in Start Here hardware table.
+- Built pod v2 (both handle sizes): body pocket 12.6 × 4.4 deep + tab cross slots, leg cavity with centre pillar, wire channel. Rendered and checked. 3MFs are LFS → delivered in chat, not committed. Asked owner: black-body height, and whether to wire the button LEDs (2 more wires per button).
+- Sync: LOCAL.
+
+### 2026-11-22 20:40 UTC — Action 38: "update the vault and yourself"
+- Fetched: 14 new commits from the parallel print/vault session (V5.3 thumb, V5.4 spare twins, print queue, HANDOFF compaction, and its own button pod v2 for the HUAZIZ buttons with the SAME file names as this session's 17:30 pod v2). Reset to origin/main (local commit a6df4e5 kept on branch `led-session-pre-merge`, not pushed), kept this session note, dropped this session's pod_v2.py/png and README section, and added a superseded warning to the print README and a HANDOFF entry. Claude project memory file updated (vi-gauntlet).
+- Sync: PUSHED.
