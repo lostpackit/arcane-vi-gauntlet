@@ -34,3 +34,4 @@ See [[docs/DECISIONS_AND_HISTORY]] and [[HANDOFF]].
 - **2026-11-22 / Owner:** Board mounting: Sparkle Motion Mini on a printed **sled glued under the ring**, fixed with the owner's **M2 × 8 screws**, with a **perforated (vented) cover** to protect it (owner's idea). **Power bank Velcroed to the cuff wall.** **Button pod snaps onto the handle after assembly.** Concept files: [[electronics/concepts/2026-11-22_controller_placement_option_A/README]].
 - **2026-11-22 / Owner:** Deadline 2026-11-28: both gauntlets complete, working and painted.
 - **2026-11-22 / Owner:** Approved V5.3 thumb joint: socket in R_13/L_13 + dowel; thumb base reprinted with matching hole (old printed base was a poor print anyway). Files: `releases/v5/.../V5_3_Thumb/`.
+- **2026-11-22 / Owner:** Reprint both pressure gauges in transparent PLA and paint the areas that should not glow (more light from the ring shows through). Gauge sits directly on the ring cover over the LEDs.

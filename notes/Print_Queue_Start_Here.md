@@ -30,7 +30,7 @@ Remaining shells: **to be confirmed by owner** (owner photo 2026-11-22 suggests 
 | Part | Status | Printer / material |
 |---|---|---|
 | Transparent: ring covers, crystals, lenses (both arms) | done | — |
-| Pressure gauge | 1 of 2 done. R and L gauges are the same shape (mirror-symmetric within 0.22 mm), so print the same file again | A1 Mini **standing on end, diagonal** (185 mm long, too long to lie flat), tree supports + brim; regular PLA |
+| Pressure gauge ×2 | **Reprint both in transparent PLA** (owner 2026-11-22), then mask + paint what should not glow. R and L are the same shape (mirror-symmetric within 0.22 mm) | A1 Mini standing on end across the diagonal (one per plate; 185 mm long) or X1C flat; tree supports + brim. Thumb bases go on their own plate (different filament) |
 | Thumb bases R + L (`*_Thumb_Base_V5_3_dowel`) | to print | A1 Mini, standard PLA/PETG, 4 walls, ~30 % infill; fit in the plate corners beside the standing gauge (`releases/v5/.../V5_4_Spare_Twins/a1_plate_gauge_thumbbases.png`) |
 | One more thumb (stock finger model) | to print | A1 Mini |
 | Handles ×2 (250 mm) | to print or 18 mm beech rod | X1C only (too long for A1 Mini) |
