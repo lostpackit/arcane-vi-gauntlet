@@ -43,3 +43,5 @@
 - 2026-11-22 18:00: Spare R_05 + R_01 analysis: mirror-twin pairs 01/03, 02/04, 05/06, 10/11 (07/09, 12/13 not). Built V5.4 spare-match L_04/L_09/L_11 (dowel holes relocated; verified new holes void, old plugged, overlaps expected where new and old holes are <3.2 mm apart). Delivered V5_4_Left_Arm_Spare_Match.zip.
 
 - 2026-11-22 18:55: Owner: third spare is R_02. Rebuilt V5.4 v2 (L_08 V5_2 needed seam-plane registration; V5 reference is thicker). Verified new holes void; one unpartnered hole documented. Delivered V5_4_Left_Arm_Spare_Match_v2.zip.
+
+- 2026-11-22 21:00: Owner could not find the button pod files (LFS-blocked, delivered in LED chat). Regenerated both from electronics/concepts/.../scripts/pod_export.py (18p8: 7.72 cm3, 28.6x30x26; 18p0: 7.59 cm3) and sent them; not committed (LFS).
