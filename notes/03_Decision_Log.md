@@ -36,3 +36,4 @@ See [[docs/DECISIONS_AND_HISTORY]] and [[HANDOFF]].
 - **2026-11-22 / Owner:** Approved V5.3 thumb joint: socket in R_13/L_13 + dowel; thumb base reprinted with matching hole (old printed base was a poor print anyway). Files: `releases/v5/.../V5_3_Thumb/`.
 - **2026-11-22 / Owner:** Reprint both pressure gauges in transparent PLA and paint the areas that should not glow (more light from the ring shows through). Gauge sits directly on the ring cover over the LEDs.
 - **2026-11-22 / Owner:** A1 Mini plate = 2 transparent gauges + button pod fit test; thumb bases printed later.
+- **2026-11-22 / Owner:** Button roles (2 buttons per arm): **button 1 = power on + cycle through effects**, **button 2 = a 'Hextech power-up explosion' burst**, then back to the normal look. Effects, burst length and button-LED wiring (always-on via 470 Ω from 5V proposed) still to confirm.

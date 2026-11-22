@@ -42,7 +42,7 @@ tags:
 - Bambu Studio slice: #3.
 
 ## Pending owner decisions
-- Lighting behaviour: "breathing all the time, button triggers an effect, then back to breathing" (durations and button mapping).
+- Lighting behaviour: button roles decided (B1 on/cycle, B2 Hextech burst, then back to default); still open: default look, effect list, burst length, button LEDs always-on or not.
 - Right-arm shells still to print (needed for the X1C schedule) and whether a 0.6 mm nozzle is available.
 - Button LEDs: wire the HUAZIZ buttons' built-in LEDs (2 wires + resistor each) or not.
 - Part labelling (owner note 2026-11-21): parts need IDs in Bambu Studio and physically. Options: marker/tape now; owner adds text in Bambu Studio; or Claude engraves IDs on hidden inner faces of the left-arm shells (geometry change, needs approval).

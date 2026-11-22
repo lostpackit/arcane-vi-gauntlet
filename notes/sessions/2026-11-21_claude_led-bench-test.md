@@ -248,3 +248,8 @@ tags: [agents, session, electronics, leds, wled]
 ### 2026-11-22 20:40 UTC — Action 38: "update the vault and yourself"
 - Fetched: 14 new commits from the parallel print/vault session (V5.3 thumb, V5.4 spare twins, print queue, HANDOFF compaction, and its own button pod v2 for the HUAZIZ buttons with the SAME file names as this session's 17:30 pod v2). Reset to origin/main (local commit a6df4e5 kept on branch `led-session-pre-merge`, not pushed), kept this session note, dropped this session's pod_v2.py/png and README section, and added a superseded warning to the print README and a HANDOFF entry. Claude project memory file updated (vi-gauntlet).
 - Sync: PUSHED.
+
+### 2026-11-22 20:38 UTC — Action 39: button LEDs and button roles
+- Explained button LEDs: always-on = one extra 5V wire per arm + one 470 Ω resistor per LED at the pod, LED minus shares the G wire; plus leg via red tab mark or coin-cell test (owner has no multimeter). Switching the LEDs with effects needs a transistor each (not recommended).
+- Owner: button 1 = power on + cycle effects; button 2 = Hextech power-up explosion. Recorded in Decision Log. Proposed WLED mapping: B1 short = next preset (cycle API), B1 long = off (never hold B1 > ~6 s: WLED opens AP / resets on long holds of button 0), B2 short = playlist burst ~3 s then end preset = default look.
+- Sync: LOCAL.
