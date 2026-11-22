@@ -1,6 +1,6 @@
 # WLED 16 presets: whole strip, both arms (2026-11-22)
 
-File: `presets_wled16_whole_strip.json`. Built by Claude from the owner's right-arm dry-fit (160 LEDs) and owner's style decisions. Effect IDs checked against WLED v16.0.1 source (`wled00/FX.h`). **Not yet loaded on a board.** Replaces `presets.json` / `presets_144.json` (old strip, 91 LEDs).
+File: `presets_wled16_whole_strip.json`. Built by Claude from the owner's right-arm dry-fit (160 LEDs) and owner's style decisions. Effect IDs checked against WLED v16.0.1 source (`wled00/FX.h`). Loaded on a board 2026-11-22 (owner video): v1 had the **Overlay flag in the wrong field** (`o1`; WLED 16 uses `o2` = check2 for Lightning/Glitter overlay), so the idle lightning layer blacked out the hand shafts. Fixed in v2 of this file. Replaces `presets.json` / `presets_144.json` (old strip, 91 LEDs).
 
 Segments (WLED index from the board end): lead-in 0–10 off · ring 11–122 · (123–124 dark) · hand 125–148 · crystal 149–159.
 
