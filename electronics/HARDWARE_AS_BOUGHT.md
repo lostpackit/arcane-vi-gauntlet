@@ -5,7 +5,17 @@ Confirmed from the owner's photos of the packaging.
 | Part | Exact item | Notes |
 |---|---|---|
 | LED strip | BTF-LIGHTING model `HD-5V-2020-160-W-IP30-SPI`, SKU `20205V1M160L5MMRGBICW30-EU`: DC 5 V, PCB width 5 mm, 1 m, 160 LEDs/m, RGB, IP30, white PCB | Chip not named on the bag. BTF's enclosed connector card shows a 3-pin connector (+V, Data, GND), the single-data-line type WLED drives as WS281x. Confirm the pad labels on the strip itself |
-| Controller | Adafruit Mini Sparkle Motion **6160** (no terminal block), seller Paradisetronic | 1 received, 1 outstanding |
+| Controller | Adafruit Mini Sparkle Motion **6160** (no terminal block), seller Paradisetronic | **3 in hand** (owner, 2026-11-22, all confirmed as product 6160) |
+
+### Product page facts (adafruit.com/product/6160, opened by Claude 2026-11-22)
+- Size **31.6 × 19.8 × 7.3 mm**, with mounting holes. Sled design uses these numbers.
+- USB-C power, rated 5 V 4 A, 4 A resettable fuse.
+- Two level-shifted (5 V) LED outputs + 5V + GND on 0.1" pads; 2×3 pad block with 4 more GPIO + 3V + GND. GPIO numbers are not on the product page (32/33 and 14/27/25/26 come from the Adafruit guide and owner photos, recorded 2026-11-19).
+- Onboard: I2S microphone, STEMMA QT, user button on GPIO 0, reset button, red LED on 12, small NeoPixel on 18, JST input port on 13. No IR receiver.
+- Product page says "WLED-friendly" but does **not** say WLED is preinstalled. **Owner 2026-11-22: owner flashed board 1 with stock WLED himself (it did not come ready); now runs WLED 16.0.1, `WLED-AP` + `4.3.2.1` work.** Stock defaults seen: WS281x, GRB, length 30, GPIO reported as 1, brightness 100. Other two boards not yet checked; assume they need flashing too.
+
+### Owner update 2026-11-21 (in chat)
+Owner has: **both LED strips**, **the buttons**, **the ESP32 boards (both)**, **the capacitors**. Not yet arrived: **the additional (silicone) wire**. Exact button and capacitor part numbers and values not yet recorded.
 
 ## Board connections (Adafruit pinout page)
 

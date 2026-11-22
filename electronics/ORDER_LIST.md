@@ -1,5 +1,7 @@
 # LED and electronics order list — both gauntlets (Claude, 2026-11-15)
 
+> **Status 2026-11-21:** the strip and controller choices below are superseded. Bought and received: BTF 5 mm SMD2020 160/m strip (1 m) and one Adafruit Sparkle Motion Mini; see [[electronics/HARDWARE_AS_BOUGHT]] and [[notes/LED_Wiring_Start_Here]] for current hardware and the 91-LED layout. The rest of this list is kept for history and for the parts still to order.
+
 This is the single list to order from. It consolidates `BOM.md`, `LED_STRIP_COMPARISON.md` and the V5.1 CAD. **Nothing has been purchased or bench-tested.** "Verified" means the product and its key specification were confirmed on a manufacturer or store page; everything else is a search term to check before buying.
 
 ## Is there an LED ring for the gauge?
