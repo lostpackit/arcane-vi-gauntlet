@@ -265,3 +265,7 @@ tags: [agents, session, electronics, leds, wled]
 ### 2026-11-22 21:35 UTC — Action 42: LED dry-fit counts
 - Owner dry-fit (right arm, from far end): crystal 1–11, hidden 12–13, Lens B 14–21, hidden 22–23, Lens A 24–35, hidden 36–37, ring 38–149 (112 = 2 turns), last 11 probably inside the gauntlet; soft twist OK. Converted to WLED indices (input end = 0) and segments; Start Here layout replaced, Test Log row added. CAD estimate was close (crystal 11 vs 9–10, Lens A 12 vs 13, hidden 2 vs 3).
 - Sync: LOCAL.
+
+### 2026-11-22 21:40 UTC — Action 43: animation style
+- Owner: burst 3–4 s; Vi pink + blue/cyan with white flashes; lightning in the shafts. Checked effect IDs in WLED v16.0.1 source (wled00/FX.h, FX.cpp; Lightning, Glitter and Starburst have an Overlay option). Proposed idle / burst / cycle storyboard. Decision Log updated.
+- Sync: LOCAL.
