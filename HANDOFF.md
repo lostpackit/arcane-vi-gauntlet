@@ -45,6 +45,9 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 09:20, Claude
+- Owner decision: continuous strip ring→hand; near end keeps factory connector to ESP32 pigtail (owner soldered pigtail to board). Far end cut before threading. Recorded in Decision Log + LED_Wiring_Start_Here. Next: bench test, then physical turn check. Sync: PUSHED.
+
 ### 2026-11-22 09:10, Claude
 - Owner photo: strip test-placed in R_08 ring trough; JST connector lies in the trough. Confirmed plan: no connectors in the ring; solder wires at strip ends, exit via hole, connector in cavity. Added to LED_Wiring_Start_Here. Sync: PUSHED.
 
