@@ -19,11 +19,12 @@ Context pack for any agent (or new conversation) working on the gauntlet LEDs. R
 | Item | Status | Notes |
 |---|---|---|
 | Adafruit Sparkle Motion Mini (#6160) | **3 in hand** (owner, 2026-11-22) | 31.6 × 19.8 × 7.3 mm, USB-C 5 V 4 A fused. Not WLED-preinstalled: board 1 flashed by owner with stock **WLED 16.0.1**; flash the others via install.wled.me |
-| BTF-LIGHTING 5 mm SMD2020 strip, 160 LEDs/m, IP30 | **2 in hand** (1 m each) | 6.25 mm pitch, 5 V, JST-SM 3-pin. Confirmed on strip: red +5V, green data (middle pad), white GND; input end = factory cable with the product tag |
+| BTF-LIGHTING 5 mm SMD2020 strip, 160 LEDs/m, IP30 | **2 in hand** (1 m each) | 6.25 mm pitch, 5 V, JST-SM 3-pin. Confirmed on strip: red +5V, green data (middle pad), white GND; input end = factory cable with the product tag. **Bare cut pads between every LED** (can cut at any LED; pads short if strip touches itself or metal) |
 | JST-SM pigtail, 3 wires | Came with strip | Soldered to board 1 (5V/32/G), checked from photos 2026-11-22 |
 | Buttons, capacitors | In hand (owner, 2026-11-21) | Part numbers / values not yet recorded |
 | 24 AWG silicone wire | Not yet arrived | |
-| BTF JST-SM 3-pin pairs (20), heat shrink, USB-C power banks + C-to-C cables, flux | Status not recorded | See [[electronics/ORDER_LIST]] |
+| Solid rosin flux (tin) | In hand (owner photo 2026-11-22) | Use on board joints |
+| BTF JST-SM 3-pin pairs (20), heat shrink, USB-C power banks + C-to-C cables | Status not recorded | See [[electronics/ORDER_LIST]] |
 
 Details: [[electronics/HARDWARE_AS_BOUGHT]].
 
@@ -48,14 +49,16 @@ Details: [[electronics/HARDWARE_AS_BOUGHT]].
 - LEDs hidden in the slot are set off in WLED; zone counts (ring / gap / hand / crystal) to be recounted after the physical fit.
 - ESP32 pigtail soldered by owner 2026-11-22 (red/green/white); pad check against silkscreen done from photos: red 5V, green 32, white G, 33 empty.
 - Don't stick the strip down until the bench test passes. Each arm needs its own 1 m reel.
+- **Owner decision 2026-11-22: use the whole 1 m per arm, ring wrapped twice** (two rows on the outer wall; ~110 ring + ~36 hand/crystal ≈ 146 LEDs). Dry-fit on R_08 pending; the 91-LED layout below is superseded once the fit is confirmed and LEDs recounted.
 
 ## Next steps (in order)
-1. **Bench test board 1 (2026-11-22): first light, R/G/B (GRB), rainbow PASS on all 160.** Still to record: **heat test** (length 160 + segment 0–91, max 1000 mA, solid white full, USB-C charger; touch-check strip start / board / joints / JST at 5 and 10 min). Details in [[04_Test_Log]].
+1. **Bench test board 1: DONE, PASS (2026-11-22).** First light, R/G/B (GRB), rainbow on all 160; 10+ min at 91 LEDs / 1000 mA full white: everything warm, no restarts. Restarts seen earlier were the strip's bare pads shorting when coiled. Details in [[04_Test_Log]]. Still open: heat with the strip enclosed under the cover (do at first in-arm power-up). **Board 2 + strip 2: PASS (owner, 2026-11-22).** Both boards still named `WLED-AP`: rename (Config → WiFi Setup → AP SSID) before powering both at once.
 2. Mirror results to GitHub issues #10–#13 (not yet done).
-3. Update [[electronics/WIRING]] fully for the Sparkle Motion Mini (it still reflects older plans).
-4. Redesign the electronics sled for the 32 × 20 mm board (current concept is 80 × 45 for the old board); validate button pod with the real switches (#9).
-5. Owner decision pending: "breathing all the time, button triggers an effect then returns to breathing" (durations and button mapping).
-6. Check WLED effect IDs on the device (IDs 13/15 in the presets may be wrong).
+3. **Dry-fit** the double ring wrap on printed R_08; count LEDs per turn → set WLED segments (ring / hand / crystal).
+4. **Placement (option A) concept done 2026-11-22:** [[electronics/concepts/2026-11-22_controller_placement_option_A/README]]. Test-print sled (R/L) and cover; hold the sled against printed shell 08 before gluing. Button pod: clip-fit test print first; pockets wait for the owner's button type and handle type (printed Ø18.8 or beech Ø18).
+5. Update [[electronics/WIRING]] fully for the Sparkle Motion Mini and option A (wire lengths ~5 / 18 / 20 cm + slack; keep strip pads apart and off metal; insulate the cut end).
+6. Owner decision pending: "breathing all the time, button triggers an effect then returns to breathing" (durations and button mapping).
+7. Check WLED effect IDs on the device (IDs 13/15 in the presets may be wrong).
 
 ## Related
 [[electronics/README]] · [[electronics/EFFECTS]] · [[electronics/CODE_AND_WLED_REVIEW]] · [[electronics/LED_STRIP_COMPARISON]] · [[03_Decision_Log]] · [[05_Risks_and_Blockers]]

@@ -3,7 +3,7 @@ type: agent-session
 date: "2026-11-21"
 agent: "Claude"
 task: "led-bench-test"
-status: paused
+status: complete
 tags: [agents, session, electronics, leds, wled]
 ---
 
@@ -149,3 +149,93 @@ tags: [agents, session, electronics, leds, wled]
 - Remaining: heat-test result; issues #10–#13 comments; routing plan; WIRING.md; sled.
 - [[HANDOFF]] updated: YES.
 - Push note: origin/main had 5 newer commits from a parallel Claude session (continuous ring→hand strip decision, ring-trough connector rule, 3MF naming fix, right-arm print status, labelling decision pending). Local per-step commits (kept on local branch `led-session-local`, not pushed) were reapplied as one commit on top of origin/main; HANDOFF and LED Start Here hand-merged keeping both sessions' content. The parallel session's "pad check pending" line is now marked done.
+
+### 2026-11-22 08:41 UTC — Action 23: strip went off/on when moved
+- Owner moved the strip during the heat test; it turned off and back on. Two cases: board rebooted (Info uptime resets; USB-C connection, brownout or a momentary short) vs strip-side intermittent (board stays up; 5V/G/data joint or JST). Asked owner for Info uptime and a warmth check of joints/JST, then a gentle wiggle test of each point separately.
+- Sync: LOCAL.
+- 08:43 UTC: owner reports segments lost and uptime 2 min 45 s: board rebooted. Next: move strip away from metal, warmth check, wiggle test USB-C / wires / JST.
+
+### 2026-11-22 08:56 UTC — Action 24: reboot isolation
+- Owner: without the strip the board runs and does not reboot when shaken; with the strip connected, shaking reboots it. Photo: strip coiled on the table with loops crossing face-to-face; far-end JST plug lying on/near the strip.
+- A broken strip-side contact would darken the strip, not reboot the board; a reboot needs the 5 V rail to dip, i.e. a momentary short. Bare copper cut pads (5V/DIN/GND, every 3 LEDs) on crossing loops, or the far-end plug contacts, are the likely bridge. LED packages themselves are not conductive.
+- Confirming test given: strip laid out with no crossings, far-end plug taped, shake strip; then wiggle the JST joint alone.
+- In-arm relevance: single layer on PLA, far end cut, so low risk; still insulate the cut end (UHU Poly Max dab or tape) and keep pads off any metal. Add to WIRING.md.
+- Sync: LOCAL.
+- 08:57 UTC correction: owner close-up shows the 3 bare cut pads (+5V / DIN / −) between EVERY LED, not every third. Strip can be cut at any LED (useful for the continuous ring→hand run); more exposed copper when coiled.
+
+### 2026-11-22 09:11 UTC — Action 25: short confirmed
+- Owner: strip laid out with no crossings, shaken, JST wiggled: no restarts. Cause confirmed as pad-to-pad contact when coiled. Solder joints and JST pass the wiggle test.
+- Lesson for WIRING.md: never let strip sections touch face to face; insulate cut ends; keep pads off metal.
+- Next: redo segment 0–91 (lost at reboot) and restart the 10-min heat test.
+- Sync: LOCAL.
+- 09:16 UTC: heat test started. Owner screenshot: WLED v16.0.1 "Niji", brightness 255, Total LEDs 160 (segment 0–91 lit), estimated current 1000 mA (limiter at cap), 43 FPS. Waiting for 5/10-min touch results.
+
+### 2026-11-22 09:30 UTC — Action 26: heat test result
+- Owner: "warm at both times, about what I would expect" (5 and 10 min). Screenshot 10:29: uptime 18 min 53 s (no restarts since 10:11), est. 1000 mA, brightness max.
+- Result: PASS (touch only). Limits: no thermometer; strip in open air, not enclosed in the trough under the PLA cover. Recommend keeping the 1000 mA WLED limit and repeating a touch check at first in-arm power-up.
+- Bench test complete for board 1. Next: wire-routing plan (owner review), WIRING.md, sled.
+- Sync: LOCAL.
+
+### 2026-11-22 09:35 UTC — Action 27: wire-routing plan, draft for owner
+- Read: ELECTRONICS_FIT.md (ring trough 27.1 × 13.3 mm, outer wall r 55.9, notch 13–14 mm), V5 README (arm order cuff 01–04 → light band 05–09 with ring on 08 → wrist 10/11 with handle → knuckles 12/13; "electronics planned for the cuff"), continuous-strip decision, V5.2 passages (ring→hand slot 4 mm sphere; ring→arm cavity 11 mm). Shell models in this clone are LFS pointers only; no new geometry check run yet.
+- Draft given to owner: fixed parts (strip input JST exits trough to cavity; continuous strip; buttons on handle pod) and one open choice: board location A = near the ring (short data lead, short button leads, only the USB-C cable runs to the bank in the cuff) vs B = board + bank together on a sled in the cuff (3-wire extension to the ring). Recommended A, subject to a CAD clearance check against the wearer's forearm. Asked owner to choose and to confirm button pod on the handle.
+- Sync: LOCAL.
+
+### 2026-11-22 09:38 UTC — Action 28: owner idea, use all 160 LEDs per arm
+- Owner asked whether to use the whole 1 m (160 LEDs) instead of cutting to 91: "double up in the ring or crystal".
+- Analysis given: ring outer wall is 13.3 mm high (ELECTRONICS_FIT, measured), so two 5 mm rows fit (~10.5 mm with a gap, ~3 mm spare). Wrapping twice is a shallow helix (~5.5 mm rise per 351 mm turn), no edgewise bend, so it stays one strip: ~110 LEDs in the ring + 36 hand/crystal = ~146, ~14 spare. Unknowns: how the second turn passes the notch (input) and the floor-level slot (exit to hand), clearance under the cover, and the gauge hides most of the cover (only a halo shows). Same 1 A limit → same total heat and battery use, light spread over more LEDs. Crystal doubling not recommended (needs a fold; face-to-face pads short). Using everything leaves no spare LEDs for repairs.
+- Proposed physical dry-fit on owner's printed R_08 (unpowered, backing on). Recorded as pending owner decision.
+- Sync: LOCAL.
+
+### 2026-11-22 09:44 UTC — Action 29: owner decision, double ring wrap
+- Owner: "Richer is what I was looking for." Recorded in Decision Log: whole strip per arm, ring wrapped twice, subject to dry-fit on printed R_08.
+- Dry-fit instructions issued: unpowered, backing on, first turn upper row, second turn lower row so the strip finishes at floor level for the hand slot; check cover seats; count LEDs per turn.
+- Changed: Decision Log, Start Here, HANDOFF (pending item removed).
+- Sync: LOCAL.
+
+### 2026-11-22 09:55 UTC — Action 30: boot preset; second set
+- Owner asked how to keep settings after power-off, and whether to bring strip 2 + board 2 to the same point.
+- Answer: LED Preferences are already stored; the look (colour/effect/brightness/segments) needs a preset (with segment bounds included) set under Config → LED Preferences → Defaults → "Apply preset N at boot" (Adafruit WLED presets guide; WLED forum). Since the whole strip will be used, segment 0 can go back to 0–160.
+- Recommended yes for set 2, with the condensed recipe (flash, AudioReactive remap, LED prefs, visual pigtail map, solder from top, photo check before power, first light / RGB / rainbow with strip laid flat). Added: give each board its own AP name (Config → WiFi Setup → AP SSID) so two boards don't both broadcast WLED-AP.
+- Sync: LOCAL.
+- 10:34 UTC: owner has solid rosin flux (photo); asked how to use it for better joints on board 2. Recorded in Start Here hardware table.
+
+### 2026-11-22 11:13 UTC — Action 31: solder photo (board not stated, likely board 2)
+- Underside photo, rosin flux used. Order from the label side: G joint, 33 pad (empty hole but tinned), 32 joint, 5V joint — matches board 1 layout. Joints smoother and shinier than board 1's first attempt (32 and 5V good; G slightly lumpy but wetted).
+- Check items before power: 33 pad picked up solder; confirm a clear gap to the G joint (GPIO33 unused, so a bridge is low-risk but should be removed). Small solder speck beside the GPIO 26 pad ring and a splash on the left mounting-hole rim: brush off / check no contact. Top-side photo needed to confirm colours (red 5V, green 32, white G). Asked which board this is.
+- Sync: LOCAL.
+- 11:15 UTC: owner confirms the photo is board 2; top photo shows white→G, green→32, red→5V, 33 empty. Solder check PASS. Next: power board 2 with strip unplugged, flash WLED if needed, AudioReactive remap, own AP SSID, LED prefs; then strip laid flat, first light.
+- 11:18 UTC: cleanup photo: 33 pad separated by clear gaps, solder ball near 26 removed, mounting-hole splash isolated. Cleared to power board 2 (strip unplugged) for WLED setup.
+
+### 2026-11-22 11:29 UTC — Action 32: board 2 bench
+- Owner: board 2 + strip 2 light up and run effects. PASS (owner report). AP rename deferred by owner. Both sets now bench-tested; board 3 is spare (not yet flashed).
+- Open with owner: dry-fit photos/LED count per turn, board location A/B, button pod.
+- Sync: LOCAL.
+- 14:16 UTC: owner chose board location A (near the ring). Recorded in Decision Log. Owner asked to see the button pod and sled and where they sit in the gauntlet: pulling LFS shells for a placement study.
+
+### 2026-11-22 14:20–15:10 UTC — Action 33: option A placement study (sled + button pod)
+- Pulled via LFS: originals/Full_Arm_Right (No Fingers).stl, Circle_Light, Circle_Light_Cover, Together For Sizing (read only). Cloned Adafruit-Mini-Sparkle-Motion-PCB (.brd: outline 30.48 × 19.75, M2.5 holes) and Adafruit_CAD_Parts/6160 (board STL) into /home/claude/ext (not in repo).
+- Found: exit hole 16 × 12 mm under the ring (Z 255–271); bore ceiling is a ridge (230.8 centre, 222 at ±10 mm); bore is very roomy (sides X 85–337, floor Y ~52–65, ceiling ~231).
+- Built concept: conformal sled (ceiling-matched glue face, 4 posts on the board's hole pattern, M2.5 pilots, tie bar), board hung labels-down, USB-C toward cuff; button pod rebuilt from Mounts_CONCEPT on the handle at X 262–288; example power bank on cuff wall; wire routes 3 mm off the shell. Overlaps with shell: 0. Clearance to assumed forearm ≈ 32 mm.
+- Output: `electronics/concepts/2026-11-22_controller_placement_option_A/` (5 images, README, scripts). No shell geometry changed. Not print files.
+- Sync: LOCAL.
+
+### 2026-11-22 14:40 UTC — Action 34: owner review of placement concept; pod fit-test files
+- Owner likes the sled; asked about the grey parts (= M2.5 screws; board removable by unscrewing, sled stays glued). Owner: power bank velcroed to the cuff wall (confirmed plan); pod snaps on after assembly; asked for the pod model + filament + slicer settings.
+- Exported `print/Button_Pod_for_18p8_printed_handle.3mf` and `..._for_18p0_beech_rod.3mf` (watertight, object names = file names, upright on bed), print README with PETG + Bambu settings. Button pockets not yet matched to owner's buttons (type/legs unknown) — clip-fit test only.
+- Open: handle type (printed 18.8 vs beech 18), button model, M2.5 screws in hand, power bank choice.
+- Sync: LOCAL.
+
+### 2026-11-22 14:45 UTC — Action 35: sled v3 with M2 screws and vented cover
+- Owner: smallest screws are M2 × 8 (has nuts); suggested nuts and a protective, perforated cover.
+- Checked Adafruit .brd: mounting holes plated, no net, 3.2 mm pad, 4.0 mm silkscreen keep-out; JP1 (GND/+5V/S2/S1) and JP3 (GND/3.3V/IO26/IO27) pads sit ~0.2 mm from where an M2 nut (4.6 mm AF corners) would reach → nuts on the board rejected; screw heads (3.8 mm) fit the keep-out. First v2 attempt (stud screws in posts) also rejected: head counterbore left a 0.05 mm post wall.
+- v3: 4 board posts Ø5 with 1.7 mm pilots (one post flattened around an underside part near the USB-end hole), 2 outer posts for a slotted cover, all M2 × 8. Overlaps 0; board-to-sled contact checked. Print files: sled R/L (standing on end), cover (flat). Not sliced; concept/test print.
+- Sync: LOCAL.
+
+### 2026-11-22 15:35 UTC — Action 36: "update the vault"
+- HANDOFF current state + entry, LED Start Here next steps, Decision Log (mounting, cover, power bank, pod) updated; Test Log already current (no new physical results this afternoon). Push to main.
+
+## Session exit
+- Pushed as ONE squashed commit (per-step local commits kept only on local branch `led-session-full-history`): the first push failed because the 5 new .3mf files are LFS and the proxy blocks LFS uploads. The .3mf files were removed from the commit and delivered to the owner in chat; owner/Copilot to upload them to `electronics/concepts/2026-11-22_controller_placement_option_A/print/`.
+- Open: button type + handle type for the pod pockets; dry-fit LED count per turn; power bank model; WIRING.md rewrite; GitHub issues #9–#13 comments; renaming both WLED APs.
+- [[HANDOFF]] updated: YES.

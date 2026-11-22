@@ -30,13 +30,13 @@ tags:
 - **Print set: V5 / V5.1 / V5.2** in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`. Shell 08 must be `_V5_2`. Not print-approved by release gates; owner is test-printing.
 - **Physical results:** T2 finger coupon PASS (2026-11-18). **Right arm partly printed** (owner photo 2026-11-21: shell 08 with ring cover seated, plus several shells; exact list being confirmed against the inventory). Glow-blue PETG covers FAIL (wet); covers now GiantArm transparent PLA.
 - **Materials/assembly:** shells LW-PLA; handle printed PLA/PETG or 18 mm beech rod; wooden 6 × 30 mm dowels (57 per arm); UHU Plus Schnellfest epoxy for seams; UHU Poly Max for covers/electronics; no super glue near clear parts.
-- **Electronics:** in hand: 3 Sparkle Motion Minis (6160), 2 BTF 5 mm 160/m strips (1 m each), buttons, capacitors; silicone wire not yet arrived. 91 LEDs per arm, data GPIO 32, buttons 14/27, WLED; one continuous strip ring→hand (owner decision 2026-11-22). **Bench test board 1: first light, colour order (GRB) and rainbow PASS on all 160 (2026-11-22)**; 10-min heat test at arm settings (91 LEDs, 1000 mA) running, result not yet recorded. Gotchas in [LED Start Here](notes/LED_Wiring_Start_Here.md).
+- **Electronics:** in hand: 3 Sparkle Motion Minis (6160), 2 BTF 5 mm 160/m strips, buttons, capacitors, rosin flux, M2 × 8 screws; silicone wire not yet arrived. **Both board + strip sets bench-tested PASS (2026-11-22)** (WLED 16.0.1, GPIO 32, GRB, 1 A limit, heat OK). Owner decisions 2026-11-22: one continuous strip ring→hand, **whole 1 m per arm with the ring wrapped twice** (dry-fit on R_08 pending), **board near the ring (option A)**, board on a sled with M2 × 8 screws and a vented cover, power bank Velcroed to the cuff wall, button pod snaps onto the handle after assembly. Concept renders + test-print 3MFs (sled R/L, cover, pod) in `electronics/concepts/2026-11-22_controller_placement_option_A/`; not printed. Details: [LED Start Here](notes/LED_Wiring_Start_Here.md).
 - **No Bambu Studio slice by any agent** (issue #3). Only owner prints are physical evidence.
 
 ## Open work queue (GitHub issues)
 - **Owner upload needed:** #2 (V5.2 shell 08 + mount concepts), #20 (fixed left inserts). Files in `Repo_Upload_Issues_2_and_20.zip` from Claude; steps in its `UPLOAD_STEPS.md`. Claude's session cannot upload LFS.
 - Print/fit: #4 ring fit with real strip, #5 finger string pull, #6 dowel fit, #7 handle, #8 gauge/cover retention, #14 thumb route, #15 supports, #16 centre seam.
-- Electronics: #9 mounts vs hardware (sled must be redone for 32 × 20 mm board), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
+- Electronics: #9 mounts vs hardware (sled v3 + cover + pod concept done 2026-11-22, test print pending), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
 - Bambu Studio slice: #3.
 
 ## Pending owner decisions
@@ -45,6 +45,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 16:35 CET, Claude (LED session, afternoon)
+- Option A placement study from the original right arm + Adafruit's board model: exit hole under the ring 16 × 12 mm, sled glued to the ridged ceiling behind it, ~28 mm to an average forearm (assumed). Sled v3 (M2 × 8 into posts; nuts rejected: too close to pads), vented cover, button pod fit-test files for 18.8 printed handle and 18 mm beech rod. Recorded owner decisions. Open: pod buttons + handle type, dry-fit count, power bank model, WIRING.md rewrite. **Owner/Copilot: upload the 5 concept .3mf files (LFS) to the concept `print/` folder; Claude cannot push LFS.**
+- Sync: PUSHED (see git log).
+
 ### 2026-11-22 09:45 CET, Claude (LED bench session)
 - Hygiene check (stale items fixed, incl. "Project instructions empty" below and entry times). Bench test board 1 + strip: owner flashed stock WLED 16.0.1; AudioReactive remapped (mic 9/10/23) to free GPIO 32; pigtail solder joints checked from photos (5V/32/G correct; stray strand removed); **first light, colour order, rainbow PASS**. Pixels past WLED length light up on their own (not WLED-driven); bench workaround length 160 + segment 0–91. Parts in hand recorded.
 - Files: Test Log, HARDWARE_AS_BOUGHT, LED Start Here, ORDER_LIST banner, `notes/sessions/2026-11-21_claude_led-bench-test.md`. Merged with the parallel 09:10/09:20 session (continuous-strip decision kept).
