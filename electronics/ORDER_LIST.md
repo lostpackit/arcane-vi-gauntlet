@@ -2,6 +2,21 @@
 
 > **Status 2026-11-21:** the strip and controller choices below are superseded. Bought and received: BTF 5 mm SMD2020 160/m strip (1 m) and one Adafruit Sparkle Motion Mini; see [[electronics/HARDWARE_AS_BOUGHT]] and [[notes/LED_Wiring_Start_Here]] for current hardware and the 91-LED layout. The rest of this list is kept for history and for the parts still to order.
 
+## Amazon order list, 2026-11-23 (Electronics conversation; owner ordering now)
+Must have:
+- 470 Ω resistors, 1/4 W (small assortment) — 2 per arm for always-on button LEDs from 5V.
+- 2 × power bank: USB-C output 5 V ≥ 2 A, slim (~100 × 65 × 15 mm or smaller), ~5000 mAh, ideally with a low-current / always-on mode (many banks switch off at low draw). Test with the gauntlet on Calm before relying on it.
+- 2 (+1 spare) × short USB-C to USB-C cable, 20–30 cm, preferably one angled plug.
+- Strong self-adhesive hook-and-loop (Velcro) strips for the power banks.
+- Heat-shrink assortment (resistor legs, wire joints at the button pod).
+- Isopropyl alcohol 99 % (flux clean-up, surface prep before tape/glue).
+- Small cable ties, 2.5 mm wide (sled strain-relief bar).
+Recommended:
+- Cheap digital multimeter (continuity, LED polarity, 5 V checks).
+- Thin clear double-sided acrylic foam tape ("VHB" type), 5–6 mm wide, as a better hold for the strip than its factory tape on LW-PLA (plus UHU Poly Max dots, already owned).
+Optional: USB-C power-bank KeepAlive module, only if the chosen bank keeps switching off.
+Already have / pending: silicone wire (pending), UHU Poly Max, M2 × 8 screws, rosin flux, solder.
+
 This is the single list to order from. It consolidates `BOM.md`, `LED_STRIP_COMPARISON.md` and the V5.1 CAD. **Nothing has been purchased or bench-tested.** "Verified" means the product and its key specification were confirmed on a manufacturer or store page; everything else is a search term to check before buying.
 
 ## Is there an LED ring for the gauge?

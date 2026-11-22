@@ -284,3 +284,7 @@ tags: [agents, session, electronics, leds, wled]
 
 ### 2026-11-22 22:30 UTC — Action 46: "update the repo and the vault"
 - HANDOFF current state (electronics) + entry, Start Here step 7, pushed. No new remote commits since 16e6bab.
+
+### 2026-11-22 23:24 UTC — Action 47: Amazon order list
+- Owner placing an order; asked what else is needed and whether to trust the strip's adhesive. Added an order list to electronics/ORDER_LIST.md (resistors, power banks with low-current behaviour, C-to-C cables, Velcro, heat shrink, IPA, cable ties; recommended multimeter and VHB-type tape). Strip hold: ring strip self-presses outward against the wall; factory tape + Poly Max dots or VHB-type tape; IPA clean; no super glue near clear parts.
+- Sync: LOCAL.
