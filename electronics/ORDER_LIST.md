@@ -15,7 +15,7 @@ Recommended:
 - Cheap digital multimeter (continuity, LED polarity, 5 V checks).
 - Thin clear double-sided acrylic foam tape ("VHB" type), 5–6 mm wide, as a better hold for the strip than its factory tape on LW-PLA (plus UHU Poly Max dots, already owned).
 Optional: USB-C power-bank KeepAlive module, only if the chosen bank keeps switching off.
-Already have / pending: silicone wire (pending), UHU Poly Max, M2 × 8 screws, rosin flux, solder. **Owner 2026-11-23 00:27: also has USB-C cables, cable ties, isopropyl alcohol, and probably power banks (5000 or 7000 mAh; to test for low-current shut-off and size).** Still to buy: resistors, Velcro, heat shrink (if none), multimeter + VHB-type tape (recommended).
+Already have / pending: silicone wire (pending), UHU Poly Max, M2 × 8 screws, rosin flux, solder. **Owner 2026-11-23 00:27: also has USB-C cables, cable ties, isopropyl alcohol, and probably power banks (5000 or 7000 mAh; to test for low-current shut-off and size).** Still to buy: resistors, Velcro, heat shrink (if none), multimeter + VHB-type tape (recommended). **00:29: owner also has heat shrink, Velcro and clear double-sided tape → only 470 Ω resistors (+ optional multimeter) left to buy.**
 
 This is the single list to order from. It consolidates `BOM.md`, `LED_STRIP_COMPARISON.md` and the V5.1 CAD. **Nothing has been purchased or bench-tested.** "Verified" means the product and its key specification were confirmed on a manufacturer or store page; everything else is a search term to check before buying.
 
