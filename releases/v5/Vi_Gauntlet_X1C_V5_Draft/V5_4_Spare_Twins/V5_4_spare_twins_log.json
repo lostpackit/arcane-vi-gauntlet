@@ -1,93 +1,4 @@
 {
- "L_04_Cuff_Right_Rear_V5_SPAREMATCH": {
-  "source": "R_04_Cuff_Right_Rear_V5.3mf",
-  "seams": [
-   {
-    "meets": "spare R_01 (as L_03)",
-    "old_holes": 1,
-    "new_holes": [
-     {
-      "point": [
-       379.74,
-       147.0,
-       136.76
-      ],
-      "axis": "Y",
-      "hole_outside_mm3": 0.0,
-      "wall_ring_outside_pct": 0.0,
-      "drilled": true
-     },
-     {
-      "point": [
-       376.74,
-       147.0,
-       91.76
-      ],
-      "axis": "Y",
-      "hole_outside_mm3": 0.0,
-      "wall_ring_outside_pct": 0.0,
-      "drilled": true
-     }
-    ]
-   },
-   {
-    "meets": "spare R_05 (as L_06)",
-    "old_holes": 2,
-    "new_holes": [
-     {
-      "point": [
-       375.6,
-       171.48,
-       145.0
-      ],
-      "axis": "Z",
-      "hole_outside_mm3": 0.0,
-      "wall_ring_outside_pct": 0.0,
-      "drilled": true
-     },
-     {
-      "point": [
-       399.6,
-       162.48,
-       145.0
-      ],
-      "axis": "Z",
-      "hole_outside_mm3": 0.0,
-      "wall_ring_outside_pct": 0.0,
-      "drilled": true
-     },
-     {
-      "point": [
-       354.6,
-       156.48,
-       145.0
-      ],
-      "axis": "Z",
-      "hole_outside_mm3": 0.0,
-      "wall_ring_outside_pct": 0.0,
-      "drilled": true
-     }
-    ]
-   }
-  ],
-  "fit_median_mm": 0.0,
-  "output": "L_04_Cuff_Right_Rear_V5_SPAREMATCH.3mf",
-  "volume_cm3": 960.6,
-  "source_volume_cm3": 961.62,
-  "watertight": true,
-  "extents": [
-   209.49,
-   147.01,
-   144.97
-  ],
-  "source_extents": [
-   209.49,
-   147.01,
-   144.97
-  ],
-  "status": "Error.NoError",
-  "sha256": "66db909335979c85f34ab901e3fd58b80e239662053aaf4964601081bbb5a95c"
- },
  "L_09_LightBand_Rear_Right_V5_SPAREMATCH": {
   "source": "R_09_LightBand_Rear_Right_V5.3mf",
   "seams": [
@@ -129,6 +40,34 @@
       "drilled": true
      }
     ]
+   },
+   {
+    "meets": "spare R_02 (as L_04)",
+    "old_holes": 1,
+    "new_holes": [
+     {
+      "point": [
+       366.6,
+       195.48,
+       145.0
+      ],
+      "axis": "Z",
+      "hole_outside_mm3": 1.3,
+      "wall_ring_outside_pct": 1.8,
+      "drilled": false
+     },
+     {
+      "point": [
+       393.6,
+       192.48,
+       145.0
+      ],
+      "axis": "Z",
+      "hole_outside_mm3": 0.0,
+      "wall_ring_outside_pct": 0.0,
+      "drilled": true
+     }
+    ]
    }
   ],
   "fit_median_mm": 0.0,
@@ -147,7 +86,7 @@
    71.87
   ],
   "status": "Error.NoError",
-  "sha256": "5d4406b131bf0293e48f18511a54c12ee8f8300136596bd85db11cbfe019c929"
+  "sha256": "5b0280cac0c5a92759f74e0478d51a01b7e13d82236b60d8e6233768cc7ebb88"
  },
  "L_11_Wrist_Right_V5_1_SPAREMATCH": {
   "source": "R_11_Wrist_Right_V5_1.3mf",
@@ -208,6 +147,45 @@
    90.0
   ],
   "status": "Error.NoError",
-  "sha256": "b33a6353c9f97f1b606fa9ab2b3006a5f45ebeded7dde34f1b705152e4157180"
+  "sha256": "d566ce4af4ff38cac8b03bafc79ba4452dada26ac8e99c18bef16b0284a30cba"
+ },
+ "L_08_LightBand_Rear_RingCarrier_V5_2_SPAREMATCH": {
+  "source": "R_08_LightBand_Rear_RingCarrier_V5_2.3mf",
+  "seams": [
+   {
+    "meets": "spare R_02 (as L_04)",
+    "old_holes": 1,
+    "new_holes": [
+     {
+      "point": [
+       243.6,
+       237.48,
+       145.0
+      ],
+      "axis": "Z",
+      "hole_outside_mm3": 0.0,
+      "wall_ring_outside_pct": 0.0,
+      "drilled": true
+     }
+    ]
+   }
+  ],
+  "fit_median_mm": 0.0,
+  "output": "L_08_LightBand_Rear_RingCarrier_V5_2_SPAREMATCH.3mf",
+  "volume_cm3": 1013.45,
+  "source_volume_cm3": 1013.45,
+  "watertight": true,
+  "extents": [
+   200.0,
+   165.0,
+   83.83
+  ],
+  "source_extents": [
+   200.0,
+   165.0,
+   83.83
+  ],
+  "status": "Error.NoError",
+  "sha256": "da7bb9e9b866a4f6ea6181ae6036c50a91c1a109c1328bb50ed7fe3b56a456de"
  }
 }

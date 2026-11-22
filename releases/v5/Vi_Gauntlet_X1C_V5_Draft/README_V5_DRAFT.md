@@ -179,4 +179,4 @@ Shell 13 (R and L) gets a socket for the thumb base plus one 6 × 30 mm dowel; t
 
 
 ## V5.4 spare-twin left arm (2026-11-22)
-Owner has spare printed R_05 and R_01; they serve as L_06 and L_03 (mirror twins). L_04, L_09, L_11 get matching dowel holes (`*_SPAREMATCH`). Parts list: [V5_4_Spare_Twins/README_V5_4_SPARE_TWINS.md](V5_4_Spare_Twins/README_V5_4_SPARE_TWINS.md). 3MFs delivered as `V5_4_Left_Arm_Spare_Match.zip` (LFS upload pending).
+Owner has spare printed R_01, R_02, R_05; they serve as L_03, L_04, L_06 (mirror twins). L_08, L_09, L_11 get matching dowel holes (`*_SPAREMATCH`). Parts list: [V5_4_Spare_Twins/README_V5_4_SPARE_TWINS.md](V5_4_Spare_Twins/README_V5_4_SPARE_TWINS.md). 3MFs delivered as `V5_4_Left_Arm_Spare_Match_v2.zip` (LFS upload pending).

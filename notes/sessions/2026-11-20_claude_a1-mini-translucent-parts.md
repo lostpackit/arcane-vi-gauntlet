@@ -41,3 +41,5 @@
 - 2026-11-22 17:30: Owner approved thumb socket; old thumb base reprint. Built V5.3 (R/L_13 + R/L thumb base, 1 dowel). Verified: zero overlap, 15.4 cm2 contact, bounds unchanged, L mirror exact. Mirror-winding bug caught and fixed before delivery (negative volume on first L export). Delivered V5_3_Thumb_Joint.zip.
 
 - 2026-11-22 18:00: Spare R_05 + R_01 analysis: mirror-twin pairs 01/03, 02/04, 05/06, 10/11 (07/09, 12/13 not). Built V5.4 spare-match L_04/L_09/L_11 (dowel holes relocated; verified new holes void, old plugged, overlaps expected where new and old holes are <3.2 mm apart). Delivered V5_4_Left_Arm_Spare_Match.zip.
+
+- 2026-11-22 18:55: Owner: third spare is R_02. Rebuilt V5.4 v2 (L_08 V5_2 needed seam-plane registration; V5 reference is thicker). Verified new holes void; one unpartnered hole documented. Delivered V5_4_Left_Arm_Spare_Match_v2.zip.

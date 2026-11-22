@@ -1,5 +1,5 @@
 """V5.4 spare-twin left arm (2026-11-22): owner has spare printed R_05 and R_01. Mirror twins: R_05 ~ L_06, R_01 ~ L_03.
-Their dowel holes differ from L_06/L_03, so the new LEFT neighbours that meet them (L_04, L_09, L_11) get their seam
+Their dowel holes differ from L_06/L_03, so the new LEFT neighbours that meet them (L_08, L_09, L_11) get their seam
 dowel holes moved to match the spares. Work in the right-arm assembled frame, then mirror to left like the V5 pipeline."""
 import sys, json, glob, os, re, zipfile, hashlib
 sys.path.insert(0, '/home/claude/thumbstudy')
@@ -12,13 +12,19 @@ AX = {'X': 0, 'Y': 1, 'Z': 2}
 def refl(p): q = np.array(p, float); q[0] = 422.0 - q[0]; return q          # mirror about the X = 211 centre seam
 def seam(a, b): return [x for x in D if sorted(x['shells']) == sorted([a, b])]
 # changes in the right-arm frame: (shell to modify, [(old seam partner), spare shell, spare seam partner])
-plan = {4:  [(3, 1, 2), (6, 5, 2)],     # L_04 meets spare R_01 (as L_03) and spare R_05 (as L_06)
-        9:  [(6, 5, 7)],
-        11: [(6, 5, 10)]}
+# spares (owner, 2026-11-22): R_01 -> L_03, R_02 -> L_04, R_05 -> L_06
+plan = {9:  [(6, 5, 7), (4, 2, 7)],     # L_09 meets spare R_05 (as L_06) and spare R_02 (as L_04)
+        11: [(6, 5, 10)],
+        8:  [(4, 2, 8)]}
 def asm_bounds(n): d = np.load(f'/home/claude/out/asm_R_{n:02d}.npz'); return d['v'].min(0), d['v'].max(0)
 import itertools
 Tm_fit = [None]
 def reg(n, P):
+    if n == 8:   # V5.2 shell 08 is thinner than the V5 reference, so bbox-centre matching fails; use the seam planes:
+        # Y=180 face on the bed (z = Y-180), X 100..300 -> x, Z 145..310 -> -y, bed-centred (exact, median 0.0 mm)
+        T8 = np.eye(4); T8[:3, :3] = 0; T8[0, 0] = 1; T8[1, 2] = -1; T8[2, 1] = 1
+        c = P.bounds.mean(0); T8[0, 3] = c[0]-200; T8[1, 3] = c[1]+227.5; T8[2, 3] = -180
+        Tm_fit[0] = 0.0; return T8
     d = np.load(f'/home/claude/out/asm_R_{n:02d}.npz'); A = trimesh.Trimesh(d['v'], d['f'], process=False)
     pts = trimesh.sample.sample_surface(A, 1500, seed=1)[0]; best = None
     for perm in itertools.permutations(range(3)):
