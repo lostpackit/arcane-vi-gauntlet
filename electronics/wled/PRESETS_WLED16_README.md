@@ -1,6 +1,6 @@
 # WLED 16 presets: whole strip, both arms (2026-11-22)
 
-File: `presets_wled16_whole_strip.json`. Built by Claude from the owner's right-arm dry-fit (160 LEDs) and owner's style decisions. Effect IDs checked against WLED v16.0.1 source (`wled00/FX.h`). Loaded on a board 2026-11-22 (owner video): v1 had the **Overlay flag in the wrong field** (`o1`; WLED 16 uses `o2` = check2 for Lightning/Glitter overlay), so the idle lightning layer blacked out the hand shafts. Fixed in v2 of this file. Replaces `presets.json` / `presets_144.json` (old strip, 91 LEDs).
+File: `presets_wled16_whole_strip.json`. Built by Claude from the owner's right-arm dry-fit (160 LEDs) and owner's style decisions. Effect IDs checked against WLED v16.0.1 source (`wled00/FX.h`). Loaded on a board 2026-11-22 (owner video): v1 had the **Overlay flag in the wrong field** (`o1`; WLED 16 uses `o2` = check2 for Lightning/Glitter overlay), so the idle lightning layer blacked out the hand shafts. Fixed in v2 of this file. **v3:** in WLED 16 every segment has its own pixel buffer and the default blend mode "top" replaces the layers below, black included, so layered effects need **blend mode stencil (`bm`: 16, black = see-through)** with the effect's own Overlay off (`FX_fcn.cpp` segblend). Idle lightning: speed 90 → a strike every 0–16 s (avg ~8 s; `mode_lightning`: delay = random(255−speed)×100 ms). Replaces `presets.json` / `presets_144.json` (old strip, 91 LEDs).
 
 Segments (WLED index from the board end): lead-in 0–10 off · ring 11–122 · (123–124 dark) · hand 125–148 · crystal 149–159.
 

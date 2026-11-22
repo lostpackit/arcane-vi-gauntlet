@@ -204,8 +204,8 @@
      ]
     ],
     "fx": 57,
-    "sx": 25,
-    "ix": 30,
+    "sx": 90,
+    "ix": 60,
     "pal": 0,
     "c1": 128,
     "c2": 128,
@@ -214,8 +214,9 @@
     "rev": false,
     "mi": false,
     "o1": false,
-    "o2": true,
-    "o3": false
+    "o2": false,
+    "o3": false,
+    "bm": 16
    },
    {
     "id": 5,
@@ -640,8 +641,9 @@
     "rev": false,
     "mi": false,
     "o1": false,
-    "o2": true,
-    "o3": false
+    "o2": false,
+    "o3": false,
+    "bm": 16
    },
    {
     "id": 5,
