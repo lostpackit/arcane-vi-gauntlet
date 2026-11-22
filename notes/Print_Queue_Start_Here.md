@@ -34,4 +34,5 @@ Remaining shells: **to be confirmed by owner** (owner photo 2026-11-22 suggests 
 | Thumb bases R + L (`*_Thumb_Base_V5_3_dowel`) | to print | A1 Mini, standard PLA/PETG, 4 walls, ~30 % infill; fit in the plate corners beside the standing gauge (`releases/v5/.../V5_4_Spare_Twins/a1_plate_gauge_thumbbases.png`) |
 | One more thumb (stock finger model) | to print | A1 Mini |
 | Handles ×2 (250 mm) | to print or 18 mm beech rod | X1C only (too long for A1 Mini) |
-| Electronics sled / cover / button pod (LED session `print/` folder) | to print | A1 Mini, regular PLA |
+| Button pod **v2** (`Button_Pod_v2_HUAZIZ_for_18p8_printed_handle` or `..._18p0_beech_rod`) | fit test on tonight's gauge plate (clear PLA); final in PETG | A1 Mini, supports off, 4 walls |
+| Electronics sled R/L + vented cover (LED session `print/` folder) | to print | A1 Mini, PLA/PETG |

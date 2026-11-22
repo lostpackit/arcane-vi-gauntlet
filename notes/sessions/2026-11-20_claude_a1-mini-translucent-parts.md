@@ -47,3 +47,5 @@
 - 2026-11-22 21:00: Owner could not find the button pod files (LFS-blocked, delivered in LED chat). Regenerated both from electronics/concepts/.../scripts/pod_export.py (18p8: 7.72 cm3, 28.6x30x26; 18p0: 7.59 cm3) and sent them; not committed (LFS).
 
 - 2026-11-22 21:15: Owner buttons = HUAZIZ LED tact 12x12x7 (13.4 over legs, 14.64 over tabs). Built pod v2 (pod_export_v2.py): 15.2x13.8x4.5 pockets + leg/solder channel + island + bottom wire exit; sent files.
+
+- 2026-11-22 21:35: "Update the vault": HANDOFF compacted (128 -> under 120; old entries archived verbatim to HANDOFF_SNAPSHOT_2026-11-22), Current state rewritten, LED Start Here (buttons, pod v2), Print Queue (pod v2), Decision Log. Inbox empty.
