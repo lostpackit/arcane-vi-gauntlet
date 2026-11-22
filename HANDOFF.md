@@ -49,6 +49,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 21:50 CET, Claude (LED session)
+- Owner re-confirmed: **whole 1 m strip per arm, no LEDs cut off** (only the far-end plug removed). Decision Log, LED Start Here and the new hand/crystal layout figure (`electronics/concepts/2026-11-22_controller_placement_option_A/hand_crystal_layout.png`) corrected; Claude memory updated. Owner button roles recorded (B1 on/cycle, B2 Hextech burst).
+- Sync: PUSHED (see git log).
+
 ### 2026-11-22 21:40 CET, Claude (LED session)
 - Merge note: this session also sent the owner a "pod v2" at 17:30 with the **same file names** but different pockets (12.6 square + tab cross slots, leg cavity with pillar). **Superseded:** the canonical v2 is the print session's (`scripts/pod_export_v2.py`, already on the A1 plate). Owner: discard the 17:30 copies. Noted in the concept print/README. Claude project memory updated.
 - Sync: PUSHED (see git log).

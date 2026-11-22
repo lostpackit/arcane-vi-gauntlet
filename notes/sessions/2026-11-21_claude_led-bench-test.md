@@ -257,3 +257,4 @@ tags: [agents, session, electronics, leds, wled]
 ### 2026-11-22 20:45 UTC — Action 40: hand/crystal layout figure
 - Owner asked for a visual of the crystal LED layout for the dry-fit. Drew schematic from V5.1/V5.2 numbers (channel 232.5, Lens A 81, tunnel 22, Lens B 46, tunnel ~18, crystal 65; 6.25 mm pitch → 36 LEDs). Saved as hand_crystal_layout.png; Start Here line added.
 - Sync: LOCAL.
+- 20:47 UTC: owner corrected me: no cutting, whole strip. My figure and Start Here line said 'cut at the channel end' (wrong). Fixed figure, Start Here, Decision Log (re-confirmation), HANDOFF; memory updated. Pushed.

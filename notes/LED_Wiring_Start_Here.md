@@ -44,21 +44,21 @@ Details: [[electronics/HARDWARE_AS_BOUGHT]].
 - Firmware: `LED_PIN 32`, `MODE_PIN 14`, `ACTION_PIN 27`, `LIMIT_MA 1000` ([[electronics/firmware/README]]). WLED presets: `electronics/wled/presets_144.json` (ring [0,55), hand [55,80), crystal [80,91)).
 
 ## Strip routing (owner decision 2026-11-22)
-- **Hand channel + crystal layout (dry-fit guide):** `electronics/concepts/2026-11-22_controller_placement_option_A/hand_crystal_layout.png`. Strip lies flat, LEDs up; from the ring: LEDs 1–13 under Lens A, 14–16 hidden (top plate), 17–24 Lens B, 25–27 hidden (crystal base front), 28–36 light the crystal; cut at the channel end. Twist 90° in the notch slot.
+- **Hand channel + crystal layout (dry-fit guide):** `electronics/concepts/2026-11-22_controller_placement_option_A/hand_crystal_layout.png`. Strip lies flat, LEDs up; from the ring: LEDs 1–13 under Lens A, 14–16 hidden (top plate), 17–24 Lens B, 25–27 hidden (crystal base front), 28–36 light the crystal; the strip's end lands at the channel end. Twist 90° in the notch slot.
 - **One continuous strip per arm** from the ring into the hand channel, no cut between ring and hand (owner's call; physical turn into the notch slot still to be checked on printed R_08).
 - **Near end** (owner's term) = strip input end: keeps its **factory JST connector**, which passes out through the ring's exit hole and plugs into the ESP32 pigtail in the cavity. No connector sits inside the trough.
 - **Far end**: the far-end factory JST **does not fit** the opening toward the hand channel (owner fit check 2026-11-22), so it is cut off before threading and stays on the offcut; the leading end must be bare. The bare strip passes the round hole. Thread once (or twice, see below) around the trough **outer wall** (LEDs facing inward), through the notch slot into the hand channel, then trim at the crystal end in place. (The earlier "cut at ~100 LEDs" note is superseded by the whole-1-m decision below.)
 - LEDs hidden in the slot are set off in WLED; zone counts (ring / gap / hand / crystal) to be recounted after the physical fit.
 - ESP32 pigtail soldered by owner 2026-11-22 (red/green/white); pad check against silkscreen done from photos: red 5V, green 32, white G, 33 empty.
 - Don't stick the strip down until the bench test passes. Each arm needs its own 1 m reel.
-- **Owner decision 2026-11-22: use the whole 1 m per arm, ring wrapped twice** (two rows on the outer wall; ~110 ring + ~36 hand/crystal ≈ 146 LEDs). Dry-fit on R_08 pending; the 91-LED layout below is superseded once the fit is confirmed and LEDs recounted.
+- **Owner decision 2026-11-22 (re-confirmed 21:47): use the WHOLE 1 m strip per arm, do not cut LEDs off; ring wrapped twice**. Only the far-end factory plug/cable is removed (it does not fit the opening). Estimate: ring 2 turns ≈ 112 + slot ≈ 3 + hand 36 ≈ 151 of 160; where the last LEDs land is checked in the dry-fit (two rows on the outer wall; ~110 ring + ~36 hand/crystal ≈ 146 LEDs). Dry-fit on R_08 pending; the 91-LED layout below is superseded once the fit is confirmed and LEDs recounted.
 
 ## Next steps (in order)
 1. **Bench test board 1: DONE, PASS (2026-11-22).** First light, R/G/B (GRB), rainbow on all 160; 10+ min at 91 LEDs / 1000 mA full white: everything warm, no restarts. Restarts seen earlier were the strip's bare pads shorting when coiled. Details in [[04_Test_Log]]. Still open: heat with the strip enclosed under the cover (do at first in-arm power-up). **Board 2 + strip 2: PASS (owner, 2026-11-22).** Both boards still named `WLED-AP`: rename (Config → WiFi Setup → AP SSID) before powering both at once.
 2. Mirror results to GitHub issues #10–#13 (not yet done).
 3. **Dry-fit** the double ring wrap on printed R_08; count LEDs per turn → set WLED segments (ring / hand / crystal).
 4. **Placement (option A) concept done 2026-11-22:** [[electronics/concepts/2026-11-22_controller_placement_option_A/README]]. Test-print sled (R/L) and cover; hold the sled against printed shell 08 before gluing. Button pod: **v2** (`print/Button_Pod_v2_HUAZIZ_for_18p8_printed_handle` / `..._18p0_beech_rod`) has pockets for the HUAZIZ buttons (island + leg/solder channel + bottom wire exit; glue with Poly Max). Fit test on the owner's A1 Mini plate 2026-11-22; final pod in PETG.
-5. Update [[electronics/WIRING]] fully for the Sparkle Motion Mini and option A (wire lengths ~5 / 18 / 20 cm + slack; keep strip pads apart and off metal; insulate the cut end).
+5. Update [[electronics/WIRING]] fully for the Sparkle Motion Mini and option A (wire lengths ~5 / 18 / 20 cm + slack; keep strip pads apart and off metal; insulate the strip end where the far-end plug was removed).
 6. Owner decision pending: "breathing all the time, button triggers an effect then returns to breathing" (durations and button mapping).
 7. Check WLED effect IDs on the device (IDs 13/15 in the presets may be wrong).
 

@@ -37,3 +37,4 @@ See [[docs/DECISIONS_AND_HISTORY]] and [[HANDOFF]].
 - **2026-11-22 / Owner:** Reprint both pressure gauges in transparent PLA and paint the areas that should not glow (more light from the ring shows through). Gauge sits directly on the ring cover over the LEDs.
 - **2026-11-22 / Owner:** A1 Mini plate = 2 transparent gauges + button pod fit test; thumb bases printed later.
 - **2026-11-22 / Owner:** Button roles (2 buttons per arm): **button 1 = power on + cycle through effects**, **button 2 = a 'Hextech power-up explosion' burst**, then back to the normal look. Effects, burst length and button-LED wiring (always-on via 470 Ω from 5V proposed) still to confirm.
+- **2026-11-22 21:47 / Owner (re-confirmed):** **No cutting LEDs off: the whole 1 m strip is used in each arm** (ring wrapped twice, then the hand channel and crystal). Only the far-end factory plug is removed because it does not fit. Any agent planning a strip layout must start from 160 LEDs per arm.
