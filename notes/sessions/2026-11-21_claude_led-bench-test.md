@@ -279,3 +279,4 @@ tags: [agents, session, electronics, leds, wled]
 - Sync: LOCAL.
 - 22:15 UTC: owner: lightning in idle not visible. Source check (FX_fcn.cpp blendSegment, mode_lightning): WLED 16 segments have own buffers, blend mode 0 = top replaces lower layers; Overlay (check2) only stops the effect clearing its own buffer. Fix v3: overlay layers o2 off + bm 16 (stencil); idle lightning sx 90 / ix 60. Asked owner whether to add subtle glitter to idle.
 - 22:22 UTC: owner: idle v3 "spot on". Test Log PASS. (Owner noted the name Shimmer is a fitting coincidence.) Next: try Bring It, Shimmer, Overcharged, Calm from the Presets list.
+- 22:27 UTC: owner accepts presets; tune after mounting with the wearer (his daughter). Decision Log updated.
