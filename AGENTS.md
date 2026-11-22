@@ -30,6 +30,7 @@ Conversations end, get summarised, or move between tools (Claude, ChatGPT, Copil
 7. Never record something as done, measured or bought unless it actually happened; never describe a web page or listing that was not actually opened.
 
 ## Concurrent agent safety
+- **Topic ownership (Claude conversations, owner decision 2026-11-22):** see [notes/Conversation_Starters.md](notes/Conversation_Starters.md). Edit only the files your conversation owns; for anything else, ask the owner or leave a note in `notes/inbox/`.
 - Prefer distinct work branches for CAD modifications and separate dated session logs per agent.
 - Before editing the shared handoff, fetch/rebase the newest remote version; preserve all other agents' changes and blockers.
 - Never force-push `main`; never silently overwrite a handoff, validation report, or another agent's edits. Resolve conflicts by merging both sets of findings.

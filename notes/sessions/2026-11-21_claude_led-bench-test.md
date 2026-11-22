@@ -258,3 +258,6 @@ tags: [agents, session, electronics, leds, wled]
 - Owner asked for a visual of the crystal LED layout for the dry-fit. Drew schematic from V5.1/V5.2 numbers (channel 232.5, Lens A 81, tunnel 22, Lens B 46, tunnel ~18, crystal 65; 6.25 mm pitch → 36 LEDs). Saved as hand_crystal_layout.png; Start Here line added.
 - Sync: LOCAL.
 - 20:47 UTC: owner corrected me: no cutting, whole strip. My figure and Start Here line said 'cut at the channel end' (wrong). Fixed figure, Start Here, Decision Log (re-confirmation), HANDOFF; memory updated. Pushed.
+
+### 2026-11-22 21:05 UTC — Action 41: topic conversations and ownership
+- Owner: this chat = Electronics/LEDs owner; 'LED review' chat = Main; new chats for Print queue and Finishing. Created notes/Conversation_Starters.md (ownership table + starter prompts, incl. optional Mechanics), notes/Finishing_Start_Here.md, AGENTS.md rule, Agent Roles line, Hub link, HANDOFF entry; updated Claude Project doc. Pushed.

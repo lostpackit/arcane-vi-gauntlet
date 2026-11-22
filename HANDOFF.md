@@ -19,7 +19,7 @@ tags:
 ## Start here by topic
 | Working on | Read |
 |---|---|
-| Anything | [Project Hub](notes/00_Project_Hub.md), then this file |
+| Anything | [Project Hub](notes/00_Project_Hub.md), then this file; **who owns what: [Conversation starters](notes/Conversation_Starters.md)** |
 | Printing V5 parts | **[Print queue to 2026-11-28](notes/Print_Queue_Start_Here.md)**, [Print order](releases/v5/Vi_Gauntlet_X1C_V5_Draft/PRINT_ORDER.md), [Parts inventory](releases/v5/Vi_Gauntlet_X1C_V5_Draft/Inventory/V5_Parts_Inventory.md) |
 | LEDs, wiring, WLED, firmware | [LED_Wiring_Start_Here](notes/LED_Wiring_Start_Here.md) |
 | Why something was decided | [Decision log](notes/03_Decision_Log.md) |
@@ -49,6 +49,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 22:05 CET, Claude (Electronics & LEDs conversation)
+- Owner set up topic conversations: **Main** (renamed "LED review"), **Electronics & LEDs** (this one), **Print queue**, **Finishing** (glue-up + painting), optional **Mechanics**. Ownership + starter prompts: `notes/Conversation_Starters.md`; new `notes/Finishing_Start_Here.md`; AGENTS.md concurrency rule; Claude Project start-here doc updated.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-22 21:50 CET, Claude (LED session)
 - Owner re-confirmed: **whole 1 m strip per arm, no LEDs cut off** (only the far-end plug removed). Decision Log, LED Start Here and the new hand/crystal layout figure (`electronics/concepts/2026-11-22_controller_placement_option_A/hand_crystal_layout.png`) corrected; Claude memory updated. Owner button roles recorded (B1 on/cycle, B2 Hextech burst).
 - Sync: PUSHED (see git log).

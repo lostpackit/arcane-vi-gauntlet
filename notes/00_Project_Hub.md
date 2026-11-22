@@ -49,3 +49,5 @@ tags: [arcane, vi, 3d-printing, dashboard]
 
 ## Agent reminder
 After **every** project action, record the result in your own dated session note and update [[HANDOFF]]. Push at completed atomic checkpoints. A local edit is not a cross-agent update until committed and pushed.
+
+**Topic conversations and ownership:** [[Conversation_Starters]] · Finishing: [[Finishing_Start_Here]]
