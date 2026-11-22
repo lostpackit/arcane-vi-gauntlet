@@ -33,3 +33,5 @@
 - 2026-11-22 09:10: Owner photo of strip in R_08 trough with JST connector inside; owner flagged connector problem. Advised: remove pigtails at ring ends, solder wires, route through exit, connector in cavity (matches WIRING.md "connectors on cavity side"). Recorded in LED_Wiring_Start_Here.
 
 - 2026-11-22 09:20: Owner decided continuous strip ring to hand; near end keeps factory connector; owner soldered ESP32 pigtail. Recorded (Decision Log, LED start-here, HANDOFF).
+
+- 2026-11-22 16:50: "Update the vault". Pulled LED-session work (bench PASS both boards, whole-1-m double-wrap decision, option A sled). Added Test Log rows (R_08 connector/strip fit 2026-11-22; geometry_0 naming; 2026-11-21 print history), Risks (#21, unidentified X1C plates), aligned LED Start Here far-end note, HANDOFF current state + queue + entry. Local working tree still holds uncommitted 3MF copies from the blocked LFS attempt (not committed, intentionally).

@@ -28,13 +28,13 @@ tags:
 ## Current state (2026-11-22)
 - **V4: NO-GO** ([audit verdict](audits/results/FINAL_VERDICT.md)). Do not print V4 shells.
 - **Print set: V5 / V5.1 / V5.2** in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`. Shell 08 must be `_V5_2`. Not print-approved by release gates; owner is test-printing.
-- **Physical results:** T2 finger coupon PASS (2026-11-18). **Right arm partly printed** (owner photo 2026-11-21: shell 08 with ring cover seated, plus several shells; exact list being confirmed against the inventory). Glow-blue PETG covers FAIL (wet); covers now GiantArm transparent PLA.
+- **Physical results:** T2 finger coupon PASS (2026-11-18). **Right arm partly printed** (owner photo + print history 2026-11-21: shell 08 with ring cover seated; A1 Mini printed ring cover ×2, crystals and lenses; X1C plates 21 and 27 of the owner's project of Claude files, shells not yet identified because every file was named geometry_0, now fixed in the named print pack). Glow-blue PETG covers FAIL (wet); covers now GiantArm transparent PLA.
 - **Materials/assembly:** shells LW-PLA; handle printed PLA/PETG or 18 mm beech rod; wooden 6 × 30 mm dowels (57 per arm); UHU Plus Schnellfest epoxy for seams; UHU Poly Max for covers/electronics; no super glue near clear parts.
 - **Electronics:** in hand: 3 Sparkle Motion Minis (6160), 2 BTF 5 mm 160/m strips, buttons, capacitors, rosin flux, M2 × 8 screws; silicone wire not yet arrived. **Both board + strip sets bench-tested PASS (2026-11-22)** (WLED 16.0.1, GPIO 32, GRB, 1 A limit, heat OK). Owner decisions 2026-11-22: one continuous strip ring→hand, **whole 1 m per arm with the ring wrapped twice** (dry-fit on R_08 pending), **board near the ring (option A)**, board on a sled with M2 × 8 screws and a vented cover, power bank Velcroed to the cuff wall, button pod snaps onto the handle after assembly. Concept renders + test-print 3MFs (sled R/L, cover, pod) in `electronics/concepts/2026-11-22_controller_placement_option_A/`; not printed. Details: [LED Start Here](notes/LED_Wiring_Start_Here.md).
 - **No Bambu Studio slice by any agent** (issue #3). Only owner prints are physical evidence.
 
 ## Open work queue (GitHub issues)
-- **Owner upload needed:** #2 (V5.2 shell 08 + mount concepts), #20 (fixed left inserts). Files in `Repo_Upload_Issues_2_and_20.zip` from Claude; steps in its `UPLOAD_STEPS.md`. Claude's session cannot upload LFS.
+- **Owner upload needed:** #2 (V5.2 shell 08 + mount concepts), #20 (fixed left inserts), #21 (3MF object names; use `Vi_Gauntlet_V5_Print_Pack_named.zip`). Files in `Repo_Upload_Issues_2_and_20.zip` from Claude; steps in its `UPLOAD_STEPS.md`. Claude's session cannot upload LFS.
 - Print/fit: #4 ring fit with real strip, #5 finger string pull, #6 dowel fit, #7 handle, #8 gauge/cover retention, #14 thumb route, #15 supports, #16 centre seam.
 - Electronics: #9 mounts vs hardware (sled v3 + cover + pod concept done 2026-11-22, test print pending), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
 - Bambu Studio slice: #3.
@@ -45,6 +45,11 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 16:50 CET, Claude (print/vault session)
+- "Update the vault": hygiene check (HANDOFF 102 lines OK, inbox empty). Recorded fit checks on printed R_08 (near-end JST passes exit hole but not into trough; bare strip passes round hole; far-end JST does not fit, cut before threading), print history 2026-11-21, geometry_0 naming fix (#21). LED Start Here far-end note aligned with the whole-1-m decision. Files: Test Log, Risks, LED Start Here, session note `2026-11-20_claude_a1-mini-translucent-parts.md`.
+- Next: identify X1C plates 21/27 by size; owner uploads #2/#20/#21.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-22 16:35 CET, Claude (LED session, afternoon)
 - Option A placement study from the original right arm + Adafruit's board model: exit hole under the ring 16 × 12 mm, sled glued to the ridged ceiling behind it, ~28 mm to an average forearm (assumed). Sled v3 (M2 × 8 into posts; nuts rejected: too close to pads), vented cover, button pod fit-test files for 18.8 printed handle and 18 mm beech rod. Recorded owner decisions. Open: pod buttons + handle type, dry-fit count, power bank model, WIRING.md rewrite. **Owner/Copilot: upload the 5 concept .3mf files (LFS) to the concept `print/` folder; Claude cannot push LFS.**
 - Sync: PUSHED (see git log).
@@ -62,7 +67,7 @@ tags:
 - Owner photo: strip test-placed in R_08 ring trough; JST connector lies in the trough. Confirmed plan: no connectors in the ring; solder wires at strip ends, exit via hole, connector in cavity. Added to LED_Wiring_Start_Here. Sync: PUSHED.
 
 ### 2026-11-21 23:35, Claude
-- Bug: all Claude 3MFs show as "geometry_0" in Bambu. Fixed object names (= file name) in a new `Vi_Gauntlet_V5_Print_Pack_named.zip` (geometry unchanged). Repo copies need replacing (issue #21). Owner X1C prints come from "Vi Gauntlet right 3mf_reaggranged" plates: source unknown, asked. Sync: PUSHED.
+- Bug: all Claude 3MFs show as "geometry_0" in Bambu. Fixed object names (= file name) in a new `Vi_Gauntlet_V5_Print_Pack_named.zip` (geometry unchanged). Repo copies need replacing (issue #21). Owner confirmed X1C plates ("Vi Gauntlet right 3mf_reaggranged") are his project built from Claude's files; plates 21/27 shells still unidentified. Sync: PUSHED.
 
 ### 2026-11-21 22:36 CET, Claude
 - Claude Project "Arcane Gauntlets": added start-here pointer doc; V4 verdict doc marked historical. Project instructions were empty then; owner has since set them (checked 2026-11-21 22:40). Sync: PUSHED b67fae9.

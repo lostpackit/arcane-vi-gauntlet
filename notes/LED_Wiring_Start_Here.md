@@ -45,7 +45,7 @@ Details: [[electronics/HARDWARE_AS_BOUGHT]].
 ## Strip routing (owner decision 2026-11-22)
 - **One continuous strip per arm** from the ring into the hand channel, no cut between ring and hand (owner's call; physical turn into the notch slot still to be checked on printed R_08).
 - **Near end** (owner's term) = strip input end: keeps its **factory JST connector**, which passes out through the ring's exit hole and plugs into the ESP32 pigtail in the cavity. No connector sits inside the trough.
-- **Far end**: cut the strip to about 100 LEDs *before* threading (leading end must be bare; the far-end factory connector stays on the ~60-LED spare offcut), run once around the trough **outer wall** (LEDs facing inward), through the notch slot into the hand channel, then trim at the crystal end in place on the copper pads.
+- **Far end**: the far-end factory JST **does not fit** the opening toward the hand channel (owner fit check 2026-11-22), so it is cut off before threading and stays on the offcut; the leading end must be bare. The bare strip passes the round hole. Thread once (or twice, see below) around the trough **outer wall** (LEDs facing inward), through the notch slot into the hand channel, then trim at the crystal end in place. (The earlier "cut at ~100 LEDs" note is superseded by the whole-1-m decision below.)
 - LEDs hidden in the slot are set off in WLED; zone counts (ring / gap / hand / crystal) to be recounted after the physical fit.
 - ESP32 pigtail soldered by owner 2026-11-22 (red/green/white); pad check against silkscreen done from photos: red 5V, green 32, white G, 33 empty.
 - Don't stick the strip down until the bench test passes. Each arm needs its own 1 m reel.

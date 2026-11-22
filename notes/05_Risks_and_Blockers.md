@@ -31,6 +31,8 @@ tags: [risk, blockers]
 | V5.1 3MF files (shells 08, 10–13, crystal, lenses) not yet in the repo | CLOSED 2026-11-15 — uploaded (`030b461`), verified 16/16; superseded files moved to `Superseded_V5_DO_NOT_PRINT/` | Owner/Copilot: upload from `V5_1_changed_files.zip`, verify manifest, remove superseded `_V5` files |
 | V5.2 shell 08, mount concepts and fixed left inserts not yet in the repo | OPEN — owner upload from `Repo_Upload_Issues_2_and_20.zip` | GitHub issues #2, #20 |
 | Left inserts (ring cover, crystal, lenses, gauge) had inverted normals | FIXED in files 2026-11-20; awaiting upload | issue #20 |
+| Repo 3MFs all named `geometry_0` (parts indistinguishable in Bambu) | FIXED in delivered named print pack; repo copies pending upload | issue #21 |
+| X1C-printed right shells (plates 21, 27) not identified | OPEN: owner to read part sizes in Bambu or measure; compare to inventory sizes | Test Log 2026-11-21 |
 | Electronics sled concept sized for old board (80 × 45) | OPEN | Redesign for 32 × 20 mm Sparkle Motion Mini |
 | LED bench test not yet run | OPEN | Board + strip in WLED, 10 min full-white heat check (covers are PLA) |
 | Remaining work is tracked as GitHub issues #2–#16 and #20 | INFO | Use the issue list as the queue |
