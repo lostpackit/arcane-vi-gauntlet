@@ -172,3 +172,7 @@ Inserts: ring cover, gauge, handle, crystal, hand lens A and B (both arms), opti
   - `Electronics_Sled_80x45_CONCEPT` — rimmed tray with eight zip-tie slots for the controller and level shifter; fix it and the power bank to the cuff's inner wall with hook-and-loop tape.
   - Both are sized from catalogue dimensions, not from parts in hand. Check against the hardware you buy.
 - **Gauge retention:** magnet pockets were tried and dropped. The gauge only touches the shell on narrow rims, with no flat area for a 6 mm magnet. Recommended: glue the gauge to the cover so they lift out as one cap, and hold the cap with two or three dots of removable mounting putty.
+
+
+## V5.3 thumb joint (2026-11-22, owner-approved)
+Shell 13 (R and L) gets a socket for the thumb base plus one 6 × 30 mm dowel; the thumb base is reprinted with the matching dowel hole. **Print `R/L_13_Knuckles_Right_V5_3` instead of `_V5_1`.** Details and assembly: [V5_3_Thumb/README_V5_3_THUMB.md](V5_3_Thumb/README_V5_3_THUMB.md). 3MFs delivered as `V5_3_Thumb_Joint.zip` (LFS upload pending, hashes in `V5_3_Thumb/V5_3_SHA256_MANIFEST.txt`).
