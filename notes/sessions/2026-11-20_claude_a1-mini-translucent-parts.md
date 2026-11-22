@@ -45,3 +45,5 @@
 - 2026-11-22 18:55: Owner: third spare is R_02. Rebuilt V5.4 v2 (L_08 V5_2 needed seam-plane registration; V5 reference is thicker). Verified new holes void; one unpartnered hole documented. Delivered V5_4_Left_Arm_Spare_Match_v2.zip.
 
 - 2026-11-22 21:00: Owner could not find the button pod files (LFS-blocked, delivered in LED chat). Regenerated both from electronics/concepts/.../scripts/pod_export.py (18p8: 7.72 cm3, 28.6x30x26; 18p0: 7.59 cm3) and sent them; not committed (LFS).
+
+- 2026-11-22 21:15: Owner buttons = HUAZIZ LED tact 12x12x7 (13.4 over legs, 14.64 over tabs). Built pod v2 (pod_export_v2.py): 15.2x13.8x4.5 pockets + leg/solder channel + island + bottom wire exit; sent files.

@@ -38,3 +38,11 @@ Print settings (recommendation, not sliced by Claude):
 - **Cover**: PLA or PETG, flat as in the file, 0.2 mm, 3 walls, supports off.
 - **Before gluing**: hold the sled up against the printed shell 08 under the ring, board end toward the cuff. The glue face should sit flush on the ridge; sand lightly if a print artefact holds it off. Glue with UHU Poly Max.
 - Clearance (computed): cover bottom ~28 mm above an average forearm (assumed size).
+
+
+## Button pod v2 for the owner's buttons (2026-11-22, Claude print/vault session)
+Owner's buttons: **HUAZIZ LED push button 12 × 12 × 7 mm** (illuminated tact switch, through-hole legs). Owner caliper: 13.4 mm across the legs, 14.64 mm across the white side tabs.
+- `Button_Pod_v2_HUAZIZ_for_18p8_printed_handle.3mf` / `Button_Pod_v2_HUAZIZ_for_18p0_beech_rod.3mf` (script `../scripts/pod_export_v2.py`; 3MFs LFS-pending, delivered in chat).
+- Pocket 15.2 × 13.8 × 4.5 mm (body), 2.6 mm channel round a 7.6 mm centre island, 5 mm deep, for the legs and solder joints; wire exit to the pod's bottom end. Clip unchanged. Pad 10.7 mm thick (v1: 7.2), pod 32 × 33 × 26 mm, ~9 cm³.
+- Assembly: solder wires to the switch legs (and the LED legs if the button lights are wanted), route out the bottom slot, dab of UHU Poly Max on the island, press the button in.
+- Not printed or fitted. Black-body height not measured (pocket assumes ≈4.5 mm; if taller, the button simply stands further proud).

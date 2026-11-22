@@ -15,7 +15,7 @@ Confirmed from the owner's photos of the packaging.
 - Product page says "WLED-friendly" but does **not** say WLED is preinstalled. **Owner 2026-11-22: owner flashed board 1 with stock WLED himself (it did not come ready); now runs WLED 16.0.1, `WLED-AP` + `4.3.2.1` work.** Stock defaults seen: WS281x, GRB, length 30, GPIO reported as 1, brightness 100. Other two boards not yet checked; assume they need flashing too.
 
 ### Owner update 2026-11-21 (in chat)
-Owner has: **both LED strips**, **the buttons**, **the ESP32 boards (both)**, **the capacitors**. Not yet arrived: **the additional (silicone) wire**. Exact button and capacitor part numbers and values not yet recorded.
+Owner has: **both LED strips**, **the buttons**, **the ESP32 boards (both)**, **the capacitors**. Not yet arrived: **the additional (silicone) wire**. Buttons: **HUAZIZ LED push button 12 × 12 × 7 mm** (illuminated tact switch, through-hole; owner caliper 13.4 mm over legs, 14.64 mm over white tabs; 2026-11-22). Capacitor value not yet recorded.
 
 ## Board connections (Adafruit pinout page)
 
