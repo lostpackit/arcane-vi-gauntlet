@@ -176,3 +176,7 @@ Inserts: ring cover, gauge, handle, crystal, hand lens A and B (both arms), opti
 
 ## V5.3 thumb joint (2026-11-22, owner-approved)
 Shell 13 (R and L) gets a socket for the thumb base plus one 6 × 30 mm dowel; the thumb base is reprinted with the matching dowel hole. **Print `R/L_13_Knuckles_Right_V5_3` instead of `_V5_1`.** Details and assembly: [V5_3_Thumb/README_V5_3_THUMB.md](V5_3_Thumb/README_V5_3_THUMB.md). 3MFs delivered as `V5_3_Thumb_Joint.zip` (LFS upload pending, hashes in `V5_3_Thumb/V5_3_SHA256_MANIFEST.txt`).
+
+
+## V5.4 spare-twin left arm (2026-11-22)
+Owner has spare printed R_05 and R_01; they serve as L_06 and L_03 (mirror twins). L_04, L_09, L_11 get matching dowel holes (`*_SPAREMATCH`). Parts list: [V5_4_Spare_Twins/README_V5_4_SPARE_TWINS.md](V5_4_Spare_Twins/README_V5_4_SPARE_TWINS.md). 3MFs delivered as `V5_4_Left_Arm_Spare_Match.zip` (LFS upload pending).

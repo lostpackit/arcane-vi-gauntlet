@@ -35,7 +35,7 @@ tags:
 - **No Bambu Studio slice by any agent** (issue #3). Only owner prints are physical evidence.
 
 ## Open work queue (GitHub issues)
-- **Owner upload needed:** #2 (V5.2 shell 08 + mount concepts), #20 (fixed left inserts), #21 (3MF object names; use `Vi_Gauntlet_V5_Print_Pack_named.zip`), and the V5.3 thumb files (`V5_3_Thumb_Joint.zip`: R/L_13 V5_3, R/L thumb base; retire R/L_13 V5_1). Files in `Repo_Upload_Issues_2_and_20.zip` from Claude; steps in its `UPLOAD_STEPS.md`. Claude's session cannot upload LFS.
+- **Owner upload needed:** #2 (V5.2 shell 08 + mount concepts), #20 (fixed left inserts), #21 (3MF object names; use `Vi_Gauntlet_V5_Print_Pack_named.zip`), the V5.3 thumb files (`V5_3_Thumb_Joint.zip`: R/L_13 V5_3, R/L thumb base; retire R/L_13 V5_1), and V5.4 spare-match left files (`V5_4_Left_Arm_Spare_Match.zip`: L_04/L_09/L_11 SPAREMATCH). Files in `Repo_Upload_Issues_2_and_20.zip` from Claude; steps in its `UPLOAD_STEPS.md`. Claude's session cannot upload LFS.
 - Print/fit: #4 ring fit with real strip, #5 finger string pull, #6 dowel fit, #7 handle, #8 gauge/cover retention, #14 thumb route, #15 supports, #16 centre seam.
 - Electronics: #9 mounts vs hardware (sled v3 + cover + pod concept done 2026-11-22, test print pending), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
 - Bambu Studio slice: #3.
@@ -46,6 +46,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 18:00 CET, Claude (print/vault session)
+- Owner accidentally printed spare R_05 and R_01. Computed: they are mirror twins of L_06 / L_03 (seam faces within ~2 %); built `L_04/L_09/L_11_*_SPAREMATCH` with dowel holes moved to match the spares (all holes fully in material). Left arm list: `V5_4_Spare_Twins/README_V5_4_SPARE_TWINS.md`. Saves ~24 h (surrogate). Not printed.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-22 17:30 CET, Claude (print/vault session)
 - Built V5.3 thumb joint (owner-approved): R/L_13 socket (0.25 mm clearance, swept along the insertion direction) + one 6.4 mm × 16 mm dowel hole; R/L thumb base with matching hole, original print pose. Overlap 0, contact ~15.4 cm² (was ~2.6). Only one dowel spot has full material. Files delivered as `V5_3_Thumb_Joint.zip`; docs/log/manifest in `releases/v5/.../V5_3_Thumb/`; script `Build_Scripts/v5_3_thumb.py`. Not printed or load-tested.
 - Next: owner answers on remaining right shells and 0.6 mm nozzle; then plate-by-plate print queue to 2026-11-28.
