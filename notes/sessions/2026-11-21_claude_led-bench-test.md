@@ -269,3 +269,7 @@ tags: [agents, session, electronics, leds, wled]
 ### 2026-11-22 21:40 UTC — Action 43: animation style
 - Owner: burst 3–4 s; Vi pink + blue/cyan with white flashes; lightning in the shafts. Checked effect IDs in WLED v16.0.1 source (wled00/FX.h, FX.cpp; Lightning, Glitter and Starburst have an Overlay option). Proposed idle / burst / cycle storyboard. Decision Log updated.
 - Sync: LOCAL.
+
+### 2026-11-22 21:50 UTC — Action 44: WLED 16 preset file
+- Owner: default all blue, pink only in the burst, burst named "Bring It", likes glitter. Built presets_wled16_whole_strip.json (9 presets: 4 looks, Bring It playlist with 2 phases and end=255 restore, Next look ps 1~4~, Off) + README with load/button steps. Verified in WLED 16.0.1 source: playlist end 255 restores the previous preset; ps "1~4~" cycles; button long press 600 ms; button 0 held >5 s opens AP, >10 s factory reset. Not loaded on hardware yet.
+- Sync: LOCAL.
