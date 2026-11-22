@@ -36,6 +36,10 @@ Details: [[electronics/HARDWARE_AS_BOUGHT]].
 - Hand: 36 LEDs (55–90), 225 mm in a 232.5 mm channel. Crystal = last 11 (80–90).
 - Firmware: `LED_PIN 32`, `MODE_PIN 14`, `ACTION_PIN 27`, `LIMIT_MA 1000` ([[electronics/firmware/README]]). WLED presets: `electronics/wled/presets_144.json` (ring [0,55), hand [55,80), crystal [80,91)).
 
+## Ring trough rule (owner photo 2026-11-22)
+- The JST-SM housing is too big for the ring trough and the ~7 mm exit hole. **No connectors inside the ring.** Cut the factory pigtails off the ring segment, solder thin wires (24–26 AWG) to the strip's end pads, thread them out through the exit hole, and put any connector on the cavity side near the board. Both ring ends (input and the link to the hand strip) leave through the same exit at the 7.4 mm joint gap.
+- Strip goes on the trough **outer wall**, LEDs facing inward (wall 13.0 mm high, strip 5 mm). Don't stick it down until the bench test passes.
+
 ## Next steps (in order)
 1. **Bench test** one board + strip: solder pigtail to 5V/32/G, USB-C power, join `WLED-AP`, open `4.3.2.1`. Config → LED Preferences: GPIO 32, WS281x, 160 LEDs, max current 500 mA, GRB. Test solid red, then rainbow. Run 10 min full white and check heat by touch (covers are PLA, softens around 55–60 °C).
 2. Record result in [[04_Test_Log]], [[HANDOFF]] and GitHub issues #10–#13.

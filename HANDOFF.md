@@ -45,6 +45,9 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 09:10, Claude
+- Owner photo: strip test-placed in R_08 ring trough; JST connector lies in the trough. Confirmed plan: no connectors in the ring; solder wires at strip ends, exit via hole, connector in cavity. Added to LED_Wiring_Start_Here. Sync: PUSHED.
+
 ### 2026-11-21 23:35, Claude
 - Bug: all Claude 3MFs show as "geometry_0" in Bambu. Fixed object names (= file name) in a new `Vi_Gauntlet_V5_Print_Pack_named.zip` (geometry unchanged). Repo copies need replacing (issue #21). Owner X1C prints come from "Vi Gauntlet right 3mf_reaggranged" plates: source unknown, asked. Sync: PUSHED.
 
