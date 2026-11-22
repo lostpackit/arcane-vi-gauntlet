@@ -26,6 +26,7 @@ tags:
 | What has been tested | [Test log](notes/04_Test_Log.md), [Release gates](docs/RELEASE_GATES.md) |
 
 ## Current state (2026-11-22)
+- **DEADLINE: ready to wear by 2026-11-28** (owner, 2026-11-22). Owner status 2026-11-22: all fingers except thumbs printed + primed (drying), probably one more thumb to print; all transparent parts printed; right gauntlet ~65 % printed; left gauntlet not started (except fingers, crystals, LED parts); nothing glued, full dry-fit planned first. R_13 (thumb mount shell) not yet printed.
 - **V4: NO-GO** ([audit verdict](audits/results/FINAL_VERDICT.md)). Do not print V4 shells.
 - **Print set: V5 / V5.1 / V5.2** in `releases/v5/Vi_Gauntlet_X1C_V5_Draft/`. Shell 08 must be `_V5_2`. Not print-approved by release gates; owner is test-printing.
 - **Physical results:** T2 finger coupon PASS (2026-11-18). **Right arm partly printed** (owner photo + print history 2026-11-21: shell 08 with ring cover seated; A1 Mini printed ring cover ×2, crystals and lenses; X1C plates 21 and 27 of the owner's project of Claude files, shells not yet identified because every file was named geometry_0, now fixed in the named print pack). Glow-blue PETG covers FAIL (wet); covers now GiantArm transparent PLA.
@@ -45,6 +46,11 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 17:20 CET, Claude (print/vault session)
+- **Thumb joint finding (computed):** printable `Thumb_Base` placed on V5.1 shell 13 touches only ~2.6 cm² (within 0.5 mm) and **collides with the shell by ~6.6 cm³** at its inner end, so it cannot seat as modelled. Cutting a 0.25 mm-clearance socket into R_13 (removes ~7 cm³) raises the nesting contact to ~18.5 cm² (≈7×); the cut adds one through-opening (genus 18→19), location and wall thickness not yet checked (run killed by memory). Proposal to owner: socket in R_13/L_13 + 2 × 6 mm wooden dowels + UHU Plus Schnellfest. **Needs owner approval (geometry change).** Evidence: `/home/claude/thumbstudy/sections.png` (session workspace). Issue #14.
+- Schedule check: surrogate slice ≈151 h per arm of shells (PrusaSlicer light profile; owner X1C runs faster, e.g. plate 21 6.7 h); left arm + rest of right ≈ the whole time to 2026-11-28 with no margin. Asked owner what "ready" must include.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-22 16:50 CET, Claude (print/vault session)
 - "Update the vault": hygiene check (HANDOFF 102 lines OK, inbox empty). Recorded fit checks on printed R_08 (near-end JST passes exit hole but not into trough; bare strip passes round hole; far-end JST does not fit, cut before threading), print history 2026-11-21, geometry_0 naming fix (#21). LED Start Here far-end note aligned with the whole-1-m decision. Files: Test Log, Risks, LED Start Here, session note `2026-11-20_claude_a1-mini-translucent-parts.md`.
 - Next: identify X1C plates 21/27 by size; owner uploads #2/#20/#21.
