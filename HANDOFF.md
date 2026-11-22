@@ -49,6 +49,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-22 22:30 CET, Claude (Mechanics conversation)
+- Read-only status + hygiene check. Finger string pull test (#5) still not reported; thumb V5.3 digital PASS only (not printed or load-tested); thumb string route unresolved (#14). New `notes/Mechanics_Start_Here.md`; Hub is stale, left `notes/inbox/2026-11-22_claude-mechanics_hub-stale.md` for Main. No CAD changed.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-22 22:05 CET, Claude (Electronics & LEDs conversation)
 - Owner set up topic conversations: **Main** (renamed "LED review"), **Electronics & LEDs** (this one), **Print queue**, **Finishing** (glue-up + painting), optional **Mechanics**. Ownership + starter prompts: `notes/Conversation_Starters.md`; new `notes/Finishing_Start_Here.md`; AGENTS.md concurrency rule; Claude Project start-here doc updated.
 - Sync: PUSHED (see git log).
