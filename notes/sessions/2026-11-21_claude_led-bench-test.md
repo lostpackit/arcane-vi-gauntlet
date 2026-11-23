@@ -292,3 +292,6 @@ tags: [agents, session, electronics, leds, wled]
 
 ### 2026-11-24 00:45 CET: Button locating pegs
 - Owner photos: HUAZIZ buttons have two plastic locating pegs underneath. Checked against pod v2 (`pod_export_v2.py`): pegs land at the 7.6 mm island edge. Advice: snip flush, no CAD change. Noted in print/README.md. Result: OK.
+
+### 2026-11-24 00:45 CET: Update the vault
+- Start Here (hardware row: in hand vs still to buy; peg-snip note), Decision Log (pegs snipped), HANDOFF entry. Committed and pushed with the order-list commits. Result: OK.

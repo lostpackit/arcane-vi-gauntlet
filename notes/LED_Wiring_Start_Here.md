@@ -25,7 +25,7 @@ Context pack for any agent (or new conversation) working on the gauntlet LEDs. R
 | Capacitors | In hand (owner, 2026-11-21) | Value not yet recorded |
 | 24 AWG silicone wire | Not yet arrived | |
 | Solid rosin flux (tin) | In hand (owner photo 2026-11-22) | Use on board joints |
-| BTF JST-SM 3-pin pairs (20), heat shrink, USB-C power banks + C-to-C cables | Status not recorded | See [[electronics/ORDER_LIST]] |
+| Heat shrink, Velcro, clear double-sided tape, USB-C cables, cable ties, IPA | In hand (owner, 2026-11-23); power banks 5000/7000 mAh probably in hand | Still to buy: **470 Ω resistors** (+ optional multimeter), see [[electronics/ORDER_LIST]] |
 
 Details: [[electronics/HARDWARE_AS_BOUGHT]].
 
@@ -67,7 +67,7 @@ Proposed WLED segments: lead `[0,11)` off; ring `[11,123)`; hand `[125,149)` (hi
 1. **Bench test board 1: DONE, PASS (2026-11-22).** First light, R/G/B (GRB), rainbow on all 160; 10+ min at 91 LEDs / 1000 mA full white: everything warm, no restarts. Restarts seen earlier were the strip's bare pads shorting when coiled. Details in [[04_Test_Log]]. Still open: heat with the strip enclosed under the cover (do at first in-arm power-up). **Board 2 + strip 2: PASS (owner, 2026-11-22).** Both boards still named `WLED-AP`: rename (Config → WiFi Setup → AP SSID) before powering both at once.
 2. Mirror results to GitHub issues #10–#13 (not yet done).
 3. **Dry-fit** the double ring wrap on printed R_08; count LEDs per turn → set WLED segments (ring / hand / crystal).
-4. **Placement (option A) concept done 2026-11-22:** [[electronics/concepts/2026-11-22_controller_placement_option_A/README]]. Test-print sled (R/L) and cover; hold the sled against printed shell 08 before gluing. Button pod: **v2** (`print/Button_Pod_v2_HUAZIZ_for_18p8_printed_handle` / `..._18p0_beech_rod`) has pockets for the HUAZIZ buttons (island + leg/solder channel + bottom wire exit; glue with Poly Max). Fit test on the owner's A1 Mini plate 2026-11-22; final pod in PETG.
+4. **Placement (option A) concept done 2026-11-22:** [[electronics/concepts/2026-11-22_controller_placement_option_A/README]]. Test-print sled (R/L) and cover; hold the sled against printed shell 08 before gluing. Button pod: **v2** (`print/Button_Pod_v2_HUAZIZ_for_18p8_printed_handle` / `..._18p0_beech_rod`) has pockets for the HUAZIZ buttons (island + leg/solder channel + bottom wire exit; glue with Poly Max). Fit test on the owner's A1 Mini plate 2026-11-22; final pod in PETG. **Snip the two plastic locating pegs off the button underside flush before gluing** (they sit on the island edge; owner photos 2026-11-24).
 5. Update [[electronics/WIRING]] fully for the Sparkle Motion Mini and option A (wire lengths ~5 / 18 / 20 cm + slack; keep strip pads apart and off metal; insulate the strip end where the far-end plug was removed).
 6. Lighting decided 2026-11-22: B1 = on / next look (hold = off), B2 = "Bring It" burst 3–4 s; default all blue; Vi pink only in the burst.
 7. **Presets v3 loaded on board 1, accepted (2026-11-22); load the same file on board 2.** `electronics/wled/presets_wled16_whole_strip.json` + `PRESETS_WLED16_README.md` (IDs checked in WLED 16.0.1 source). Load on both boards, set buttons 14/27 and button actions, tune speeds by eye.
