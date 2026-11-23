@@ -289,3 +289,6 @@ tags: [agents, session, electronics, leds, wled]
 - Owner placing an order; asked what else is needed and whether to trust the strip's adhesive. Added an order list to electronics/ORDER_LIST.md (resistors, power banks with low-current behaviour, C-to-C cables, Velcro, heat shrink, IPA, cable ties; recommended multimeter and VHB-type tape). Strip hold: ring strip self-presses outward against the wall; factory tape + Poly Max dots or VHB-type tape; IPA clean; no super glue near clear parts.
 - Sync: LOCAL.
 - 23:29 UTC: owner has heat shrink, Velcro, clear double-sided tape, cables, ties, IPA, probably power banks. Only 470 Ω resistors (+ optional multimeter) to order.
+
+### 2026-11-24 00:45 CET: Button locating pegs
+- Owner photos: HUAZIZ buttons have two plastic locating pegs underneath. Checked against pod v2 (`pod_export_v2.py`): pegs land at the 7.6 mm island edge. Advice: snip flush, no CAD change. Noted in print/README.md. Result: OK.
