@@ -26,8 +26,8 @@ tags:
 | Why something was decided | [Decision log](notes/03_Decision_Log.md) |
 | What has been tested | [Test log](notes/04_Test_Log.md), [Release gates](docs/RELEASE_GATES.md) |
 
-## Current state (2026-11-22 21:35)
-- **DEADLINE 2026-11-28: BOTH gauntlets working (fingers, LEDs) and painted** (owner). **Plan: [Deadline_Plan_2026-11-28](notes/Deadline_Plan_2026-11-28.md)**. Critical path: X1C time (~110–120 h needed vs ~96 h to Thu night at current settings). Owner plans a full dry-fit before any glue.
+## Current state (2026-11-25 00:45, Main)
+- **DEADLINE 2026-11-28: BOTH gauntlets working (fingers, LEDs) and painted** (owner). **Plan v2: [Deadline_Plan_2026-11-28](notes/Deadline_Plan_2026-11-28.md)**. Critical path now: **right arm glue-up Wed 11-25** (a day behind), left arm via the sub-assembly pipeline as shells arrive (last left shell L_13 ≈ Fri 08:00 on the first Bambu estimate), **finger string test before any knuckle glue**. Nothing glued or painted yet.
 - **What to print: [Print queue](notes/Print_Queue_Start_Here.md)** (single source of truth). Key points: R_13 = `R_13_Knuckles_Right_V5_3` (thumb socket); left arm uses **spare R_01 / R_02 / R_05 as L_03 / L_04 / L_06**, plus `L_08 / L_09 / L_11 _SPAREMATCH`, `L_13_V5_3`, and normal L_01, L_02, L_05, L_07, L_10, L_12 (10 new left shells). **Right arm: all shells printed (owner 11-24; R_13 V5_3 was last).** L_09 SPAREMATCH printed; the other 9 new left shells are open.
 - **A1 Mini (owner 11-24):** gauges, 2 pods (transparent PLA, tested, final) and thumb bases R/L printed; L_09 SPAREMATCH printed. Next: **L_07**, sled + vented cover R/L, one more thumb (status unknown).
 - **Status (owner 11-24):** right arm fully printed; fingers except thumbs printed + primed; transparent parts done; left arm: spares cover 3 + L_09 done, **8 X1C shells + L_07 still to print. First Bambu estimate: L_08 + a cuff on one plate = 10 h 39 min (SUNLU, 3 walls, 3 %), so all left X1C shells may finish Fri morning (~55 h, extrapolated); see Print queue.**
@@ -49,6 +49,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-25 00:50 CET, Claude (Main)
+- Updated from the repo (Print queue, Electronics, Finishing, Mechanics work since 11-22). Hygiene: merged Print queue inbox note (schedule slip) and deleted it; archived entries 2026-11-22 22:05 and older verbatim. **Deadline plan v2**: right arm glue-up Wed, left sub-assembly pipeline, fallbacks F1–F3, 7 blocking decisions (thumb fixed?, G1–G4, paint, F1 approval, wire/resistors, string test, deadline hour). Hub status refreshed.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-25 00:25 CET, Claude (Print queue conversation)
 - Owner sliced L_08 + a left cuff on one X1C plate: **10 h 39 min** (first Bambu estimate; about 0.51 of the surrogate). Rescaled schedule: left X1C shells done about Fri 08:10 if the ratio holds. Corrected "nothing pairs": pairing works for L_08 + a cuff. Print Queue, Test Log, Decision Log, Risks and the Main inbox note updated.
 - Sync: PUSHED (see git log).
@@ -78,26 +82,6 @@ tags:
 ### 2026-11-22 22:30 CET, Claude (Mechanics conversation)
 - Read-only status + hygiene check. Finger string pull test (#5) still not reported; thumb V5.3 digital PASS only (not printed or load-tested); thumb string route unresolved (#14). New `notes/Mechanics_Start_Here.md`; Hub is stale, left `notes/inbox/2026-11-22_claude-mechanics_hub-stale.md` for Main. No CAD changed.
 - Sync: PUSHED (see git log).
-
-### 2026-11-22 22:05 CET, Claude (Electronics & LEDs conversation)
-- Owner set up topic conversations: **Main** (renamed "LED review"), **Electronics & LEDs** (this one), **Print queue**, **Finishing** (glue-up + painting), optional **Mechanics**. Ownership + starter prompts: `notes/Conversation_Starters.md`; new `notes/Finishing_Start_Here.md`; AGENTS.md concurrency rule; Claude Project start-here doc updated.
-- Sync: PUSHED (see git log).
-
-### 2026-11-22 21:50 CET, Claude (LED session)
-- Owner re-confirmed: **whole 1 m strip per arm, no LEDs cut off** (only the far-end plug removed). Decision Log, LED Start Here and the new hand/crystal layout figure (`electronics/concepts/2026-11-22_controller_placement_option_A/hand_crystal_layout.png`) corrected; Claude memory updated. Owner button roles recorded (B1 on/cycle, B2 Hextech burst).
-- Sync: PUSHED (see git log).
-
-### 2026-11-22 21:40 CET, Claude (LED session)
-- Merge note: this session also sent the owner a "pod v2" at 17:30 with the **same file names** but different pockets (12.6 square + tab cross slots, leg cavity with pillar). **Superseded:** the canonical v2 is the print session's (`scripts/pod_export_v2.py`, already on the A1 plate). Owner: discard the 17:30 copies. Noted in the concept print/README. Claude project memory updated.
-- Sync: PUSHED (see git log).
-
-### 2026-11-22 21:35 CET, Claude (print/vault session)
-- "Update the vault": hygiene check: HANDOFF was 128 lines, so entries up to 2026-11-22 09:20 moved verbatim to `notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-22.md`; Current state rewritten; inbox empty. Since 20:45: two transparent gauges fit one A1 Mini plate standing; owner plate = 2 gauges + pod; button pod v2 for HUAZIZ LED buttons (`electronics/concepts/.../scripts/pod_export_v2.py`, 3MFs LFS-pending, sent in chat). Files: Print Queue, LED Start Here, Hardware as bought, print/README.
-- Next: owner confirms right shells left + 0.6 nozzle → X1C plate schedule to 11-28.
-- Sync: PUSHED (see git log).
-
-### 2026-11-22 20:45 CET, Claude (print/vault session)
-- New `notes/Print_Queue_Start_Here.md`: left-arm list with spares, small parts, A1 Mini assignments. Gauge: R and L identical shape (mirror-symmetric ≤0.22 mm), 185 mm long so A1 Mini only standing diagonally; plate layout with both thumb bases verified (2D, 32 mm clearance). Right-arm remaining shells still to be confirmed by owner. Sync: PUSHED.
 
 Older entries: [snapshot 2026-11-22](notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-22.md), [snapshot 2026-11-21](notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-21.md), [archive 2026-11](notes/handoff_archive/HANDOFF_ARCHIVE_2026-11.md).
 

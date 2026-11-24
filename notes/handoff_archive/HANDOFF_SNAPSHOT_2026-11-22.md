@@ -78,3 +78,27 @@ Moved out of `HANDOFF.md` by the vault hygiene check (file was 128 lines). Nothi
 - Next: heat-test result; wire-routing plan for owner review; WIRING.md rewrite; sled for 31.6 × 19.8 mm board (stand-alone part).
 - Sync: PUSHED (see git log).
 
+
+
+<!-- appended 2026-11-25 00:50 by Main (hygiene: HANDOFF near 120 lines) -->
+
+### 2026-11-22 22:05 CET, Claude (Electronics & LEDs conversation)
+- Owner set up topic conversations: **Main** (renamed "LED review"), **Electronics & LEDs** (this one), **Print queue**, **Finishing** (glue-up + painting), optional **Mechanics**. Ownership + starter prompts: `notes/Conversation_Starters.md`; new `notes/Finishing_Start_Here.md`; AGENTS.md concurrency rule; Claude Project start-here doc updated.
+- Sync: PUSHED (see git log).
+
+### 2026-11-22 21:50 CET, Claude (LED session)
+- Owner re-confirmed: **whole 1 m strip per arm, no LEDs cut off** (only the far-end plug removed). Decision Log, LED Start Here and the new hand/crystal layout figure (`electronics/concepts/2026-11-22_controller_placement_option_A/hand_crystal_layout.png`) corrected; Claude memory updated. Owner button roles recorded (B1 on/cycle, B2 Hextech burst).
+- Sync: PUSHED (see git log).
+
+### 2026-11-22 21:40 CET, Claude (LED session)
+- Merge note: this session also sent the owner a "pod v2" at 17:30 with the **same file names** but different pockets (12.6 square + tab cross slots, leg cavity with pillar). **Superseded:** the canonical v2 is the print session's (`scripts/pod_export_v2.py`, already on the A1 plate). Owner: discard the 17:30 copies. Noted in the concept print/README. Claude project memory updated.
+- Sync: PUSHED (see git log).
+
+### 2026-11-22 21:35 CET, Claude (print/vault session)
+- "Update the vault": hygiene check: HANDOFF was 128 lines, so entries up to 2026-11-22 09:20 moved verbatim to `notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-22.md`; Current state rewritten; inbox empty. Since 20:45: two transparent gauges fit one A1 Mini plate standing; owner plate = 2 gauges + pod; button pod v2 for HUAZIZ LED buttons (`electronics/concepts/.../scripts/pod_export_v2.py`, 3MFs LFS-pending, sent in chat). Files: Print Queue, LED Start Here, Hardware as bought, print/README.
+- Next: owner confirms right shells left + 0.6 nozzle → X1C plate schedule to 11-28.
+- Sync: PUSHED (see git log).
+
+### 2026-11-22 20:45 CET, Claude (print/vault session)
+- New `notes/Print_Queue_Start_Here.md`: left-arm list with spares, small parts, A1 Mini assignments. Gauge: R and L identical shape (mirror-symmetric ≤0.22 mm), 185 mm long so A1 Mini only standing diagonally; plate layout with both thumb bases verified (2D, 32 mm clearance). Right-arm remaining shells still to be confirmed by owner. Sync: PUSHED.
+

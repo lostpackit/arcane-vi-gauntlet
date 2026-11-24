@@ -4,3 +4,6 @@
 - Hygiene: HANDOFF 117 lines → archived entries 18:55 and older (verbatim) to notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-22.md; inbox note from Mechanics merged into the Hub (status refreshed; Mechanics, Finishing, Conversation_Starters linked) and deleted.
 - Wrote notes/Deadline_Plan_2026-11-28.md (day-by-day across X1C, A1 Mini, electronics, mechanics, finishing; fallbacks; 9 blocking decisions). X1C estimate: remaining shells ≈110–120 h vs ≈96 h available to Thu night (surrogate × 0.68; right-arm remainder assumed ~5 shells, unconfirmed).
 - Did not edit other conversations' Start Here notes.
+
+## 2026-11-25
+- 00:37 owner: "Update yourself". Pulled 17 commits (Electronics presets/dry-fit/order list; Print queue right arm done, SUNLU switch, Bambu estimate; Finishing plan). Merged Print queue inbox note, deleted it. Deadline plan v2 written; HANDOFF current state + entry; Hub status. HANDOFF archived 2026-11-22 22:05 and older.

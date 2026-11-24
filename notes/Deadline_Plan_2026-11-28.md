@@ -2,43 +2,50 @@
 type: plan
 owner_conversation: Main
 tags: [deadline, schedule, coordination]
-updated: 2026-11-22
+updated: 2026-11-25
+version: 2
 ---
 
-# Deadline plan: both gauntlets working and painted by Sat 2026-11-28
+# Deadline plan: both gauntlets working and painted by Sat 2026-11-28 (v2, 2026-11-25 00:45)
 
-Owned by **Main** ([[Conversation_Starters]]). Topic details live in each topic's Start Here note; this page only sequences them.
-Assumptions (owner to correct): both printers run around the clock; owner works on it in the evenings; "done" = Friday 27 night, Saturday 28 is buffer and final test.
+Owned by **Main** ([[Conversation_Starters]]). Topic details live in each topic's notes; this page only sequences them. v1 (2026-11-22) assumed the right arm printed by Mon night; it finished Tue 23:36, so v2 re-plans from Wed 11-25. Nothing below is a physical result unless the owner reported it.
 
-## Critical path
-**X1C print time.** Remaining right shells (not yet confirmed, probably ~5) + 8 left shells + handles ≈ **110–120 X1C hours** at current settings (estimate: surrogate slices × 0.68, the ratio seen on plate 21). X1C time available until Thursday 26 night ≈ **96 h**. So the left arm must print faster (0.6 mm nozzle / 0.28–0.32 mm layers / 2 walls / ~8 % infill), or something moves to the A1 Mini, or finishing is compressed.
+## Where we are (Wed 11-25 00:45)
+- **Right arm: all 13 shells printed** (R_13 V5_3 last, Tue 23:36). Not glued. Thumb bases R+L, gauges ×2, pods ×2 (final), all clear parts printed. Handles = beech rod.
+- **Left arm:** L_03/L_04/L_06 (spares) + L_09 printed. **8 X1C shells + L_07 (A1) to go.** First real Bambu estimate (L_08 + cuff, SUNLU PLA, 3 walls, 3 %) = 10 h 39 min, so the X1C queue ≈ 55 h → **last left shell (L_13) about Fri 08:00** if the 0.51 ratio holds (one data point; L_05/L_12/L_13 are support-heavy and may run longer). Order and times: [[Print_Queue_Start_Here]].
+- **Electronics:** both boards + strips bench PASS; right-arm strip dry-fit counted; WLED 16 presets v3 accepted (final tuning with the wearer after mounting). To buy: 470 Ω resistors (button LEDs). Silicone wire: arrival not recorded.
+- **Mechanics:** finger string-pull test (#5) **not yet done**; thumb joint printed but not dry-fitted; R_13/L_13 have **no thumb string hole** (so the thumb is fixed this build unless drilled).
+- **Finishing:** nothing glued or painted; gates G1–G4 (dry-fit questions) and the paint system still open ([[Finishing_Plan_2026-11-28]]).
 
-Second risk: **paint cure time** on the left arm (glued Friday morning, painted Friday). Third: **silicone wire not arrived** (blocks electronics install).
+## Critical path now
+1. **Right arm must be glued Wed** (it is a day behind the Finishing calendar), so it can be primed Thu and painted Thu–Fri.
+2. **Left arm** follows the Finishing **sub-assembly pipeline**: glue → fill → prime → paint each sub-assembly as its shells arrive, join the painted pieces on masked bare seam faces. The knuckles (L_12 Thu night, L_13 Fri morning) are the last and tightest.
+3. **Finger string test before any knuckle glue** (both arms).
 
 ## Day by day
-| Day | X1C | A1 Mini | Electronics & LEDs | Mechanics | Finishing |
+| Day | X1C (Print queue) | A1 Mini | Right arm (Finishing + Mechanics) | Left arm | Electronics |
 |---|---|---|---|---|---|
-| **Sun 22** (tonight) | Next right shell overnight. If it is R_13, **only after the thumb-string decision** (see decisions) | 2 clear gauges + pod v2 fit test | Rename the boards' AP SSIDs | — | — |
-| **Mon 23** | Last right shells (long one overnight). Decide faster profile for the left | Thumb bases R+L + extra thumb (day); **L_07** overnight | Dry-fit the double ring wrap on R_08, count LEDs per turn; pod v2 fit check with real buttons | **Finger string test** on coupon/R_12 (#5); one dowel fit test (#6); handle decision | Full **dry-fit of the right arm**; buy primer/filler/paint; test the paint stack on a lit scrap clear part |
-| **Tue 24** | Right finished → **left long shells** (L_05, L_08, L_12, L_13) start | **L_09_SPAREMATCH** overnight; sled R/L + cover | Wire arrives? Solder strip lead + buttons into PETG pod; WLED segments; update WIRING | Right thumb: dry-fit, then epoxy base + dowel (overnight) | **Right glue-up** in sub-assemblies (sled glued under the ring **before** closing that area); cure overnight |
-| **Wed 25** | Left shells | Final pods (PETG) ×2; spares/reprints | Left board + strip prepared on the bench | String the right fingers | Right: fill seams, sand, **prime**; base coat in the evening |
-| **Thu 26** | **Last left shells must finish tonight** | Buffer / reprints | Right: thread strip (ring + hand channel), sled + board + pod, power bank; **first in-arm power-up + heat check** | Right fingers adjusted | Right: details, masking, clear parts (gauges painted), covers/lenses on **after** the strip; left dry-fit as parts arrive |
-| **Fri 27** | Buffer for one failed print | — | — | Left thumb epoxy (morning), string left fingers | **Left glue-up morning**, fill/sand midday, **prime + paint** afternoon/evening (thin coats, fast-dry) |
-| **Sat 28** | — | — | Left: strip, board, pod, power-up; both arms final test, power banks charged | Final finger check | Left touch-ups; cover/lenses on; **wear test** |
+| **Wed 25** | L_08+L_01 (→ ~11:00), L_02 (→ ~15:00), L_10 (→ ~21:00), L_05 overnight | **L_07**, then sled + vented cover R/L | **Morning: dry-fit gates G1–G4, finger string test, thumb base dry-fit in R_13.** Then glue: cuff, rear band (sled first if G2 = no), front band, wrist with **beech rod in**, thumb base + dowel epoxy. Knuckles last (after string test). Cure overnight | Glue cuff sub-assembly (L_01/L_02 + spares R_01/R_02) once L_02 is off | Load presets on board 2; rename both APs; buy 470 Ω resistors; wire buttons if wire is in |
+| **Thu 26** | L_11 (→ ~13:00), L_12 (→ ~23:00), L_13 overnight | Spare / reprints | Fill + sand seams, **prime** (night to dry) | Rear band (L_08+L_07+L_09) + front band (L_05+spare R_05): glue, fill; prime cuff | Prepare left board + strip on the bench |
+| **Fri 27** | L_13 done ~08:00; **buffer for one failed print** | — | **Colour coats** + masking; gauges painted; evening: strip, board, pod, power bank in; **first in-arm power-up + heat check** | Prime/paint bands + cuff; wrist (L_10+L_11) glue in the morning with rod; knuckles glue as soon as L_13 is off | Right install (evening) |
+| **Sat 28** | — | — | Covers, lenses, crystal, gauge on; fingers strung; **wear test with the wearer**, WLED tuning | Join painted sub-assemblies; knuckles: fallback finish if needed; strip, board, pod; covers/lenses; fingers | Left install; both arms tested; power banks charged |
 
-Fallbacks if the X1C slips past Thursday: (1) left arm painted in a simpler scheme (one base colour + dry-brush), (2) strip and electronics in the left arm Saturday morning instead of Friday, (3) the least visible left shell printed at the coarsest settings.
+## Fallbacks (Main's recommendation, owner to approve)
+- **F1, approve now:** if L_12/L_13 land Friday, the **left knuckles get a simpler finish** (primer + one colour + dry-brush, no clear coat) so they are dry by Saturday.
+- **F2, planned anyway:** left electronics install on Saturday morning.
+- **F3, only if a Bambu estimate for L_05, L_12 or L_13 is over about 11 h:** slice that part at 0.28 mm layers (keep 3 walls on L_13 for the thumb socket). Print queue to apply.
+- If the X1C loses a plate (failure/clog): print queue reorders so the knuckles still finish first; the left cuff can be glued and painted last because it is the least detailed.
 
-## Decisions blocking the plan (owner)
-| # | Decision | Blocks | Topic |
+## Decisions blocking this plan (owner)
+| # | Decision | Needed by | Topic |
 |---|---|---|---|
-| 1 | **Thumb: string-actuated or fixed?** If strings, R_13/L_13 need a thumb bore **before** they are printed | R_13 / L_13 printing | Mechanics |
-| 2 | **Which right shells are still left to print?** | X1C schedule | Print queue |
-| 3 | **Faster left-arm profile:** 0.6 mm nozzle available? Accept coarser layers? | Left arm fitting in time | Print queue |
-| 4 | **Handle: printed or 18 mm beech rod?** | Handle prints, pod variant, wrist assembly | Mechanics |
-| 5 | **Silicone wire ETA** (if not here by Tue, buy 24–26 AWG locally) | Electronics install | Electronics |
-| 6 | **Paint scheme and paint on hand** (primer, colours, filler, masking) | Priming Wed | Finishing |
-| 7 | When exactly on the 28th it must be ready, and owner's available hours per day | Whole schedule | Main |
-| 8 | Button LEDs wired or not; default look / effect list / burst length | Not blocking the build (set in WLED any time) | Electronics |
-| 9 | Part labelling (marker now, or engraved left shells) | Avoiding mix-ups | Print queue |
+| 1 | **Thumb fixed this build?** R_13/L_13 were printed without a string hole. Yes = glue it in its pose; no = Mechanics designs a drill guide today | Wed (before thumb epoxy) | Mechanics |
+| 2 | **Dry-fit answers G1–G4** (strip through channel with arm assembled? sled reachable? primed fits? dowels fit?) | Wed morning (before right glue-up) | Finishing |
+| 3 | **Paint system and colours on hand** (primer/filler, colours, masking, clear?) | Wed (shopping) / Thu (priming) | Finishing |
+| 4 | **Approve fallback F1** for the left knuckles | Thu | Main |
+| 5 | **Silicone wire here?** If not, buy 22/26 AWG locally Wed; plus 470 Ω resistors | Wed | Electronics |
+| 6 | **Finger string test result** (#5) | Before knuckle glue (Wed right, Fri left) | Mechanics |
+| 7 | What time on Sat 28 it must be ready | Now | Main |
+| — | Non-blocking: owner LFS uploads (#2, #20, #21, V5.3, V5.4); part labelling (marker) | — | Print queue |
 
-Related: [[HANDOFF]] · [[Print_Queue_Start_Here]] · [[LED_Wiring_Start_Here]] · [[Mechanics_Start_Here]] · [[Finishing_Start_Here]]
+Related: [[HANDOFF]] · [[Print_Queue_Start_Here]] · [[Finishing_Plan_2026-11-28]] · [[LED_Wiring_Start_Here]] · [[Mechanics_Start_Here]]
