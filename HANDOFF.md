@@ -2,7 +2,7 @@
 type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
-updated_date: 2026-11-22
+updated_date: 2026-11-24
 last_agent: Claude
 sync_state: pushed
 tags:
@@ -28,11 +28,11 @@ tags:
 
 ## Current state (2026-11-22 21:35)
 - **DEADLINE 2026-11-28: BOTH gauntlets working (fingers, LEDs) and painted** (owner). **Plan: [Deadline_Plan_2026-11-28](notes/Deadline_Plan_2026-11-28.md)**. Critical path: X1C time (~110–120 h needed vs ~96 h to Thu night at current settings). Owner plans a full dry-fit before any glue.
-- **What to print: [Print queue](notes/Print_Queue_Start_Here.md)** (single source of truth). Key points: R_13 = `R_13_Knuckles_Right_V5_3` (thumb socket); left arm uses **spare R_01 / R_02 / R_05 as L_03 / L_04 / L_06**, plus `L_08 / L_09 / L_11 _SPAREMATCH`, `L_13_V5_3`, and normal L_01, L_02, L_05, L_07, L_10, L_12 (10 new left shells). **Right-arm shells still to print: not yet confirmed by owner.**
-- **A1 Mini plate tonight (owner):** both pressure gauges in **transparent PLA** (standing on end, 3 mm brim, tree supports) + **button pod v2** fit test. Thumb bases (`*_Thumb_Base_V5_3_dowel`, standard/clear PLA, 4 walls) later, before knuckle assembly. A1 Mini also takes L_07, L_09_SPAREMATCH, one more thumb, sled/cover.
-- **Status (owner):** fingers except thumbs printed + primed; one more thumb needed; all transparent parts printed; right arm ~65 % printed and dry-fitting with dowels; left arm shells not started (spares cover 3).
+- **What to print: [Print queue](notes/Print_Queue_Start_Here.md)** (single source of truth). Key points: R_13 = `R_13_Knuckles_Right_V5_3` (thumb socket); left arm uses **spare R_01 / R_02 / R_05 as L_03 / L_04 / L_06**, plus `L_08 / L_09 / L_11 _SPAREMATCH`, `L_13_V5_3`, and normal L_01, L_02, L_05, L_07, L_10, L_12 (10 new left shells). **Right arm: all shells printed (owner 11-24; R_13 V5_3 was last).** L_09 SPAREMATCH printed; the other 9 new left shells are open.
+- **A1 Mini (owner 11-24):** gauges, 2 pods (transparent PLA, tested, final) and thumb bases R/L printed; L_09 SPAREMATCH printed. Next: **L_07**, sled + vented cover R/L, one more thumb (status unknown).
+- **Status (owner 11-24):** right arm fully printed; fingers except thumbs printed + primed; transparent parts done; left arm: spares cover 3 + L_09 done, **8 X1C shells + L_07 still to print; X1C needs 74-109 h vs ~96 h to Sat 24:00** (see Print queue, risks). Real Bambu time of L_08 on SUNLU still needed.
 - **Physical results:** T2 finger coupon PASS (11-18); both board + strip bench tests PASS (11-22); strip passes R_08 round hole, far-end JST does not (cut off). Glow-blue PETG covers FAIL (wet). Nothing else physically tested; no Bambu Studio slice by any agent (#3).
-- **Materials/assembly:** shells LW-PLA; handle printed PLA/PETG or 18 mm beech rod; wooden 6 × 30 dowels; UHU Plus Schnellfest (seams, thumb dowel); UHU Poly Max (covers, electronics, buttons); no super glue near clear parts; gauges masked + painted where they should not glow.
+- **Materials/assembly:** **all remaining prints SUNLU matte black standard PLA, 3 walls, 3 % infill (owner 11-24; PLA Lite batch clogged both heads)**; handle = 18 mm beech rod; wooden 6 × 30 dowels; UHU Plus Schnellfest (seams, thumb dowel); UHU Poly Max (covers, electronics, buttons); no super glue near clear parts; gauges masked + painted where they should not glow.
 - **Electronics:** 3 Sparkle Motion Minis, 2 BTF 160/m strips, HUAZIZ 12 × 12 × 7 LED push buttons, capacitors, flux, M2 × 8; silicone wire not yet arrived. Both board + strip sets bench-tested PASS. **Right-arm strip dry-fit done (whole 160 LEDs: lead-in 11 off, ring 112 = 2 turns, hand 24, crystal 11)**. **WLED 16 presets v3 loaded on board 1 and accepted** (Hextech Idle all blue; Shimmer; Overcharged; Calm; button-2 burst "Bring It" with Vi pink; board cool on a phone charger). Final tuning after mounting, with the wearer (owner's daughter). Still to buy: 470 Ω resistors only (+ optional multimeter). Decisions: board on sled near the ring (option A), vented cover, power bank on cuff wall, button roles B1 on/next/off, B2 Bring It. [LED Start Here](notes/LED_Wiring_Start_Here.md).
 - **V4 stays NO-GO** ([audit](audits/results/FINAL_VERDICT.md)).
 
@@ -44,11 +44,16 @@ tags:
 
 ## Pending owner decisions
 - Button LEDs: always-on (one extra 5V wire + 470 Ω per LED) or not wired.
-- Right-arm shells still to print (needed for the X1C schedule) and whether a 0.6 mm nozzle is available.
+- Whether a 0.6 mm nozzle is available and whether to use a faster left-arm profile (web reports: little gain on Bambu printers; see Print queue). Fallback finish for the left arm if prints run late (Main / Finishing).
 - Part labelling (owner note 2026-11-21): parts need IDs in Bambu Studio and physically. Options: marker/tape now; owner adds text in Bambu Studio; or Claude engraves IDs on hidden inner faces of the left-arm shells (geometry change, needs approval).
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-24 23:55 CET, Claude (Print queue conversation)
+- Hygiene check: HANDOFF 102 lines OK, inbox empty; fixed stale "draft, unprinted" in PRINT_ORDER and a status banner in the inventory. Recorded owner reports: right arm all printed, gauges + 2 transparent pods tested and final, thumb bases printed, L_09 SPAREMATCH printed, handles = beech rod, material switch to SUNLU standard PLA (3 walls, 3 %). **Finding:** X1C needs 74-109 h for the 8 left shells vs ~96 h to Sat 24:00 (surrogate, not Bambu); rewrote `notes/Print_Queue_Start_Here.md` with an ordered schedule (L_08, L_02, L_01, L_05, L_10, L_11, L_12, L_13). Nothing sliced by Claude. Main note in `notes/inbox/`.
+- Next: owner sends Bambu time for L_08; starts L_08 on the X1C and L_07 on the A1 Mini.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-24 00:45 CET, Claude (Electronics & LEDs)
 - Order list 2026-11-23 (`electronics/ORDER_LIST.md`): only 470 Ω resistors (+ optional multimeter) left to buy. Button locating pegs (owner photos): snip flush before gluing into pod v2; no CAD change (noted in option-A print/README).
 - Sync: PUSHED (see git log).

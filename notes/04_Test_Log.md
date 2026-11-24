@@ -66,5 +66,12 @@ For each test, add a separate note from [[templates/Validation_Template]] or app
 | 2026-11-14 | Original finger mount and tendon travel | NOT RUN physically — digital findings in ISSUES C-3, C-5; test T-2 proposed | `audits/results/FINAL_VERDICT.md` |
 | 2026-11-14 | V5 draft model SHA-256 manifest | PASS (33/33) | `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_SHA256_MANIFEST.txt`; 82,500,770 bytes |
 | 2026-11-14 | V5 targeted remote LFS readback | PASS (2/33 sampled) | Fresh clone retrieved `Dowel_Peg_5p9x30_optional.3mf` (2,884 bytes) and `R_01_Cuff_Left_Front_V5.3mf` (1,641,461 bytes); both SHA-256 values matched the manifest |
+| 2026-11-24 | Right gauntlet photos (owner, 11-22 23:38): assembled on dowels, ring carrier + cover seat + both dials in place; only R_06, R_13 (V5_3) and the new thumb base missing | **INFO (photo review, no measurement)** | owner photos 23:36-23:37 |
+| 2026-11-24 | Gauges (transparent PLA) + 2 button pods v2 (transparent PLA) printed on A1 Mini and tested | **PASS (owner report):** "fine in transparent PLA"; pods accepted as final (one per arm) | owner in chat 00:47 |
+| 2026-11-24 | Thumb bases R + L (`*_Thumb_Base_V5_3_dowel`) printed | **DONE (owner report).** Fit in R_13 socket not yet reported (#14) | owner in chat 00:47 |
+| 2026-11-24 | `L_09_LightBand_Rear_Right_V5_SPAREMATCH` printed on A1 Mini | **DONE (owner report).** Dowel fit against spare R_02/R_05 not yet reported | owner in chat 23:24 |
+| 2026-11-24 | Right arm: R_06 printed; `R_13_Knuckles_Right_V5_3` last print, finishing 23:36 | **DONE (owner report):** all right shells printed. Fit of R_13 + thumb base not yet reported | owner in chat 23:36 |
+| 2026-11-24 | PLA Lite (lightweight PLA) batch | **FAIL: bad batch, head clogs on both printers (owner).** Print times from the affected prints are not usable for calibration. Switched to SUNLU matte black standard PLA | owner in chat 23:39, 23:50 |
+| 2026-11-24 | Weight, standard PLA vs PLA Lite at 3 walls, 3 % infill | **INFO (owner):** little difference in weight | owner in chat 23:39 |
 
 Also update [[docs/RELEASE_GATES]] and [[HANDOFF]] after every test.

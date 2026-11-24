@@ -2,6 +2,8 @@
 
 Checklist of every part for each arm. Tick ☐ → ☑ (or write the date) as parts come off the printer.
 
+> **Status 2026-11-24 (owner reports, boxes below not ticked individually):** right arm: all 13 shells printed (R_13 as `V5_3`, last print finishing 11-24 23:36); right handle = beech rod; gauges and button pods printed in transparent PLA and tested fine (pods final); thumb bases R + L printed; left arm: spares R_01/R_02/R_05 stand in for L_03/L_04/L_06 and `L_09_..._SPAREMATCH` is printed, the rest is open. Current list: [Print_Queue_Start_Here](../../../../notes/Print_Queue_Start_Here.md). Shells are now standard PLA (SUNLU), not lightweight PLA.
+
 - Pictures are renders of the actual print files, not photos. They show each part in its **print orientation**, so the left-arm pictures look different from the right: the left parts are mirror images.
 - Sizes are the print bounding box in mm.
 - **Left-arm naming:** left shells keep the right arm's side names (`L_01_Cuff_Left_Front` actually sits on the other side). Label parts as they come off the printer.

@@ -4,7 +4,7 @@ Print order for the current file set (Claude, 2026-11-17). Folder names below re
 
 > Until GitHub issue #2 is done, the repo still holds shell 08 as `_V5_1` and lacks the two mount files. The print pack already contains the V5.2 shell 08 and the mounts.
 
-**Status: draft, unprinted.** Nothing has been sliced in Bambu Studio or printed. Steps 1–2 are the tests; only carry on to the big shells if they pass.
+**Status (updated 2026-11-24):** this order is historical. Owner reports: right arm fully printed (R_13 as `V5_3`), T2 coupon PASS, gauges and pods printed, left arm just started. No Bambu Studio slice has been recorded by any agent. **Current queue and materials: [Print_Queue_Start_Here](../../../notes/Print_Queue_Start_Here.md)** (shells now SUNLU standard PLA, handles are beech rod, pods are the tested transparent ones).
 
 Filament figures are from a stand-in slicer at 2 walls, 8 % gyroid, standard PLA. Lightweight PLA will come out roughly half to two-thirds of that.
 

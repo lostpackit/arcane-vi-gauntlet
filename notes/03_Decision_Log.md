@@ -42,3 +42,6 @@ See [[docs/DECISIONS_AND_HISTORY]] and [[HANDOFF]].
 - **2026-11-22 22:44 / Owner:** Default look **all blue** (no pink). **Vi pink only in the button-2 burst**, which is named **"Bring It"** (cocky name wanted). Owner likes the glitter and the rest of the storyboard; the pink cycle look becomes "Shimmer" (blue + white glitter). Presets: `electronics/wled/presets_wled16_whole_strip.json`.
 - **2026-11-22 23:27 / Owner:** Presets accepted as they are; **final effect tuning after everything is mounted, with the wearer (owner's daughter) watching**. Button pod position/angle to be set by the wearer's thumb.
 - **2026-11-24 00:39 / Owner:** HUAZIZ button locating pegs get **snipped off** rather than adding holes to the button pod; no pod CAD change.
+- **2026-11-24 / Owner:** **Material change:** all remaining prints in **SUNLU matte black standard PLA** (4 spools in hand, same-day delivery) unless PETG is needed; shells no longer LW-PLA (PLA Lite batch clogged both heads; weight difference at 3 walls / 3 % infill is small). Profile **3 walls, 3 % infill**. Time estimates from the clogged prints are not usable.
+- **2026-11-24 / Owner:** **Handles: 18 mm beech rod**, not printed.
+- **2026-11-24 / Owner:** **Button pods: the transparent-PLA pods (printed and tested) are final**; no PETG pods.

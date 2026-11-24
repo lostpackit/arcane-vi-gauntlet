@@ -35,6 +35,8 @@ tags: [risk, blockers]
 | X1C-printed right shells (plates 21, 27) not identified | OPEN: owner to read part sizes in Bambu or measure; compare to inventory sizes | Test Log 2026-11-21 |
 | Electronics sled concept sized for old board (80 × 45) | OPEN | Redesign for 32 × 20 mm Sparkle Motion Mini |
 | LED bench test not yet run | OPEN | Board + strip in WLED, 10 min full-white heat check (covers are PLA) |
+| **X1C time for the left arm vs deadline (Print queue, 2026-11-24)** | OPEN, CRITICAL: 109 h surrogate (74 h at ×0.68) for 8 left X1C shells vs ~96 h to Sat 24:00; left arm cannot meet the whole-arm finish chain | Real Bambu time of L_08 on SUNLU; faster profile; Main/Finishing fallback decision |
+| PLA Lite filament batch clogs (2026-11-24) | CLOSED by switching to SUNLU standard PLA (owner); watch first layers of long plates | First-layer check on each long plate |
 | Remaining work is tracked as GitHub issues #2–#16 and #20 | INFO | Use the issue list as the queue |
 
 For current priority and ownership, see [[HANDOFF]]. Record any newly discovered risk there **after the action**.
