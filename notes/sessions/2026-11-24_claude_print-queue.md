@@ -13,3 +13,5 @@ date: 2026-11-24
 - Could not locate: R_13 V5_3 and SPAREMATCH 3MFs are LFS-pending in the repo; owner has the zips in chat.
 - Owner reports 11-24 recorded in Test Log, Decision Log, Print Queue, HANDOFF. Handles = beech rod, pods final, SUNLU standard PLA.
 - Not done: no Bambu Studio slice, no physical check by Claude.
+
+- 2026-11-25 00:25: owner Bambu estimate L_08 + cuff = 10 h 39 min; schedule rescaled (0.51 of surrogate); "nothing pairs" corrected; vault files updated (Print Queue, HANDOFF, Test/Decision logs, Risks, Main inbox note).

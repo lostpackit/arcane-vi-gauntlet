@@ -73,5 +73,6 @@ For each test, add a separate note from [[templates/Validation_Template]] or app
 | 2026-11-24 | Right arm: R_06 printed; `R_13_Knuckles_Right_V5_3` last print, finishing 23:36 | **DONE (owner report):** all right shells printed. Fit of R_13 + thumb base not yet reported | owner in chat 23:36 |
 | 2026-11-24 | PLA Lite (lightweight PLA) batch | **FAIL: bad batch, head clogs on both printers (owner).** Print times from the affected prints are not usable for calibration. Switched to SUNLU matte black standard PLA | owner in chat 23:39, 23:50 |
 | 2026-11-24 | Weight, standard PLA vs PLA Lite at 3 walls, 3 % infill | **INFO (owner):** little difference in weight | owner in chat 23:39 |
+| 2026-11-25 | Bambu Studio estimate: L_08 SPAREMATCH + a left cuff (L_01 assumed) on one X1C plate, SUNLU standard PLA, 3 walls, 3 % infill | **INFO (slicer estimate, not a print): 10 h 39 min.** Both parts fit one plate. About 0.51 of the PrusaSlicer surrogate (20.9 h) | owner in chat 00:21 |
 
 Also update [[docs/RELEASE_GATES]] and [[HANDOFF]] after every test.

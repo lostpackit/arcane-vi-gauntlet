@@ -45,3 +45,4 @@ See [[docs/DECISIONS_AND_HISTORY]] and [[HANDOFF]].
 - **2026-11-24 / Owner:** **Material change:** all remaining prints in **SUNLU matte black standard PLA** (4 spools in hand, same-day delivery) unless PETG is needed; shells no longer LW-PLA (PLA Lite batch clogged both heads; weight difference at 3 walls / 3 % infill is small). Profile **3 walls, 3 % infill**. Time estimates from the clogged prints are not usable.
 - **2026-11-24 / Owner:** **Handles: 18 mm beech rod**, not printed.
 - **2026-11-24 / Owner:** **Button pods: the transparent-PLA pods (printed and tested) are final**; no PETG pods.
+- **2026-11-25 / Owner:** plans to print **L_08 (SPAREMATCH) together with a left cuff on one X1C plate** (Bambu estimate 10 h 39 min); the other left cuff follows. L_01 and L_02 are the cuffs still needed (spares R_01/R_02 = L_03/L_04).

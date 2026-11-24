@@ -32,19 +32,18 @@ Owned by the **Print queue** conversation. Everything under "Status" is the owne
 | L_13 | `L_13_Knuckles_Right_V5_3` (thumb socket) | X1C | to print |
 Files: `Vi_Gauntlet_V5_Print_Pack_named.zip` (plain files, correct part names), `V5_4_Left_Arm_Spare_Match_v2.zip` (SPAREMATCH), `V5_3_Thumb_Joint.zip` (R/L_13 V5_3, thumb bases). Repo copies are LFS pointers or missing (see HANDOFF "Owner upload needed").
 
-## X1C schedule from Tue 11-24 23:55 (order follows the Finishing pipeline: rear band, cuff, front band, wrist, knuckles)
-Hours = PrusaSlicer surrogate (2 walls, 8 %, standard PLA, supports included) and "×0.68" (Main's ratio from plate 21). **No Bambu Studio estimate exists yet for any left shell.** Assumes plates are swapped only 07:00-23:30.
-| # | Plate | Surrogate h | ×0.68 h | Ends (surrogate) | Ends (×0.68) |
-|---|---|---|---|---|---|
-| 1 | L_08 | 16.1 | 10.9 | Wed 16:01 | Wed 10:51 |
-| 2 | L_02 | 7.9 | 5.4 | Wed 23:55 | Wed 16:14 |
-| 3 | L_01 | 4.8 | 3.3 | Thu 11:48 | Wed 19:30 |
-| 4 | L_05 | 19.6 | 13.3 | Fri 07:24 | Thu 08:49 |
-| 5 | L_10 | 11.2 | 7.6 | Fri 18:36 | Thu 16:26 |
-| 6 | L_11 | 11.4 | 7.8 | Sat 06:00 | Fri 00:11 |
-| 7 | L_12 | 19.3 | 13.1 | Sun 02:18 | Fri 20:07 |
-| 8 | L_13 | 18.7 | 12.7 | Mon 01:42 | Sat 08:50 |
-**Verdict:** total 109 h (surrogate) or 74 h (×0.68) against ~96 h to Sat 24:00 and ~48 h to Thu night. Even the optimistic column leaves no time for glue and paint on the last shells (Finishing needs the last glue by about Tue). The left arm will be a sub-assembly pipeline with a fallback finish; see the Finishing plan. **Needed to replace guesses:** the real Bambu Studio time of L_08 on SUNLU with the 3-wall, 3 % profile.
+## X1C schedule from Wed 11-25 00:30 (order follows the Finishing pipeline: rear band, cuff, front band, wrist, knuckles)
+**First Bambu Studio number (owner, 11-25 00:21, SUNLU, 3 walls, 3 %): L_08 + a left cuff (L_01 assumed, owner to confirm) on ONE plate = 10 h 39 min.** The surrogate figure for that pair was 20.9 h, so Bambu is about 0.51 of surrogate. The other rows apply 0.51 to the surrogate hours (one data point, not a calibration; the support-heavy L_05, L_12, L_13 may run longer). Swap window assumed 07:00-23:30.
+| # | Plate | Hours | Ends |
+|---|---|---|---|
+| 1 | L_08 + L_01 (Bambu) | 10.7 | Wed 11:09 |
+| 2 | L_02 | 4.0 | Wed 15:10 |
+| 3 | L_10 | 5.7 | Wed 20:52 |
+| 4 | L_05 | 10.0 | Thu 06:52 |
+| 5 | L_11 | 5.8 | Thu 12:48 |
+| 6 | L_12 | 9.8 | Thu 22:38 |
+| 7 | L_13 | 9.5 | Fri 08:10 |
+**Verdict:** about 55 h in total, so all left X1C shells could be done Fri morning (earlier surrogate figures said 74-109 h and a miss). Glue and paint of the last shells still has to fit in Fri-Sat; fallback finishes are Main's call. Replace each row with the real Bambu time as plates are sliced.
 
 ## A1 Mini queue
 1. **L_07** (plain file, ~6 h guess, brim ≤ 7 mm), next.
@@ -53,7 +52,7 @@ Hours = PrusaSlicer surrogate (2 walls, 8 %, standard PLA, supports included) an
 All A1 plates in SUNLU unless the design says PETG.
 
 ## Multiples and speed
-- Nothing pairs on an X1C plate: cuffs are 210 mm wide, bands 200-225 mm. Only handles could have ridden along (now beech rod). Multiples do not shorten time; the only gain is fewer plate swaps and no idle gap overnight.
+- **Pairing works for some parts** (corrects the earlier "nothing pairs"): the owner fit L_08 + a cuff on one X1C plate (10 h 39 min). Check Arrange per plate (5-10 mm gaps, brims apart, supports not crossing). Pairing saves swaps and overnight idle, not print time. Handles are beech rod.
 - Levers (web research 2026-11-23): layers 0.24-0.28 mm; grid or cross hatch instead of gyroid plus infill combination; keep 3 walls on L_13 (thumb socket); tree or hybrid supports on the build plate only; compare normal vs tree estimate per plate. A 0.6 mm nozzle gave little or no gain in Bambu Lab user reports; standard PLA removes LW-PLA's flow limit. **Orientation:** start from the file's own pose; keep supports out of string bores, thumb socket, dowel holes and visible faces (the T2 coupon's bore filled with support).
 - Do not start a long plate unattended on filament suspected bad.
 
