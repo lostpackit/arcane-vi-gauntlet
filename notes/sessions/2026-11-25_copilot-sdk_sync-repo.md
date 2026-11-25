@@ -44,6 +44,12 @@
 - Next: Commit only the local restoration record, rebase onto remote `main`, resolve any conflict by retaining both updates, and push.
 - Sync: Backup PUSHED; restoration record LOCAL.
 
+## 2026-11-25 — reconciliation
+- Action: Committed the restoration record and rebased it onto `origin/main` at `66b6a2182ef5ec03f8698006a4ceec22ae231e98`.
+- Result: Rebase succeeded without conflicts as commit `18ce48e72343ac61efaac3791a94fe36426df6fb`. Local status was clean and one commit ahead before this record. Both agents' handoff updates were retained.
+- Next: Push and verify the resulting remote ref.
+- Sync: Backup PUSHED; rebased restoration record LOCAL.
+
 ## 2026-11-25 00:26 UTC — temporary cleanup
 - Action: Removed the explicitly named isolated V5.3 readback cache after verification.
 - Result: Temporary cache removed; no project files deleted.
