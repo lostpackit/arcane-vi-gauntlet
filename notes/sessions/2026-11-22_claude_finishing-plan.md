@@ -9,3 +9,6 @@ date: 2026-11-22
 - Derived the 27-seam graph from `V5_build_log.json` (dowel `shells` pairs). Not CAD-verified which shells carry the hand channel (3MF/STL not opened): left as dry-fit gate G1.
 - Searched UHU data sheets (Plus Schnellfest, Poly Max Glasklar Express / Power Transparent); paint times are generic, unverified.
 - Output: `notes/Finishing_Plan_2026-11-28.md`; updated Finishing Start Here and HANDOFF. No physical work done, no owner decisions made.
+
+## 2026-11-23 to 11-25 follow-ups
+- Paint strategy chat: owner supplied a reference photo; chose blue spray + hand/dry-brushed gold (decision logged 11-25). Advised matte white for the LED groove interior; not yet confirmed. No physical work by Claude.
