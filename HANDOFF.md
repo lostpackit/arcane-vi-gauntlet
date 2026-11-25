@@ -37,7 +37,7 @@ tags:
 - **V4 stays NO-GO** ([audit](audits/results/FINAL_VERDICT.md)).
 
 ## Open work queue (GitHub issues)
-- **Owner upload needed:** #2 (V5.2 shell 08 + mount concepts), #20 (fixed left inserts), #21 (3MF object names; use `Vi_Gauntlet_V5_Print_Pack_named.zip`), the V5.3 thumb files (`V5_3_Thumb_Joint.zip`: R/L_13 V5_3, R/L thumb base; retire R/L_13 V5_1), and V5.4 spare-match left files (`V5_4_Left_Arm_Spare_Match_v2.zip`: L_08/L_09/L_11 SPAREMATCH). Files in `Repo_Upload_Issues_2_and_20.zip` from Claude; steps in its `UPLOAD_STEPS.md`. Claude's session cannot upload LFS.
+- **Owner upload needed:** #2 (V5.2 shell 08 + mount concepts), #20 (fixed left inserts), #21 (3MF object names; use `Vi_Gauntlet_V5_Print_Pack_named.zip`), ~~V5.3 thumb files~~ **uploaded 2026-11-25 by Copilot to `/V5_3_Thumb_Joint/` (repo root); Main verified all 4 LFS objects download and match `V5_3_SHA256_MANIFEST.txt`** (R/L_13 V5_1 in `releases/` still to retire), and V5.4 spare-match left files (`V5_4_Left_Arm_Spare_Match_v2.zip`: L_08/L_09/L_11 SPAREMATCH). Files in `Repo_Upload_Issues_2_and_20.zip` from Claude; steps in its `UPLOAD_STEPS.md`. Claude's session cannot upload LFS.
 - Print/fit: #4 ring fit with real strip, #5 finger string pull, #6 dowel fit, #7 handle, #8 gauge/cover retention, #14 thumb route, #15 supports, #16 centre seam.
 - Electronics: #9 mounts vs hardware (sled v3 + cover + pod concept done 2026-11-22, test print pending), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
 - Bambu Studio slice: #3.
@@ -49,6 +49,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-25 01:40 CET, Claude (Main)
+- Checked Copilot's sync at owner request: **OK.** Fast-forward only (Claude's last push `bae19da` is an ancestor of `59e164b`; no history rewritten); 14 files changed, all additions except HANDOFF header; V5.3 package added at repo root `V5_3_Thumb_Joint/`; all 4 LFS objects fetched from GitHub and SHA-256 identical to the manifest; root `README.md` intact on GitHub (its deletion exists only unstaged on the owner's PC: do not commit it). Still pending owner uploads: #2, #20, #21, V5.4 SPAREMATCH.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-25 00:23 UTC, Copilot SDK (repository sync)
 - Fetched and fast-forwarded `main` from `493cbb9` to `744b27f`, preserving the existing local deletion of root `README.md` and the untracked `V5_3_Thumb_Joint/` folder. Remote did not change `README.md`. No local deletion was staged.
 - Package backup: nine V5.3 files pushed at `1ec674df10bd95c8e6c01afe21e44066fdd49053`; all four LFS objects independently fetched and hash-checked; `git lfs fsck` passed. Verification commit `dcec0de` was confirmed on remote. Root `README.md` deletion remains unstaged; canonical CAD paths untouched. Full print approval is not implied.
