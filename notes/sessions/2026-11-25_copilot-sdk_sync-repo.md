@@ -8,6 +8,24 @@
 - Next: Validate local package and Git LFS handling.
 - Sync: LOCAL.
 
+## 2026-11-25 — package push
+- Action: Fetched again, staged the handoff and session record, committed the nine-file package and pushed to `main`.
+- Result: `1ec674df10bd95c8e6c01afe21e44066fdd49053` confirmed on remote `main`; Git LFS acknowledged four uploads. Root `README.md` remains deleted locally but unstaged.
+- Next: Independently read back four remote LFS objects, then commit the verification record.
+- Sync: Backup commit PUSHED `1ec674d`; verification record LOCAL.
+
+## 2026-11-25 00:25 UTC — remote readback
+- Action: Fetched the four V5.3 LFS objects from backup commit `1ec674df10bd95c8e6c01afe21e44066fdd49053` into a fresh isolated cache and checked their hashes; ran `git lfs fsck`.
+- Result: Remote readback 4/4 PASS; `git lfs fsck` passed. This proves backup integrity, not fit or print approval.
+- Next: Remove the temporary readback cache, push the verification record and report the existing local README deletion.
+- Sync: Backup PUSHED `1ec674d`; verification record LOCAL.
+
+## 2026-11-25 00:26 UTC — temporary cleanup
+- Action: Removed the explicitly named isolated V5.3 readback cache after verification.
+- Result: Temporary cache removed; no project files deleted.
+- Next: Push verification notes and disclose the unstaged root README deletion.
+- Sync: Backup PUSHED `1ec674d`; verification record LOCAL.
+
 ## 2026-11-25 — staging
 - Action: Staged the entire V5.3 folder as supplied and verified each staged LFS pointer against the local 3MF hash and size.
 - Result: Nine files staged; all four CAD pointers match. Root `README.md` remains deleted locally but unstaged; canonical release assets unchanged.
