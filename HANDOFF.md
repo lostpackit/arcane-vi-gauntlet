@@ -37,7 +37,12 @@ tags:
 - **V4 stays NO-GO** ([audit](audits/results/FINAL_VERDICT.md)).
 
 ## Open work queue (GitHub issues)
-- **Owner upload needed:** #2 (V5.2 shell 08 + mount concepts), #20 (fixed left inserts), #21 (3MF object names; use `Vi_Gauntlet_V5_Print_Pack_named.zip`), ~~V5.3 thumb files~~ **uploaded 2026-11-25 by Copilot to `/V5_3_Thumb_Joint/` (repo root); Main verified all 4 LFS objects download and match `V5_3_SHA256_MANIFEST.txt`** (R/L_13 V5_1 in `releases/` still to retire), and V5.4 spare-match left files (`V5_4_Left_Arm_Spare_Match_v2.zip`: L_08/L_09/L_11 SPAREMATCH). Files in `Repo_Upload_Issues_2_and_20.zip` from Claude; steps in its `UPLOAD_STEPS.md`. Claude's session cannot upload LFS.
+- **Owner upload needed (checklist 2026-11-25, Main).** Use Git LFS (`.gitattributes` covers 3MF). Verify every file against the named manifest after push. Do **not** commit the local deletion of root `README.md`.
+  1. `Vi_Gauntlet_V5_Print_Pack_named.zip` → replace the repo-root folder `Vi_Gauntlet_V5_Print_Pack/` with the zip's folder (same layout; correct part names #21; fixed left inserts #20; adds `0_Parts_Inventory/`). Check: its `SHA256_MANIFEST.txt`.
+  2. `Repo_Upload_Issues_2_and_20.zip` → copy its `releases/` folder over the repo and run the two `git mv` lines in its `UPLOAD_STEPS.md` (R/L_08 V5_2 + mount concepts #2, fixed left inserts #20, retire R/L_08 V5_1). Check: `V5_2_SHA256_MANIFEST.txt`, `L_INSERTS_NORMALS_FIX_SHA256.txt`.
+  3. `V5_4_Left_Arm_Spare_Match_v2.zip` (not the first version) → its three `*_SPAREMATCH.3mf` into `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_4_Spare_Twins/`. Check: `V5_4_Spare_Twins/V5_4_SHA256_MANIFEST.txt`.
+  4. Button pod v2 → `electronics/concepts/2026-11-22_controller_placement_option_A/print/`: `Button_Pod_v2_HUAZIZ_for_18p0_beech_rod.3mf` (sha256 7425796004f8b14a396e2a5766327ba33556f17445459482982151da1e913e04, the one in use) and optionally `..._for_18p8_printed_handle.3mf` (3f067b0a2a6a792a52ef75ada5a1e22c3fb7df476628ec5d2d095cd0cf514148). Plus the Electronics conversation's sled R/L + vented cover 3MFs (that conversation has their names).
+  - Done: V5.3 thumb package (Copilot 2026-11-25, `/V5_3_Thumb_Joint/`, verified). Superseded, do not upload: `V5_4_Left_Arm_Spare_Match.zip` (v1), `L_Inserts_Normals_Fix.zip`, `V5_2_changed_files.zip`, `Vi_Gauntlet_V5_Print_Pack.zip` (unnamed).
 - Print/fit: #4 ring fit with real strip, #5 finger string pull, #6 dowel fit, #7 handle, #8 gauge/cover retention, #14 thumb route, #15 supports, #16 centre seam.
 - Electronics: #9 mounts vs hardware (sled v3 + cover + pod concept done 2026-11-22, test print pending), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
 - Bambu Studio slice: #3.
