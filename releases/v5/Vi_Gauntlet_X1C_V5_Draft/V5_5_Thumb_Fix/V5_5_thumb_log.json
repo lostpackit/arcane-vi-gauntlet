@@ -1,0 +1,24 @@
+{
+ "L_Thumb_Base_V5_5_stock": {
+  "volume_cm3": 113.66,
+  "extents": [
+   80.6,
+   59.0,
+   70.7
+  ],
+  "watertight": true,
+  "winding_ok": true,
+  "sha256": "6023b544a4259ea3c7a42e65713892d8ef04841606bf97e8f221999b0fdb2102"
+ },
+ "R_Thumb_Base_V5_5_mirrored": {
+  "volume_cm3": 113.66,
+  "extents": [
+   80.6,
+   59.0,
+   70.7
+  ],
+  "watertight": true,
+  "winding_ok": true,
+  "sha256": "418456e665af0155efe1c07c690bf7d72c7655628824d2541de6dc3731e2fe4a"
+ }
+}

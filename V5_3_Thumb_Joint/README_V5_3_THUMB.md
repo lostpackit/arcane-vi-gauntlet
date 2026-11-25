@@ -1,3 +1,5 @@
+> **WITHDRAWN 2026-11-25 (Claude, Mechanics):** V5.3 was built on the stock Thumb_Base, which is the LEFT-hand part, forced onto the right shell. Socket and dowel holes are wrong. Do not print `L_13_..._V5_3`; print `L_13_Knuckles_Right_V5_1`. The printed V5.3 bases are swapped (L_ file = right hand). See [V5_5_Thumb_Fix/README_V5_5_THUMB_FIX.md](../releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_5_Thumb_Fix/README_V5_5_THUMB_FIX.md).
+
 # V5.3 thumb joint: R/L shell 13 + thumb base with dowel
 
 Owner-approved 2026-11-22. Replaces `R_13_Knuckles_Right_V5_1` and `L_13_Knuckles_Right_V5_1`, and the stock `Thumb_Base`.

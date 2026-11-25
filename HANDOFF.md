@@ -54,6 +54,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-25 01:50 CET, Claude (Mechanics)
+- **Thumb V5.3 WITHDRAWN.** The stock Thumb_Base is the LEFT-hand part (mirror fit 0.013 mm); V5.3 forced it onto the right arm. The correct-hand base keys into the existing V5_1 square pocket, so no socket or dowel is needed. **Print `L_13_Knuckles_Right_V5_1`, not V5_3.** Printed V5.3 bases are swapped (`L_` = right arm), plug the stray hole. Printed R_13 V5_3 is usable (pocket intact). Files: `releases/v5/.../V5_5_Thumb_Fix/`; inbox note for Print queue and Main. **Owner upload needed:** `R/L_Thumb_Base_V5_5` 3MFs (optional reprints).
+- Sync: PUSHED (see git log).
+
 ### 2026-11-25 01:45 CET, Claude (Electronics & LEDs)
 - Owner confirmed: transparent-PLA pods v2 clip onto the 18 mm beech rods and work; no screws, no redesign. Stale "final pod in PETG"/"not printed" lines fixed (LED Start Here, option-A print/README, issue #9 line).
 - Sync: PUSHED (see git log).

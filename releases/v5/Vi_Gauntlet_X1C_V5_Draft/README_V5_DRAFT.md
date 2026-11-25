@@ -174,9 +174,13 @@ Inserts: ring cover, gauge, handle, crystal, hand lens A and B (both arms), opti
 - **Gauge retention:** magnet pockets were tried and dropped. The gauge only touches the shell on narrow rims, with no flat area for a 6 mm magnet. Recommended: glue the gauge to the cover so they lift out as one cap, and hold the cap with two or three dots of removable mounting putty.
 
 
-## V5.3 thumb joint (2026-11-22, owner-approved)
+## V5.3 thumb joint (2026-11-22) — WITHDRAWN 2026-11-25, see V5.5 below
 Shell 13 (R and L) gets a socket for the thumb base plus one 6 × 30 mm dowel; the thumb base is reprinted with the matching dowel hole. **Print `R/L_13_Knuckles_Right_V5_3` instead of `_V5_1`.** Details and assembly: [V5_3_Thumb/README_V5_3_THUMB.md](V5_3_Thumb/README_V5_3_THUMB.md). 3MFs delivered as `V5_3_Thumb_Joint.zip` (LFS upload pending, hashes in `V5_3_Thumb/V5_3_SHA256_MANIFEST.txt`).
 
 
 ## V5.4 spare-twin left arm (2026-11-22)
 Owner has spare printed R_01, R_02, R_05; they serve as L_03, L_04, L_06 (mirror twins). L_08, L_09, L_11 get matching dowel holes (`*_SPAREMATCH`). Parts list: [V5_4_Spare_Twins/README_V5_4_SPARE_TWINS.md](V5_4_Spare_Twins/README_V5_4_SPARE_TWINS.md). 3MFs delivered as `V5_4_Left_Arm_Spare_Match_v2.zip` (LFS upload pending).
+
+
+## V5.5 thumb fix (2026-11-25)
+The stock Thumb_Base is the left-hand part; V5.3 was built on it in the wrong arm and is withdrawn. Shell 13 V5_1 already keys the correct-hand base. **Print `L_13_Knuckles_Right_V5_1`.** Printed V5.3 bases: `L_` = right arm, `R_` = left arm, plug the stray hole. Details: [V5_5_Thumb_Fix/README_V5_5_THUMB_FIX.md](V5_5_Thumb_Fix/README_V5_5_THUMB_FIX.md).
