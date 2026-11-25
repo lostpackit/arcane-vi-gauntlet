@@ -1,0 +1,60 @@
+{
+ "insertion_dir": [
+  0.9397,
+  0.0,
+  -0.3419
+ ],
+ "dowel_interface_point": [
+  339.03,
+  163.5,
+  492.78
+ ],
+ "shell_removed_cm3": 7.94,
+ "base_removed_cm3": 0.51,
+ "shell_status": "Error.NoError",
+ "base_status": "Error.NoError",
+ "shell_genus": [
+  18,
+  19
+ ],
+ "L_13_Knuckles_Right_V5_3.3mf": {
+  "volume_cm3": 1531.74,
+  "extents": [
+   200.1,
+   199.0,
+   157.7
+  ],
+  "watertight": true,
+  "sha256": "53255b4d51c269d8f54aa0afa63634c608cbd02214c56f9b28b625d4a7023378"
+ },
+ "L_Thumb_Base_V5_3_dowel.3mf": {
+  "volume_cm3": 113.15,
+  "extents": [
+   80.6,
+   59.1,
+   70.7
+  ],
+  "watertight": true,
+  "sha256": "fe1f716d062104bce5268a10b6d75514853ef1d532a34c2ee9a2c0ff0a36107b"
+ },
+ "R_13_Knuckles_Right_V5_3.3mf": {
+  "volume_cm3": 1531.74,
+  "extents": [
+   200.1,
+   199.0,
+   157.7
+  ],
+  "watertight": true,
+  "sha256": "8350d94415267701a053ca076627b52c504237030edb50c445150e79bb28fcad"
+ },
+ "R_Thumb_Base_V5_3_dowel.3mf": {
+  "volume_cm3": 113.15,
+  "extents": [
+   80.6,
+   59.1,
+   70.7
+  ],
+  "watertight": true,
+  "sha256": "b0d9b1b31f0c344420f9c101b92a6bf83a99dfc07cc6a6f468e5dc2edd89c6ad"
+ }
+}

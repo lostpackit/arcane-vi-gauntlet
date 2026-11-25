@@ -49,6 +49,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-25 00:23 UTC, Copilot SDK (repository sync)
+- Fetched and fast-forwarded `main` from `493cbb9` to `744b27f`, preserving the existing local deletion of root `README.md` and the untracked `V5_3_Thumb_Joint/` folder. Remote did not change `README.md`. No local deletion was staged.
+- Package inspection: nine files / 10,824,537 bytes staged; all four 3MF hashes match both manifests and staged LFS pointers match hashes/sizes. The local root README deletion remains unresolved and unstaged. Next: push package backup; no canonical CAD changes. Sync record LOCAL.
+
 ### 2026-11-25 01:30 CET, Claude (Finishing conversation)
 - Owner decided the paint look (spray blue, hand/dry-brush gold, clear coat maybe later) from a reference photo: logged in Decision Log + Finishing Start Here. Recommended matte white inside the LED groove/crystal well/ring trough (not black, not gold); awaiting OK. Nothing glued or painted by me.
 - Sync: PUSHED (see git log).
