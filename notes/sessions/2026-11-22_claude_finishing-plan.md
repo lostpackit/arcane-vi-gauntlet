@@ -12,3 +12,6 @@ date: 2026-11-22
 
 ## 2026-11-23 to 11-25 follow-ups
 - Paint strategy chat: owner supplied a reference photo; chose blue spray + hand/dry-brushed gold (decision logged 11-25). Advised matte white for the LED groove interior; not yet confirmed. No physical work by Claude.
+
+## 2026-11-25 assembly guide
+- Owner asked for glue-up/assembly instructions with pictures and the beech rod length. Built 14 renders from the arm STL cut at the seam planes, measured the handle socket floors in R_10/R_11 (251.0 mm computed), wrote `notes/Finishing_Assembly_Guide_Right_Arm.md` and a PDF. Computed only; no physical work, no owner decisions.

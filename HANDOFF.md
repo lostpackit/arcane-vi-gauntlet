@@ -75,6 +75,10 @@ tags:
 - Fetched and fast-forwarded `main` from `493cbb9` to `744b27f`, preserving the existing local deletion of root `README.md` and the untracked `V5_3_Thumb_Joint/` folder. Remote did not change `README.md`. No local deletion was staged.
 - Package backup: nine V5.3 files pushed at `1ec674df10bd95c8e6c01afe21e44066fdd49053`; all four LFS objects independently fetched and hash-checked; `git lfs fsck` passed. At the owner's request, root `README.md` was restored from HEAD. Rebased the restoration record onto `66b6a21` without conflicts; owner upload checklist and confirmed button-pod fit preserved. Push pending.
 
+### 2026-11-25 03:00 CET, Claude (Finishing conversation)
+- Wrote the right-arm glue-up guide [notes/Finishing_Assembly_Guide_Right_Arm.md](notes/Finishing_Assembly_Guide_Right_Arm.md) (+ PDF sent to owner): 4 rounds, 57 dowels, figures. **Beech rod 249 mm** (computed socket floor-to-floor 251.0; owner re-measures). Stages 5 and 9 (knuckles) wait for finger string test and thumb joint. Sled and wires before stages 7 and 10. Nothing glued or fitted yet.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-25 01:30 CET, Claude (Finishing conversation)
 - Owner decided the paint look (spray blue, hand/dry-brush gold, clear coat maybe later) from a reference photo: logged in Decision Log + Finishing Start Here. Recommended matte white inside the LED groove/crystal well/ring trough (not black, not gold); awaiting OK. Nothing glued or painted by me.
 - Sync: PUSHED (see git log).
