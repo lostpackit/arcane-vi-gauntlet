@@ -32,7 +32,7 @@ tags:
 - **A1 Mini (owner 11-24):** gauges, 2 pods (transparent PLA, tested, final) and thumb bases R/L printed; L_09 SPAREMATCH printed. Next: **L_07**, sled + vented cover R/L, one more thumb (status unknown).
 - **Status (owner 11-24):** right arm fully printed; fingers except thumbs printed + primed; transparent parts done; left arm: spares cover 3 + L_09 done, **8 X1C shells + L_07 still to print. First Bambu estimate: L_08 + a cuff on one plate = 10 h 39 min (SUNLU, 3 walls, 3 %), so all left X1C shells may finish Fri morning (~55 h, extrapolated); see Print queue.**
 - **Physical results:** T2 finger coupon PASS (11-18); both board + strip bench tests PASS (11-22); strip passes R_08 round hole, far-end JST does not (cut off). Glow-blue PETG covers FAIL (wet). Nothing else physically tested; no Bambu Studio slice by any agent (#3).
-- **Materials/assembly:** **all remaining prints SUNLU matte black standard PLA, 3 walls, 3 % infill (owner 11-24; PLA Lite batch clogged both heads)**; handle = 18 mm beech rod; wooden 6 × 30 dowels; UHU Plus Schnellfest (seams, thumb dowel); UHU Poly Max (covers, electronics, buttons); no super glue near clear parts; gauges masked + painted where they should not glow.
+- **Materials/assembly:** **all remaining prints SUNLU matte black standard PLA, 3 walls, 3 % infill (owner 11-24; PLA Lite batch clogged both heads)**; handle = 18 mm beech rod, **cut to 249 mm** (computed by Finishing, owner to confirm on the dry stack); wooden 6 × 30 dowels; UHU Plus Schnellfest (seams, thumb dowel); UHU Poly Max (covers, electronics, buttons); no super glue near clear parts; gauges masked + painted where they should not glow.
 - **Electronics:** 3 Sparkle Motion Minis, 2 BTF 160/m strips, HUAZIZ 12 × 12 × 7 LED push buttons, capacitors, flux, M2 × 8; silicone wire not yet arrived. Both board + strip sets bench-tested PASS. **Right-arm strip dry-fit done (whole 160 LEDs: lead-in 11 off, ring 112 = 2 turns, hand 24, crystal 11)**. **WLED 16 presets v3 loaded on board 1 and accepted** (Hextech Idle all blue; Shimmer; Overcharged; Calm; button-2 burst "Bring It" with Vi pink; board cool on a phone charger). Final tuning after mounting, with the wearer (owner's daughter). Still to buy: 470 Ω resistors only (+ optional multimeter). Decisions: board on sled near the ring (option A), vented cover, power bank on cuff wall, button roles B1 on/next/off, B2 Bring It. [LED Start Here](notes/LED_Wiring_Start_Here.md).
 - **V4 stays NO-GO** ([audit](audits/results/FINAL_VERDICT.md)).
 
@@ -55,6 +55,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-25 02:35 CET, Claude (Main sweep)
+- Scheduled sweep: one new commit (Finishing right-arm glue-up guide, rod 249 mm). Linked the guide in the topic table and Deadline plan; rod length in Current state. Archived older entries verbatim. Mechanics inbox note still waits for Print queue. No new owner decisions for memory.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-25 01:55 CET, Claude (Main)
 - Merged the Main part of the Mechanics inbox note (thumb V5.3 withdrawn; the error was Main's V5.3 build using the left-hand stock base on the right arm). Deadline plan v2 and Current state updated: L_13 = V5_1, thumb joint = key + epoxy after a wire test; V5.5 reprints added to the upload checklist. Inbox note left for Print queue (marked Main-merged). Claude project memory updated.
 - Sync: PUSHED (see git log).
@@ -85,23 +89,6 @@ tags:
 
 ### 2026-11-25 00:50 CET, Claude (Main)
 - Updated from the repo (Print queue, Electronics, Finishing, Mechanics work since 11-22). Hygiene: merged Print queue inbox note (schedule slip) and deleted it; archived entries 2026-11-22 22:05 and older verbatim. **Deadline plan v2**: right arm glue-up Wed, left sub-assembly pipeline, fallbacks F1–F3, 7 blocking decisions (thumb fixed?, G1–G4, paint, F1 approval, wire/resistors, string test, deadline hour). Hub status refreshed.
-- Sync: PUSHED (see git log).
-
-### 2026-11-25 00:25 CET, Claude (Print queue conversation)
-- Owner sliced L_08 + a left cuff on one X1C plate: **10 h 39 min** (first Bambu estimate; about 0.51 of the surrogate). Rescaled schedule: left X1C shells done about Fri 08:10 if the ratio holds. Corrected "nothing pairs": pairing works for L_08 + a cuff. Print Queue, Test Log, Decision Log, Risks and the Main inbox note updated.
-- Sync: PUSHED (see git log).
-
-### 2026-11-24 23:55 CET, Claude (Print queue conversation)
-- Hygiene check: HANDOFF 102 lines OK, inbox empty; fixed stale "draft, unprinted" in PRINT_ORDER and a status banner in the inventory. Recorded owner reports: right arm all printed, gauges + 2 transparent pods tested and final, thumb bases printed, L_09 SPAREMATCH printed, handles = beech rod, material switch to SUNLU standard PLA (3 walls, 3 %). **Finding:** X1C needs 74-109 h for the 8 left shells vs ~96 h to Sat 24:00 (surrogate, not Bambu); rewrote `notes/Print_Queue_Start_Here.md` with an ordered schedule (L_08, L_02, L_01, L_05, L_10, L_11, L_12, L_13). Nothing sliced by Claude. Main note in `notes/inbox/`.
-- Next: owner sends Bambu time for L_08; starts L_08 on the X1C and L_07 on the A1 Mini.
-- Sync: PUSHED (see git log).
-
-### 2026-11-24 00:45 CET, Claude (Electronics & LEDs)
-- Order list 2026-11-23 (`electronics/ORDER_LIST.md`): only 470 Ω resistors (+ optional multimeter) left to buy. Button locating pegs (owner photos): snip flush before gluing into pod v2; no CAD change (noted in option-A print/README).
-- Sync: PUSHED (see git log).
-
-### 2026-11-22 23:30 CET, Claude (Electronics & LEDs)
-- Right-arm LED dry-fit counts recorded and mapped to WLED segments; WLED 16 preset file `electronics/wled/presets_wled16_whole_strip.json` (v3) built, loaded on board 1 and accepted by owner after two source-checked fixes (overlay flag is `o2`; layered segments need blend mode stencil `bm`:16). Board cool. Owner decisions: default all blue, Vi pink only in "Bring It", tune after mounting with the wearer. Next: load board 2, rename APs, print sled/cover, power bank, resistors, wire buttons when wire arrives.
 - Sync: PUSHED (see git log).
 
 Older entries: [snapshot 2026-11-22](notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-22.md), [snapshot 2026-11-21](notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-21.md), [archive 2026-11](notes/handoff_archive/HANDOFF_ARCHIVE_2026-11.md).

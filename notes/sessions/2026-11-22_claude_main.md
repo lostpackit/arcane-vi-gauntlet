@@ -10,3 +10,4 @@
 - 01:40 Copilot sync check: fast-forward only, V5.3 LFS objects verified by download + SHA-256, README intact on remote. HANDOFF upload list updated.
 - 01:50 Wrote owner LFS upload checklist (4 items, targets, manifests, pod hashes) into HANDOFF open-work queue.
 - 01:55 Merged Mechanics inbox (Main part): thumb V5.3 withdrawn (my V5.3 used the left-hand stock base on the right arm). Plan, HANDOFF, Hub updated; inbox note left for Print queue.
+- 02:35 Scheduled sweep: Finishing guide linked (HANDOFF, plan), rod 249 mm; HANDOFF archived to stay < 120.

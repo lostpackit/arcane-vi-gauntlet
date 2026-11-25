@@ -119,3 +119,24 @@ Moved out of `HANDOFF.md` by the vault hygiene check (file was 128 lines). Nothi
 - Read-only status + hygiene check. Finger string pull test (#5) still not reported; thumb V5.3 digital PASS only (not printed or load-tested); thumb string route unresolved (#14). New `notes/Mechanics_Start_Here.md`; Hub is stale, left `notes/inbox/2026-11-22_claude-mechanics_hub-stale.md` for Main. No CAD changed.
 - Sync: PUSHED (see git log).
 
+
+
+<!-- appended 2026-11-25 02:35 by Main sweep (hygiene) -->
+
+### 2026-11-25 00:25 CET, Claude (Print queue conversation)
+- Owner sliced L_08 + a left cuff on one X1C plate: **10 h 39 min** (first Bambu estimate; about 0.51 of the surrogate). Rescaled schedule: left X1C shells done about Fri 08:10 if the ratio holds. Corrected "nothing pairs": pairing works for L_08 + a cuff. Print Queue, Test Log, Decision Log, Risks and the Main inbox note updated.
+- Sync: PUSHED (see git log).
+
+### 2026-11-24 23:55 CET, Claude (Print queue conversation)
+- Hygiene check: HANDOFF 102 lines OK, inbox empty; fixed stale "draft, unprinted" in PRINT_ORDER and a status banner in the inventory. Recorded owner reports: right arm all printed, gauges + 2 transparent pods tested and final, thumb bases printed, L_09 SPAREMATCH printed, handles = beech rod, material switch to SUNLU standard PLA (3 walls, 3 %). **Finding:** X1C needs 74-109 h for the 8 left shells vs ~96 h to Sat 24:00 (surrogate, not Bambu); rewrote `notes/Print_Queue_Start_Here.md` with an ordered schedule (L_08, L_02, L_01, L_05, L_10, L_11, L_12, L_13). Nothing sliced by Claude. Main note in `notes/inbox/`.
+- Next: owner sends Bambu time for L_08; starts L_08 on the X1C and L_07 on the A1 Mini.
+- Sync: PUSHED (see git log).
+
+### 2026-11-24 00:45 CET, Claude (Electronics & LEDs)
+- Order list 2026-11-23 (`electronics/ORDER_LIST.md`): only 470 Ω resistors (+ optional multimeter) left to buy. Button locating pegs (owner photos): snip flush before gluing into pod v2; no CAD change (noted in option-A print/README).
+- Sync: PUSHED (see git log).
+
+### 2026-11-22 23:30 CET, Claude (Electronics & LEDs)
+- Right-arm LED dry-fit counts recorded and mapped to WLED segments; WLED 16 preset file `electronics/wled/presets_wled16_whole_strip.json` (v3) built, loaded on board 1 and accepted by owner after two source-checked fixes (overlay flag is `o2`; layered segments need blend mode stencil `bm`:16). Board cool. Owner decisions: default all blue, Vi pink only in "Bring It", tune after mounting with the wearer. Next: load board 2, rename APs, print sled/cover, power bank, resistors, wire buttons when wire arrives.
+- Sync: PUSHED (see git log).
+
