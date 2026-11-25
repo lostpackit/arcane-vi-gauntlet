@@ -44,7 +44,7 @@ tags:
   4. Button pod v2 → `electronics/concepts/2026-11-22_controller_placement_option_A/print/`: `Button_Pod_v2_HUAZIZ_for_18p0_beech_rod.3mf` (sha256 7425796004f8b14a396e2a5766327ba33556f17445459482982151da1e913e04, the one in use) and optionally `..._for_18p8_printed_handle.3mf` (3f067b0a2a6a792a52ef75ada5a1e22c3fb7df476628ec5d2d095cd0cf514148). Plus the Electronics conversation's sled R/L + vented cover 3MFs (that conversation has their names).
   - Done: V5.3 thumb package (Copilot 2026-11-25, `/V5_3_Thumb_Joint/`, verified). Superseded, do not upload: `V5_4_Left_Arm_Spare_Match.zip` (v1), `L_Inserts_Normals_Fix.zip`, `V5_2_changed_files.zip`, `Vi_Gauntlet_V5_Print_Pack.zip` (unnamed).
 - Print/fit: #4 ring fit with real strip, #5 finger string pull, #6 dowel fit, #7 handle, #8 gauge/cover retention, #14 thumb route, #15 supports, #16 centre seam.
-- Electronics: #9 mounts vs hardware (sled v3 + cover + pod concept done 2026-11-22, test print pending), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
+- Electronics: #9 mounts vs hardware (pods printed + fitted on beech rods, final; sled v3 + cover test print pending), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
 - Bambu Studio slice: #3.
 
 ## Pending owner decisions
@@ -54,6 +54,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-25 01:45 CET, Claude (Electronics & LEDs)
+- Owner confirmed: transparent-PLA pods v2 clip onto the 18 mm beech rods and work; no screws, no redesign. Stale "final pod in PETG"/"not printed" lines fixed (LED Start Here, option-A print/README, issue #9 line).
+- Sync: PUSHED (see git log).
+
 ### 2026-11-25 01:40 CET, Claude (Main)
 - Checked Copilot's sync at owner request: **OK.** Fast-forward only (Claude's last push `bae19da` is an ancestor of `59e164b`; no history rewritten); 14 files changed, all additions except HANDOFF header; V5.3 package added at repo root `V5_3_Thumb_Joint/`; all 4 LFS objects fetched from GitHub and SHA-256 identical to the manifest; root `README.md` intact on GitHub (its deletion exists only unstaged on the owner's PC: do not commit it). Still pending owner uploads: #2, #20, #21, V5.4 SPAREMATCH.
 - Sync: PUSHED (see git log).

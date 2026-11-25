@@ -2,7 +2,9 @@
 
 > **The five .3mf files are not in the repo yet.** They are Git LFS files and Claude's session cannot upload LFS (proxy blocks the LFS storage host). They were delivered to Erich in the chat on 2026-11-22; to add them, upload them with LFS from a normal checkout (or have Copilot do it) into this `print/` folder. They can also be regenerated from `../scripts/` (pod_export.py, build_v3.py + export_sled.py) with the original arm STL and Adafruit's 6160 model.
 
-## Button pod: fit-test print
+> **Final pod (owner, 2026-11-24/25):** `Button_Pod_v2_HUAZIZ_for_18p0_beech_rod` (see v2 section below), printed in **transparent PLA**, clips onto the **18 mm beech rod** and fits fine. No screws, no redesign. The v1 files below are history.
+
+## Button pod: fit-test print (v1, superseded)
 
 Status: **test print for the clip fit only.** The button pockets (12.5 × 12.5 × 4.2 mm, from the Mounts_CONCEPT pod) are not yet checked against the owner's actual buttons; they will be updated once the button type is known.
 
@@ -46,6 +48,6 @@ Owner's buttons: **HUAZIZ LED push button 12 × 12 × 7 mm** (illuminated tact s
 - Pocket 15.2 × 13.8 × 4.5 mm (body), 2.6 mm channel round a 7.6 mm centre island, 5 mm deep, for the legs and solder joints; wire exit to the pod's bottom end. Clip unchanged. Pad 10.7 mm thick (v1: 7.2), pod 32 × 33 × 26 mm, ~9 cm³.
 - Assembly: solder wires to the switch legs (and the LED legs if the button lights are wanted), route out the bottom slot, dab of UHU Poly Max on the island, press the button in.
 - **Locating pegs (owner photo 2026-11-24):** each button has two small round plastic pegs on its underside, about 8.7 mm apart on the white-tab axis (estimated from the photo, not measured). They sit right at the island edge (island ±3.8 mm) and could hold the button up. **Snip them off flush** before gluing; they are only PCB alignment pegs and do nothing electrically. No CAD change.
-- Not printed or fitted. Black-body height not measured (pocket assumes ≈4.5 mm; if taller, the button simply stands further proud).
+- **Printed and fitted 2026-11-24 (owner): transparent PLA, beech rod version, fine.** Black-body height not measured (pocket assumes ≈4.5 mm; if taller, the button simply stands further proud).
 
 > **Duplicate pod v2 warning (2026-11-22 21:40):** the LED session sent Erich a different "pod v2" at 17:30 under the **same file names** (`Button_Pod_v2_HUAZIZ_for_18p8_printed_handle.3mf` / `..._18p0_beech_rod.3mf`: 12.6 mm square pocket with tab cross slots, 14.4 mm leg cavity with a centre pillar). It is **superseded** by the print session's v2 from `scripts/pod_export_v2.py` (15.2 × 13.8 pocket, island + leg/solder channel). Print and upload only the `pod_export_v2.py` version; discard the 17:30 copies.

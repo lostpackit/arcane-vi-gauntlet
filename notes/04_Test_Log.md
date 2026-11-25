@@ -76,3 +76,4 @@ For each test, add a separate note from [[templates/Validation_Template]] or app
 | 2026-11-25 | Bambu Studio estimate: L_08 SPAREMATCH + a left cuff (L_01 assumed) on one X1C plate, SUNLU standard PLA, 3 walls, 3 % infill | **INFO (slicer estimate, not a print): 10 h 39 min.** Both parts fit one plate. About 0.51 of the PrusaSlicer surrogate (20.9 h) | owner in chat 00:21 |
 
 Also update [[docs/RELEASE_GATES]] and [[HANDOFF]] after every test.
+| 2026-11-25 | Pods v2 (transparent PLA) clipped onto 18 mm beech rod handles | **PASS (owner):** clip holds, works fine; no changes | owner in chat 01:38 |

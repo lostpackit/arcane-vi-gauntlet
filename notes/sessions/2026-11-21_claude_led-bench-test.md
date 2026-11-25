@@ -295,3 +295,6 @@ tags: [agents, session, electronics, leds, wled]
 
 ### 2026-11-24 00:45 CET: Update the vault
 - Start Here (hardware row: in hand vs still to buy; peg-snip note), Decision Log (pegs snipped), HANDOFF entry. Committed and pushed with the order-list commits. Result: OK.
+
+### 2026-11-25 01:45 CET: Button pod confirmed
+- Owner: pods printed in transparent PLA, clipped on beech 18 mm rods, fine. Verified pod has no screws (pod_export_v2.py has none). Fixed stale PETG/not-printed lines; Decision + Test Log rows. Result: OK.
