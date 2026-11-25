@@ -20,6 +20,12 @@
 - Next: Remove the temporary readback cache, push the verification record and report the existing local README deletion.
 - Sync: Backup PUSHED `1ec674d`; verification record LOCAL.
 
+## 2026-11-25 — verification push
+- Action: Committed and pushed verification evidence and compared local and remote refs.
+- Result: `HEAD` and remote `main` both `dcec0dee6aada82309ef663752c2f225387f2a67`; LFS count 190. Root `README.md` is still locally deleted and unstaged.
+- Next: Push this final status, then seek the owner's decision on the README deletion rather than deleting it remotely or restoring it without consent.
+- Sync: Verification record PUSHED `dcec0de`; check remote ref for the final status.
+
 ## 2026-11-25 00:26 UTC — temporary cleanup
 - Action: Removed the explicitly named isolated V5.3 readback cache after verification.
 - Result: Temporary cache removed; no project files deleted.
