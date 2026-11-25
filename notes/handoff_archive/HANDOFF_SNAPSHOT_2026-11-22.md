@@ -102,3 +102,20 @@ Moved out of `HANDOFF.md` by the vault hygiene check (file was 128 lines). Nothi
 ### 2026-11-22 20:45 CET, Claude (print/vault session)
 - New `notes/Print_Queue_Start_Here.md`: left-arm list with spares, small parts, A1 Mini assignments. Gauge: R and L identical shape (mirror-symmetric ≤0.22 mm), 185 mm long so A1 Mini only standing diagonally; plate layout with both thumb bases verified (2D, 32 mm clearance). Right-arm remaining shells still to be confirmed by owner. Sync: PUSHED.
 
+
+
+<!-- appended 2026-11-25 02:00 by Main (hygiene: HANDOFF over 120 lines) -->
+
+### 2026-11-22 22:20 CET, Claude (Main)
+- Took the Main role. Hygiene: merged Mechanics inbox note (Hub status refreshed, Mechanics/Finishing/Conversation_Starters linked) and deleted it; archived entries 18:55 and older verbatim to `HANDOFF_SNAPSHOT_2026-11-22`. New **`notes/Deadline_Plan_2026-11-28.md`**: day-by-day plan across printing, electronics, mechanics, finishing + 9 blocking decisions (thumb string before R_13 prints; right shells left; faster left profile; handle; wire ETA; paint; deadline hour).
+- Sync: PUSHED (see git log).
+
+### 2026-11-22 22:35 CET, Claude (Finishing conversation)
+- Hygiene check: HANDOFF 113 lines, inbox empty, Start Here notes within a page; no fixes needed. Wrote `notes/Finishing_Plan_2026-11-28.md` (glue-up order from the seam graph, prerequisites, UHU cure times from data sheets, dry-fit gates G1-G4, paint/masking proposal, calendar). **Finding:** whole-arm finish for 11-28 needs the last shell glued by Tue 11-24; left arm cannot, so it uses a sub-assembly pipeline. Nothing glued or painted; paint system not yet chosen.
+- Next: owner dry-fit answers G1-G4 and the open decisions; Main/Print queue to see the schedule risk.
+- Sync: PUSHED (see git log).
+
+### 2026-11-22 22:30 CET, Claude (Mechanics conversation)
+- Read-only status + hygiene check. Finger string pull test (#5) still not reported; thumb V5.3 digital PASS only (not printed or load-tested); thumb string route unresolved (#14). New `notes/Mechanics_Start_Here.md`; Hub is stale, left `notes/inbox/2026-11-22_claude-mechanics_hub-stale.md` for Main. No CAD changed.
+- Sync: PUSHED (see git log).
+

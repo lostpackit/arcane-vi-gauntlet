@@ -100,19 +100,6 @@ tags:
 - Right-arm LED dry-fit counts recorded and mapped to WLED segments; WLED 16 preset file `electronics/wled/presets_wled16_whole_strip.json` (v3) built, loaded on board 1 and accepted by owner after two source-checked fixes (overlay flag is `o2`; layered segments need blend mode stencil `bm`:16). Board cool. Owner decisions: default all blue, Vi pink only in "Bring It", tune after mounting with the wearer. Next: load board 2, rename APs, print sled/cover, power bank, resistors, wire buttons when wire arrives.
 - Sync: PUSHED (see git log).
 
-### 2026-11-22 22:20 CET, Claude (Main)
-- Took the Main role. Hygiene: merged Mechanics inbox note (Hub status refreshed, Mechanics/Finishing/Conversation_Starters linked) and deleted it; archived entries 18:55 and older verbatim to `HANDOFF_SNAPSHOT_2026-11-22`. New **`notes/Deadline_Plan_2026-11-28.md`**: day-by-day plan across printing, electronics, mechanics, finishing + 9 blocking decisions (thumb string before R_13 prints; right shells left; faster left profile; handle; wire ETA; paint; deadline hour).
-- Sync: PUSHED (see git log).
-
-### 2026-11-22 22:35 CET, Claude (Finishing conversation)
-- Hygiene check: HANDOFF 113 lines, inbox empty, Start Here notes within a page; no fixes needed. Wrote `notes/Finishing_Plan_2026-11-28.md` (glue-up order from the seam graph, prerequisites, UHU cure times from data sheets, dry-fit gates G1-G4, paint/masking proposal, calendar). **Finding:** whole-arm finish for 11-28 needs the last shell glued by Tue 11-24; left arm cannot, so it uses a sub-assembly pipeline. Nothing glued or painted; paint system not yet chosen.
-- Next: owner dry-fit answers G1-G4 and the open decisions; Main/Print queue to see the schedule risk.
-- Sync: PUSHED (see git log).
-
-### 2026-11-22 22:30 CET, Claude (Mechanics conversation)
-- Read-only status + hygiene check. Finger string pull test (#5) still not reported; thumb V5.3 digital PASS only (not printed or load-tested); thumb string route unresolved (#14). New `notes/Mechanics_Start_Here.md`; Hub is stale, left `notes/inbox/2026-11-22_claude-mechanics_hub-stale.md` for Main. No CAD changed.
-- Sync: PUSHED (see git log).
-
 Older entries: [snapshot 2026-11-22](notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-22.md), [snapshot 2026-11-21](notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-21.md), [archive 2026-11](notes/handoff_archive/HANDOFF_ARCHIVE_2026-11.md).
 
 ## Entry template
