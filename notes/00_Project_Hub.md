@@ -49,7 +49,7 @@ tags: [arcane, vi, 3d-printing, dashboard]
 
 **Electronics:** both board + strip bench tests PASS; right strip dry-fit counted; WLED 16 presets v3 accepted. [[LED_Wiring_Start_Here]].
 
-**Finishing / mechanics:** nothing glued or painted; finger string test, dowel fit, thumb dry-fit still to do. [[Finishing_Plan_2026-11-28]] · [[Mechanics_Start_Here]].
+**Finishing / mechanics:** nothing glued or painted; finger string test and thumb dry-fit still to do. **Thumb V5.3 withdrawn (11-25): key + square pocket of V5_1, left arm prints L_13 V5_1.** [[Finishing_Plan_2026-11-28]] · [[Mechanics_Start_Here]].
 
 **Independent audit (Claude, 2026-11-14): NO-GO for the V4 shell set.** Shell 08 seals the LED chamber, the handle is cut, and the finger mount is a different revision from the printable base. Start with [[audits/results/FINAL_VERDICT]] and [[audits/results/ISSUES]]. Four small test prints are proposed.
 

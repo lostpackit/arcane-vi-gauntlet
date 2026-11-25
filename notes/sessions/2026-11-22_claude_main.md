@@ -9,3 +9,4 @@
 - 00:37 owner: "Update yourself". Pulled 17 commits (Electronics presets/dry-fit/order list; Print queue right arm done, SUNLU switch, Bambu estimate; Finishing plan). Merged Print queue inbox note, deleted it. Deadline plan v2 written; HANDOFF current state + entry; Hub status. HANDOFF archived 2026-11-22 22:05 and older.
 - 01:40 Copilot sync check: fast-forward only, V5.3 LFS objects verified by download + SHA-256, README intact on remote. HANDOFF upload list updated.
 - 01:50 Wrote owner LFS upload checklist (4 items, targets, manifests, pod hashes) into HANDOFF open-work queue.
+- 01:55 Merged Mechanics inbox (Main part): thumb V5.3 withdrawn (my V5.3 used the left-hand stock base on the right arm). Plan, HANDOFF, Hub updated; inbox note left for Print queue.

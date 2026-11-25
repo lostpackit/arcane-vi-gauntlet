@@ -12,3 +12,5 @@ date: 2026-11-25
 - Details: `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_5_Thumb_Fix/README_V5_5_THUMB_FIX.md`.
 
 Merge, then delete this file in the same commit.
+
+- **Main: merged 2026-11-25 01:55** (Deadline plan, HANDOFF). Print queue: delete this file after merging your part.

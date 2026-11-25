@@ -28,7 +28,7 @@ tags:
 
 ## Current state (2026-11-25 00:45, Main)
 - **DEADLINE 2026-11-28: BOTH gauntlets working (fingers, LEDs) and painted** (owner). **Plan v2: [Deadline_Plan_2026-11-28](notes/Deadline_Plan_2026-11-28.md)**. Critical path now: **right arm glue-up Wed 11-25** (a day behind), left arm via the sub-assembly pipeline as shells arrive (last left shell L_13 ≈ Fri 08:00 on the first Bambu estimate), **finger string test before any knuckle glue**. Nothing glued or painted yet.
-- **What to print: [Print queue](notes/Print_Queue_Start_Here.md)** (single source of truth). Key points: R_13 = `R_13_Knuckles_Right_V5_3` (thumb socket); left arm uses **spare R_01 / R_02 / R_05 as L_03 / L_04 / L_06**, plus `L_08 / L_09 / L_11 _SPAREMATCH`, `L_13_V5_3`, and normal L_01, L_02, L_05, L_07, L_10, L_12 (10 new left shells). **Right arm: all shells printed (owner 11-24; R_13 V5_3 was last).** L_09 SPAREMATCH printed; the other 9 new left shells are open.
+- **What to print: [Print queue](notes/Print_Queue_Start_Here.md)** (single source of truth). Key points: **thumb V5.3 withdrawn 11-25 (wrong-hand base): left arm prints `L_13_Knuckles_Right_V5_1`; printed R_13 V5_3 is usable; printed V5.3 bases are swapped (`L_` print = right arm)**, see [Mechanics](notes/Mechanics_Start_Here.md); left arm uses **spare R_01 / R_02 / R_05 as L_03 / L_04 / L_06**, plus `L_08 / L_09 / L_11 _SPAREMATCH`, `L_13_V5_1`, and normal L_01, L_02, L_05, L_07, L_10, L_12 (10 new left shells). **Right arm: all shells printed (owner 11-24; R_13 V5_3 was last).** L_09 SPAREMATCH printed; the other 9 new left shells are open.
 - **A1 Mini (owner 11-24):** gauges, 2 pods (transparent PLA, tested, final) and thumb bases R/L printed; L_09 SPAREMATCH printed. Next: **L_07**, sled + vented cover R/L, one more thumb (status unknown).
 - **Status (owner 11-24):** right arm fully printed; fingers except thumbs printed + primed; transparent parts done; left arm: spares cover 3 + L_09 done, **8 X1C shells + L_07 still to print. First Bambu estimate: L_08 + a cuff on one plate = 10 h 39 min (SUNLU, 3 walls, 3 %), so all left X1C shells may finish Fri morning (~55 h, extrapolated); see Print queue.**
 - **Physical results:** T2 finger coupon PASS (11-18); both board + strip bench tests PASS (11-22); strip passes R_08 round hole, far-end JST does not (cut off). Glow-blue PETG covers FAIL (wet). Nothing else physically tested; no Bambu Studio slice by any agent (#3).
@@ -42,7 +42,8 @@ tags:
   2. `Repo_Upload_Issues_2_and_20.zip` → copy its `releases/` folder over the repo and run the two `git mv` lines in its `UPLOAD_STEPS.md` (R/L_08 V5_2 + mount concepts #2, fixed left inserts #20, retire R/L_08 V5_1). Check: `V5_2_SHA256_MANIFEST.txt`, `L_INSERTS_NORMALS_FIX_SHA256.txt`.
   3. `V5_4_Left_Arm_Spare_Match_v2.zip` (not the first version) → its three `*_SPAREMATCH.3mf` into `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_4_Spare_Twins/`. Check: `V5_4_Spare_Twins/V5_4_SHA256_MANIFEST.txt`.
   4. Button pod v2 → `electronics/concepts/2026-11-22_controller_placement_option_A/print/`: `Button_Pod_v2_HUAZIZ_for_18p0_beech_rod.3mf` (sha256 7425796004f8b14a396e2a5766327ba33556f17445459482982151da1e913e04, the one in use) and optionally `..._for_18p8_printed_handle.3mf` (3f067b0a2a6a792a52ef75ada5a1e22c3fb7df476628ec5d2d095cd0cf514148). Plus the Electronics conversation's sled R/L + vented cover 3MFs (that conversation has their names).
-  - Done: V5.3 thumb package (Copilot 2026-11-25, `/V5_3_Thumb_Joint/`, verified). Superseded, do not upload: `V5_4_Left_Arm_Spare_Match.zip` (v1), `L_Inserts_Normals_Fix.zip`, `V5_2_changed_files.zip`, `Vi_Gauntlet_V5_Print_Pack.zip` (unnamed).
+  5. Optional: V5.5 clean thumb-base reprints `R_Thumb_Base_V5_5_mirrored.3mf`, `L_Thumb_Base_V5_5_stock.3mf` → `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_5_Thumb_Fix/` (Mechanics conversation delivered them; check `V5_5_SHA256_MANIFEST.txt`).
+  - Done: V5.3 thumb package (Copilot 2026-11-25, `/V5_3_Thumb_Joint/`, verified) **but V5.3 is withdrawn**; keep for history. Superseded, do not upload: `V5_4_Left_Arm_Spare_Match.zip` (v1), `L_Inserts_Normals_Fix.zip`, `V5_2_changed_files.zip`, `Vi_Gauntlet_V5_Print_Pack.zip` (unnamed).
 - Print/fit: #4 ring fit with real strip, #5 finger string pull, #6 dowel fit, #7 handle, #8 gauge/cover retention, #14 thumb route, #15 supports, #16 centre seam.
 - Electronics: #9 mounts vs hardware (pods printed + fitted on beech rods, final; sled v3 + cover test print pending), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
 - Bambu Studio slice: #3.
@@ -54,6 +55,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-25 01:55 CET, Claude (Main)
+- Merged the Main part of the Mechanics inbox note (thumb V5.3 withdrawn; the error was Main's V5.3 build using the left-hand stock base on the right arm). Deadline plan v2 and Current state updated: L_13 = V5_1, thumb joint = key + epoxy after a wire test; V5.5 reprints added to the upload checklist. Inbox note left for Print queue (marked Main-merged). Claude project memory updated.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-25 01:50 CET, Claude (Mechanics)
 - **Thumb V5.3 WITHDRAWN.** The stock Thumb_Base is the LEFT-hand part (mirror fit 0.013 mm); V5.3 forced it onto the right arm. The correct-hand base keys into the existing V5_1 square pocket, so no socket or dowel is needed. **Print `L_13_Knuckles_Right_V5_1`, not V5_3.** Printed V5.3 bases are swapped (`L_` = right arm), plug the stray hole. Printed R_13 V5_3 is usable (pocket intact). Files: `releases/v5/.../V5_5_Thumb_Fix/`; inbox note for Print queue and Main. **Owner upload needed:** `R/L_Thumb_Base_V5_5` 3MFs (optional reprints).
 - Sync: PUSHED (see git log).
