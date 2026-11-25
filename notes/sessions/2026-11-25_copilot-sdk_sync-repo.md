@@ -26,6 +26,24 @@
 - Next: Push this final status, then seek the owner's decision on the README deletion rather than deleting it remotely or restoring it without consent.
 - Sync: Verification record PUSHED `dcec0de`; check remote ref for the final status.
 
+## 2026-11-25 00:39 UTC — restore README
+- Action: Asked the owner how to handle the pre-existing local root README deletion; the owner chose to restore it. Ran `git restore -- README.md`.
+- Result: Root `README.md` restored from current HEAD. `git status --short --branch` was clean before recording this note; no remote deletion occurred.
+- Next: Push this handoff/session record and confirm remote `main`.
+- Sync: Backup and verification are pushed; this record is LOCAL.
+
+## 2026-11-25 — concurrent remote update
+- Action: Fetched before committing the restoration record.
+- Result: `origin/main` advanced from `59e164b` to `66b6a21`; the guarded command stopped before staging or pushing. Existing local handoff and session changes are preserved.
+- Next: Inspect the incoming commit and safely integrate both agents' updates.
+- Sync: Backup PUSHED; restoration record LOCAL pending reconciliation.
+
+## 2026-11-25 — concurrent update inspection
+- Action: Inspected the four newer commits, their file summary and shared handoff diff.
+- Result: Remote contains an owner upload checklist, independent confirmation of V5.3 backup, and owner-reported button-pod fit. Both remote findings and the local README restoration must be preserved.
+- Next: Commit only the local restoration record, rebase onto remote `main`, resolve any conflict by retaining both updates, and push.
+- Sync: Backup PUSHED; restoration record LOCAL.
+
 ## 2026-11-25 00:26 UTC — temporary cleanup
 - Action: Removed the explicitly named isolated V5.3 readback cache after verification.
 - Result: Temporary cache removed; no project files deleted.
