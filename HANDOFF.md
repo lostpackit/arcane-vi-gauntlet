@@ -55,6 +55,10 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-26 14:40 CET, Claude (Electronics & LEDs)
+- Owner printing the board sled: re-exported Sled R/L (unchanged v3) + new **cover v3.1** with two 3 mm mic sound holes; 3MFs delivered in chat (LFS, owner/Copilot upload). Print README updated.
+- Sync: committed locally, NOT pushed yet.
+
 ### 2026-11-26 07:20 CET, Claude (Electronics & LEDs)
 - Onboard mic PASS (owner clap test). WLED presets **v4**: +5 Misfit Toys, +6 Playground (sound-reactive, stencil over dim base, IDs checked in v16.0.1 source); Next look 1 → 6. Not yet tried on the board.
 - Sync: committed locally, NOT pushed yet.

@@ -33,10 +33,11 @@ Owner has **M2 × 8 screws** (plus nuts). Design uses the screws only:
 |---|---|
 | `Sled_Right_Arm_M2_CONCEPT.3mf` | Glue face shaped to the right arm's ceiling under the ring (computed from the original arm). 34 × 26 × 36 mm, ~10.6 cm³ |
 | `Sled_Left_Arm_M2_CONCEPT.3mf` | Exact mirror for the left arm |
-| `Board_Cover_vented_both_arms_CONCEPT.3mf` | Symmetric, fits either arm. 35 × 30 × 11 mm, ~1.7 cm³ |
+| `Board_Cover_vented_both_arms_CONCEPT.3mf` | Symmetric, fits either arm. 35 × 30 × 11 mm, ~1.7 cm³ | **Superseded by v3.1 below.** |
+| `Board_Cover_vented_mic_both_arms_v3_1.3mf` (2026-11-26) | **Print this cover.** Same as v3 plus two 3 mm **sound holes** in the floor right under the onboard mic's port (one per arm orientation, so it still fits both arms). Mic = TDK ICS-43434 on the board underside at the USB-C end; its port hole opens to the label side, which faces this cover. Figure `cover_v3_1_mic.png`, scripts `../scripts/build_v3_1.py` + `export_v3_1.py`. Sled files unchanged. |
 
 Print settings (recommendation, not sliced by Claude):
-- **Sled**: standard **PETG or PLA** (not LW-PLA: the screws thread into it). Printed standing on its end as in the file, so the glue face is a clean side wall. 0.2 mm layers, **4 walls** (posts come out solid), 25 % infill, brim 5 mm. Supports off; if the horizontal posts droop, switch on tree supports (build plate only).
+- **Sled**: standard **PETG or PLA** (owner's SUNLU matte black standard PLA is fine) (not LW-PLA: the screws thread into it). Printed standing on its end as in the file, so the glue face is a clean side wall. 0.2 mm layers, **4 walls** (posts come out solid), 25 % infill, brim 5 mm. Supports off; if the horizontal posts droop, switch on tree supports (build plate only).
 - **Cover**: PLA or PETG, flat as in the file, 0.2 mm, 3 walls, supports off.
 - **Before gluing**: hold the sled up against the printed shell 08 under the ring, board end toward the cuff. The glue face should sit flush on the ridge; sand lightly if a print artefact holds it off. Glue with UHU Poly Max.
 - Clearance (computed): cover bottom ~28 mm above an average forearm (assumed size).

@@ -302,3 +302,6 @@ tags: [agents, session, electronics, leds, wled]
 ### 2026-11-26 07:20 CET: Mic + song looks
 - Board file: mic is TDK ICS-43434 (IC2) on the underside at the USB-C end, port hole through the board to the label side. Owner enabled/checked AudioReactive and clap-tested Gravimeter: works.
 - Owner idea: sound looks inspired by "Misfit Toys" (Pusha T & Mako; Ekko/Firelights) and "Playground" (Bea Miller; ep. 1, Undercity). Researched song background (web), checked audio effects in WLED v16.0.1 FX.cpp, built presets v4 (5, 6), README section. Result: built, not yet tested on the board.
+
+### 2026-11-26 14:40 CET: Sled files for printing, cover v3.1
+- Owner asked where the board holder model is. 3MFs were never committed (LFS) and were gone from the workspace: re-exported Sled_Right/Left_Arm_M2_CONCEPT (identical to v3, 10.63 cm3) and Board_Cover_vented_mic_both_arms_v3_1 (v3 + 2 x 3 mm holes under the ICS-43434 port at board (5.9, 2.8) and its mirror; watertight, no clash with arm/sled/board). Delivered in chat. Result: OK, not printed yet.
