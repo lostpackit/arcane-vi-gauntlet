@@ -305,3 +305,6 @@ tags: [agents, session, electronics, leds, wled]
 
 ### 2026-11-26 14:40 CET: Sled files for printing, cover v3.1
 - Owner asked where the board holder model is. 3MFs were never committed (LFS) and were gone from the workspace: re-exported Sled_Right/Left_Arm_M2_CONCEPT (identical to v3, 10.63 cm3) and Board_Cover_vented_mic_both_arms_v3_1 (v3 + 2 x 3 mm holes under the ICS-43434 port at board (5.9, 2.8) and its mirror; watertight, no clash with arm/sled/board). Delivered in chat. Result: OK, not printed yet.
+
+### 2026-11-26 14:35 CET: Update the vault and yourself
+- Start Here + Decision Log updated; pushed; project memory updated. Result: OK.

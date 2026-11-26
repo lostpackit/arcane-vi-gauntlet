@@ -33,7 +33,7 @@ tags:
 - **Status (owner 11-24):** right arm fully printed; fingers except thumbs printed + primed; transparent parts done; left arm: spares cover 3 + L_09 done, **8 X1C shells + L_07 still to print. First Bambu estimate: L_08 + a cuff on one plate = 10 h 39 min (SUNLU, 3 walls, 3 %), so all left X1C shells may finish Fri morning (~55 h, extrapolated); see Print queue.**
 - **Physical results:** T2 finger coupon PASS (11-18); both board + strip bench tests PASS (11-22); strip passes R_08 round hole, far-end JST does not (cut off). Glow-blue PETG covers FAIL (wet). Nothing else physically tested; no Bambu Studio slice by any agent (#3).
 - **Materials/assembly:** **all remaining prints SUNLU matte black standard PLA, 3 walls, 3 % infill (owner 11-24; PLA Lite batch clogged both heads)**; handle = 18 mm beech rod, **cut to 249 mm** (computed by Finishing, owner to confirm on the dry stack); wooden 6 × 30 dowels; UHU Plus Schnellfest (seams, thumb dowel); UHU Poly Max (covers, electronics, buttons); no super glue near clear parts; gauges masked + painted where they should not glow.
-- **Electronics:** 3 Sparkle Motion Minis, 2 BTF 160/m strips, HUAZIZ 12 × 12 × 7 LED push buttons, capacitors, flux, M2 × 8; silicone wire not yet arrived. Both board + strip sets bench-tested PASS. **Right-arm strip dry-fit done (whole 160 LEDs: lead-in 11 off, ring 112 = 2 turns, hand 24, crystal 11)**. **WLED 16 presets v3 loaded on board 1 and accepted** (Hextech Idle all blue; Shimmer; Overcharged; Calm; button-2 burst "Bring It" with Vi pink; board cool on a phone charger). Final tuning after mounting, with the wearer (owner's daughter). Still to buy: 470 Ω resistors only (+ optional multimeter). Decisions: board on sled near the ring (option A), vented cover, power bank on cuff wall, button roles B1 on/next/off, B2 Bring It. [LED Start Here](notes/LED_Wiring_Start_Here.md).
+- **Electronics:** 3 Sparkle Motion Minis, 2 BTF 160/m strips, HUAZIZ 12 × 12 × 7 LED push buttons, capacitors, flux, M2 × 8; silicone wire not yet arrived. Both board + strip sets bench-tested PASS. **Right-arm strip dry-fit done (whole 160 LEDs: lead-in 11 off, ring 112 = 2 turns, hand 24, crystal 11)**. **WLED 16 presets v3 loaded on board 1 and accepted** (Hextech Idle all blue; Shimmer; Overcharged; Calm; button-2 burst "Bring It" with Vi pink; board cool on a phone charger). **Onboard mic PASS (11-26); presets v4 add sound looks 5 Misfit Toys + 6 Playground (not yet tried). Sled R/L + 2 × cover v3.1 (mic sound holes) to print now.** Final tuning after mounting, with the wearer (owner's daughter). Still to buy: 470 Ω resistors only (+ optional multimeter). Decisions: board on sled near the ring (option A), vented cover, power bank on cuff wall, button roles B1 on/next/off, B2 Bring It. [LED Start Here](notes/LED_Wiring_Start_Here.md).
 - **V4 stays NO-GO** ([audit](audits/results/FINAL_VERDICT.md)).
 
 ## Open work queue (GitHub issues)
@@ -42,10 +42,11 @@ tags:
   2. `Repo_Upload_Issues_2_and_20.zip` → copy its `releases/` folder over the repo and run the two `git mv` lines in its `UPLOAD_STEPS.md` (R/L_08 V5_2 + mount concepts #2, fixed left inserts #20, retire R/L_08 V5_1). Check: `V5_2_SHA256_MANIFEST.txt`, `L_INSERTS_NORMALS_FIX_SHA256.txt`.
   3. `V5_4_Left_Arm_Spare_Match_v2.zip` (not the first version) → its three `*_SPAREMATCH.3mf` into `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_4_Spare_Twins/`. Check: `V5_4_Spare_Twins/V5_4_SHA256_MANIFEST.txt`.
   4. Button pod v2 → `electronics/concepts/2026-11-22_controller_placement_option_A/print/`: `Button_Pod_v2_HUAZIZ_for_18p0_beech_rod.3mf` (sha256 7425796004f8b14a396e2a5766327ba33556f17445459482982151da1e913e04, the one in use) and optionally `..._for_18p8_printed_handle.3mf` (3f067b0a2a6a792a52ef75ada5a1e22c3fb7df476628ec5d2d095cd0cf514148). Plus the Electronics conversation's sled R/L + vented cover 3MFs (that conversation has their names).
+  4b. Board sled + cover (Claude Electronics, 2026-11-26, delivered in chat) → same `print/` folder: `Sled_Right_Arm_M2_CONCEPT.3mf` (sha256 5c67b087bd2af200…), `Sled_Left_Arm_M2_CONCEPT.3mf` (sha256 4703d322c064471a…), `Board_Cover_vented_mic_both_arms_v3_1.3mf` (sha256 648b232a1bdd6a2a…).
   5. Optional: V5.5 clean thumb-base reprints `R_Thumb_Base_V5_5_mirrored.3mf`, `L_Thumb_Base_V5_5_stock.3mf` → `releases/v5/Vi_Gauntlet_X1C_V5_Draft/V5_5_Thumb_Fix/` (Mechanics conversation delivered them; check `V5_5_SHA256_MANIFEST.txt`).
   - Done: V5.3 thumb package (Copilot 2026-11-25, `/V5_3_Thumb_Joint/`, verified) **but V5.3 is withdrawn**; keep for history. Superseded, do not upload: `V5_4_Left_Arm_Spare_Match.zip` (v1), `L_Inserts_Normals_Fix.zip`, `V5_2_changed_files.zip`, `Vi_Gauntlet_V5_Print_Pack.zip` (unnamed).
 - Print/fit: #4 ring fit with real strip, #5 finger string pull, #6 dowel fit, #7 handle, #8 gauge/cover retention, #14 thumb route, #15 supports, #16 centre seam.
-- Electronics: #9 mounts vs hardware (pods printed + fitted on beech rods, final; sled v3 + cover test print pending), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
+- Electronics: #9 mounts vs hardware (pods printed + fitted on beech rods, final; sled v3 R/L + cover v3.1 printing next), #10 controller pin map, #11 WLED on device, #12 firmware build, #13 current/temperature.
 - Bambu Studio slice: #3.
 
 ## Pending owner decisions
@@ -57,11 +58,11 @@ tags:
 ## Latest actions (newest first; one short entry each)
 ### 2026-11-26 14:40 CET, Claude (Electronics & LEDs)
 - Owner printing the board sled: re-exported Sled R/L (unchanged v3) + new **cover v3.1** with two 3 mm mic sound holes; 3MFs delivered in chat (LFS, owner/Copilot upload). Print README updated.
-- Sync: committed locally, NOT pushed yet.
+- Sync: PUSHED (see git log).
 
 ### 2026-11-26 07:20 CET, Claude (Electronics & LEDs)
 - Onboard mic PASS (owner clap test). WLED presets **v4**: +5 Misfit Toys, +6 Playground (sound-reactive, stencil over dim base, IDs checked in v16.0.1 source); Next look 1 → 6. Not yet tried on the board.
-- Sync: committed locally, NOT pushed yet.
+- Sync: PUSHED (see git log).
 
 ### 2026-11-25 02:35 CET, Claude (Main sweep)
 - Scheduled sweep: one new commit (Finishing right-arm glue-up guide, rod 249 mm). Linked the guide in the topic table and Deadline plan; rod length in Current state. Archived older entries verbatim. Mechanics inbox note still waits for Print queue. No new owner decisions for memory.
