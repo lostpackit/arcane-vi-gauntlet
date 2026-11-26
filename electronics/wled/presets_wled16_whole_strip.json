@@ -854,6 +854,654 @@
   ],
   "ql": "4"
  },
+ "5": {
+  "n": "Misfit Toys",
+  "on": true,
+  "bri": 255,
+  "transition": 7,
+  "mainseg": 1,
+  "seg": [
+   {
+    "id": 0,
+    "start": 0,
+    "stop": 11,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": false,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      40,
+      255
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 0,
+    "sx": 128,
+    "ix": 128,
+    "pal": 0,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false
+   },
+   {
+    "id": 1,
+    "start": 11,
+    "stop": 123,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      10,
+      60
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 0,
+    "sx": 128,
+    "ix": 128,
+    "pal": 0,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": true,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false
+   },
+   {
+    "id": 2,
+    "start": 125,
+    "stop": 149,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      10,
+      60
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 0,
+    "sx": 128,
+    "ix": 128,
+    "pal": 0,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false
+   },
+   {
+    "id": 3,
+    "start": 149,
+    "stop": 160,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      10,
+      60
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 0,
+    "sx": 128,
+    "ix": 128,
+    "pal": 0,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false
+   },
+   {
+    "id": 4,
+    "start": 11,
+    "stop": 123,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      200,
+      255
+     ],
+     [
+      0,
+      40,
+      255
+     ],
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    "fx": 156,
+    "sx": 150,
+    "ix": 160,
+    "pal": 4,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false,
+    "si": 0,
+    "bm": 16
+   },
+   {
+    "id": 5,
+    "start": 125,
+    "stop": 149,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      160,
+      230,
+      255
+     ],
+     [
+      0,
+      40,
+      255
+     ],
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    "fx": 144,
+    "sx": 110,
+    "ix": 150,
+    "pal": 4,
+    "c1": 0,
+    "c2": 0,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false,
+    "si": 0,
+    "bm": 16
+   },
+   {
+    "id": 6,
+    "start": 149,
+    "stop": 160,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      255,
+      170,
+      40
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 128,
+    "sx": 120,
+    "ix": 160,
+    "pal": 2,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false,
+    "si": 0,
+    "bm": 16
+   },
+   {
+    "id": 7,
+    "stop": 0
+   }
+  ],
+  "ql": "5"
+ },
+ "6": {
+  "n": "Playground",
+  "on": true,
+  "bri": 255,
+  "transition": 7,
+  "mainseg": 1,
+  "seg": [
+   {
+    "id": 0,
+    "start": 0,
+    "stop": 11,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": false,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      40,
+      255
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 0,
+    "sx": 128,
+    "ix": 128,
+    "pal": 0,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false
+   },
+   {
+    "id": 1,
+    "start": 11,
+    "stop": 123,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 70,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      40,
+      255
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 101,
+    "sx": 128,
+    "ix": 128,
+    "pal": 0,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": true,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false
+   },
+   {
+    "id": 2,
+    "start": 125,
+    "stop": 149,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      10,
+      60
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 0,
+    "sx": 128,
+    "ix": 128,
+    "pal": 0,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false
+   },
+   {
+    "id": 3,
+    "start": 149,
+    "stop": 160,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      10,
+      60
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 0,
+    "sx": 128,
+    "ix": 128,
+    "pal": 0,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false
+   },
+   {
+    "id": 4,
+    "start": 11,
+    "stop": 123,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      40,
+      255
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 133,
+    "sx": 100,
+    "ix": 140,
+    "pal": 9,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false,
+    "si": 0,
+    "bm": 16
+   },
+   {
+    "id": 5,
+    "start": 125,
+    "stop": 149,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      0,
+      40,
+      255
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "fx": 148,
+    "sx": 128,
+    "ix": 96,
+    "pal": 9,
+    "c1": 0,
+    "c2": 0,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false,
+    "si": 0,
+    "bm": 16
+   },
+   {
+    "id": 6,
+    "start": 149,
+    "stop": 160,
+    "grp": 1,
+    "spc": 0,
+    "of": 0,
+    "on": true,
+    "frz": false,
+    "bri": 255,
+    "cct": 127,
+    "col": [
+     [
+      160,
+      230,
+      255
+     ],
+     [
+      0,
+      200,
+      255
+     ],
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    "fx": 135,
+    "sx": 128,
+    "ix": 128,
+    "pal": 4,
+    "c1": 128,
+    "c2": 128,
+    "c3": 16,
+    "sel": false,
+    "rev": false,
+    "mi": false,
+    "o1": false,
+    "o2": false,
+    "o3": false,
+    "si": 0,
+    "bm": 16
+   },
+   {
+    "id": 7,
+    "stop": 0
+   }
+  ],
+  "ql": "6"
+ },
+ "10": {
+  "n": "Bring It",
+  "ql": "B",
+  "playlist": {
+   "ps": [
+    11,
+    12
+   ],
+   "dur": [
+    12,
+    16
+   ],
+   "transition": [
+    0,
+    0
+   ],
+   "repeat": 1,
+   "end": 255
+  }
+ },
  "11": {
   "n": "Bring It 1 charge",
   "on": true,
@@ -1240,29 +1888,9 @@
    }
   ]
  },
- "10": {
-  "n": "Bring It",
-  "ql": "B",
-  "playlist": {
-   "ps": [
-    11,
-    12
-   ],
-   "dur": [
-    12,
-    16
-   ],
-   "transition": [
-    0,
-    0
-   ],
-   "repeat": 1,
-   "end": 255
-  }
- },
  "20": {
   "n": "Next look",
-  "ps": "1~4~"
+  "ps": "1~6~"
  },
  "21": {
   "n": "Off",

@@ -298,3 +298,7 @@ tags: [agents, session, electronics, leds, wled]
 
 ### 2026-11-25 01:45 CET: Button pod confirmed
 - Owner: pods printed in transparent PLA, clipped on beech 18 mm rods, fine. Verified pod has no screws (pod_export_v2.py has none). Fixed stale PETG/not-printed lines; Decision + Test Log rows. Result: OK.
+
+### 2026-11-26 07:20 CET: Mic + song looks
+- Board file: mic is TDK ICS-43434 (IC2) on the underside at the USB-C end, port hole through the board to the label side. Owner enabled/checked AudioReactive and clap-tested Gravimeter: works.
+- Owner idea: sound looks inspired by "Misfit Toys" (Pusha T & Mako; Ekko/Firelights) and "Playground" (Bea Miller; ep. 1, Undercity). Researched song background (web), checked audio effects in WLED v16.0.1 FX.cpp, built presets v4 (5, 6), README section. Result: built, not yet tested on the board.
