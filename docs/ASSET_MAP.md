@@ -11,7 +11,7 @@ The print-pack manifest matches 42/42 files; its two V5.2 shell models and two c
 The required CAD set contains **59 files / 832,044,520 bytes**: 9 originals, 49 V4 files, and the V3 fit-validation archive. The V3 archive is 698,022 bytes. The separately committed manifest contains 61 rows; the two V1/V2 rows are intentionally excluded from this required set.
 
 ### Originals — `originals/` (9 files, 581,242,767 bytes)
-- `Vi Gauntlet 3mf Project File.3mf`
+- [Vi Gauntlet 3mf Project File.3mf](../originals/Vi%20Gauntlet%203mf%20Project%20File.3mf) — original model used as a reference guide. **Owner guidance (2026-11-27): only the fingers remain correct for this project; use this model only as a finger reference**, not as the current design for the rest of the gauntlet. This does not establish finger mounting or tendon compatibility.
 - `Full_Arm_Right (No Fingers).stl`
 - `Full_Arm_Left (No Fingers).stl`
 - `Together For Sizing.stl`
@@ -22,6 +22,8 @@ The required CAD set contains **59 files / 832,044,520 bytes**: 9 originals, 49 
 - `Crystal.stl`
 
 All nine files match their byte counts and SHA-256 values in `Claude_Vi_Gauntlet_Audit_Kit/03_INPUT_MANIFEST_SHA256.csv`. That CSV is a 10-entry audit-input manifest, not the previously referenced 61-entry asset manifest.
+
+The owner-supplied 3MF was compared on 2026-11-27: it matches the tracked LFS object exactly (192,851,495 bytes; SHA-256 `07f60e694fd7db847d10357d4fffd24a59badcdc783af3107d92cf3618aed288`). The remote object was independently fetched and hash-checked at commit `491ee0e653da0dc68fc7fac9271a255680783704`. No duplicate or original-file modification was needed.
 
 ### V1/V2
 

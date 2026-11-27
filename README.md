@@ -43,6 +43,8 @@ The **repository root is an Obsidian vault**. Open the cloned repository folder 
 ## CAD storage and build workflow
 The original, V3, V4, V5 and V5.1 CAD assets are in the repository using **Git LFS** for STL, 3MF, and ZIP objects. V1 and V2 were intentionally excluded. See the [asset map](docs/ASSET_MAP.md) and [asset instructions](docs/UPLOAD_CAD_ASSETS.md). Do not commit generated G-code.
 
+**Original 3MF reference:** [Vi Gauntlet 3mf Project File.3mf](originals/Vi%20Gauntlet%203mf%20Project%20File.3mf) is the original model used as a guide. The owner states that only the fingers remain correct for this project: use this file **only as a finger reference**, not as the current design for the rest of the gauntlet. Finger mounting and tendon compatibility still require the checks in the [handoff](HANDOFF.md).
+
 Keep this repository **private** until the third-party model license and redistribution permissions are established. Nothing here grants rights to *Arcane* or third-party source meshes.
 
 ## Release rule

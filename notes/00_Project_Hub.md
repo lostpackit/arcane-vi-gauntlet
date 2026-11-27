@@ -45,6 +45,8 @@ tags: [arcane, vi, 3d-printing, dashboard]
 ## Current status (2026-11-25)
 **Deadline 2026-11-28: both gauntlets working and painted.** Plan v2: [[Deadline_Plan_2026-11-28]]. Current state in [[HANDOFF]].
 
+**Original model — finger reference only:** The owner says only the fingers in the [original 3MF](../originals/Vi%20Gauntlet%203mf%20Project%20File.3mf) remain correct for this project. Do not use the rest as the current gauntlet design; finger mounting and string compatibility still need their documented checks. The supplied file matches the existing Git LFS object; see [[docs/ASSET_MAP]].
+
 **Printing:** right arm **all 13 shells printed** (R_13 V5_3 last, 11-24). Left arm: spares R_01/R_02/R_05 as L_03/L_04/L_06 + L_09 printed; 8 X1C shells + L_07 to go (≈55 h on the first Bambu estimate). All remaining prints SUNLU standard PLA, 3 walls, 3 %. Handles = beech rod. [[Print_Queue_Start_Here]].
 
 **Electronics:** both board + strip bench tests PASS; right strip dry-fit counted; WLED 16 presets v3 accepted. [[LED_Wiring_Start_Here]].

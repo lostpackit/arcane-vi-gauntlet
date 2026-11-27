@@ -27,6 +27,7 @@ tags:
 | What has been tested | [Test log](notes/04_Test_Log.md), [Release gates](docs/RELEASE_GATES.md) |
 
 ## Current state (2026-11-25 00:45, Main)
+- **Original model — finger reference only (owner 2026-11-27):** [Original 3MF](originals/Vi%20Gauntlet%203mf%20Project%20File.3mf) was the reference guide; only its fingers remain correct for this project. Do not use the rest as the current gauntlet design. Finger mounting and tendon compatibility remain subject to the existing checks.
 - **DEADLINE 2026-11-28: BOTH gauntlets working (fingers, LEDs) and painted** (owner). **Plan v2: [Deadline_Plan_2026-11-28](notes/Deadline_Plan_2026-11-28.md)**. Critical path now: **right arm glue-up Wed 11-25** (a day behind), left arm via the sub-assembly pipeline as shells arrive (last left shell L_13 ≈ Fri 08:00 on the first Bambu estimate), **finger string test before any knuckle glue**. Nothing glued or painted yet.
 - **What to print: [Print queue](notes/Print_Queue_Start_Here.md)** (single source of truth). Key points: **thumb V5.3 withdrawn 11-25 (wrong-hand base): left arm prints `L_13_Knuckles_Right_V5_1`; printed R_13 V5_3 is usable; printed V5.3 bases are swapped (`L_` print = right arm)**, see [Mechanics](notes/Mechanics_Start_Here.md); left arm uses **spare R_01 / R_02 / R_05 as L_03 / L_04 / L_06**, plus `L_08 / L_09 / L_11 _SPAREMATCH`, `L_13_V5_1`, and normal L_01, L_02, L_05, L_07, L_10, L_12 (10 new left shells). **Right arm: all shells printed (owner 11-24; R_13 V5_3 was last).** L_09 SPAREMATCH printed; the other 9 new left shells are open.
 - **A1 Mini (owner 11-24):** gauges, 2 pods (transparent PLA, tested, final) and thumb bases R/L printed; L_09 SPAREMATCH printed. Next: **L_07**, sled + vented cover R/L, one more thumb (status unknown).
@@ -56,6 +57,9 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-27 09:28 UTC, Copilot SDK (original finger reference)
+- Owner supplied the original 3MF and specified that only its fingers remain correct for this project; use it as a finger reference, not as the current gauntlet design. Supplied file and tracked `originals/Vi Gauntlet 3mf Project File.3mf` match exactly: 192,851,495 bytes, SHA-256 `07f60e694fd7db847d10357d4fffd24a59badcdc783af3107d92cf3618aed288`. Independent remote LFS readback matched; temporary cache removed. Project README, asset map, hub and decision log updated. Diff check passed, link target exists, LFS count 190; no CAD or release gates changed. Fetched origin; local and remote main both `491ee0e`. Next: commit, push and verify. Sync LOCAL.
+
 ### 2026-11-26 14:40 CET, Claude (Electronics & LEDs)
 - Owner printing the board sled: re-exported Sled R/L (unchanged v3) + new **cover v3.1** with two 3 mm mic sound holes; 3MFs delivered in chat (LFS, owner/Copilot upload). Print README updated.
 - Sync: PUSHED (see git log).
