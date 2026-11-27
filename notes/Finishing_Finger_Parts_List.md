@@ -18,14 +18,19 @@ Source: `originals/Vi Gauntlet 3mf Project File.3mf` (Bambu Studio project, one 
 | Piece | Fore | Middle | Ring | Little | Thumb | Probable job |
 |---|---|---|---|---|---|---|
 | Finger body (print-in-place) | [ ] | [ ] | [ ] | [ ] | [ ] | the moving finger; stays unpainted |
-| Base_A | [ ] | [ ] | [ ] | [ ] | - | wraps the base segment |
+| Base_A | [ ] | [ ] | [ ] | [ ] | - | armour plate at the knuckle end of the finger |
 | Base_B | [ ] | [ ] | [ ] | [ ] | - | wraps the base segment |
 | Middle_A | [ ] | [ ] | [ ] | [ ] | [ ] | middle segment |
 | Middle_B (V2) | [ ] | [ ] | [ ] | [ ] | [ ] | middle segment |
-| Piece | [ ] | [ ] | [ ] | [ ] | - | small cover |
+| Piece | [ ] | [ ] | [ ] | [ ] | - | **slot piece: press-fits into the knuckle slot in shells 12/13** (do not build up paint on its press faces) |
 | Tip | [ ] | [ ] | [ ] | [ ] | [ ] | fingertip |
 | Detail | [ ] | [ ] | [ ] | [ ] | - | small detail piece (about 32 mm) |
 | Thumb_Base | - | - | - | - | [ ] | goes into knuckle 13 with the thumb joint, not on the finger |
+
+## Comparison with the current design (shells 12/13 V5.1), from the V5.2 simulation report
+Existing vault result (`V5_2_SIMULATION_REPORT.md` section 5, computed, not physical): the finger parts that touch the knuckle shells are the **finger core** (first segment) and the **slot Piece**. In the 3MF the printable core and Piece volumes match the assembled reference to 0.03 cm3 or better (middle core 0.24 cm3 apart, possibly a small revision). Against shells 12/13 V5.1: cores clear with a typical 0.8 to 1.8 mm gap; **Pieces overlap by at most 0.15 mm, a snug press fit as designed.** The Finger_Knot caps were skipped in that check, which fits your statement that the knot is now part of the main moulded body; I have **not** checked the knot geometry against the shells myself. The reference copy of Base_A is an older revision (about 0.7 % smaller in volume than the printable one), a minor difference. The physical T2 coupon PASS (11-18) is the real confirmation of the slot fit.
+
+Practical consequence: the **Piece is the part where paint thickness matters** (primer plus paint adds about 0.05 to 0.15 mm per surface). Test-fit every primed Piece into its slot before painting; keep paint off its press faces.
 
 ## If they are mixed up: sort in two steps
 **Step 1, by shape** (the sheets below): seven piles of piece types. The thumb pieces are big (73 to 115 mm) and unmistakable.
