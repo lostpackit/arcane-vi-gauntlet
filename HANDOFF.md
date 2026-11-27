@@ -2,8 +2,8 @@
 type: agent-handoff
 project: arcane-vi-gauntlet
 status: active
-updated_date: 2026-11-25
-last_agent: Copilot SDK (repository sync)
+updated_date: 2026-11-27
+last_agent: Claude (Finishing conversation)
 sync_state: pushed
 tags:
   - handoff
@@ -28,7 +28,8 @@ tags:
 
 ## Current state (2026-11-25 00:45, Main)
 - **Original model — finger reference only (owner 2026-11-27):** [Original 3MF](originals/Vi%20Gauntlet%203mf%20Project%20File.3mf) was the reference guide; only its fingers remain correct for this project. Do not use the rest as the current gauntlet design. Finger mounting and tendon compatibility remain subject to the existing checks.
-- **DEADLINE 2026-11-28: BOTH gauntlets working (fingers, LEDs) and painted** (owner). **Plan v2: [Deadline_Plan_2026-11-28](notes/Deadline_Plan_2026-11-28.md)**. Critical path now: **right arm glue-up Wed 11-25** (a day behind), left arm via the sub-assembly pipeline as shells arrive (last left shell L_13 ≈ Fri 08:00 on the first Bambu estimate), **finger string test before any knuckle glue**. Nothing glued or painted yet.
+- **Right arm status (owner 2026-11-27 evening):** left arm skipped. Last two big shells glued (final join, drying), thumb joint glued, all putty done, whole body has filler-primer coat 1 (coats 2-3 tonight), finger shells have 2 coats blue and are cured. **Sled + board were NOT installed before the final join; owner expects to reach it (G2 untested).** Plan: LED bench wiring + primer + matte white + blue tonight; **Sat: sled epoxy, finger gold, gauntlet gold, strip, fingers, strings, pod.** See Finishing Start Here.
+- **DEADLINE 2026-11-28: right arm working (fingers, LEDs) and painted** (owner; original wording was both arms). **Plan v2: [Deadline_Plan_2026-11-28](notes/Deadline_Plan_2026-11-28.md)**. Critical path now: **right arm glue-up Wed 11-25** (a day behind), left arm via the sub-assembly pipeline as shells arrive (last left shell L_13 ≈ Fri 08:00 on the first Bambu estimate), **finger string test before any knuckle glue**. Nothing glued or painted yet.
 - **What to print: [Print queue](notes/Print_Queue_Start_Here.md)** (single source of truth). Key points: **thumb V5.3 withdrawn 11-25 (wrong-hand base): left arm prints `L_13_Knuckles_Right_V5_1`; printed R_13 V5_3 is usable; printed V5.3 bases are swapped (`L_` print = right arm)**, see [Mechanics](notes/Mechanics_Start_Here.md); left arm uses **spare R_01 / R_02 / R_05 as L_03 / L_04 / L_06**, plus `L_08 / L_09 / L_11 _SPAREMATCH`, `L_13_V5_1`, and normal L_01, L_02, L_05, L_07, L_10, L_12 (10 new left shells). **Right arm: all shells printed (owner 11-24; R_13 V5_3 was last).** L_09 SPAREMATCH printed; the other 9 new left shells are open.
 - **A1 Mini (owner 11-24):** gauges, 2 pods (transparent PLA, tested, final) and thumb bases R/L printed; L_09 SPAREMATCH printed. Next: **L_07**, sled + vented cover R/L, one more thumb (status unknown).
 - **Status (owner 11-24):** right arm fully printed; fingers except thumbs printed + primed; transparent parts done; left arm: spares cover 3 + L_09 done, **8 X1C shells + L_07 still to print. First Bambu estimate: L_08 + a cuff on one plate = 10 h 39 min (SUNLU, 3 walls, 3 %), so all left X1C shells may finish Fri morning (~55 h, extrapolated); see Print queue.**
@@ -57,11 +58,16 @@ tags:
 - Whether to flatten the lens undersides (cosmetic; they print fine as is).
 
 ## Latest actions (newest first; one short entry each)
+### 2026-11-27 20:45 CET, Claude (Finishing conversation)
+- Owner (evening, ~4 h left): right arm only. Reported: final two-half join glued and drying, thumb joint glued, finger rubber bands (black) tested and pull the finger straight, finger shells 2 coats blue cured, body primer coat 1. Forgot to mount the sled before the final join; owner thinks the cuff opening is big enough to reach the ceiling spot (not tested).
+- Owner decisions: sled glued with epoxy (UHU Plus Schnellfest, Claude proposal accepted; vault had Poly Max) on **Sat morning**, after the blue paint; finger gold + finger epoxy assembly Sat; LED wiring tonight takes priority over finger gold. Matte-white groove still not confirmed by owner. Computed only; nothing here is a fit test.
+- Files: Finishing Start Here, Decision Log, Test Log, session note. Sync: see git log.
+
 ### 2026-11-27 09:28 UTC, Copilot SDK (original finger reference)
 - Owner supplied the original 3MF and specified that only its fingers remain correct for this project; use it as a finger reference, not as the current gauntlet design. Supplied file and tracked `originals/Vi Gauntlet 3mf Project File.3mf` match exactly: 192,851,495 bytes, SHA-256 `07f60e694fd7db847d10357d4fffd24a59badcdc783af3107d92cf3618aed288`. Independent remote LFS readback matched; temporary cache removed. Project README, asset map, hub and decision log updated in commit `1d62bcf`. Diff check passed, link target exists, LFS count 190; no CAD or release gates changed. Sync: remote main verified at `6ae6f4f` (2026-11-27 09:31 UTC); this handoff update accompanies the final checkpoint. Next: follow existing physical-test blockers.
 
 ### 2026-11-27 11:00 CET, Claude (Finishing conversation)
-- Owner skipping the left arm; right arm: thumb joint and final join glue today, fingers painted and shells glued on after. Read the finger design from the project 3MF: parts list + sort guide in [notes/Finishing_Finger_Parts_List.md](notes/Finishing_Finger_Parts_List.md) (41 parts: 5 bodies + 36 shells). Computed only; shell assembly unconfirmed until dry fit.
+- Owner skipping the left arm; right arm: thumb joint and final join glue today, fingers painted and shells glued on after. Read the finger design from the project 3MF: parts list + sort guide in [notes/Finishing_Finger_Parts_List.md](notes/Finishing_Finger_Parts_List.md) (37 parts: 5 bodies + 32 shells; knuckle caps are built into the body, owner 11-27). Computed only; shell assembly unconfirmed until dry fit.
 - Sync: PUSHED (see git log).
 
 ### 2026-11-26 14:40 CET, Claude (Electronics & LEDs)
@@ -84,29 +90,10 @@ tags:
 - **Thumb V5.3 WITHDRAWN.** The stock Thumb_Base is the LEFT-hand part (mirror fit 0.013 mm); V5.3 forced it onto the right arm. The correct-hand base keys into the existing V5_1 square pocket, so no socket or dowel is needed. **Print `L_13_Knuckles_Right_V5_1`, not V5_3.** Printed V5.3 bases are swapped (`L_` = right arm), plug the stray hole. Printed R_13 V5_3 is usable (pocket intact). Files: `releases/v5/.../V5_5_Thumb_Fix/`; inbox note for Print queue and Main. **Owner upload needed:** `R/L_Thumb_Base_V5_5` 3MFs (optional reprints).
 - Sync: PUSHED (see git log).
 
-### 2026-11-25 01:45 CET, Claude (Electronics & LEDs)
-- Owner confirmed: transparent-PLA pods v2 clip onto the 18 mm beech rods and work; no screws, no redesign. Stale "final pod in PETG"/"not printed" lines fixed (LED Start Here, option-A print/README, issue #9 line).
-- Sync: PUSHED (see git log).
-
-### 2026-11-25 01:40 CET, Claude (Main)
-- Checked Copilot's sync at owner request: **OK.** Fast-forward only (Claude's last push `bae19da` is an ancestor of `59e164b`; no history rewritten); 14 files changed, all additions except HANDOFF header; V5.3 package added at repo root `V5_3_Thumb_Joint/`; all 4 LFS objects fetched from GitHub and SHA-256 identical to the manifest; root `README.md` intact on GitHub (its deletion exists only unstaged on the owner's PC: do not commit it). Still pending owner uploads: #2, #20, #21, V5.4 SPAREMATCH.
-- Sync: PUSHED (see git log).
-
-### 2026-11-25 00:23 UTC, Copilot SDK (repository sync)
-- Fetched and fast-forwarded `main` from `493cbb9` to `744b27f`, preserving the existing local deletion of root `README.md` and the untracked `V5_3_Thumb_Joint/` folder. Remote did not change `README.md`. No local deletion was staged.
-- Package backup: nine V5.3 files pushed at `1ec674df10bd95c8e6c01afe21e44066fdd49053`; all four LFS objects independently fetched and hash-checked; `git lfs fsck` passed. At the owner's request, root `README.md` was restored from HEAD. Rebased the restoration record onto `66b6a21` without conflicts; owner upload checklist and confirmed button-pod fit preserved. Push pending.
-
 ### 2026-11-25 03:00 CET, Claude (Finishing conversation)
 - Wrote the right-arm glue-up guide [notes/Finishing_Assembly_Guide_Right_Arm.md](notes/Finishing_Assembly_Guide_Right_Arm.md) (+ PDF sent to owner): 4 rounds, 57 dowels, figures. **Beech rod 249 mm** (computed socket floor-to-floor 251.0; owner re-measures). Stages 5 and 9 (knuckles) wait for finger string test and thumb joint. Sled and wires before stages 7 and 10. Nothing glued or fitted yet.
 - Sync: PUSHED (see git log).
 
-### 2026-11-25 01:30 CET, Claude (Finishing conversation)
-- Owner decided the paint look (spray blue, hand/dry-brush gold, clear coat maybe later) from a reference photo: logged in Decision Log + Finishing Start Here. Recommended matte white inside the LED groove/crystal well/ring trough (not black, not gold); awaiting OK. Nothing glued or painted by me.
-- Sync: PUSHED (see git log).
-
-### 2026-11-25 00:50 CET, Claude (Main)
-- Updated from the repo (Print queue, Electronics, Finishing, Mechanics work since 11-22). Hygiene: merged Print queue inbox note (schedule slip) and deleted it; archived entries 2026-11-22 22:05 and older verbatim. **Deadline plan v2**: right arm glue-up Wed, left sub-assembly pipeline, fallbacks F1–F3, 7 blocking decisions (thumb fixed?, G1–G4, paint, F1 approval, wire/resistors, string test, deadline hour). Hub status refreshed.
-- Sync: PUSHED (see git log).
 
 Older entries: [snapshot 2026-11-22](notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-22.md), [snapshot 2026-11-21](notes/handoff_archive/HANDOFF_SNAPSHOT_2026-11-21.md), [archive 2026-11](notes/handoff_archive/HANDOFF_ARCHIVE_2026-11.md).
 

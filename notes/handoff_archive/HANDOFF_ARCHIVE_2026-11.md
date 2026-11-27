@@ -347,4 +347,24 @@ period: 2026-11
 - **Next:** Final check that remote `main` matches the pushed handoff record.
 - **Sync:** Push succeeded; final ref check pending.
 
+### 2026-11-25 01:45 CET, Claude (Electronics & LEDs)
+- Owner confirmed: transparent-PLA pods v2 clip onto the 18 mm beech rods and work; no screws, no redesign. Stale "final pod in PETG"/"not printed" lines fixed (LED Start Here, option-A print/README, issue #9 line).
+- Sync: PUSHED (see git log).
+
+### 2026-11-25 01:40 CET, Claude (Main)
+- Checked Copilot's sync at owner request: **OK.** Fast-forward only (Claude's last push `bae19da` is an ancestor of `59e164b`; no history rewritten); 14 files changed, all additions except HANDOFF header; V5.3 package added at repo root `V5_3_Thumb_Joint/`; all 4 LFS objects fetched from GitHub and SHA-256 identical to the manifest; root `README.md` intact on GitHub (its deletion exists only unstaged on the owner's PC: do not commit it). Still pending owner uploads: #2, #20, #21, V5.4 SPAREMATCH.
+- Sync: PUSHED (see git log).
+
+### 2026-11-25 00:23 UTC, Copilot SDK (repository sync)
+- Fetched and fast-forwarded `main` from `493cbb9` to `744b27f`, preserving the existing local deletion of root `README.md` and the untracked `V5_3_Thumb_Joint/` folder. Remote did not change `README.md`. No local deletion was staged.
+- Package backup: nine V5.3 files pushed at `1ec674df10bd95c8e6c01afe21e44066fdd49053`; all four LFS objects independently fetched and hash-checked; `git lfs fsck` passed. At the owner's request, root `README.md` was restored from HEAD. Rebased the restoration record onto `66b6a21` without conflicts; owner upload checklist and confirmed button-pod fit preserved. Push pending.
+
+### 2026-11-25 01:30 CET, Claude (Finishing conversation)
+- Owner decided the paint look (spray blue, hand/dry-brush gold, clear coat maybe later) from a reference photo: logged in Decision Log + Finishing Start Here. Recommended matte white inside the LED groove/crystal well/ring trough (not black, not gold); awaiting OK. Nothing glued or painted by me.
+- Sync: PUSHED (see git log).
+
+### 2026-11-25 00:50 CET, Claude (Main)
+- Updated from the repo (Print queue, Electronics, Finishing, Mechanics work since 11-22). Hygiene: merged Print queue inbox note (schedule slip) and deleted it; archived entries 2026-11-22 22:05 and older verbatim. **Deadline plan v2**: right arm glue-up Wed, left sub-assembly pipeline, fallbacks F1–F3, 7 blocking decisions (thumb fixed?, G1–G4, paint, F1 approval, wire/resistors, string test, deadline hour). Hub status refreshed.
+- Sync: PUSHED (see git log).
+
 ## End of archived actions

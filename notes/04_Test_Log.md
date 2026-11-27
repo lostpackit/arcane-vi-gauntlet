@@ -78,5 +78,7 @@ For each test, add a separate note from [[templates/Validation_Template]] or app
 | 2026-11-26 | Onboard mic (ICS-43434) via WLED AudioReactive (SPH0654, SD 9 / WS 10 / SCK 23, AGC Normal), Gravimeter clap test on the bench board, open air | **PASS (owner):** "it works" | owner in chat 06:50 |
 | 2026-11-25 | Thumb joint re-analysis after owner dry-fit photos (computed) | **FINDING: stock Thumb_Base is left-handed** (mirror fit 0.013 mm median). V5.3 socket/dowel WITHDRAWN. Correct-hand base keys into the V5_1 square pocket (28 cm² within 0.5 mm); on printed R_13 V5_3: pocket intact, 19 cm² within 0.5 mm, 0.30 cm³ skin overlap. Printed V5.3 bases swapped (L_ = right). Not fitted by an agent | `releases/v5/.../V5_5_Thumb_Fix/` |
 | 2026-11-25 | Handle socket floor-to-floor in printed R_10/R_11 (computed from the 3MFs, not measured) | **INFO (computed): 251.0 mm** (floors X=85.5 and 336.5, 12.3 mm engagement/side). Rod recommendation 249 mm. Owner to confirm with a caliper on the dry stack | Finishing guide |
+| 2026-11-27 | Black rubber bands on the finger bodies (owner, finger skeleton) | **PASS (owner report):** bands fit and pull the finger back straight | owner in chat |
+| 2026-11-27 | G2: can the sled spot (ceiling under the ring, about 200 mm in) be reached through the cuff opening after assembly | **UNKNOWN:** not tested; owner expects it is fine (large opening). Re-test before the sled glue-up | owner in chat 20:39 |
 
 Also update [[docs/RELEASE_GATES]] and [[HANDOFF]] after every test.
