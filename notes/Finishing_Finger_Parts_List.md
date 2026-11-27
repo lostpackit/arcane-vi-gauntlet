@@ -11,13 +11,13 @@ Source: `originals/Vi Gauntlet 3mf Project File.3mf` (Bambu Studio project, one 
 
 ## What each finger is
 - **1 print-in-place finger body** (`Forefinger`, `Middle_Finger`, `Ring_Finger`, `Little_Finger`, `Thumb`), printed flat; these are the moving parts, do not paint or glue them.
-- **Shell pieces** that go over the body: 8 per finger (4 fingers) or 4 for the thumb. That is **36 shell pieces + 5 bodies = 41 parts**.
+- **Shell pieces** that go over the body: 7 per finger (4 fingers) or 4 for the thumb. That is **32 shell pieces + 5 bodies = 37 parts**.
+- **Owner correction 2026-11-27:** in the design actually printed, the knuckle caps (`Finger_Knot`) are built into the main body (not the thumb). They are removed from this list. This 3MF is the *original* design, kept as a finger reference only, so other pieces may differ from what you printed too: check the sheets against your pieces.
 
 ## Checklist (tick when found, primed, painted, glued)
 | Piece | Fore | Middle | Ring | Little | Thumb | Probable job |
 |---|---|---|---|---|---|---|
 | Finger body (print-in-place) | [ ] | [ ] | [ ] | [ ] | [ ] | the moving finger; stays unpainted |
-| Finger_Knot (round knuckle cap) | [ ] | [ ] | [ ] | [ ] | - | knuckle end |
 | Base_A | [ ] | [ ] | [ ] | [ ] | - | wraps the base segment |
 | Base_B | [ ] | [ ] | [ ] | [ ] | - | wraps the base segment |
 | Middle_A | [ ] | [ ] | [ ] | [ ] | [ ] | middle segment |
@@ -28,13 +28,12 @@ Source: `originals/Vi Gauntlet 3mf Project File.3mf` (Bambu Studio project, one 
 | Thumb_Base | - | - | - | - | [ ] | goes into knuckle 13 with the thumb joint, not on the finger |
 
 ## If they are mixed up: sort in two steps
-**Step 1, by shape** (the sheets below): eight piles of piece types. The thumb pieces are big (73 to 115 mm) and unmistakable.
+**Step 1, by shape** (the sheets below): seven piles of piece types. The thumb pieces are big (73 to 115 mm) and unmistakable.
 
 **Step 2, by finger**, longest edge in mm (caliper, expect plus or minus 2 with primer):
 
 | Piece | Fore | Middle | Ring | Little |
 |---|---|---|---|---|
-| Finger_Knot | 65.3 | 62.4 | 62.4 | 64.6 |
 | Base_A | 82.6 | 83.0 | 83.0 | 80.7 |
 | Base_B | 78.7 | 79.1 | 79.1 | 76.9 |
 | Middle_A | 90.9 | 90.6 | 91.2 | 88.8 |
