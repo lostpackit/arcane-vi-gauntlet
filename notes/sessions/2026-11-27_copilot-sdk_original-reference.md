@@ -26,6 +26,10 @@
 - Staged the six intended documentation/session paths; `git diff --cached --check` passed.
 - Created commit `1d62bcf6c0915c8c5f19d5d933e34ce9937e992b`. Next: push and verify. Sync pending push.
 
+## 2026-11-27 09:31 UTC — push and remote verification
+- Pushed commits through `6ae6f4fd9ffd0e2cb84cabc45cb8741ac34d49a9` to `origin/main`; `git ls-remote origin refs/heads/main` returned the same SHA.
+- The reference guidance and the existing 3MF are now on GitHub. This final handoff/log checkpoint records the verified push; existing physical-test and design blockers remain unchanged.
+
 ## 2026-11-27 — documentation
 - Action: Added the owner's fingers-only reference restriction to the root README, asset map, project hub, decision log and handoff, with a link to the already-tracked original.
 - Result: The original remains unchanged and is not described as the current full gauntlet design. Existing physical-test and release-gate requirements remain in force. The pending Mechanics inbox note remains for its explicitly assigned Print queue owner.
