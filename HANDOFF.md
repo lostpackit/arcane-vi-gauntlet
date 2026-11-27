@@ -60,6 +60,10 @@ tags:
 ### 2026-11-27 09:28 UTC, Copilot SDK (original finger reference)
 - Owner supplied the original 3MF and specified that only its fingers remain correct for this project; use it as a finger reference, not as the current gauntlet design. Supplied file and tracked `originals/Vi Gauntlet 3mf Project File.3mf` match exactly: 192,851,495 bytes, SHA-256 `07f60e694fd7db847d10357d4fffd24a59badcdc783af3107d92cf3618aed288`. Independent remote LFS readback matched; temporary cache removed. Project README, asset map, hub and decision log updated in commit `1d62bcf`. Diff check passed, link target exists, LFS count 190; no CAD or release gates changed. Sync: remote main verified at `6ae6f4f` (2026-11-27 09:31 UTC); this handoff update accompanies the final checkpoint. Next: follow existing physical-test blockers.
 
+### 2026-11-27 11:00 CET, Claude (Finishing conversation)
+- Owner skipping the left arm; right arm: thumb joint and final join glue today, fingers painted and shells glued on after. Read the finger design from the project 3MF: parts list + sort guide in [notes/Finishing_Finger_Parts_List.md](notes/Finishing_Finger_Parts_List.md) (41 parts: 5 bodies + 36 shells). Computed only; shell assembly unconfirmed until dry fit.
+- Sync: PUSHED (see git log).
+
 ### 2026-11-26 14:40 CET, Claude (Electronics & LEDs)
 - Owner printing the board sled: re-exported Sled R/L (unchanged v3) + new **cover v3.1** with two 3 mm mic sound holes; 3MFs delivered in chat (LFS, owner/Copilot upload). Print README updated.
 - Sync: PUSHED (see git log).
