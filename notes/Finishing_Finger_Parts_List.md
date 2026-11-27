@@ -32,6 +32,27 @@ Existing vault result (`V5_2_SIMULATION_REPORT.md` section 5, computed, not phys
 
 Practical consequence: the **Piece is the part where paint thickness matters** (primer plus paint adds about 0.05 to 0.15 mm per surface). Test-fit every primed Piece into its slot before painting; keep paint off its press faces.
 
+## Assembly pictures (from `originals/Together For Sizing.stl`, the assembled reference with all four fingers)
+The project 3MF has no assembled pose, but the sizing model does. I matched each piece in it to the printable parts by volume and position, then drew each finger assembled and pulled apart. **Computed from CAD, not fitted by hand.** Side view: knuckle on the left, fingertip on the right, back of the hand up (+Y).
+
+How one finger goes together, from the pictures (same layout on all four fingers):
+1. **Finger body** = 3 print-in-place segments in a row (grey). Small tabs on the top edge of the body look like the places the plates clip or glue onto: confirm on the dry fit.
+2. **Piece** (orange) sits under the root of segment 1 on the palm side and presses into the knuckle slot (up to 0.15 mm overlap).
+3. **Base_A** (dark blue, back side) and **Base_B** (light blue, palm side) wrap segment 1 as a pair of halves, just past the knuckle.
+4. **Detail** (gold) is the small fin on top of Base_A.
+5. **Middle_A** (green, back) and **Middle_B** (teal, palm side) wrap segment 2 the same way.
+6. **Tip** (purple) caps segment 3 and has a round pin boss on each side at its hinge end.
+7. **Finger_Knot** (black cap at the top left) is shown only because the reference has it as a separate part. In your design it is part of the main knuckle body, so **ignore it**.
+
+Differences between the reference and your printable parts: the reference Base_B and Middle_A are **older, thicker revisions** (Base_B about 21 % and Middle_A about 13 % larger in volume); the printable Base_B and Middle_B_V2 are the newer slimmer ones. Base_A, Piece, Detail, Tip and Middle_B_V2 match. The bodies' hinge geometry was not checked.
+
+![](assets/finger_parts/asm_Forefinger.png)
+![](assets/finger_parts/asm_Middle_finger.png)
+![](assets/finger_parts/asm_Ring_finger.png)
+![](assets/finger_parts/asm_Little_finger.png)
+
+The **thumb** is not drawn: its pieces sit differently (Thumb_Base joins the knuckle shell, see Mechanics) and I have not matched them yet.
+
 ## If they are mixed up: sort in two steps
 **Step 1, by shape** (the sheets below): seven piles of piece types. The thumb pieces are big (73 to 115 mm) and unmistakable.
 
