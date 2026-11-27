@@ -58,7 +58,7 @@ tags:
 
 ## Latest actions (newest first; one short entry each)
 ### 2026-11-27 09:28 UTC, Copilot SDK (original finger reference)
-- Owner supplied the original 3MF and specified that only its fingers remain correct for this project; use it as a finger reference, not as the current gauntlet design. Supplied file and tracked `originals/Vi Gauntlet 3mf Project File.3mf` match exactly: 192,851,495 bytes, SHA-256 `07f60e694fd7db847d10357d4fffd24a59badcdc783af3107d92cf3618aed288`. Independent remote LFS readback matched; temporary cache removed. Project README, asset map, hub and decision log updated. Diff check passed, link target exists, LFS count 190; no CAD or release gates changed. Fetched origin; local and remote main both `491ee0e`. Next: commit, push and verify. Sync LOCAL.
+- Owner supplied the original 3MF and specified that only its fingers remain correct for this project; use it as a finger reference, not as the current gauntlet design. Supplied file and tracked `originals/Vi Gauntlet 3mf Project File.3mf` match exactly: 192,851,495 bytes, SHA-256 `07f60e694fd7db847d10357d4fffd24a59badcdc783af3107d92cf3618aed288`. Independent remote LFS readback matched; temporary cache removed. Project README, asset map, hub and decision log updated in commit `1d62bcf`. Diff check passed, link target exists, LFS count 190; no CAD or release gates changed. Next: push and verify; follow existing physical-test blockers. Sync pending push.
 
 ### 2026-11-26 14:40 CET, Claude (Electronics & LEDs)
 - Owner printing the board sled: re-exported Sled R/L (unchanged v3) + new **cover v3.1** with two 3 mm mic sound holes; 3MFs delivered in chat (LFS, owner/Copilot upload). Print README updated.

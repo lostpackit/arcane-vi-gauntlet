@@ -22,6 +22,10 @@
 - `git fetch origin` succeeded; both local HEAD and fetched `origin/main` are `491ee0e653da0dc68fc7fac9271a255680783704`.
 - Next: Commit and push the verified documentation, then verify the remote ref. Sync: LOCAL.
 
+## 2026-11-27 09:30 UTC — commit
+- Staged the six intended documentation/session paths; `git diff --cached --check` passed.
+- Created commit `1d62bcf6c0915c8c5f19d5d933e34ce9937e992b`. Next: push and verify. Sync pending push.
+
 ## 2026-11-27 — documentation
 - Action: Added the owner's fingers-only reference restriction to the root README, asset map, project hub, decision log and handoff, with a link to the already-tracked original.
 - Result: The original remains unchanged and is not described as the current full gauntlet design. Existing physical-test and release-gate requirements remain in force. The pending Mechanics inbox note remains for its explicitly assigned Print queue owner.
